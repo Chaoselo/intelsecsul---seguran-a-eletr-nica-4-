@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --brand-black: #0A0D14;
+  --brand-dark: #121824;
+  --brand-card: #161F30;
+  --brand-blue: #0091FF;
+  --brand-cyan: #00C5FF;
+  --graphite: #CBD5E1;
+  --bg-dark: #0A0D14;
+  --white: #FFFFFF;
+  --border-color: #1E293B;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--graphite);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Logo gradient text utility */
+.brand-gradient-text {
+  background: linear-gradient(135deg, #0077FF 0%, #00D0FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-gradient-bg {
+  background: linear-gradient(135deg, #0077FF 0%, #00C0FF 100%);
+}
+
+/* Custom subtle scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(10, 13, 20, 0.05);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 145, 255, 0.3);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 145, 255, 0.5);
+}

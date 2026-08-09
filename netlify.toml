@@ -1,0 +1,39 @@
+[build]
+  command = "vite build"
+  publish = "dist"
+
+# Redirecionamento permanente 301 do antigo serviço de alarme monitorado
+[[redirects]]
+  from = "/servicos/alarme-monitorado"
+  to = "/servicos/instalacao-de-alarmes"
+  status = 301
+  force = true
+
+# Redirecionamento permanente 301 do antigo serviço de locação
+[[redirects]]
+  from = "/servicos/locacao-de-equipamentos-de-seguranca"
+  to = "/servicos/locacao-de-cameras-de-seguranca"
+  status = 301
+  force = true
+
+# Fallback para Single Page Application (React Router)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Cabeçalhos globais de segurança e proteção HSTS
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# Cache agressivo e otimizado para arquivos estáticos compilados pelo Vite
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

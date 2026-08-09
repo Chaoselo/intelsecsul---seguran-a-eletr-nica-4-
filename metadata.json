@@ -1,0 +1,6 @@
+{
+  "name": "Intelsecsul - Segurança Eletrônica",
+  "description": "Empresa de segurança eletrônica em Curitiba e Região Metropolitana. Câmeras, alarme monitorado, cerca elétrica, controle de acesso e manutenção com equipe própria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
