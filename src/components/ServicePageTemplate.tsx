@@ -89,7 +89,7 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
     "@type": "Service",
     "name": h1,
     "provider": {
-      "@type": "SecurityService",
+      "@type": "HomeAndConstructionBusiness",
       "name": "Intelsecsul - Segurança Eletrônica",
       "telephone": "+5541998448409",
       "email": "contato@intelsecsul.com.br"
