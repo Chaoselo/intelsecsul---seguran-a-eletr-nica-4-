@@ -57,7 +57,7 @@ function resolveFullImageUrl(url?: string): string {
 
 export const LOCAL_BUSINESS_SCHEMA = {
   "@context": "https://schema.org",
-  "@type": "SecurityService",
+  "@type": "HomeAndConstructionBusiness",
   "@id": "https://intelsecsul.com.br/#organization",
   "name": "IntelSec Sul - Segurança Eletrônica",
   "legalName": "IntelSec Sul Segurança Eletrônica e Tecnologia",
