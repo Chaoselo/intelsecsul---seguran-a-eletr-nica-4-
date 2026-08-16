@@ -54,7 +54,7 @@ export const Footer: React.FC = () => {
               {SERVICES_LIST.map((s) => (
                 <li key={s.slug}>
                   <Link
-                    to={`/servicos/${s.slug}`}
+                    to={`/servicos/${s.slug}/`}
                     className="hover:text-[#00C5FF] transition-colors flex items-center gap-1 group"
                   >
                     <span className="text-slate-500 group-hover:text-[#00C5FF] transition-colors">›</span>
@@ -74,7 +74,7 @@ export const Footer: React.FC = () => {
               {CITIES_LIST.slice(0, 8).map((c) => (
                 <li key={c.slug}>
                   <Link
-                    to={`/cidades/${c.slug}`}
+                    to={`/cidades/${c.slug}/`}
                     className="hover:text-[#00C5FF] transition-colors flex items-center gap-1 group"
                   >
                     <span className="text-slate-500 group-hover:text-[#00C5FF] transition-colors">›</span>
@@ -84,7 +84,7 @@ export const Footer: React.FC = () => {
               ))}
               <li>
                 <Link
-                  to="/cidades"
+                  to="/cidades/"
                   className="text-[#00C5FF] font-bold hover:underline inline-flex items-center gap-1 pt-1"
                 >
                   <span>Ver todas as 11 cidades</span>
@@ -101,42 +101,42 @@ export const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-2.5 text-xs mb-6">
               <li>
-                <Link to="/sobre" className="hover:text-[#00C5FF] transition-colors">
+                <Link to="/sobre/" className="hover:text-[#00C5FF] transition-colors">
                   Sobre a Empresa
                 </Link>
               </li>
               <li>
-                <Link to="/por-que-escolher-a-intelsecsul" className="hover:text-[#00C5FF] transition-colors">
+                <Link to="/por-que-escolher-a-intelsecsul/" className="hover:text-[#00C5FF] transition-colors">
                   Por Que Nos Escolher
                 </Link>
               </li>
               <li>
-                <Link to="/depoimentos" className="hover:text-[#00C5FF] transition-colors">
+                <Link to="/depoimentos/" className="hover:text-[#00C5FF] transition-colors">
                   Depoimentos de Clientes
                 </Link>
               </li>
               <li>
-                <Link to="/perguntas-frequentes" className="hover:text-[#00C5FF] transition-colors">
+                <Link to="/perguntas-frequentes/" className="hover:text-[#00C5FF] transition-colors">
                   Perguntas Frequentes (FAQ)
                 </Link>
               </li>
               <li>
-                <Link to="/glossario" className="hover:text-[#00C5FF] transition-colors">
+                <Link to="/glossario/" className="hover:text-[#00C5FF] transition-colors">
                   Glossário Técnico
                 </Link>
               </li>
               <li>
-                <Link to="/comparativos" className="hover:text-[#00C5FF] transition-colors">
+                <Link to="/comparativos/" className="hover:text-[#00C5FF] transition-colors">
                   Comparativos de Serviços
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="hover:text-[#00C5FF] transition-colors">
+                <Link to="/blog/" className="hover:text-[#00C5FF] transition-colors">
                   Blog e Dicas de Segurança
                 </Link>
               </li>
               <li>
-                <Link to="/contato" className="hover:text-[#00C5FF] transition-colors">
+                <Link to="/contato/" className="hover:text-[#00C5FF] transition-colors">
                   Fale Conosco
                 </Link>
               </li>
@@ -174,21 +174,21 @@ export const Footer: React.FC = () => {
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-4 text-slate-400 text-xs">
-            <Link to="/sobre" className="hover:text-white transition-colors">Sobre</Link>
+            <Link to="/sobre/" className="hover:text-white transition-colors">Sobre</Link>
             <span>•</span>
-            <Link to="/perguntas-frequentes" className="hover:text-white transition-colors">FAQ</Link>
+            <Link to="/perguntas-frequentes/" className="hover:text-white transition-colors">FAQ</Link>
             <span>•</span>
-            <Link to="/glossario" className="hover:text-white transition-colors">Glossário</Link>
+            <Link to="/glossario/" className="hover:text-white transition-colors">Glossário</Link>
             <span>•</span>
-            <Link to="/comparativos" className="hover:text-white transition-colors">Comparativos</Link>
+            <Link to="/comparativos/" className="hover:text-white transition-colors">Comparativos</Link>
             <span>•</span>
-            <Link to="/blog" className="hover:text-white transition-colors">Blog</Link>
+            <Link to="/blog/" className="hover:text-white transition-colors">Blog</Link>
             <span>•</span>
-            <Link to="/servicos/manutencao" className="hover:text-white transition-colors">Serviços</Link>
+            <Link to="/servicos/manutencao/" className="hover:text-white transition-colors">Serviços</Link>
             <span>•</span>
-            <Link to="/cidades" className="hover:text-white transition-colors">Cidades</Link>
+            <Link to="/cidades/" className="hover:text-white transition-colors">Cidades</Link>
             <span>•</span>
-            <Link to="/contato" className="hover:text-white transition-colors">Contato</Link>
+            <Link to="/contato/" className="hover:text-white transition-colors">Contato</Link>
           </div>
         </div>
       </div>

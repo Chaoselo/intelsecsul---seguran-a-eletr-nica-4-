@@ -18,7 +18,11 @@ export const Header: React.FC = () => {
     setCitiesDropdownOpen(false);
   };
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => {
+    const current = location.pathname.endsWith('/') ? location.pathname : `${location.pathname}/`;
+    const target = path.endsWith('/') ? path : `${path}/`;
+    return current === target;
+  };
 
   return (
     <header className="sticky top-0 z-40 bg-[#0A0D14]/95 backdrop-blur-md border-b border-slate-800 shadow-lg text-white">
@@ -75,7 +79,7 @@ export const Header: React.FC = () => {
                     {SERVICES_LIST.map((service) => (
                       <Link
                         key={service.slug}
-                        to={`/servicos/${service.slug}`}
+                        to={`/servicos/${service.slug}/`}
                         onClick={() => setServicesDropdownOpen(false)}
                         className="block px-3 py-2.5 rounded-lg text-slate-200 hover:bg-[#0091FF]/15 hover:text-[#00C5FF] transition-colors text-xs font-medium"
                       >
@@ -94,7 +98,7 @@ export const Header: React.FC = () => {
               onMouseLeave={() => setCitiesDropdownOpen(false)}
             >
               <Link
-                to="/cidades"
+                to="/cidades/"
                 className={`flex items-center gap-1 py-2 transition-colors ${
                   location.pathname.startsWith('/cidades')
                     ? 'text-[#00C5FF] font-semibold'
@@ -112,7 +116,7 @@ export const Header: React.FC = () => {
                       Região Metropolitana
                     </span>
                     <Link
-                      to="/cidades"
+                      to="/cidades/"
                       onClick={() => setCitiesDropdownOpen(false)}
                       className="text-[11px] text-[#00C5FF] hover:underline font-semibold"
                     >
@@ -123,7 +127,7 @@ export const Header: React.FC = () => {
                     {CITIES_LIST.map((city) => (
                       <Link
                         key={city.slug}
-                        to={`/cidades/${city.slug}`}
+                        to={`/cidades/${city.slug}/`}
                         onClick={() => setCitiesDropdownOpen(false)}
                         className="block px-3 py-2 rounded-lg text-slate-200 hover:bg-[#0091FF]/15 hover:text-[#00C5FF] transition-colors text-xs"
                       >
@@ -137,9 +141,9 @@ export const Header: React.FC = () => {
 
             {/* Blog Link */}
             <Link
-              to="/blog"
+              to="/blog/"
               className={`transition-colors py-2 ${
-                isActive('/blog') ? 'text-[#00A3FF] font-semibold' : 'text-slate-200 hover:text-[#00A3FF]'
+                isActive('/blog/') ? 'text-[#00A3FF] font-semibold' : 'text-slate-200 hover:text-[#00A3FF]'
               }`}
             >
               Blog
@@ -147,9 +151,9 @@ export const Header: React.FC = () => {
 
             {/* Sobre Link */}
             <Link
-              to="/sobre"
+              to="/sobre/"
               className={`transition-colors py-2 ${
-                isActive('/sobre') ? 'text-[#00A3FF] font-semibold' : 'text-slate-200 hover:text-[#00A3FF]'
+                isActive('/sobre/') ? 'text-[#00A3FF] font-semibold' : 'text-slate-200 hover:text-[#00A3FF]'
               }`}
             >
               Sobre
@@ -157,9 +161,9 @@ export const Header: React.FC = () => {
 
             {/* Depoimentos Link */}
             <Link
-              to="/depoimentos"
+              to="/depoimentos/"
               className={`transition-colors py-2 ${
-                isActive('/depoimentos') ? 'text-[#00A3FF] font-semibold' : 'text-slate-200 hover:text-[#00A3FF]'
+                isActive('/depoimentos/') ? 'text-[#00A3FF] font-semibold' : 'text-slate-200 hover:text-[#00A3FF]'
               }`}
             >
               Depoimentos
@@ -167,9 +171,9 @@ export const Header: React.FC = () => {
 
             {/* Contato Link */}
             <Link
-              to="/contato"
+              to="/contato/"
               className={`transition-colors py-2 ${
-                isActive('/contato') ? 'text-[#00A3FF] font-semibold' : 'text-slate-200 hover:text-[#00A3FF]'
+                isActive('/contato/') ? 'text-[#00A3FF] font-semibold' : 'text-slate-200 hover:text-[#00A3FF]'
               }`}
             >
               Contato
@@ -188,7 +192,7 @@ export const Header: React.FC = () => {
             </a>
 
             <Link
-              to="/contato"
+              to="/contato/"
               className="inline-flex items-center justify-center px-4 py-2.5 rounded-lg text-sm font-bold text-white bg-[#0091FF] hover:bg-[#0081E6] active:bg-[#0070CC] transition-all shadow-md hover:shadow-[#0091FF]/30"
             >
               Solicitar Orçamento
@@ -244,7 +248,7 @@ export const Header: React.FC = () => {
                   {SERVICES_LIST.map((s) => (
                     <Link
                       key={s.slug}
-                      to={`/servicos/${s.slug}`}
+                      to={`/servicos/${s.slug}/`}
                       onClick={closeMobileMenu}
                       className="block px-3 py-2 rounded-md text-sm text-slate-300 hover:text-sky-400 hover:bg-slate-800/80"
                     >
@@ -267,7 +271,7 @@ export const Header: React.FC = () => {
               {citiesDropdownOpen && (
                 <div className="ml-3 pl-3 border-l border-slate-800 my-1 space-y-1">
                   <Link
-                    to="/cidades"
+                    to="/cidades/"
                     onClick={closeMobileMenu}
                     className="block px-3 py-2 rounded-md text-xs font-bold text-sky-400 hover:bg-slate-800 uppercase tracking-wider"
                   >
@@ -276,7 +280,7 @@ export const Header: React.FC = () => {
                   {CITIES_LIST.map((c) => (
                     <Link
                       key={c.slug}
-                      to={`/cidades/${c.slug}`}
+                      to={`/cidades/${c.slug}/`}
                       onClick={closeMobileMenu}
                       className="block px-3 py-2 rounded-md text-sm text-slate-300 hover:text-sky-400 hover:bg-slate-800/80"
                     >
@@ -288,40 +292,40 @@ export const Header: React.FC = () => {
             </div>
 
             <Link
-              to="/blog"
+              to="/blog/"
               onClick={closeMobileMenu}
               className={`block px-3 py-2.5 rounded-lg font-medium text-base ${
-                isActive('/blog') ? 'bg-sky-600/20 text-sky-400 font-semibold' : 'text-slate-200 hover:bg-slate-800'
+                isActive('/blog/') ? 'bg-sky-600/20 text-sky-400 font-semibold' : 'text-slate-200 hover:bg-slate-800'
               }`}
             >
               Blog
             </Link>
 
             <Link
-              to="/sobre"
+              to="/sobre/"
               onClick={closeMobileMenu}
               className={`block px-3 py-2.5 rounded-lg font-medium text-base ${
-                isActive('/sobre') ? 'bg-sky-600/20 text-sky-400 font-semibold' : 'text-slate-200 hover:bg-slate-800'
+                isActive('/sobre/') ? 'bg-sky-600/20 text-sky-400 font-semibold' : 'text-slate-200 hover:bg-slate-800'
               }`}
             >
               Sobre a Intelsecsul
             </Link>
 
             <Link
-              to="/depoimentos"
+              to="/depoimentos/"
               onClick={closeMobileMenu}
               className={`block px-3 py-2.5 rounded-lg font-medium text-base ${
-                isActive('/depoimentos') ? 'bg-sky-600/20 text-sky-400 font-semibold' : 'text-slate-200 hover:bg-slate-800'
+                isActive('/depoimentos/') ? 'bg-sky-600/20 text-sky-400 font-semibold' : 'text-slate-200 hover:bg-slate-800'
               }`}
             >
               Depoimentos
             </Link>
 
             <Link
-              to="/contato"
+              to="/contato/"
               onClick={closeMobileMenu}
               className={`block px-3 py-2.5 rounded-lg font-medium text-base ${
-                isActive('/contato') ? 'bg-sky-600/20 text-sky-400 font-semibold' : 'text-slate-200 hover:bg-slate-800'
+                isActive('/contato/') ? 'bg-sky-600/20 text-sky-400 font-semibold' : 'text-slate-200 hover:bg-slate-800'
               }`}
             >
               Contato

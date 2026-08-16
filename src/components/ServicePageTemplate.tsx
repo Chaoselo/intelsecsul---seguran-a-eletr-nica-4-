@@ -74,7 +74,8 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
   serviceSlug,
 }) => {
   const location = useLocation();
-  const currentPath = serviceSlug ? `/servicos/${serviceSlug}` : location.pathname;
+  const rawPath = serviceSlug ? `/servicos/${serviceSlug}` : location.pathname;
+  const currentPath = rawPath.endsWith('/') ? rawPath : `${rawPath}/`;
 
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: 'Início', url: '/' },
@@ -120,6 +121,7 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
     title,
     description: metaDescription,
     ogImage: currentService?.imageUrl,
+    canonicalUrl: `https://intelsecsul.com.br${currentPath}`,
     jsonLdSchema,
   });
 
@@ -166,7 +168,7 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
                 <Link
-                  to="/contato"
+                  to="/contato/"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white bg-[#0091FF] hover:bg-[#0081E6] active:bg-[#0070CC] transition-all shadow-lg hover:shadow-[#0091FF]/30 text-sm"
                 >
                   <FileText className="w-4 h-4" />
@@ -239,7 +241,7 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
           <div className="text-center max-w-3xl mx-auto mb-12">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0091FF]/10 text-[#00C5FF] text-xs font-semibold mb-3 border border-[#0091FF]/30">
               <AlertTriangle className="w-3.5 h-3.5 text-[#00C5FF]" />
-              <span>Diagnóstico Técnico Rápidos</span>
+              <span>Diagnóstico Técnico Rápido</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-3">
               Problemas e Sintomas Frequentes que Resolvemos
@@ -413,14 +415,21 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
           <div className="space-y-4">
             {faq.map((item, idx) => {
               const isOpen = openFaqIndex === idx;
+              const buttonId = `service-faq-btn-${idx}`;
+              const panelId = `service-faq-panel-${idx}`;
+
               return (
                 <div
                   key={idx}
                   className="bg-[#121824] rounded-xl border border-slate-800 shadow-xs overflow-hidden transition-all duration-200"
                 >
                   <button
+                    id={buttonId}
+                    type="button"
                     onClick={() => toggleFaq(idx)}
-                    className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-[#00C5FF] transition-colors"
+                    aria-expanded={isOpen}
+                    aria-controls={panelId}
+                    className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-[#00C5FF] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0091FF] focus-visible:ring-offset-2 focus-visible:ring-offset-[#121824] transition-colors"
                   >
                     <span>{item.question}</span>
                     <ChevronDown
@@ -431,7 +440,12 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
                   </button>
 
                   {isOpen && (
-                    <div className="px-6 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800 pt-3">
+                    <div
+                      id={panelId}
+                      role="region"
+                      aria-labelledby={buttonId}
+                      className="px-6 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800 pt-3"
+                    >
                       {item.answer}
                     </div>
                   )}
@@ -480,3 +494,4 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
     </div>
   );
 };
+

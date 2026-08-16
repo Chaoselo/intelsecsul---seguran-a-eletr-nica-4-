@@ -15,7 +15,7 @@ export const ControleFacialPage: React.FC = () => {
         'Indicado para portarias, recepções e áreas corporativas',
       ]}
       pillarLink={{
-        url: '/servicos/controle-de-acesso',
+        url: '/servicos/controle-de-acesso/',
         label: 'Veja todos os detalhes sobre Controle de Acesso',
       }}
       ctaFinal={{

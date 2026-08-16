@@ -43,19 +43,52 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
   const location = useLocation();
 
   const resolvedOgImage = ogImage || SERVICES_LIST[0]?.imageUrl;
+  const normalizedPath = location.pathname.endsWith('/') ? location.pathname : `${location.pathname}/`;
+  const canonicalPageUrl = `https://intelsecsul.com.br${normalizedPath}`;
 
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: 'Início', url: '/' },
-    { name: 'Blog', url: '/blog' },
-    { name: h1, url: location.pathname }
+    { name: 'Blog', url: '/blog/' },
+    { name: h1, url: normalizedPath }
   ]);
+
+  const articleSchema: Record<string, any> = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": h1,
+    "description": metaDescription,
+    "image": resolvedOgImage,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": canonicalPageUrl
+    },
+    "author": {
+      "@type": "Organization",
+      "@id": "https://intelsecsul.com.br/#organization",
+      "name": "IntelSec Sul - Segurança Eletrônica"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://intelsecsul.com.br/#organization",
+      "name": "IntelSec Sul - Segurança Eletrônica",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://intelsecsul.com.br/logo.png"
+      }
+    }
+  };
+
+  if (publishedDate && publishedDate !== '[DATA DE PUBLICAÇÃO]') {
+    articleSchema["datePublished"] = publishedDate;
+  }
 
   useDocumentMeta({
     title,
     description: metaDescription,
     ogType: 'article',
     ogImage: resolvedOgImage,
-    jsonLdSchema: breadcrumbSchema,
+    canonicalUrl: canonicalPageUrl,
+    jsonLdSchema: [breadcrumbSchema, articleSchema],
   });
 
   const whatsappUrl = getWhatsAppUrl(location.pathname);
@@ -71,7 +104,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
           <nav className="flex items-center gap-2 text-xs text-slate-400 mb-6 flex-wrap">
             <Link to="/" className="hover:text-[#00C5FF] transition-colors">Início</Link>
             <ChevronRight className="w-3 h-3 text-slate-600" />
-            <Link to="/blog" className="hover:text-[#00C5FF] transition-colors">Blog</Link>
+            <Link to="/blog/" className="hover:text-[#00C5FF] transition-colors">Blog</Link>
             <ChevronRight className="w-3 h-3 text-slate-600" />
             <span className="text-slate-300 font-medium truncate max-w-[200px] sm:max-w-xs">{h1}</span>
           </nav>
@@ -158,7 +191,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
               </a>
 
               <Link
-                to="/contato"
+                to="/contato/"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-white bg-[#1E2638] hover:bg-[#28334A] transition-all text-base border border-slate-700"
               >
                 <span>Enviar mensagem</span>
@@ -171,7 +204,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
           {/* Navigation link back to blog */}
           <div className="mt-10 text-center">
             <Link
-              to="/blog"
+              to="/blog/"
               className="inline-flex items-center gap-2 text-sm font-semibold text-[#00C5FF] hover:text-white transition-colors"
             >
               <BookOpen className="w-4 h-4" />

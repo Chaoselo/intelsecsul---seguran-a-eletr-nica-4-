@@ -15,7 +15,7 @@ export const CercaResidencialPage: React.FC = () => {
         'Pode ser integrada ao alarme e às câmeras já instalados',
       ]}
       pillarLink={{
-        url: '/servicos/cerca-eletrica',
+        url: '/servicos/cerca-eletrica/',
         label: 'Veja todos os detalhes sobre Cerca Elétrica',
       }}
       ctaFinal={{

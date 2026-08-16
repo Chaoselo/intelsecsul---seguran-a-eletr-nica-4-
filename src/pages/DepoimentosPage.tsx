@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { 
   Shield, 
   Star, 
@@ -9,28 +9,27 @@ import {
 } from 'lucide-react';
 import { COMPANY_INFO } from '../constants';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
+import { useDocumentMeta, buildBreadcrumbSchema } from '../hooks/useDocumentMeta';
+import { getWhatsAppUrl } from '../utils/whatsapp';
 
 export const DepoimentosPage: React.FC = () => {
-  useEffect(() => {
-    document.title = 'Depoimentos de Clientes | Intelsecsul';
+  const location = useLocation();
+  const rawPath = location.pathname;
+  const currentPath = rawPath.endsWith('/') ? rawPath : `${rawPath}/`;
 
-    let metaTag = document.querySelector('meta[name="description"]');
-    if (!metaTag) {
-      metaTag = document.createElement('meta');
-      metaTag.setAttribute('name', 'description');
-      document.head.appendChild(metaTag);
-    }
-    metaTag.setAttribute(
-      'content',
-      'Veja o que os clientes da Intelsecsul dizem sobre a instalação de câmeras, alarme e demais sistemas de segurança em Curitiba e região.'
-    );
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Início', url: '/' },
+    { name: 'Depoimentos', url: '/depoimentos/' }
+  ]);
 
-    return () => {
-      document.title = 'Intelsecsul - Segurança Eletrônica e Tecnologia';
-    };
-  }, []);
+  useDocumentMeta({
+    title: 'Depoimentos de Clientes | Intelsecsul',
+    description: 'Veja o que os clientes da Intelsecsul dizem sobre a instalação de câmeras, alarme e demais sistemas de segurança em Curitiba e região.',
+    canonicalUrl: `https://intelsecsul.com.br${currentPath}`,
+    jsonLdSchema: breadcrumbSchema,
+  });
 
-  const whatsappUrl = COMPANY_INFO.whatsappUrlDefault;
+  const whatsappUrl = getWhatsAppUrl(currentPath);
 
   // 6 testimonial cards as requested
   const depoimentos = [
@@ -195,7 +194,7 @@ export const DepoimentosPage: React.FC = () => {
               </a>
 
               <Link
-                to="/contato"
+                to="/contato/"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-white bg-[#1E2638] hover:bg-[#28334A] transition-all text-base border border-slate-700"
               >
                 <span>Enviar mensagem</span>

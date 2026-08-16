@@ -83,12 +83,12 @@ export const ControleAcessoPage: React.FC = () => {
         {
           title: 'Biometria Digital',
           description: 'Identificação por digital para controle de ponto e acesso de funcionários.',
-          url: '/servicos/controle-de-acesso/biometria',
+          url: '/servicos/controle-de-acesso/biometria/',
         },
         {
           title: 'Reconhecimento Facial',
           description: 'Liberação rápida sem contato físico para portarias e recepções corporativas.',
-          url: '/servicos/controle-de-acesso/reconhecimento-facial',
+          url: '/servicos/controle-de-acesso/reconhecimento-facial/',
         },
       ]}
       diferenciais={[

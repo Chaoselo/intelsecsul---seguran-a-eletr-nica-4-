@@ -13,6 +13,38 @@ export interface SEOOptions {
 }
 
 const DEFAULT_OG_IMAGE = 'https://intelsecsul.com.br/og-image.jpg';
+const DOMAIN = 'https://intelsecsul.com.br';
+
+export function normalizeCanonicalUrl(urlOrPath?: string): string {
+  if (!urlOrPath || urlOrPath === '/' || urlOrPath === DOMAIN || urlOrPath === `${DOMAIN}/`) {
+    return `${DOMAIN}/`;
+  }
+  let path = urlOrPath;
+  if (path.startsWith(DOMAIN)) {
+    path = path.slice(DOMAIN.length);
+  }
+  // Strip trailing slash first to handle aliases cleanly
+  const trimmed = path.replace(/\/+$/, '');
+  const aliasCanonicalMap: Record<string, string> = {
+    '/faq': '/perguntas-frequentes',
+    '/servicos/interfones': '/servicos/interfonia',
+    '/servicos/manutencao-de-sistemas-de-seguranca': '/servicos/manutencao',
+    '/servicos/alarme-monitorado': '/servicos/instalacao-de-alarmes',
+    '/servicos/alarme-monitorado/residencial': '/servicos/instalacao-de-alarmes/residencial',
+    '/servicos/alarme-monitorado/empresarial': '/servicos/instalacao-de-alarmes/empresarial',
+    '/servicos/locacao-de-equipamentos-de-seguranca': '/servicos/locacao-de-cameras-de-seguranca',
+    '/servicos/locacao-de-equipamentos': '/servicos/locacao-de-cameras-de-seguranca',
+  };
+
+  let resolvedPath = aliasCanonicalMap[trimmed] || trimmed;
+  if (!resolvedPath.startsWith('/')) {
+    resolvedPath = `/${resolvedPath}`;
+  }
+  if (!resolvedPath.endsWith('/')) {
+    resolvedPath = `${resolvedPath}/`;
+  }
+  return `${DOMAIN}${resolvedPath}`;
+}
 
 function resolveFullImageUrl(url?: string): string {
   if (!url) return DEFAULT_OG_IMAGE;
@@ -176,23 +208,7 @@ export function useDocumentMeta({
     setMetaTag('meta[name="twitter:image"]', 'name', 'twitter:image', fullOgImage);
 
     // 4. Canonical Link & og:url
-    const aliasCanonicalMap: Record<string, string> = {
-      '/faq': '/perguntas-frequentes',
-      '/servicos/interfones': '/servicos/interfonia',
-      '/servicos/manutencao-de-sistemas-de-seguranca': '/servicos/manutencao',
-      '/servicos/alarme-monitorado': '/servicos/instalacao-de-alarmes',
-      '/servicos/alarme-monitorado/residencial': '/servicos/instalacao-de-alarmes/residencial',
-      '/servicos/alarme-monitorado/empresarial': '/servicos/instalacao-de-alarmes/empresarial',
-      '/servicos/locacao-de-equipamentos-de-seguranca': '/servicos/locacao-de-cameras-de-seguranca',
-      '/servicos/locacao-de-equipamentos': '/servicos/locacao-de-cameras-de-seguranca',
-    };
-
-    let targetPath = window.location.pathname;
-    if (aliasCanonicalMap[targetPath]) {
-      targetPath = aliasCanonicalMap[targetPath];
-    }
-
-    const currentUrl = canonicalUrl || `https://intelsecsul.com.br${targetPath}`;
+    const currentUrl = normalizeCanonicalUrl(canonicalUrl || window.location.pathname);
     let canonicalTag = document.querySelector('link[rel="canonical"]');
     if (!canonicalTag) {
       canonicalTag = document.createElement('link');

@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { 
   Shield, 
   CheckCircle2, 
@@ -12,28 +12,28 @@ import {
 } from 'lucide-react';
 import { COMPANY_INFO } from '../constants';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
+import { useDocumentMeta, buildBreadcrumbSchema } from '../hooks/useDocumentMeta';
+import { getWhatsAppUrl } from '../utils/whatsapp';
 
 export const ComparativoVerisurePage: React.FC = () => {
-  useEffect(() => {
-    document.title = 'Intelsecsul ou Verisure: Diferenças entre os Modelos de Segurança | Intelsecsul';
+  const location = useLocation();
+  const rawPath = location.pathname;
+  const currentPath = rawPath.endsWith('/') ? rawPath : `${rawPath}/`;
 
-    let metaTag = document.querySelector('meta[name="description"]');
-    if (!metaTag) {
-      metaTag = document.createElement('meta');
-      metaTag.setAttribute('name', 'description');
-      document.head.appendChild(metaTag);
-    }
-    metaTag.setAttribute(
-      'content',
-      'Compare o modelo de segurança eletrônica da Intelsecsul com o da Verisure — abrangência de serviços, contrato e atendimento em Curitiba e região.'
-    );
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Início', url: '/' },
+    { name: 'Comparativos', url: '/comparativos/' },
+    { name: 'Intelsecsul x Verisure', url: '/comparativos/intelsecsul-x-verisure/' }
+  ]);
 
-    return () => {
-      document.title = 'Intelsecsul - Segurança Eletrônica e Tecnologia';
-    };
-  }, []);
+  useDocumentMeta({
+    title: 'Intelsecsul ou Verisure: Diferenças entre os Modelos de Segurança | Intelsecsul',
+    description: 'Compare o modelo de segurança eletrônica da Intelsecsul com o da Verisure — abrangência de serviços, contrato e atendimento em Curitiba e região.',
+    canonicalUrl: `https://intelsecsul.com.br${currentPath}`,
+    jsonLdSchema: breadcrumbSchema,
+  });
 
-  const whatsappUrl = COMPANY_INFO.whatsappUrlDefault;
+  const whatsappUrl = getWhatsAppUrl(currentPath);
 
   const tableData = [
     {
@@ -92,7 +92,7 @@ export const ComparativoVerisurePage: React.FC = () => {
           <nav className="flex items-center gap-2 text-xs text-slate-400 mb-6 flex-wrap">
             <Link to="/" className="hover:text-[#00C5FF] transition-colors">Início</Link>
             <span>/</span>
-            <Link to="/comparativos" className="hover:text-[#00C5FF] transition-colors">Comparativos</Link>
+            <Link to="/comparativos/" className="hover:text-[#00C5FF] transition-colors">Comparativos</Link>
             <span>/</span>
             <span className="text-slate-200 font-medium">Intelsecsul x Verisure</span>
           </nav>
@@ -123,7 +123,7 @@ export const ComparativoVerisurePage: React.FC = () => {
               </a>
 
               <Link
-                to="/por-que-escolher-a-intelsecsul"
+                to="/por-que-escolher-a-intelsecsul/"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white bg-[#121824] hover:bg-[#1A2234] border border-slate-700 transition-all text-sm"
               >
                 <span>Conheça nossos diferenciais</span>
@@ -254,7 +254,7 @@ export const ComparativoVerisurePage: React.FC = () => {
               </a>
 
               <Link
-                to="/contato"
+                to="/contato/"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-white bg-[#1E2638] hover:bg-[#28334A] transition-all text-base border border-slate-700"
               >
                 <span>Enviar mensagem</span>

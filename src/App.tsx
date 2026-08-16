@@ -112,9 +112,9 @@ export default function App() {
             <Route path="/servicos/instalacao-de-alarmes/empresarial" element={<AlarmeEmpresarialPage />} />
 
             {/* Fallback redirects for legacy URLs */}
-            <Route path="/servicos/alarme-monitorado" element={<Navigate to="/servicos/instalacao-de-alarmes" replace />} />
-            <Route path="/servicos/alarme-monitorado/residencial" element={<Navigate to="/servicos/instalacao-de-alarmes/residencial" replace />} />
-            <Route path="/servicos/alarme-monitorado/empresarial" element={<Navigate to="/servicos/instalacao-de-alarmes/empresarial" replace />} />
+            <Route path="/servicos/alarme-monitorado" element={<Navigate to="/servicos/instalacao-de-alarmes/" replace />} />
+            <Route path="/servicos/alarme-monitorado/residencial" element={<Navigate to="/servicos/instalacao-de-alarmes/residencial/" replace />} />
+            <Route path="/servicos/alarme-monitorado/empresarial" element={<Navigate to="/servicos/instalacao-de-alarmes/empresarial/" replace />} />
 
             <Route path="/servicos/cerca-eletrica" element={<CercaEletricaPage />} />
             <Route path="/servicos/cerca-eletrica/residencial" element={<CercaResidencialPage />} />
@@ -135,8 +135,8 @@ export default function App() {
             <Route path="/servicos/manutencao" element={<ManutencaoPage />} />
             <Route path="/servicos/manutencao-de-sistemas-de-seguranca" element={<ManutencaoPage />} />
             <Route path="/servicos/locacao-de-cameras-de-seguranca" element={<LocacaoEquipamentosPage />} />
-            <Route path="/servicos/locacao-de-equipamentos-de-seguranca" element={<Navigate to="/servicos/locacao-de-cameras-de-seguranca" replace />} />
-            <Route path="/servicos/locacao-de-equipamentos" element={<Navigate to="/servicos/locacao-de-cameras-de-seguranca" replace />} />
+            <Route path="/servicos/locacao-de-equipamentos-de-seguranca" element={<Navigate to="/servicos/locacao-de-cameras-de-seguranca/" replace />} />
+            <Route path="/servicos/locacao-de-equipamentos" element={<Navigate to="/servicos/locacao-de-cameras-de-seguranca/" replace />} />
             <Route path="/servicos/:slug" element={<PlaceholderPage type="service" />} />
 
             {/* Institutional & Content Routes */}

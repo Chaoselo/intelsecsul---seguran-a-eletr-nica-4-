@@ -15,7 +15,7 @@ export const CamerasComercialPage: React.FC = () => {
         'Projeto adaptado ao layout do estabelecimento',
       ]}
       pillarLink={{
-        url: '/servicos/cameras-de-seguranca',
+        url: '/servicos/cameras-de-seguranca/',
         label: 'Veja todos os detalhes sobre Câmeras de Segurança',
       }}
       ctaFinal={{

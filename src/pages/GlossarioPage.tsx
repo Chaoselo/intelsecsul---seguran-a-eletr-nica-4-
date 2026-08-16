@@ -198,7 +198,7 @@ export const GlossarioPage: React.FC = () => {
           {/* Quick links footer inside glossary */}
           <div className="mt-16 text-center pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              to="/perguntas-frequentes"
+              to="/perguntas-frequentes/"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#121824] border border-slate-800 hover:border-[#0091FF] text-white text-sm font-semibold transition-all"
             >
               <HelpCircle className="w-4 h-4 text-[#00C5FF]" />
@@ -206,7 +206,7 @@ export const GlossarioPage: React.FC = () => {
             </Link>
 
             <Link
-              to="/comparativos"
+              to="/comparativos/"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#121824] border border-slate-800 hover:border-[#0091FF] text-white text-sm font-semibold transition-all"
             >
               <FileText className="w-4 h-4 text-[#00C5FF]" />
@@ -246,7 +246,7 @@ export const GlossarioPage: React.FC = () => {
               </a>
 
               <Link
-                to="/contato"
+                to="/contato/"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-white bg-[#1E2638] hover:bg-[#28334A] transition-all text-base border border-slate-700"
               >
                 <span>Enviar mensagem</span>

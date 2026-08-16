@@ -43,24 +43,30 @@ export const SegmentPageTemplate: React.FC<SegmentPageTemplateProps> = ({
   ogImage,
 }) => {
   const location = useLocation();
+  const rawPath = location.pathname;
+  const currentPath = rawPath.endsWith('/') ? rawPath : `${rawPath}/`;
 
-  const matchingService = SERVICES_LIST.find(s => pillarLink?.url?.includes(s.slug));
+  const rawPillar = pillarLink?.url || '/servicos/cameras-de-seguranca/';
+  const pillarUrl = rawPillar.endsWith('/') ? rawPillar : `${rawPillar}/`;
+
+  const matchingService = SERVICES_LIST.find(s => pillarUrl.includes(s.slug));
   const pageOgImage = ogImage || matchingService?.imageUrl || SERVICES_LIST[0]?.imageUrl;
 
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: 'Início', url: '/' },
-    { name: 'Serviços', url: pillarLink?.url || '/servicos/cameras-de-seguranca' },
-    { name: h1, url: location.pathname }
+    { name: 'Serviços', url: pillarUrl },
+    { name: h1, url: currentPath }
   ]);
 
   useDocumentMeta({
     title,
     description: metaDescription,
     ogImage: pageOgImage,
+    canonicalUrl: `https://intelsecsul.com.br${currentPath}`,
     jsonLdSchema: breadcrumbSchema,
   });
 
-  const whatsappUrl = getWhatsAppUrl(location.pathname);
+  const whatsappUrl = getWhatsAppUrl(currentPath);
 
   return (
     <div className="bg-[#0A0D14] text-slate-200 font-sans selection:bg-[#0091FF] selection:text-white">
@@ -73,7 +79,7 @@ export const SegmentPageTemplate: React.FC<SegmentPageTemplateProps> = ({
           <nav className="flex items-center gap-2 text-xs text-slate-400 mb-6 flex-wrap">
             <Link to="/" className="hover:text-[#00C5FF] transition-colors">Início</Link>
             <span>/</span>
-            <Link to="/servicos/cameras-de-seguranca" className="hover:text-[#00C5FF] transition-colors">Serviços</Link>
+            <Link to={pillarUrl} className="hover:text-[#00C5FF] transition-colors">Serviços</Link>
             <span>/</span>
             <span className="text-slate-200 font-medium truncate">{h1}</span>
           </nav>
@@ -95,7 +101,7 @@ export const SegmentPageTemplate: React.FC<SegmentPageTemplateProps> = ({
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <Link
-                to="/contato"
+                to="/contato/"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white bg-[#0091FF] hover:bg-[#0081E6] active:bg-[#0070CC] transition-all shadow-lg hover:shadow-[#0091FF]/30 text-sm"
               >
                 <FileText className="w-4 h-4" />
@@ -156,7 +162,7 @@ export const SegmentPageTemplate: React.FC<SegmentPageTemplateProps> = ({
                 </p>
               </div>
               <Link
-                to={pillarLink.url}
+                to={pillarUrl}
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-white bg-[#0091FF]/20 hover:bg-[#0091FF]/30 border border-[#0091FF]/40 text-sm transition-all whitespace-nowrap shrink-0"
               >
                 <span>{pillarLink.label}</span>
@@ -196,7 +202,7 @@ export const SegmentPageTemplate: React.FC<SegmentPageTemplateProps> = ({
               </a>
 
               <Link
-                to="/contato"
+                to="/contato/"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-white bg-[#1E2638] hover:bg-[#28334A] transition-all text-base border border-slate-700"
               >
                 <span>Enviar mensagem</span>
@@ -210,3 +216,4 @@ export const SegmentPageTemplate: React.FC<SegmentPageTemplateProps> = ({
     </div>
   );
 };
+

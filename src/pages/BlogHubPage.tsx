@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
   Shield, 
@@ -6,33 +6,25 @@ import {
   BookOpen, 
   Calendar, 
   Clock, 
-  ChevronRight,
-  Search,
-  Sparkles
+  ChevronRight
 } from 'lucide-react';
 import { BLOG_ARTICLES } from '../data/blogArticles';
 import { COMPANY_INFO } from '../constants';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
+import { useDocumentMeta, buildBreadcrumbSchema } from '../hooks/useDocumentMeta';
 
 export const BlogHubPage: React.FC = () => {
-  useEffect(() => {
-    document.title = 'Blog Intelsecsul | Dicas de Segurança Eletrônica';
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Início', url: '/' },
+    { name: 'Blog', url: '/blog/' }
+  ]);
 
-    let metaTag = document.querySelector('meta[name="description"]');
-    if (!metaTag) {
-      metaTag = document.createElement('meta');
-      metaTag.setAttribute('name', 'description');
-      document.head.appendChild(metaTag);
-    }
-    metaTag.setAttribute(
-      'content',
-      'Conteúdo sobre câmeras, alarme, controle de acesso e segurança eletrônica para residências, condomínios e empresas em Curitiba e região.'
-    );
-
-    return () => {
-      document.title = 'Intelsecsul - Segurança Eletrônica e Tecnologia';
-    };
-  }, []);
+  useDocumentMeta({
+    title: 'Blog Intelsecsul | Dicas de Segurança Eletrônica',
+    description: 'Conteúdo sobre câmeras, alarme, controle de acesso e segurança eletrônica para residências, condomínios e empresas em Curitiba e região.',
+    canonicalUrl: 'https://intelsecsul.com.br/blog/',
+    jsonLdSchema: breadcrumbSchema,
+  });
 
   const whatsappUrl = COMPANY_INFO.whatsappUrlDefault;
 
@@ -172,7 +164,7 @@ export const BlogHubPage: React.FC = () => {
               </a>
 
               <Link
-                to="/contato"
+                to="/contato/"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-white bg-[#1E2638] hover:bg-[#28334A] transition-all text-base border border-slate-700"
               >
                 <span>Enviar mensagem</span>
@@ -186,3 +178,4 @@ export const BlogHubPage: React.FC = () => {
     </div>
   );
 };
+

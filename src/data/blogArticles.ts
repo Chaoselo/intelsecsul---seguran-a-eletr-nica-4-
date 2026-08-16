@@ -14,7 +14,7 @@ export interface BlogArticleMeta {
 export const BLOG_ARTICLES: BlogArticleMeta[] = [
   {
     id: 'como-escolher-sistema-de-seguranca',
-    slug: '/blog/como-escolher-sistema-de-seguranca',
+    slug: '/blog/como-escolher-sistema-de-seguranca/',
     title: 'Como Escolher o Sistema de Segurança Ideal | Blog Intelsecsul',
     metaTitle: 'Como Escolher o Sistema de Segurança Ideal | Blog Intelsecsul',
     metaDescription: 'Guia para escolher entre câmeras, alarme, cerca elétrica e controle de acesso, considerando o perfil do seu imóvel e o orçamento disponível.',
@@ -26,7 +26,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
   },
   {
     id: 'seguranca-eletronica-para-condominios',
-    slug: '/blog/seguranca-eletronica-para-condominios',
+    slug: '/blog/seguranca-eletronica-para-condominios/',
     title: 'Segurança Eletrônica para Condomínios | Blog Intelsecsul',
     metaTitle: 'Segurança Eletrônica para Condomínios | Blog Intelsecsul',
     metaDescription: 'O que considerar antes de instalar câmeras, controle de acesso e portaria remota em condomínios residenciais e comerciais.',
@@ -38,7 +38,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
   },
   {
     id: 'seguranca-para-empresas-e-industrias',
-    slug: '/blog/seguranca-para-empresas-e-industrias',
+    slug: '/blog/seguranca-para-empresas-e-industrias/',
     title: 'Segurança para Empresas e Indústrias | Blog Intelsecsul',
     metaTitle: 'Segurança para Empresas e Indústrias | Blog Intelsecsul',
     metaDescription: 'Cuidados na hora de projetar CFTV e controle de acesso para empresas, galpões e indústrias.',
@@ -50,7 +50,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
   },
   {
     id: 'checklist-seguranca-antes-de-viajar',
-    slug: '/blog/checklist-seguranca-antes-de-viajar',
+    slug: '/blog/checklist-seguranca-antes-de-viajar/',
     title: 'Checklist de Segurança Antes de Viajar | Blog Intelsecsul',
     metaTitle: 'Checklist de Segurança Antes de Viajar | Blog Intelsecsul',
     metaDescription: 'Cuidados simples para deixar a casa mais protegida antes de viajar, com ou sem sistema de segurança instalado.',

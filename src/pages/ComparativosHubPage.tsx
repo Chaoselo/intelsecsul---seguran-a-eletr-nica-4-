@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { 
   Scale, 
   Shield, 
@@ -10,28 +10,27 @@ import {
 } from 'lucide-react';
 import { COMPANY_INFO } from '../constants';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
+import { useDocumentMeta, buildBreadcrumbSchema } from '../hooks/useDocumentMeta';
+import { getWhatsAppUrl } from '../utils/whatsapp';
 
 export const ComparativosHubPage: React.FC = () => {
-  useEffect(() => {
-    document.title = 'Comparativos | Intelsecsul';
+  const location = useLocation();
+  const rawPath = location.pathname;
+  const currentPath = rawPath.endsWith('/') ? rawPath : `${rawPath}/`;
 
-    let metaTag = document.querySelector('meta[name="description"]');
-    if (!metaTag) {
-      metaTag = document.createElement('meta');
-      metaTag.setAttribute('name', 'description');
-      document.head.appendChild(metaTag);
-    }
-    metaTag.setAttribute(
-      'content',
-      'Compare modelos de contratação e entenda as diferenças entre a Intelsecsul e outras opções do mercado de segurança eletrônica.'
-    );
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Início', url: '/' },
+    { name: 'Comparativos', url: '/comparativos/' }
+  ]);
 
-    return () => {
-      document.title = 'Intelsecsul - Segurança Eletrônica e Tecnologia';
-    };
-  }, []);
+  useDocumentMeta({
+    title: 'Comparativos de Segurança Eletrônica | Intelsecsul',
+    description: 'Compare modelos de contratação e entenda as diferenças entre a Intelsecsul e outras opções do mercado de segurança eletrônica.',
+    canonicalUrl: `https://intelsecsul.com.br${currentPath}`,
+    jsonLdSchema: breadcrumbSchema,
+  });
 
-  const whatsappUrl = COMPANY_INFO.whatsappUrlDefault;
+  const whatsappUrl = getWhatsAppUrl(currentPath);
 
   return (
     <div className="bg-[#0A0D14] text-slate-200 font-sans selection:bg-[#0091FF] selection:text-white">
@@ -72,7 +71,7 @@ export const ComparativosHubPage: React.FC = () => {
             
             {/* Comparativo 1 */}
             <Link
-              to="/comparativos/compra-x-locacao-de-equipamentos"
+              to="/comparativos/compra-x-locacao-de-equipamentos/"
               className="p-8 rounded-3xl bg-[#141A29] border border-slate-800 hover:border-[#0091FF] transition-all flex flex-col justify-between group shadow-xl relative overflow-hidden"
             >
               <div>
@@ -101,7 +100,7 @@ export const ComparativosHubPage: React.FC = () => {
 
             {/* Comparativo 2 */}
             <Link
-              to="/comparativos/intelsecsul-x-verisure"
+              to="/comparativos/intelsecsul-x-verisure/"
               className="p-8 rounded-3xl bg-[#141A29] border border-slate-800 hover:border-[#0091FF] transition-all flex flex-col justify-between group shadow-xl relative overflow-hidden"
             >
               <div>
@@ -181,7 +180,7 @@ export const ComparativosHubPage: React.FC = () => {
               </a>
 
               <Link
-                to="/contato"
+                to="/contato/"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-white bg-[#1E2638] hover:bg-[#28334A] transition-all text-base border border-slate-700"
               >
                 <span>Enviar mensagem</span>

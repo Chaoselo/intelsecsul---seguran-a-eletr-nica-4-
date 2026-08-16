@@ -141,7 +141,7 @@ export const Home: React.FC = () => {
           {SERVICES_LIST.map((service) => (
             <Link
               key={service.slug}
-              to={`/servicos/${service.slug}`}
+              to={`/servicos/${service.slug}/`}
               className="bg-[#121824] rounded-xl overflow-hidden border border-slate-800/90 shadow-lg hover:border-[#0091FF] hover:shadow-[#0091FF]/10 transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
@@ -252,7 +252,7 @@ export const Home: React.FC = () => {
             {CITIES_LIST.map((city) => (
               <Link
                 key={city.slug}
-                to={`/cidades/${city.slug}`}
+                to={`/cidades/${city.slug}/`}
                 className="flex items-center gap-2.5 p-3.5 rounded-lg bg-[#0A0D14] border border-slate-800 hover:bg-[#0091FF]/15 hover:border-[#00C5FF] hover:text-[#00C5FF] text-slate-200 text-xs sm:text-sm font-semibold transition-all group"
               >
                 <MapPin className="w-4 h-4 text-[#0091FF] shrink-0 group-hover:scale-110 transition-transform" />
@@ -266,7 +266,7 @@ export const Home: React.FC = () => {
               Precisa de atendimento imediato em qualquer uma dessas cidades?
             </span>
             <Link
-              to="/cidades"
+              to="/cidades/"
               className="inline-flex items-center gap-1.5 text-xs font-bold text-[#00C5FF] hover:text-white uppercase tracking-wider transition-colors"
             >
               <span>Ver detalhes de atendimento por cidade</span>
@@ -294,14 +294,21 @@ export const Home: React.FC = () => {
           <div className="space-y-4">
             {FAQ_LIST.map((faq) => {
               const isOpen = openFaq === faq.id;
+              const buttonId = `home-faq-btn-${faq.id}`;
+              const panelId = `home-faq-panel-${faq.id}`;
+
               return (
                 <div
                   key={faq.id}
                   className="bg-[#121824] rounded-xl border border-slate-800 shadow-xs overflow-hidden transition-all duration-200"
                 >
                   <button
+                    id={buttonId}
+                    type="button"
                     onClick={() => toggleFaq(faq.id)}
-                    className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-[#00C5FF] transition-colors"
+                    aria-expanded={isOpen}
+                    aria-controls={panelId}
+                    className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-[#00C5FF] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0091FF] focus-visible:ring-offset-2 focus-visible:ring-offset-[#121824] transition-colors"
                   >
                     <span>{faq.question}</span>
                     <ChevronDown
@@ -312,7 +319,12 @@ export const Home: React.FC = () => {
                   </button>
 
                   {isOpen && (
-                    <div className="px-6 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800 pt-3">
+                    <div
+                      id={panelId}
+                      role="region"
+                      aria-labelledby={buttonId}
+                      className="px-6 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800 pt-3"
+                    >
                       {faq.answer}
                     </div>
                   )}
@@ -323,7 +335,7 @@ export const Home: React.FC = () => {
 
           <div className="text-center mt-8">
             <Link
-              to="/perguntas-frequentes"
+              to="/perguntas-frequentes/"
               className="text-xs font-bold text-[#00C5FF] hover:underline"
             >
               Tem outras perguntas? Acesse nossa página completa de FAQ →
@@ -351,7 +363,7 @@ export const Home: React.FC = () => {
             {CITIES_LIST.map((city) => (
               <Link
                 key={city.slug}
-                to={`/cidades/${city.slug}`}
+                to={`/cidades/${city.slug}/`}
                 className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#121824] border border-slate-800 hover:border-[#0091FF] hover:bg-[#0091FF]/10 text-slate-200 hover:text-white text-xs font-semibold transition-all duration-200 transform hover:-translate-y-0.5 shadow-sm"
               >
                 <MapPin className="w-3.5 h-3.5 text-[#00C5FF]" />

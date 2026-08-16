@@ -15,7 +15,7 @@ export const ControleBiometriaPage: React.FC = () => {
         'Relatórios de acesso por data e horário',
       ]}
       pillarLink={{
-        url: '/servicos/controle-de-acesso',
+        url: '/servicos/controle-de-acesso/',
         label: 'Veja todos os detalhes sobre Controle de Acesso',
       }}
       ctaFinal={{

@@ -15,7 +15,7 @@ export const CercaCondominioPage: React.FC = () => {
         'Manutenção periódica para garantir o funcionamento',
       ]}
       pillarLink={{
-        url: '/servicos/cerca-eletrica',
+        url: '/servicos/cerca-eletrica/',
         label: 'Veja todos os detalhes sobre Cerca Elétrica',
       }}
       ctaFinal={{

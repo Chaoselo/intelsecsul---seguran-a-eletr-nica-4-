@@ -15,7 +15,7 @@ export const CamerasResidencialPage: React.FC = () => {
         'Projeto adaptado ao tamanho do terreno e da residência',
       ]}
       pillarLink={{
-        url: '/servicos/cameras-de-seguranca',
+        url: '/servicos/cameras-de-seguranca/',
         label: 'Veja todos os detalhes sobre Câmeras de Segurança',
       }}
       ctaFinal={{

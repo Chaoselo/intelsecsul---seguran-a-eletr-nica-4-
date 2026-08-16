@@ -1,3 +1,5 @@
+export const BASE_URL = 'https://intelsecsul.com.br';
+
 export const PRERENDER_ROUTES: string[] = [
   "/",
   "/cidades",
@@ -47,3 +49,25 @@ export const PRERENDER_ROUTES: string[] = [
   "/blog/checklist-seguranca-antes-de-viajar",
   "/contato"
 ];
+
+/**
+ * Retorna a URL absoluta padronizada para sitemap, canonical e og:url,
+ * garantindo sempre barra final ("/") em todas as páginas e na home ("https://intelsecsul.com.br/").
+ */
+export function getAbsoluteUrl(path: string): string {
+  if (!path || path === '/' || path === BASE_URL || path === `${BASE_URL}/`) {
+    return `${BASE_URL}/`;
+  }
+  let cleanPath = path;
+  if (cleanPath.startsWith(BASE_URL)) {
+    cleanPath = cleanPath.slice(BASE_URL.length);
+  }
+  if (!cleanPath.startsWith('/')) {
+    cleanPath = `/${cleanPath}`;
+  }
+  if (!cleanPath.endsWith('/')) {
+    cleanPath = `${cleanPath}/`;
+  }
+  return `${BASE_URL}${cleanPath}`;
+}
+

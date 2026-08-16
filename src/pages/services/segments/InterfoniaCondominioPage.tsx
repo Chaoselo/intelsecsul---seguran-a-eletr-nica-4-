@@ -15,7 +15,7 @@ export const InterfoniaCondominioPage: React.FC = () => {
         'Adaptação à estrutura já existente do condomínio',
       ]}
       pillarLink={{
-        url: '/servicos/interfonia',
+        url: '/servicos/interfonia/',
         label: 'Veja todos os detalhes sobre Interfonia',
       }}
       ctaFinal={{

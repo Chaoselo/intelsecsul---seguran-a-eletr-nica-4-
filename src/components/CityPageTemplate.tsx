@@ -58,14 +58,15 @@ export const CityPageTemplate: React.FC<CityPageTemplateProps> = ({
   ogImage,
 }) => {
   const location = useLocation();
-  const currentPath = citySlug ? `/cidades/${citySlug}` : location.pathname;
+  const rawPath = citySlug ? `/cidades/${citySlug}` : location.pathname;
+  const currentPath = rawPath.endsWith('/') ? rawPath : `${rawPath}/`;
 
   const featuredService = servicosDestaque?.[0]?.slug ? SERVICES_LIST.find(s => s.slug === servicosDestaque[0].slug) : null;
   const pageOgImage = ogImage || featuredService?.imageUrl || SERVICES_LIST[0]?.imageUrl;
 
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: 'Início', url: '/' },
-    { name: 'Cidades Atendidas', url: '/cidades' },
+    { name: 'Cidades Atendidas', url: '/cidades/' },
     { name: cityName, url: currentPath }
   ]);
 
@@ -91,6 +92,7 @@ export const CityPageTemplate: React.FC<CityPageTemplateProps> = ({
     title,
     description: metaDescription,
     ogImage: pageOgImage,
+    canonicalUrl: `https://intelsecsul.com.br${currentPath}`,
     jsonLdSchema: schemas,
   });
 
@@ -130,7 +132,7 @@ export const CityPageTemplate: React.FC<CityPageTemplateProps> = ({
           <nav className="flex items-center gap-2 text-xs text-slate-400 mb-6 flex-wrap">
             <Link to="/" className="hover:text-[#00C5FF] transition-colors">Início</Link>
             <span>/</span>
-            <Link to="/cidades" className="hover:text-[#00C5FF] transition-colors">Cidades Atendidas</Link>
+            <Link to="/cidades/" className="hover:text-[#00C5FF] transition-colors">Cidades Atendidas</Link>
             <span>/</span>
             <span className="text-slate-200 font-medium truncate">{cityName}</span>
           </nav>
@@ -152,7 +154,7 @@ export const CityPageTemplate: React.FC<CityPageTemplateProps> = ({
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <Link
-                to="/contato"
+                to="/contato/"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white bg-[#0091FF] hover:bg-[#0081E6] active:bg-[#0070CC] transition-all shadow-lg hover:shadow-[#0091FF]/30 text-sm"
               >
                 <FileText className="w-4 h-4" />
@@ -195,7 +197,7 @@ export const CityPageTemplate: React.FC<CityPageTemplateProps> = ({
             return (
               <Link
                 key={idx}
-                to={`/servicos/${serviceData.slug}`}
+                to={`/servicos/${serviceData.slug}/`}
                 className="bg-[#121824] rounded-xl p-6 border border-slate-800 shadow-md hover:border-[#0091FF]/60 hover:shadow-[#0091FF]/10 transition-all flex flex-col justify-between group"
               >
                 <div>
@@ -242,14 +244,21 @@ export const CityPageTemplate: React.FC<CityPageTemplateProps> = ({
           <div className="space-y-4">
             {faq.map((item, idx) => {
               const isOpen = openFaqIndex === idx;
+              const buttonId = `city-faq-btn-${idx}`;
+              const panelId = `city-faq-panel-${idx}`;
+
               return (
                 <div
                   key={idx}
                   className="bg-[#121824] rounded-xl border border-slate-800 shadow-xs overflow-hidden transition-all duration-200"
                 >
                   <button
+                    id={buttonId}
+                    type="button"
                     onClick={() => toggleFaq(idx)}
-                    className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-[#00C5FF] transition-colors"
+                    aria-expanded={isOpen}
+                    aria-controls={panelId}
+                    className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-[#00C5FF] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0091FF] focus-visible:ring-offset-2 focus-visible:ring-offset-[#121824] transition-colors"
                   >
                     <span>{item.question}</span>
                     <ChevronDown
@@ -260,7 +269,12 @@ export const CityPageTemplate: React.FC<CityPageTemplateProps> = ({
                   </button>
 
                   {isOpen && (
-                    <div className="px-6 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800 pt-3">
+                    <div
+                      id={panelId}
+                      role="region"
+                      aria-labelledby={buttonId}
+                      className="px-6 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800 pt-3"
+                    >
                       {item.answer}
                     </div>
                   )}
@@ -324,7 +338,7 @@ export const CityPageTemplate: React.FC<CityPageTemplateProps> = ({
             {otherCities.map((otherCity) => (
               <Link
                 key={otherCity.slug}
-                to={`/cidades/${otherCity.slug}`}
+                to={`/cidades/${otherCity.slug}/`}
                 className="flex items-center gap-2 p-3 rounded-xl bg-[#0A0D14] border border-slate-800 hover:border-[#0091FF] hover:text-[#00C5FF] text-slate-200 text-xs font-semibold transition-all group"
               >
                 <MapPin className="w-3.5 h-3.5 text-[#0091FF] shrink-0 group-hover:scale-110 transition-transform" />
@@ -335,7 +349,7 @@ export const CityPageTemplate: React.FC<CityPageTemplateProps> = ({
 
           <div className="mt-6 pt-4 border-t border-slate-800 flex justify-between items-center text-xs">
             <span className="text-slate-400">Atendimento presencial e suporte em toda a RMC</span>
-            <Link to="/cidades" className="text-[#00C5FF] font-bold hover:underline inline-flex items-center gap-1">
+            <Link to="/cidades/" className="text-[#00C5FF] font-bold hover:underline inline-flex items-center gap-1">
               <span>Ver mapa e todas as cidades</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
@@ -346,3 +360,4 @@ export const CityPageTemplate: React.FC<CityPageTemplateProps> = ({
     </div>
   );
 };
+

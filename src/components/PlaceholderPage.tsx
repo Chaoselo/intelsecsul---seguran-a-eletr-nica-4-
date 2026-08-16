@@ -82,7 +82,7 @@ export const PlaceholderPage: React.FC<Props> = ({ type, title: customTitle, des
           )}
           {type === 'city' && (
             <>
-              <Link to="/cidades" className="hover:text-[#00C5FF] transition-colors">Cidades</Link>
+              <Link to="/cidades/" className="hover:text-[#00C5FF] transition-colors">Cidades</Link>
               <span>/</span>
             </>
           )}

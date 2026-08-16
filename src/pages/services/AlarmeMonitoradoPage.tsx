@@ -83,12 +83,12 @@ export const AlarmeMonitoradoPage: React.FC = () => {
         {
           title: 'Alarme Residencial',
           description: 'Sensores de presença e abertura para casas e apartamentos com alerta no celular.',
-          url: '/servicos/instalacao-de-alarmes/residencial',
+          url: '/servicos/instalacao-de-alarmes/residencial/',
         },
         {
           title: 'Alarme Empresarial',
           description: 'Proteção perimetral e interna para comércios, escritórios e galpões.',
-          url: '/servicos/instalacao-de-alarmes/empresarial',
+          url: '/servicos/instalacao-de-alarmes/empresarial/',
         },
       ]}
       diferenciais={[

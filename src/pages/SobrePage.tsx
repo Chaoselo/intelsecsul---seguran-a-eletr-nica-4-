@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { 
   Shield, 
   Users, 
@@ -12,28 +12,27 @@ import {
 } from 'lucide-react';
 import { COMPANY_INFO, CITIES_LIST } from '../constants';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
+import { useDocumentMeta, buildBreadcrumbSchema } from '../hooks/useDocumentMeta';
+import { getWhatsAppUrl } from '../utils/whatsapp';
 
 export const SobrePage: React.FC = () => {
-  useEffect(() => {
-    document.title = 'Sobre a Intelsecsul | Empresa de Segurança Eletrônica em Curitiba';
+  const location = useLocation();
+  const rawPath = location.pathname;
+  const currentPath = rawPath.endsWith('/') ? rawPath : `${rawPath}/`;
 
-    let metaTag = document.querySelector('meta[name="description"]');
-    if (!metaTag) {
-      metaTag = document.createElement('meta');
-      metaTag.setAttribute('name', 'description');
-      document.head.appendChild(metaTag);
-    }
-    metaTag.setAttribute(
-      'content',
-      'Conheça a Intelsecsul, empresa de segurança eletrônica sediada em Curitiba, com equipe técnica própria e atendimento em toda a Região Metropolitana.'
-    );
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Início', url: '/' },
+    { name: 'Sobre Nós', url: '/sobre/' }
+  ]);
 
-    return () => {
-      document.title = 'Intelsecsul - Segurança Eletrônica e Tecnologia';
-    };
-  }, []);
+  useDocumentMeta({
+    title: 'Sobre a Intelsecsul | Empresa de Segurança Eletrônica em Curitiba',
+    description: 'Conheça a Intelsecsul, empresa de segurança eletrônica sediada em Curitiba, com equipe técnica própria e atendimento em toda a Região Metropolitana.',
+    canonicalUrl: `https://intelsecsul.com.br${currentPath}`,
+    jsonLdSchema: breadcrumbSchema,
+  });
 
-  const whatsappUrl = COMPANY_INFO.whatsappUrlDefault;
+  const whatsappUrl = getWhatsAppUrl(currentPath);
 
   return (
     <div className="bg-[#0A0D14] text-slate-200 font-sans selection:bg-[#0091FF] selection:text-white">
@@ -75,7 +74,7 @@ export const SobrePage: React.FC = () => {
               </a>
 
               <Link
-                to="/por-que-escolher-a-intelsecsul"
+                to="/por-que-escolher-a-intelsecsul/"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white bg-[#121824] hover:bg-[#1A2234] border border-slate-700 transition-all text-sm"
               >
                 <span>Conheça nossos diferenciais</span>
@@ -232,7 +231,7 @@ export const SobrePage: React.FC = () => {
               </a>
 
               <Link
-                to="/contato"
+                to="/contato/"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-white bg-[#1E2638] hover:bg-[#28334A] transition-all text-base border border-slate-700"
               >
                 <span>Enviar mensagem</span>

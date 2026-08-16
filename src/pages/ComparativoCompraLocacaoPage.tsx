@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { 
   Shield, 
   CheckCircle2, 
@@ -11,28 +11,28 @@ import {
 } from 'lucide-react';
 import { COMPANY_INFO } from '../constants';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
+import { useDocumentMeta, buildBreadcrumbSchema } from '../hooks/useDocumentMeta';
+import { getWhatsAppUrl } from '../utils/whatsapp';
 
 export const ComparativoCompraLocacaoPage: React.FC = () => {
-  useEffect(() => {
-    document.title = 'Compra ou Locação de Equipamentos de Segurança: Qual Escolher? | Intelsecsul';
+  const location = useLocation();
+  const rawPath = location.pathname;
+  const currentPath = rawPath.endsWith('/') ? rawPath : `${rawPath}/`;
 
-    let metaTag = document.querySelector('meta[name="description"]');
-    if (!metaTag) {
-      metaTag = document.createElement('meta');
-      metaTag.setAttribute('name', 'description');
-      document.head.appendChild(metaTag);
-    }
-    metaTag.setAttribute(
-      'content',
-      'Entenda as diferenças entre comprar e alugar equipamentos de segurança eletrônica, e veja qual opção faz mais sentido para o seu caso.'
-    );
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Início', url: '/' },
+    { name: 'Comparativos', url: '/comparativos/' },
+    { name: 'Compra x Locação', url: '/comparativos/compra-x-locacao-de-equipamentos/' }
+  ]);
 
-    return () => {
-      document.title = 'Intelsecsul - Segurança Eletrônica e Tecnologia';
-    };
-  }, []);
+  useDocumentMeta({
+    title: 'Compra ou Locação de Equipamentos de Segurança: Qual Escolher? | Intelsecsul',
+    description: 'Entenda as diferenças entre comprar e alugar equipamentos de segurança eletrônica, e veja qual opção faz mais sentido para o seu caso.',
+    canonicalUrl: `https://intelsecsul.com.br${currentPath}`,
+    jsonLdSchema: breadcrumbSchema,
+  });
 
-  const whatsappUrl = COMPANY_INFO.whatsappUrlDefault;
+  const whatsappUrl = getWhatsAppUrl(currentPath);
 
   const tableData = [
     {
@@ -78,7 +78,7 @@ export const ComparativoCompraLocacaoPage: React.FC = () => {
           <nav className="flex items-center gap-2 text-xs text-slate-400 mb-6 flex-wrap">
             <Link to="/" className="hover:text-[#00C5FF] transition-colors">Início</Link>
             <span>/</span>
-            <Link to="/comparativos" className="hover:text-[#00C5FF] transition-colors">Comparativos</Link>
+            <Link to="/comparativos/" className="hover:text-[#00C5FF] transition-colors">Comparativos</Link>
             <span>/</span>
             <span className="text-slate-200 font-medium">Compra x Locação</span>
           </nav>
@@ -109,7 +109,7 @@ export const ComparativoCompraLocacaoPage: React.FC = () => {
               </a>
 
               <Link
-                to="/servicos/locacao-de-cameras-de-seguranca"
+                to="/servicos/locacao-de-cameras-de-seguranca/"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white bg-[#121824] hover:bg-[#1A2234] border border-slate-700 transition-all text-sm"
               >
                 <span>Veja todos os detalhes da locação</span>
@@ -211,7 +211,7 @@ export const ComparativoCompraLocacaoPage: React.FC = () => {
           {/* Callout Link to service */}
           <div className="mt-10 text-center">
             <Link
-              to="/servicos/locacao-de-cameras-de-seguranca"
+              to="/servicos/locacao-de-cameras-de-seguranca/"
               className="inline-flex items-center gap-2 text-sm sm:text-base font-bold text-[#00C5FF] hover:text-white transition-colors border-b border-[#00C5FF] pb-1"
             >
               <span>Veja todos os detalhes da locação de equipamentos</span>
@@ -251,7 +251,7 @@ export const ComparativoCompraLocacaoPage: React.FC = () => {
               </a>
 
               <Link
-                to="/contato"
+                to="/contato/"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-white bg-[#1E2638] hover:bg-[#28334A] transition-all text-base border border-slate-700"
               >
                 <span>Enviar mensagem</span>

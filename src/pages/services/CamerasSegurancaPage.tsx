@@ -76,7 +76,7 @@ export const CamerasSegurancaPage: React.FC = () => {
           description: 'Formato alongado, ideal para áreas externas, muros e entradas, com alcance de visão maior.',
         },
         {
-          title: 'Câmera Wi-fi (interna/discreta)',
+          title: 'Câmera Wi-Fi (interna/discreta)',
           description: 'Formato compacto e discreto, indicada para ambientes internos como recepções, corredores e lojas.',
         },
         {
@@ -92,17 +92,17 @@ export const CamerasSegurancaPage: React.FC = () => {
         {
           title: 'Câmeras Residencial',
           description: 'Proteção para casas e apartamentos com foco em pontos de entrada, garagem e quintal.',
-          url: '/servicos/cameras-de-seguranca/residencial',
+          url: '/servicos/cameras-de-seguranca/residencial/',
         },
         {
           title: 'Câmeras Comercial',
           description: 'Cobertura de caixa, estoque e fluxo de clientes para lojas e escritórios.',
-          url: '/servicos/cameras-de-seguranca/comercial',
+          url: '/servicos/cameras-de-seguranca/comercial/',
         },
         {
           title: 'Câmeras para Condomínios',
           description: 'Sistemas de CFTV para portaria, garagens e perímetro de condomínios.',
-          url: '/servicos/cameras-de-seguranca/condominio',
+          url: '/servicos/cameras-de-seguranca/condominio/',
         },
       ]}
       diferenciais={[

@@ -33,7 +33,7 @@ export const ComoEscolherSistemaPage: React.FC = () => {
               </p>
               <div className="p-4 rounded-xl bg-[#141A29] border border-[#0091FF]/30 inline-block">
                 <Link
-                  to="/comparativos/compra-x-locacao-de-equipamentos"
+                  to="/comparativos/compra-x-locacao-de-equipamentos/"
                   className="inline-flex items-center gap-2 text-sm font-bold text-[#00C5FF] hover:text-white transition-colors"
                 >
                   <span>Veja o comparativo completo entre compra e locação de equipamentos</span>

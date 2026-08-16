@@ -79,7 +79,7 @@ export const InterfoniaPage: React.FC = () => {
         {
           title: 'Interfonia para Condomínios',
           description: 'Comunicação integrada à portaria, vídeo-porteiro e suporte a portaria remota.',
-          url: '/servicos/interfonia/condominio',
+          url: '/servicos/interfonia/condominio/',
         },
       ]}
       diferenciais={[

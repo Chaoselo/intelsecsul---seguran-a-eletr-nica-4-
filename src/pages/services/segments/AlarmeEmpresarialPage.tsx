@@ -15,7 +15,7 @@ export const AlarmeEmpresarialPage: React.FC = () => {
         'Manutenção preventiva, corretiva e suporte técnico próprio',
       ]}
       pillarLink={{
-        url: '/servicos/instalacao-de-alarmes',
+        url: '/servicos/instalacao-de-alarmes/',
         label: 'Veja todos os detalhes sobre Instalação e Manutenção de Alarmes',
       }}
       ctaFinal={{

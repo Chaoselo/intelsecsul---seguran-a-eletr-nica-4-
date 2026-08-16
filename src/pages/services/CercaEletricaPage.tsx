@@ -83,12 +83,12 @@ export const CercaEletricaPage: React.FC = () => {
         {
           title: 'Cerca Elétrica Residencial',
           description: 'Proteção perimetral sobre muros de casas com central de choque e bateria reserva.',
-          url: '/servicos/cerca-eletrica/residencial',
+          url: '/servicos/cerca-eletrica/residencial/',
         },
         {
           title: 'Cerca Elétrica para Condomínios',
           description: 'Dimensionamento para perímetros extensos e integração com a portaria.',
-          url: '/servicos/cerca-eletrica/condominio',
+          url: '/servicos/cerca-eletrica/condominio/',
         },
       ]}
       diferenciais={[

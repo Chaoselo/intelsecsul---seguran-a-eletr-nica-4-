@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { 
   Shield, 
   Users, 
@@ -13,28 +13,27 @@ import {
 } from 'lucide-react';
 import { COMPANY_INFO } from '../constants';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
+import { useDocumentMeta, buildBreadcrumbSchema } from '../hooks/useDocumentMeta';
+import { getWhatsAppUrl } from '../utils/whatsapp';
 
 export const PorQueEscolherPage: React.FC = () => {
-  useEffect(() => {
-    document.title = 'Por Que Escolher a Intelsecsul | Diferenciais';
+  const location = useLocation();
+  const rawPath = location.pathname;
+  const currentPath = rawPath.endsWith('/') ? rawPath : `${rawPath}/`;
 
-    let metaTag = document.querySelector('meta[name="description"]');
-    if (!metaTag) {
-      metaTag = document.createElement('meta');
-      metaTag.setAttribute('name', 'description');
-      document.head.appendChild(metaTag);
-    }
-    metaTag.setAttribute(
-      'content',
-      'Equipe técnica própria, atendimento em toda a Região Metropolitana de Curitiba e locação de equipamentos sem investimento inicial. Conheça os diferenciais da Intelsecsul.'
-    );
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Início', url: '/' },
+    { name: 'Por Que Escolher a Intelsecsul', url: '/por-que-escolher-a-intelsecsul/' }
+  ]);
 
-    return () => {
-      document.title = 'Intelsecsul - Segurança Eletrônica e Tecnologia';
-    };
-  }, []);
+  useDocumentMeta({
+    title: 'Por Que Escolher a Intelsecsul | Diferenciais',
+    description: 'Equipe técnica própria, atendimento em toda a Região Metropolitana de Curitiba e locação de equipamentos sem investimento inicial. Conheça os diferenciais da Intelsecsul.',
+    canonicalUrl: `https://intelsecsul.com.br${currentPath}`,
+    jsonLdSchema: breadcrumbSchema,
+  });
 
-  const whatsappUrl = COMPANY_INFO.whatsappUrlDefault;
+  const whatsappUrl = getWhatsAppUrl(currentPath);
 
   const diferenciais = [
     {
@@ -109,7 +108,7 @@ export const PorQueEscolherPage: React.FC = () => {
               </a>
 
               <Link
-                to="/contato"
+                to="/contato/"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white bg-[#0091FF] hover:bg-[#0081E6] active:bg-[#0070CC] transition-all shadow-lg hover:shadow-[#0091FF]/30 text-sm"
               >
                 <span>Solicitar orçamento sem custo</span>
@@ -172,7 +171,7 @@ export const PorQueEscolherPage: React.FC = () => {
             </div>
 
             <Link
-              to="/comparativos"
+              to="/comparativos/"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white bg-[#0091FF] hover:bg-[#0081E6] transition-all text-sm shrink-0 shadow-md"
             >
               <Scale className="w-4 h-4" />
@@ -212,7 +211,7 @@ export const PorQueEscolherPage: React.FC = () => {
               </a>
 
               <Link
-                to="/contato"
+                to="/contato/"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-white bg-[#1E2638] hover:bg-[#28334A] transition-all text-base border border-slate-700"
               >
                 <span>Enviar mensagem</span>
