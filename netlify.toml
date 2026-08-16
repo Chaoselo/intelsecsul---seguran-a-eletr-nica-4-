@@ -1,6 +1,9 @@
 [build]
-  command = "vite build"
+  command = "npx puppeteer browsers install chrome && vite build"
   publish = "dist"
+
+[build.environment]
+  PUPPETEER_CACHE_DIR = "/opt/buildhome/.cache/puppeteer"
 
 # Redirecionamento permanente 301 do antigo serviço de alarme monitorado
 [[redirects]]
