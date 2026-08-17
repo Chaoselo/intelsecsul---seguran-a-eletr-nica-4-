@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   HelpCircle, 
@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { COMPANY_INFO } from '../constants';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
+import { useDocumentMeta, buildBreadcrumbSchema } from '../hooks/useDocumentMeta';
 
 interface FaqItem {
   question: string;
@@ -23,36 +24,6 @@ interface FaqCategory {
 }
 
 export const FaqPage: React.FC = () => {
-  useEffect(() => {
-    document.title = 'Perguntas Frequentes | Intelsecsul';
-
-    let metaTag = document.querySelector('meta[name="description"]');
-    if (!metaTag) {
-      metaTag = document.createElement('meta');
-      metaTag.setAttribute('name', 'description');
-      document.head.appendChild(metaTag);
-    }
-    metaTag.setAttribute(
-      'content',
-      'Tire suas dúvidas sobre câmeras, alarme monitorado, cerca elétrica, controle de acesso e locação de equipamentos de segurança em Curitiba e região.'
-    );
-
-    return () => {
-      document.title = 'Intelsecsul - Segurança Eletrônica e Tecnologia';
-    };
-  }, []);
-
-  const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});
-  const [searchQuery, setSearchQuery] = useState('');
-
-  const toggleItem = (categoryIndex: number, itemIndex: number) => {
-    const key = `${categoryIndex}-${itemIndex}`;
-    setOpenItems((prev) => ({
-      ...prev,
-      [key]: !prev[key],
-    }));
-  };
-
   const categories: FaqCategory[] = [
     {
       categoryTitle: 'Sobre a Intelsecsul',
@@ -155,6 +126,48 @@ export const FaqPage: React.FC = () => {
     },
   ];
 
+  // Schema de breadcrumb, seguindo o mesmo padrão usado em BlogHubPage.tsx
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Início', url: '/' },
+    { name: 'Perguntas Frequentes', url: '/perguntas-frequentes/' },
+  ]);
+
+  // Schema FAQPage, gerado a partir das mesmas perguntas e respostas
+  // visíveis nesta página (sem inventar ou omitir nenhuma)
+  const faqPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": categories.flatMap((cat) =>
+      cat.items.map((item) => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.answer,
+        },
+      }))
+    ),
+  };
+
+  useDocumentMeta({
+    title: 'Perguntas Frequentes | Intelsecsul',
+    description:
+      'Tire suas dúvidas sobre câmeras, alarme monitorado, cerca elétrica, controle de acesso e locação de equipamentos de segurança em Curitiba e região.',
+    canonicalUrl: 'https://intelsecsul.com.br/perguntas-frequentes/',
+    jsonLdSchema: [breadcrumbSchema, faqPageSchema],
+  });
+
+  const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const toggleItem = (categoryIndex: number, itemIndex: number) => {
+    const key = `${categoryIndex}-${itemIndex}`;
+    setOpenItems((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
+  };
+
   const whatsappUrl = COMPANY_INFO.whatsappUrlDefault;
 
   // Filter based on search query
@@ -248,6 +261,8 @@ export const FaqPage: React.FC = () => {
                     {cat.items.map((item, itemIdx) => {
                       const itemKey = `${catIdx}-${itemIdx}`;
                       const isOpen = !!openItems[itemKey];
+                      const buttonId = `faq-question-${catIdx}-${itemIdx}`;
+                      const panelId = `faq-answer-${catIdx}-${itemIdx}`;
 
                       return (
                         <div
@@ -255,22 +270,31 @@ export const FaqPage: React.FC = () => {
                           className="bg-[#121824] rounded-xl border border-slate-800 shadow-xs overflow-hidden transition-all duration-200 hover:border-slate-700"
                         >
                           <button
+                            id={buttonId}
+                            type="button"
+                            aria-expanded={isOpen}
+                            aria-controls={panelId}
                             onClick={() => toggleItem(catIdx, itemIdx)}
-                            className="w-full px-6 py-4 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-[#00C5FF] transition-colors"
+                            className="w-full px-6 py-4 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-[#00C5FF] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00C5FF] focus-visible:ring-offset-2 focus-visible:ring-offset-[#121824]"
                           >
                             <span>{item.question}</span>
                             <ChevronDown
                               className={`w-5 h-5 text-slate-400 shrink-0 transition-transform duration-200 ${
                                 isOpen ? 'rotate-180 text-[#00C5FF]' : ''
                               }`}
+                              aria-hidden="true"
                             />
                           </button>
 
-                          {isOpen && (
-                            <div className="px-6 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800/80 pt-3">
-                              {item.answer}
-                            </div>
-                          )}
+                          <div
+                            id={panelId}
+                            role="region"
+                            aria-labelledby={buttonId}
+                            hidden={!isOpen}
+                            className="px-6 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800/80 pt-3"
+                          >
+                            {item.answer}
+                          </div>
                         </div>
                       );
                     })}
