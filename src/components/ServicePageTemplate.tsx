@@ -44,6 +44,11 @@ export interface ServicePageTemplateProps {
     title: string;
     description: string;
   }>;
+  crossLink?: {
+    text: string;
+    linkText: string;
+    url: string;
+  };
   faq: Array<{
     question: string;
     answer: string;
@@ -69,6 +74,7 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
   tiposAplicacao,
   segmentLinks,
   diferenciais,
+  crossLink,
   faq,
   ctaFinal,
   serviceSlug,
@@ -457,6 +463,28 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
         </div>
       </section>
 
+      {/* ================= LINK CRUZADO / SOLUÇÃO RELACIONADA ================= */}
+      {crossLink && (
+        <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+          <div className="bg-[#121824] rounded-2xl p-6 sm:p-8 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left shadow-lg hover:border-[#0091FF]/50 transition-colors">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#00C5FF] block mb-1">
+                Solução Relacionada
+              </span>
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                {crossLink.text}
+              </p>
+            </div>
+            <Link
+              to={crossLink.url}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white bg-[#1E2638] hover:bg-[#0091FF] active:bg-[#0081E6] border border-slate-700 hover:border-[#0091FF] transition-all text-sm shrink-0 shadow-md"
+            >
+              <span>{crossLink.linkText}</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </section>
+      )}
 
       {/* ================= CTA FINAL ================= */}
       <section className="bg-[#0A0D14] text-white py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-800">

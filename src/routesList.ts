@@ -28,6 +28,7 @@ export const PRERENDER_ROUTES: string[] = [
   "/servicos/controle-de-acesso/biometria",
   "/servicos/controle-de-acesso/reconhecimento-facial",
   "/servicos/portao-eletronico",
+  "/servicos/portas-automaticas",
   "/servicos/interfonia",
   "/servicos/interfonia/condominio",
   "/servicos/cancelas-e-catracas",
@@ -47,6 +48,9 @@ export const PRERENDER_ROUTES: string[] = [
   "/blog/seguranca-eletronica-para-condominios",
   "/blog/seguranca-para-empresas-e-industrias",
   "/blog/checklist-seguranca-antes-de-viajar",
+  "/blog/portao-eletronico-nao-abre-ou-nao-fecha",
+  "/blog/cerca-eletrica-x-concertina-diferenca",
+  "/blog/camera-com-fio-ou-wifi-qual-escolher",
   "/contato"
 ];
 

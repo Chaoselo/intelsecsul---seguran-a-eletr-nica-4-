@@ -12,6 +12,7 @@ import { CercaEletricaPage } from './pages/services/CercaEletricaPage';
 import { LocacaoEquipamentosPage } from './pages/services/LocacaoEquipamentosPage';
 import { ControleAcessoPage } from './pages/services/ControleAcessoPage';
 import { PortaoEletronicoPage } from './pages/services/PortaoEletronicoPage';
+import { PortasAutomaticasPage } from './pages/services/PortasAutomaticasPage';
 import { InterfoniaPage } from './pages/services/InterfoniaPage';
 import { CancelasCatracasPage } from './pages/services/CancelasCatracasPage';
 import { FechadurasEletromagneticasPage } from './pages/services/FechadurasEletromagneticasPage';
@@ -40,6 +41,9 @@ import { ComoEscolherSistemaPage } from './pages/blog/ComoEscolherSistemaPage';
 import { SegurancaCondominiosPage } from './pages/blog/SegurancaCondominiosPage';
 import { SegurancaEmpresasPage } from './pages/blog/SegurancaEmpresasPage';
 import { ChecklistViajarPage } from './pages/blog/ChecklistViajarPage';
+import { PortaoEletronicoNaoAbreFechaPage } from './pages/blog/PortaoEletronicoNaoAbreFechaPage';
+import { CercaEletricaConcertinaDiferencaPage } from './pages/blog/CercaEletricaConcertinaDiferencaPage';
+import { CameraComFioOuWifiPage } from './pages/blog/CameraComFioOuWifiPage';
 import { CuritibaPage } from './pages/cities/CuritibaPage';
 import { PinhaisPage } from './pages/cities/PinhaisPage';
 import { SaoJoseDosPinhaisPage } from './pages/cities/SaoJoseDosPinhaisPage';
@@ -125,6 +129,7 @@ export default function App() {
             <Route path="/servicos/controle-de-acesso/reconhecimento-facial" element={<ControleFacialPage />} />
 
             <Route path="/servicos/portao-eletronico" element={<PortaoEletronicoPage />} />
+            <Route path="/servicos/portas-automaticas" element={<PortasAutomaticasPage />} />
 
             <Route path="/servicos/interfonia" element={<InterfoniaPage />} />
             <Route path="/servicos/interfones" element={<InterfoniaPage />} />
@@ -158,6 +163,9 @@ export default function App() {
             <Route path="/blog/seguranca-eletronica-para-condominios" element={<SegurancaCondominiosPage />} />
             <Route path="/blog/seguranca-para-empresas-e-industrias" element={<SegurancaEmpresasPage />} />
             <Route path="/blog/checklist-seguranca-antes-de-viajar" element={<ChecklistViajarPage />} />
+            <Route path="/blog/portao-eletronico-nao-abre-ou-nao-fecha" element={<PortaoEletronicoNaoAbreFechaPage />} />
+            <Route path="/blog/cerca-eletrica-x-concertina-diferenca" element={<CercaEletricaConcertinaDiferencaPage />} />
+            <Route path="/blog/camera-com-fio-ou-wifi-qual-escolher" element={<CameraComFioOuWifiPage />} />
 
             <Route path="/contato" element={<ContatoPage />} />
 

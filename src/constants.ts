@@ -6,6 +6,7 @@ import alarmeMonitoradoImg from './assets/images/alarme_monitorado.webp';
 import cercaEletricaImg from './assets/images/cerca_eletrica.webp';
 import controleAcessoImg from './assets/images/controle_acesso.webp';
 import portaoEletronicoImg from './assets/images/portao_eletronico.webp';
+import portasAutomaticasImg from './assets/images/portas_automaticas.webp';
 import interfoniaImg from './assets/images/interfonia.webp';
 import cancelasCatracasImg from './assets/images/cancelas_catracas.webp';
 import fechadurasEletromagneticasImg from './assets/images/fechaduras_eletromagneticas.webp';
@@ -80,6 +81,14 @@ export const SERVICES_LIST: ServiceItem[] = [
     iconName: 'DoorClosed',
     imageUrl: portaoEletronicoImg,
     imageAlt: 'Portão eletrônico residencial automatizado com motor de alta performance',
+  },
+  {
+    slug: 'portas-automaticas',
+    title: 'Portas Automáticas',
+    description: 'Instalação e manutenção de portas automáticas de vidro, seccionais e de enrolar para comércios, indústrias e condomínios.',
+    iconName: 'DoorOpen',
+    imageUrl: portasAutomaticasImg,
+    imageAlt: 'Instalação e manutenção de portas automáticas comerciais e industriais',
   },
   {
     slug: 'interfonia',

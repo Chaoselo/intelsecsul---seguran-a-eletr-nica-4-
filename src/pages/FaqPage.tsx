@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   HelpCircle, 
   ChevronDown, 
   Shield, 
-  ArrowRight,
-  Search,
-  BookOpen,
-  Scale
+  ArrowRight, 
+  Search, 
+  BookOpen, 
+  Scale 
 } from 'lucide-react';
 import { COMPANY_INFO } from '../constants';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
+import { useDocumentMeta, buildBreadcrumbSchema } from '../hooks/useDocumentMeta';
 
 interface FaqItem {
   question: string;
@@ -23,25 +24,6 @@ interface FaqCategory {
 }
 
 export const FaqPage: React.FC = () => {
-  useEffect(() => {
-    document.title = 'Perguntas Frequentes | Intelsecsul';
-
-    let metaTag = document.querySelector('meta[name="description"]');
-    if (!metaTag) {
-      metaTag = document.createElement('meta');
-      metaTag.setAttribute('name', 'description');
-      document.head.appendChild(metaTag);
-    }
-    metaTag.setAttribute(
-      'content',
-      'Tire suas dúvidas sobre câmeras, alarme monitorado, cerca elétrica, controle de acesso e locação de equipamentos de segurança em Curitiba e região.'
-    );
-
-    return () => {
-      document.title = 'Intelsecsul - Segurança Eletrônica e Tecnologia';
-    };
-  }, []);
-
   const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -155,6 +137,31 @@ export const FaqPage: React.FC = () => {
     },
   ];
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Início', url: '/' },
+    { name: 'Perguntas Frequentes', url: '/perguntas-frequentes/' }
+  ]);
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": categories.flatMap(cat => cat.items).map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  };
+
+  useDocumentMeta({
+    title: 'Perguntas Frequentes | Intelsecsul',
+    description: 'Tire suas dúvidas sobre câmeras, alarme monitorado, cerca elétrica, controle de acesso e locação de equipamentos de segurança em Curitiba e região.',
+    canonicalUrl: 'https://intelsecsul.com.br/perguntas-frequentes/',
+    jsonLdSchema: [breadcrumbSchema, faqSchema],
+  });
+
   const whatsappUrl = COMPANY_INFO.whatsappUrlDefault;
 
   // Filter based on search query
@@ -225,6 +232,7 @@ export const FaqPage: React.FC = () => {
                 Não encontramos resultados para "{searchQuery}". Tente outros termos ou fale diretamente com a nossa equipe.
               </p>
               <button
+                type="button"
                 onClick={() => setSearchQuery('')}
                 className="px-5 py-2.5 rounded-xl bg-[#0091FF] text-white font-semibold text-sm hover:bg-[#0081E6] transition-colors"
               >
@@ -248,6 +256,8 @@ export const FaqPage: React.FC = () => {
                     {cat.items.map((item, itemIdx) => {
                       const itemKey = `${catIdx}-${itemIdx}`;
                       const isOpen = !!openItems[itemKey];
+                      const buttonId = `faq-btn-${catIdx}-${itemIdx}`;
+                      const panelId = `faq-panel-${catIdx}-${itemIdx}`;
 
                       return (
                         <div
@@ -255,8 +265,12 @@ export const FaqPage: React.FC = () => {
                           className="bg-[#121824] rounded-xl border border-slate-800 shadow-xs overflow-hidden transition-all duration-200 hover:border-slate-700"
                         >
                           <button
+                            id={buttonId}
+                            type="button"
                             onClick={() => toggleItem(catIdx, itemIdx)}
-                            className="w-full px-6 py-4 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-[#00C5FF] transition-colors"
+                            aria-expanded={isOpen}
+                            aria-controls={panelId}
+                            className="w-full px-6 py-4 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-[#00C5FF] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0091FF] focus-visible:ring-offset-2 focus-visible:ring-offset-[#121824] transition-colors"
                           >
                             <span>{item.question}</span>
                             <ChevronDown
@@ -267,7 +281,12 @@ export const FaqPage: React.FC = () => {
                           </button>
 
                           {isOpen && (
-                            <div className="px-6 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800/80 pt-3">
+                            <div
+                              id={panelId}
+                              role="region"
+                              aria-labelledby={buttonId}
+                              className="px-6 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800/80 pt-3"
+                            >
                               {item.answer}
                             </div>
                           )}
@@ -283,7 +302,7 @@ export const FaqPage: React.FC = () => {
           {/* Useful links block */}
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4 pt-8 border-t border-slate-800">
             <Link
-              to="/glossario"
+              to="/glossario/"
               className="p-5 rounded-2xl bg-[#121824] border border-slate-800 hover:border-[#0091FF] transition-all group flex items-center gap-4"
             >
               <div className="p-3 rounded-xl bg-[#0091FF]/10 text-[#00C5FF] group-hover:bg-[#0091FF]/20 transition-colors">
@@ -300,7 +319,7 @@ export const FaqPage: React.FC = () => {
             </Link>
 
             <Link
-              to="/comparativos"
+              to="/comparativos/"
               className="p-5 rounded-2xl bg-[#121824] border border-slate-800 hover:border-[#0091FF] transition-all group flex items-center gap-4"
             >
               <div className="p-3 rounded-xl bg-[#0091FF]/10 text-[#00C5FF] group-hover:bg-[#0091FF]/20 transition-colors">
@@ -349,7 +368,7 @@ export const FaqPage: React.FC = () => {
               </a>
 
               <Link
-                to="/contato"
+                to="/contato/"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-white bg-[#1E2638] hover:bg-[#28334A] transition-all text-base border border-slate-700"
               >
                 <span>Enviar mensagem</span>
@@ -363,3 +382,4 @@ export const FaqPage: React.FC = () => {
     </div>
   );
 };
+

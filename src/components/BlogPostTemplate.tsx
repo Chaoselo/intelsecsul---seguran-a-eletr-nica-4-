@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Shield, ArrowRight, Calendar, Clock, BookOpen, ChevronRight } from 'lucide-react';
+import { Shield, ArrowRight, Calendar, Clock, BookOpen, ChevronRight, ChevronDown, HelpCircle } from 'lucide-react';
 import { COMPANY_INFO, SERVICES_LIST } from '../constants';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
 import { useDocumentMeta, buildBreadcrumbSchema } from '../hooks/useDocumentMeta';
@@ -26,6 +26,16 @@ export interface BlogPostTemplateProps {
     buttonText?: string;
   };
   ogImage?: string;
+  whatsappMessage?: string;
+  internalLink?: {
+    text: string;
+    url: string;
+    linkText: string;
+  };
+  relatedQuestions?: Array<{
+    question: string;
+    answer: string;
+  }>;
 }
 
 export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
@@ -39,8 +49,18 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
   sections,
   ctaFinal,
   ogImage,
+  whatsappMessage,
+  internalLink,
+  relatedQuestions,
 }) => {
   const location = useLocation();
+  const [openFaqIndices, setOpenFaqIndices] = useState<number[]>([0]);
+
+  const toggleFaq = (idx: number) => {
+    setOpenFaqIndices((prev) =>
+      prev.includes(idx) ? prev.filter((i) => i !== idx) : [...prev, idx]
+    );
+  };
 
   const resolvedOgImage = ogImage || SERVICES_LIST[0]?.imageUrl;
   const normalizedPath = location.pathname.endsWith('/') ? location.pathname : `${location.pathname}/`;
@@ -82,16 +102,33 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
     articleSchema["datePublished"] = publishedDate;
   }
 
+  const schemas: any[] = [breadcrumbSchema, articleSchema];
+
+  if (relatedQuestions && relatedQuestions.length > 0) {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": relatedQuestions.map((q) => ({
+        "@type": "Question",
+        "name": q.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": q.answer
+        }
+      }))
+    });
+  }
+
   useDocumentMeta({
     title,
     description: metaDescription,
     ogType: 'article',
     ogImage: resolvedOgImage,
     canonicalUrl: canonicalPageUrl,
-    jsonLdSchema: [breadcrumbSchema, articleSchema],
+    jsonLdSchema: schemas,
   });
 
-  const whatsappUrl = getWhatsAppUrl(location.pathname);
+  const whatsappUrl = getWhatsAppUrl(location.pathname, whatsappMessage);
 
   return (
     <div className="bg-[#0A0D14] text-slate-200 font-sans selection:bg-[#0091FF] selection:text-white">
@@ -158,6 +195,88 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
             </article>
           ))}
 
+          {/* ================= RELATED QUESTIONS (FAQ) ================= */}
+          {relatedQuestions && relatedQuestions.length > 0 && (
+            <section className="pt-8 border-t border-slate-800/80">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 rounded-xl bg-[#0091FF]/10 text-[#00C5FF]">
+                  <HelpCircle className="w-5 h-5" />
+                </div>
+                <div>
+                  <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+                    Perguntas Relacionadas
+                  </h2>
+                  <p className="text-xs sm:text-sm text-slate-400">
+                    Dúvidas frequentes sobre este tema
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-3">
+                {relatedQuestions.map((item, qIdx) => {
+                  const isOpen = openFaqIndices.includes(qIdx);
+                  const buttonId = `faq-btn-${qIdx}`;
+                  const panelId = `faq-panel-${qIdx}`;
+
+                  return (
+                    <div
+                      key={qIdx}
+                      className="rounded-xl bg-[#121824] border border-slate-800 overflow-hidden transition-all duration-200 hover:border-slate-700"
+                    >
+                      <button
+                        type="button"
+                        id={buttonId}
+                        onClick={() => toggleFaq(qIdx)}
+                        aria-expanded={isOpen}
+                        aria-controls={panelId}
+                        className="w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-[#00C5FF] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0091FF] transition-colors"
+                      >
+                        <span>{item.question}</span>
+                        <ChevronDown
+                          className={`w-4 h-4 text-slate-400 shrink-0 transition-transform duration-200 ${
+                            isOpen ? 'rotate-180 text-[#00C5FF]' : ''
+                          }`}
+                        />
+                      </button>
+
+                      {isOpen && (
+                        <div
+                          id={panelId}
+                          role="region"
+                          aria-labelledby={buttonId}
+                          className="px-5 pb-4 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800/80 pt-3"
+                        >
+                          {item.answer}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+          )}
+
+          {/* ================= INTERNAL LINK CALLOUT ================= */}
+          {internalLink && (
+            <div className="p-6 rounded-2xl bg-gradient-to-r from-[#121824] to-[#151D2C] border border-[#0091FF]/30 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg hover:border-[#0091FF]/60 transition-colors">
+              <div className="text-center sm:text-left">
+                <span className="text-xs font-bold uppercase tracking-wider text-[#00C5FF] block mb-1">
+                  Serviço Especializado Intelsecsul
+                </span>
+                <p className="text-sm sm:text-base text-slate-200 font-medium">
+                  {internalLink.text}
+                </p>
+              </div>
+              <Link
+                to={internalLink.url}
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-white bg-[#0091FF] hover:bg-[#0081E6] active:bg-[#0070CC] transition-all text-xs sm:text-sm shrink-0 shadow-md"
+              >
+                <span>{internalLink.linkText}</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          )}
+
         </div>
       </section>
 
@@ -217,3 +336,4 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
     </div>
   );
 };
+

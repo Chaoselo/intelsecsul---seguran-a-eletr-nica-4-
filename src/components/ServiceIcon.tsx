@@ -67,6 +67,17 @@ export const ServiceIcon: React.FC<Props> = ({ name, className = "w-6 h-6", ...p
         </svg>
       );
 
+    case 'DoorOpen':
+      // Portas Automáticas (Comerciais e Industriais)
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} {...props}>
+          <path d="M13 4h3a2 2 0 0 1 2 2v14" />
+          <path d="M2 20h20" />
+          <path d="M13 20V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v16" />
+          <circle cx="10" cy="12" r="1" />
+        </svg>
+      );
+
     case 'PhoneCall':
       // Interfonia / Vídeo Porteiro
       return (

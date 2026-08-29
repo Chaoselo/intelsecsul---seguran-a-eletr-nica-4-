@@ -115,6 +115,11 @@ export const PortaoEletronicoPage: React.FC = () => {
           answer: 'Motores com sistema de bateria reserva continuam funcionando por um período mesmo sem energia elétrica; também é possível destravar o motor manualmente.',
         },
       ]}
+      crossLink={{
+        text: 'Precisa automatizar uma porta comercial de vidro, seccional ou de galpão?',
+        linkText: 'Veja Portas Automáticas',
+        url: '/servicos/portas-automaticas/',
+      }}
       ctaFinal={{
         title: 'Peça um orçamento gratuito para portão eletrônico',
         text: 'Avaliamos o portão e indicamos a melhor solução de automação ou manutenção.',
