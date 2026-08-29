@@ -31,6 +31,10 @@ export default defineConfig(() => {
           headless: true,
           renderAfterTime: 500,
           args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
+          // Usa o Chrome instalado pela integração "netlify-plugin-chromium".
+          // Em ambiente local (onde CHROME_PATH não existe), cai no comportamento
+          // padrão do Puppeteer, que já sabe localizar o Chrome baixado localmente.
+          executablePath: process.env.CHROME_PATH || undefined,
         }),
       }),
     ],
