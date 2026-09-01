@@ -57,7 +57,7 @@ function resolveFullImageUrl(url?: string): string {
 
 export const LOCAL_BUSINESS_SCHEMA = {
   "@context": "https://schema.org",
-  "@type": "SecurityService",
+  "@type": "HomeAndConstructionBusiness",
   "@id": "https://intelsecsul.com.br/#organization",
   "name": "IntelSec Sul - Segurança Eletrônica",
   "legalName": "IntelSec Sul Segurança Eletrônica e Tecnologia",
@@ -84,25 +84,6 @@ export const LOCAL_BUSINESS_SCHEMA = {
     "opens": "08:00",
     "closes": "18:00"
   },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": siteConfig.googleRating,
-    "reviewCount": siteConfig.googleReviewCount,
-    "bestRating": "5"
-  },
-  "review": TESTIMONIALS_LIST.map((item) => ({
-    "@type": "Review",
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": item.rating,
-      "bestRating": "5"
-    },
-    "author": {
-      "@type": "Person",
-      "name": item.author
-    },
-    "reviewBody": item.content
-  })),
   "areaServed": [
     { "@type": "City", "name": "Curitiba" },
     { "@type": "City", "name": "Pinhais" },
