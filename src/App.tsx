@@ -37,13 +37,7 @@ import { ComparativosHubPage } from './pages/ComparativosHubPage';
 import { ComparativoCompraLocacaoPage } from './pages/ComparativoCompraLocacaoPage';
 import { ComparativoVerisurePage } from './pages/ComparativoVerisurePage';
 import { BlogHubPage } from './pages/BlogHubPage';
-import { ComoEscolherSistemaPage } from './pages/blog/ComoEscolherSistemaPage';
-import { SegurancaCondominiosPage } from './pages/blog/SegurancaCondominiosPage';
-import { SegurancaEmpresasPage } from './pages/blog/SegurancaEmpresasPage';
-import { ChecklistViajarPage } from './pages/blog/ChecklistViajarPage';
-import { PortaoEletronicoNaoAbreFechaPage } from './pages/blog/PortaoEletronicoNaoAbreFechaPage';
-import { CercaEletricaConcertinaDiferencaPage } from './pages/blog/CercaEletricaConcertinaDiferencaPage';
-import { CameraComFioOuWifiPage } from './pages/blog/CameraComFioOuWifiPage';
+import { BlogPostPage } from './pages/blog/BlogPostPage';
 import { CuritibaPage } from './pages/cities/CuritibaPage';
 import { PinhaisPage } from './pages/cities/PinhaisPage';
 import { SaoJoseDosPinhaisPage } from './pages/cities/SaoJoseDosPinhaisPage';
@@ -159,13 +153,7 @@ export default function App() {
 
             {/* Blog Routes */}
             <Route path="/blog" element={<BlogHubPage />} />
-            <Route path="/blog/como-escolher-sistema-de-seguranca" element={<ComoEscolherSistemaPage />} />
-            <Route path="/blog/seguranca-eletronica-para-condominios" element={<SegurancaCondominiosPage />} />
-            <Route path="/blog/seguranca-para-empresas-e-industrias" element={<SegurancaEmpresasPage />} />
-            <Route path="/blog/checklist-seguranca-antes-de-viajar" element={<ChecklistViajarPage />} />
-            <Route path="/blog/portao-eletronico-nao-abre-ou-nao-fecha" element={<PortaoEletronicoNaoAbreFechaPage />} />
-            <Route path="/blog/cerca-eletrica-x-concertina-diferenca" element={<CercaEletricaConcertinaDiferencaPage />} />
-            <Route path="/blog/camera-com-fio-ou-wifi-qual-escolher" element={<CameraComFioOuWifiPage />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
 
             <Route path="/contato" element={<ContatoPage />} />
 

@@ -1,3 +1,5 @@
+import { BLOG_ARTICLES } from './data/blogArticles';
+
 export const BASE_URL = 'https://intelsecsul.com.br';
 
 export const PRERENDER_ROUTES: string[] = [
@@ -44,13 +46,7 @@ export const PRERENDER_ROUTES: string[] = [
   "/comparativos/compra-x-locacao-de-equipamentos",
   "/comparativos/intelsecsul-x-verisure",
   "/blog",
-  "/blog/como-escolher-sistema-de-seguranca",
-  "/blog/seguranca-eletronica-para-condominios",
-  "/blog/seguranca-para-empresas-e-industrias",
-  "/blog/checklist-seguranca-antes-de-viajar",
-  "/blog/portao-eletronico-nao-abre-ou-nao-fecha",
-  "/blog/cerca-eletrica-x-concertina-diferenca",
-  "/blog/camera-com-fio-ou-wifi-qual-escolher",
+  ...BLOG_ARTICLES.map(article => `/blog/${article.slug}`),
   "/contato"
 ];
 

@@ -107,7 +107,7 @@ export const BlogHubPage: React.FC = () => {
 
                   {/* Title */}
                   <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-[#00C5FF] transition-colors mb-3 leading-snug">
-                    <Link to={article.slug}>
+                    <Link to={`/blog/${article.slug}`}>
                       {article.h1}
                     </Link>
                   </h3>
@@ -121,7 +121,7 @@ export const BlogHubPage: React.FC = () => {
                 {/* Read button link */}
                 <div className="pt-4 border-t border-slate-800/80">
                   <Link
-                    to={article.slug}
+                    to={`/blog/${article.slug}`}
                     className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#00C5FF] group-hover:text-white transition-colors"
                   >
                     <span>Ler artigo completo</span>
