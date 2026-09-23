@@ -5,6 +5,7 @@ import { COMPANY_INFO, SERVICES_LIST } from '../constants';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
 import { useDocumentMeta, buildBreadcrumbSchema } from '../hooks/useDocumentMeta';
 import { getWhatsAppUrl } from '../utils/whatsapp';
+import { formatPublishedDate, isValidPublishedDate } from '../utils/formatDate';
 
 export interface BlogSection {
   h2: string;
@@ -42,7 +43,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
   title,
   metaDescription,
   h1,
-  publishedDate = '[DATA DE PUBLICAÇÃO]',
+  publishedDate,
   category = 'Segurança Eletrônica',
   readTime = '4 min de leitura',
   intro,
@@ -98,7 +99,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
     }
   };
 
-  if (publishedDate && publishedDate !== '[DATA DE PUBLICAÇÃO]') {
+  if (isValidPublishedDate(publishedDate)) {
     articleSchema["datePublished"] = publishedDate;
   }
 
@@ -151,11 +152,15 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
             <span className="px-3 py-1 rounded-full bg-[#0091FF]/10 text-[#00C5FF] font-semibold border border-[#0091FF]/30">
               {category}
             </span>
-            <div className="flex items-center gap-1.5 text-slate-400">
-              <Calendar className="w-3.5 h-3.5 text-slate-500" />
-              <span>{publishedDate}</span>
-            </div>
-            <span className="text-slate-700">•</span>
+            {formatPublishedDate(publishedDate) && (
+              <>
+                <div className="flex items-center gap-1.5 text-slate-400">
+                  <Calendar className="w-3.5 h-3.5 text-slate-500" />
+                  <span>{formatPublishedDate(publishedDate)}</span>
+                </div>
+                <span className="text-slate-700">•</span>
+              </>
+            )}
             <div className="flex items-center gap-1.5 text-slate-400">
               <Clock className="w-3.5 h-3.5 text-slate-500" />
               <span>{readTime}</span>

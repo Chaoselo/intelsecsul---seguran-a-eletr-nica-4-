@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { BLOG_ARTICLES } from '../data/blogArticles';
 import { COMPANY_INFO } from '../constants';
+import { formatPublishedDate } from '../utils/formatDate';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
 import { useDocumentMeta, buildBreadcrumbSchema } from '../hooks/useDocumentMeta';
 
@@ -93,11 +94,15 @@ export const BlogHubPage: React.FC = () => {
                       {article.category}
                     </span>
                     <div className="flex items-center gap-3 text-slate-400">
-                      <div className="flex items-center gap-1">
-                        <Calendar className="w-3 h-3 text-slate-500" />
-                        <span>{article.publishedDate}</span>
-                      </div>
-                      <span>•</span>
+                      {formatPublishedDate(article.publishedDate) && (
+                        <>
+                          <div className="flex items-center gap-1">
+                            <Calendar className="w-3 h-3 text-slate-500" />
+                            <span>{formatPublishedDate(article.publishedDate)}</span>
+                          </div>
+                          <span>•</span>
+                        </>
+                      )}
                       <div className="flex items-center gap-1">
                         <Clock className="w-3 h-3 text-slate-500" />
                         <span>{article.readTime}</span>

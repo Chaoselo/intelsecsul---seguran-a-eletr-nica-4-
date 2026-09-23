@@ -50,7 +50,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     h1: 'Como escolher o sistema de segurança ideal para sua casa ou empresa',
     category: 'Guia Prático',
     readTime: '4 min de leitura',
-    publishedDate: '[DATA DE PUBLICAÇÃO]',
+    publishedDate: '2026-08-28',
     summary: 'Com tantas opções disponíveis — câmeras, alarme monitorado, cerca elétrica, controle de acesso — é comum sentir dificuldade para saber por onde começar. Este guia ajuda a organizar a decisão em passos simples.',
     intro: 'Com tantas opções disponíveis — câmeras, alarme monitorado, cerca elétrica, controle de acesso — é comum sentir dificuldade para saber por onde começar. Este guia ajuda a organizar a decisão em passos simples.',
     sections: [
@@ -104,7 +104,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     h1: 'Segurança eletrônica para condomínios: o que considerar antes de instalar',
     category: 'Condomínios',
     readTime: '5 min de leitura',
-    publishedDate: '[DATA DE PUBLICAÇÃO]',
+    publishedDate: '2026-08-28',
     summary: 'Condomínios têm necessidades diferentes de uma residência isolada — várias unidades, áreas comuns, portaria e um fluxo maior de pessoas e veículos circulando todos os dias.',
     intro: 'Condomínios têm necessidades diferentes de uma residência isolada — várias unidades, áreas comuns, portaria e um fluxo maior de pessoas e veículos circulando todos os dias.',
     sections: [
@@ -144,7 +144,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     h1: 'Segurança para empresas e indústrias: cuidados no projeto de CFTV e controle de acesso',
     category: 'Empresas & Indústrias',
     readTime: '4 min de leitura',
-    publishedDate: '[DATA DE PUBLICAÇÃO]',
+    publishedDate: '2026-08-28',
     summary: 'Empresas e indústrias lidam com perímetros maiores, fluxo de funcionários e visitantes, e muitas vezes ativos de alto valor, o que exige um projeto de segurança mais robusto do que o residencial.',
     intro: 'Empresas e indústrias lidam com perímetros maiores, fluxo de funcionários e visitantes, e muitas vezes ativos de alto valor, o que exige um projeto de segurança mais robusto do que o residencial.',
     sections: [
@@ -184,7 +184,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     h1: 'Checklist de segurança para deixar a casa protegida antes de viajar',
     category: 'Dicas de Segurança',
     readTime: '3 min de leitura',
-    publishedDate: '[DATA DE PUBLICAÇÃO]',
+    publishedDate: '2026-08-28',
     summary: 'Períodos de viagem costumam ser momentos de maior vulnerabilidade para residências, já que o imóvel fica sem ninguém por dias ou semanas. Alguns cuidados simples ajudam a reduzir os riscos.',
     intro: 'Períodos de viagem costumam ser momentos de maior vulnerabilidade para residências, já que o imóvel fica sem ninguém por dias ou semanas. Alguns cuidados simples ajudam a reduzir os riscos.',
     sections: [
@@ -817,6 +817,337 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     ctaFinal: {
       title: 'Precisa avaliar seu sistema de segurança ou tirar dúvidas sobre manutenção?',
       text: 'A Intelsecsul faz essa avaliação em Curitiba e Região Metropolitana, identificando o estado dos equipamentos e recomendando o modelo mais adequado ao seu perfil.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
+  {
+    id: 'alarme-disparando-sozinho-causas-reduzir-falsos-alarmes',
+    slug: 'alarme-disparando-sozinho-causas-reduzir-falsos-alarmes',
+    title: 'Alarme Disparando Sozinho: Causas e Como Reduzir Falsos Alarmes | Intelsecsul',
+    metaTitle: 'Alarme Disparando Sozinho: Causas e Como Reduzir Falsos Alarmes | Intelsecsul',
+    metaDescription: 'Alarme disparando sozinho? Veja as causas mais comuns — sensores mal calibrados, bateria fraca, interferências e erros de operação — e aprenda como reduzir falsos alarmes no seu sistema.',
+    h1: 'Alarme disparando sozinho: causas mais comuns e como reduzir falsos alarmes',
+    category: 'Alarmes',
+    readTime: '9 min de leitura',
+    publishedDate: '2026-09-22',
+    summary: 'Um alarme disparando sozinho acontece quando o sistema é acionado sem uma tentativa real de invasão. Na grande maioria dos casos, a causa é simples: sensores mal calibrados, baterias fracas, interferências eletromagnéticas ou erros de operação. Segundo a ABESE, cerca de 95% dos chamados de alarme são falsos.',
+    intro: 'Um alarme disparando sozinho — ou falso alarme — acontece quando o sistema é acionado sem uma tentativa real de invasão ou emergência. Na grande maioria dos casos, o problema não é uma falha grave do equipamento, mas sim fatores simples: sensores mal calibrados ou posicionados de forma inadequada, baterias fracas, interferências eletromagnéticas, variações climáticas, sujeira acumulada nos sensores ou erros humanos na operação. Segundo a Associação Brasileira das Empresas de Sistemas Eletrônicos de Segurança (ABESE), cerca de 95% dos chamados de alarme em residências e empresas são falsos.',
+    sections: [
+      {
+        h2: 'Causas relacionadas aos sensores',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">1. Sensores mal calibrados ou posicionados</h3>
+            <p>Sensores com sensibilidade excessiva ou instalados em locais inadequados reagem a movimentos irrelevantes — cortinas balançando, sombras, animais domésticos, correntes de ar ou até reflexos de luz. É a causa mais comum de falsos alarmes em sistemas residenciais.</p>
+            <div>
+              <p className="font-bold text-white mb-2">Sintomas típicos:</p>
+              <ul className="space-y-2 list-disc list-inside">
+                <li>Disparos em horários específicos (madrugada, quando o vento aumenta; ou à tarde, quando o sol incide diretamente no sensor).</li>
+                <li>Disparos que coincidem com a movimentação de animais de estimação.</li>
+                <li>Sensores que disparam mesmo sem ninguém na área monitorada.</li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-bold text-white mb-2">Como diagnosticar e resolver:</p>
+              <ul className="space-y-2 list-disc list-inside">
+                <li><strong className="text-white">Verifique o posicionamento.</strong> Sensores PIR devem ser instalados a 2-2,5 metros de altura, longe de janelas com sol direto, cortinas, fontes de calor e objetos que balancem.</li>
+                <li><strong className="text-white">Reduza a sensibilidade.</strong> Áreas de alta circulação podem precisar de ajuste mais baixo.</li>
+                <li><strong className="text-white">Ative a função pet-immune (se aplicável).</strong> Ignora movimentos de animais até 20-40 kg.</li>
+                <li><strong className="text-white">Limpe os sensores regularmente.</strong> Poeira e teias na lente prejudicam a leitura e causam disparos falsos.</li>
+              </ul>
+            </div>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">2. Sujeira, insetos ou teias nos sensores</h3>
+            <p>Aranhas, formigas e outros insetos sobre a lente de um sensor PIR são uma causa clássica de falsos alarmes. Uma teia de aranha balançando com o vento também pode ser interpretada como movimento.</p>
+            <p><strong className="text-white">Como resolver:</strong> limpeza periódica dos sensores e repelente de insetos ao redor da carcaça (sem tocar na lente). Em casos recorrentes, vede frestas na instalação.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">3. Baterias fracas ou antigas</h3>
+            <p>Sensores sem fio com bateria fraca enviam sinais instáveis à central, resultando em acionamentos indevidos.</p>
+            <div>
+              <p className="font-bold text-white mb-2">Sintomas típicos:</p>
+              <ul className="space-y-2 list-disc list-inside">
+                <li>Disparos intermitentes, sem padrão claro.</li>
+                <li>Avisos de "bateria fraca" no painel ou aplicativo.</li>
+                <li>Sensores que param de funcionar logo após um disparo falso.</li>
+              </ul>
+            </div>
+            <p><strong className="text-white">Como resolver:</strong> substitua as baterias de todos os sensores a cada 12-18 meses, mesmo que ainda pareçam funcionar.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causas relacionadas à central e à infraestrutura',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">4. Interferências eletromagnéticas</h3>
+            <p>Equipamentos eletrônicos próximos ao alarme — roteadores Wi-Fi, babás eletrônicas, micro-ondas, motores elétricos — podem interferir no sinal entre sensores e central.</p>
+            <p><strong className="text-white">Como resolver:</strong> mantenha a central e os sensores afastados de fontes de interferência. Em sistemas com fio, a fiação deve ser adequadamente blindada.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">5. Falhas na fiação (sistemas com fio)</h3>
+            <p>Conexões soltas, fios danificados ou umidade nos contatos podem gerar sinais irregulares e disparos inesperados, especialmente em imóveis mais antigos.</p>
+            <p><strong className="text-white">Como resolver:</strong> uma inspeção profissional da fiação identifica emendas mal feitas, cabos rompidos ou conectores oxidados.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">6. Variações climáticas e correntes de ar</h3>
+            <p>Mudanças bruscas de temperatura e ventos fortes afetam principalmente sensores em áreas externas ou semiabertas não adequados para esse ambiente.</p>
+            <p><strong className="text-white">Como resolver:</strong> use sensores específicos para áreas externas e reposicione sensores internos próximos a janelas muito ventiladas.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">7. Defeito técnico na central ou nos sensores</h3>
+            <p>Em equipamentos com muitos anos sem manutenção preventiva, o disparo constante pode indicar um defeito real.</p>
+            <p><strong className="text-white">Como resolver:</strong> isole o sensor problemático (desabilite a zona no painel). Se os disparos cessarem, o sensor precisa ser trocado; se a central continuar disparando mesmo sem sensores ativos, o problema está nela.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causas relacionadas ao uso e à operação',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">8. Erro humano na operação</h3>
+            <p>Esta é a maior causa isolada de falsos alarmes. Esquecer de desativar o alarme, digitar o código errado, deixar uma janela entreaberta ou não treinar visitantes são erros comuns.</p>
+            <div>
+              <p className="font-bold text-white mb-2">Como reduzir:</p>
+              <ul className="space-y-2 list-disc list-inside">
+                <li>Treine todos os usuários do sistema — familiares, funcionários, diaristas, visitantes frequentes.</li>
+                <li>Aumente o tempo de atraso de entrada/saída para dar margem de desarmar sem pressa.</li>
+                <li>Use o modo "Home" em vez de "Away" quando estiver em casa — desativa sensores internos, mantém os perimetrais.</li>
+                <li>Mantenha portas e janelas bem fechadas antes de armar o sistema.</li>
+              </ul>
+            </div>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">9. Animais de estimação e objetos em movimento</h3>
+            <p>Pets circulando, cortinas balançando ou objetos pendurados próximos a sensores de movimento podem causar disparos.</p>
+            <p><strong className="text-white">Como resolver:</strong> use sensores pet-immune, reposicione sensores mais altos, ou substitua por sensores de porta/janela nos ambientes onde os pets circulam.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Como reduzir falsos alarmes: passo a passo',
+        content: (
+          <ol className="space-y-2 list-decimal list-inside">
+            <li>Ajuste a sensibilidade dos sensores conforme o ambiente de cada um.</li>
+            <li>Substitua baterias preventivamente a cada 12-18 meses.</li>
+            <li>Limpe os sensores periodicamente (a cada 3-6 meses).</li>
+            <li>Treine todos os usuários do sistema.</li>
+            <li>Aumente os tempos de atraso de entrada e saída.</li>
+            <li>Verifique portas e janelas antes de armar o sistema.</li>
+            <li>Contrate manutenção preventiva profissional — identifica problemas antes de virarem disparos recorrentes.</li>
+          </ol>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico especializado',
+        content: (
+          <div className="space-y-4">
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Sensor específico disparando repetidamente após limpeza e ajuste.</li>
+              <li>Central reiniciando ou disparando sozinha sem sensores ativos.</li>
+              <li>Sistema com fio apresentando falhas intermitentes.</li>
+              <li>Falsos alarmes recorrentes em condomínios.</li>
+              <li>Sistema com mais de 3 anos sem manutenção preventiva.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de alarmes em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>Alarme disparando sozinho é um problema incômodo, mas quase sempre tem solução simples. As causas mais comuns — sensores mal calibrados, baterias fracas, sujeira, interferências e erros de operação — podem ser diagnosticadas e corrigidas com verificações básicas.</p>
+            <p>O que resolve o problema no longo prazo é a combinação de instalação profissional, manutenção preventiva regular e uso consciente do sistema. Um alarme que "chora lobo" demais acaba sendo ignorado quando um evento real acontece. Se você já resolveu os falsos alarmes e quer manter todo o sistema — câmeras, cercas, portões e alarme — sem surpresas, vale considerar um <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">contrato de manutenção preventiva</Link>.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Alarme disparando sozinho pode ser sinal de invasão?',
+        answer: 'Não, na grande maioria dos casos é falso alarme — causado por sensores mal ajustados, baterias fracas, interferências ou erros de operação. Se vier acompanhado de outros sinais (janela arrombada, objetos fora de lugar), aí sim pode indicar invasão real — nesse caso, acione a polícia.',
+      },
+      {
+        question: 'Quantos falsos alarmes por ano são considerados normais?',
+        answer: 'O ideal é zero. Um sistema bem instalado, configurado e mantido não deve disparar sem motivo. Disparos recorrentes indicam um problema que precisa ser corrigido.',
+      },
+      {
+        question: 'Como desligar o alarme quando ele dispara sozinho?',
+        answer: 'Digite o código de desarme no teclado. Se for monitorado, informe a central de monitoramento que é um falso alarme usando sua senha de cancelamento. Nunca saia correndo para verificar a origem do barulho.',
+      },
+      {
+        question: 'Alarme sem fio dispara mais do que alarme com fio?',
+        answer: 'Não necessariamente. A diferença está na manutenção: sensores sem fio dependem de bateria, sensores com fio dependem da integridade da fiação. Ambos exigem manutenção preventiva.',
+      },
+      {
+        question: 'Existe multa para quem tem muitos falsos alarmes?',
+        answer: 'Em algumas cidades, sim — projetos de lei e regulamentos municipais preveem advertência e multa para proprietários com chamados falsos recorrentes.',
+      },
+    ],
+    internalLink: {
+      text: 'Seu sistema de alarme precisa de instalação ou revisão técnica?',
+      url: '/servicos/instalacao-de-alarmes/',
+      linkText: 'Ver Instalação de Alarmes',
+    },
+    whatsappMessage: 'Vim do blog e meu alarme está disparando sozinho',
+    ctaFinal: {
+      title: 'Seu alarme está disparando sozinho? Precisa de ajuda para identificar a causa?',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de sistemas de alarme em Curitiba e Região Metropolitana, identificando as causas dos falsos alarmes e recomendando as correções necessárias.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
+  {
+    id: 'interfone-nao-toca-no-apartamento-causas-testes',
+    slug: 'interfone-nao-toca-no-apartamento-causas-testes',
+    title: 'Interfone Não Toca no Apartamento: Causas e Sequência de Testes | Intelsecsul',
+    metaTitle: 'Interfone Não Toca no Apartamento: Causas e Sequência de Testes | Intelsecsul',
+    metaDescription: 'Interfone não toca no apartamento? Veja as causas mais comuns — defeito no aparelho, fonte, cabeamento ou central — e siga a sequência de testes certa para identificar o problema.',
+    h1: 'Interfone não toca no apartamento: causas e sequência de testes',
+    category: 'Interfonia',
+    readTime: '10 min de leitura',
+    publishedDate: '2026-09-22',
+    summary: 'Quando o interfone não toca no apartamento, o problema pode estar em quatro pontos: no aparelho interno, na fonte de alimentação da central, no cabeamento do ramal, ou na própria central do condomínio. A ordem de investigação pode ser padronizada — comece pelo mais simples e avance até a central.',
+    intro: 'Quando o interfone não toca no apartamento, o problema pode estar em quatro pontos distintos do sistema: no aparelho interno (fone ou monitor), na fonte de alimentação da central, no cabeamento que liga a central ao seu ramal, ou na própria central de interfonia do condomínio. A boa notícia é que a ordem de investigação pode ser padronizada — e na maioria dos casos, o morador ou o síndico consegue identificar em qual desses quatro pontos está a falha antes mesmo de chamar um técnico. A lógica é simples: comece pelo mais fácil e mais próximo de você, e vá avançando em direção à central.',
+    sections: [
+      {
+        h2: 'Triagem rápida: é só o seu apartamento ou o prédio todo?',
+        content: (
+          <div className="space-y-4">
+            <p>Antes de qualquer teste no seu aparelho, a primeira verificação é coletiva. Converse com um vizinho, pergunte se o interfone dele está funcionando normalmente. Essa informação muda completamente o diagnóstico:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Se apenas o seu apartamento não toca:</strong> o problema está no seu aparelho interno, no seu ramal ou na fiação privativa do imóvel. A central do condomínio está funcionando — o problema é pontual no seu ponto.</li>
+              <li><strong className="text-white">Se vários apartamentos (ou todos) não tocam:</strong> o problema está na central de interfonia ou na fonte de alimentação da central. Não faz sentido mexer no seu aparelho — a solução exige um técnico na casa de máquinas.</li>
+            </ul>
+            <p>Essa distinção evita que você desmonte o seu interfone à toa quando o defeito está na central — e evita que o síndico chame uma equipe para a central quando o problema é apenas um fone com defeito em um único apartamento.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Verificações no aparelho interno (o que o morador pode checar)',
+        content: (
+          <div className="space-y-4">
+            <p>Se o problema é só no seu apartamento, comece pelo que está na sua mão. Estas verificações são simples, seguras e resolvem boa parte dos casos.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Volume de campainha no mínimo ou no mudo</h3>
+            <p>A causa mais banal — e uma das mais comuns — é o volume do toque estar no mínimo ou no modo silencioso. Verifique se o volume está audível e se o aparelho não está em modo silencioso.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Fone fora do gancho ou gancho travado</h3>
+            <p>Se o fone estiver mal encaixado, a linha do seu ramal fica "ocupada" e a portaria não consegue completar a chamada. Verifique se o fone está bem encaixado e se o gancho não está travado ou quebrado.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Aparelho desligado ou sem energia</h3>
+            <p>Vídeo-porteiros e alguns interfones têm fonte de alimentação própria. Se estiver desligada, queimada ou com mau contato, o aparelho não recebe a chamada. Verifique se o LED do aparelho está aceso e a fonte conectada corretamente.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Teste de compatibilidade (aparelho novo ou trocado)</h3>
+            <p>Se você trocou o interfone recentemente, verifique se o modelo é compatível com a central e se a chave Tone/Pulse está na posição correta. Em centrais digitais (tone), um aparelho configurado para pulse não completa chamadas.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Testes no ramal e no cabeamento (morador ou técnico)',
+        content: (
+          <div className="space-y-4">
+            <p>Se as verificações no aparelho não resolveram, o próximo suspeito é o ramal — o par de fios que liga a central ao seu apartamento. Problemas aqui são comuns, especialmente em prédios com mais de 10 anos de uso.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Sinais de problema no ramal ou na fiação</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>O interfone não toca, mas quando você tira o fone do gancho, a portaria te ouve (ou você ouve a portaria) — a linha está viva, mas o sinal de ring não chega.</li>
+              <li>O interfone funciona intermitentemente — às vezes toca, às vezes não.</li>
+              <li>Você ouve chiado, zumbido ou voz baixa durante a conversa, mesmo com o volume no máximo.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que causa defeito no ramal</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Oxidação nos conectores</strong> — umidade que penetra nos bornes ao longo dos anos impede a passagem do sinal.</li>
+              <li><strong className="text-white">Fio rompido ou emenda mal feita</strong> — na tubulação ou na caixa de distribuição do andar.</li>
+              <li><strong className="text-white">Interferência de outros pares</strong> — em prédios antigos, pares de fios cruzados ou em curto podem afetar o sinal.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Teste que o morador pode fazer</h3>
+            <p>Desconecte o fone do interfone da caixa de conexão e verifique visualmente se os fios estão bem presos e sem sinais de oxidação (cor esverdeada ou escura no cobre). Não mexa nos fios da tubulação — apenas nos bornes de conexão do seu aparelho. Se estiverem soltos ou oxidados, um técnico pode limpar e reconectar.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Testes na central e na fonte (síndico ou técnico)',
+        content: (
+          <div className="space-y-4">
+            <p>Se vários apartamentos estão com o mesmo problema, a investigação se volta para a central de interfonia e para a fonte de alimentação. Estes testes exigem multímetro e conhecimento técnico, e são de responsabilidade do condomínio.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">O que verificar na fonte</h3>
+            <p>A fonte de alimentação da central gera a tensão de ring (GTOQ) — o sinal elétrico que faz o telefone tocar. Na maioria das centrais Intelbras (linha CP), a tensão correta entre o conector GTOQ e o GND é de 100 a 110 VDC (alguns modelos aceitam até 120 VDC). Se a medição estiver muito abaixo disso (ou zerada), o problema está na fonte.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que verificar na central</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Fusíveis da central:</strong> um fusível queimado pode interromper o sinal de ring para todos os ramais.</li>
+              <li><strong className="text-white">Placas de ramal:</strong> em centrais modulares, cada placa atende um grupo de ramais. Trocar a placa de posição com outra é um teste útil para isolar o defeito.</li>
+              <li><strong className="text-white">Programação da central:</strong> verifique se não foi reprogramada acidentalmente — funções como "não perturbe" em um ramal podem impedir chamadas.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Teste com "Hot Portaria"</h3>
+            <p>Algumas centrais Intelbras têm a função Hot Portaria, que permite que qualquer ramal, ao retirar o telefone do gancho, disque diretamente para a portaria. Se o ramal consegue chamar a portaria mas não toca quando a portaria chama, o problema é especificamente no circuito de ring — e não na fiação de voz.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Sequência de testes passo a passo',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[640px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Passo</th>
+                  <th className="text-left p-3 text-white font-bold">O que testar</th>
+                  <th className="text-left p-3 text-white font-bold">Quem pode fazer</th>
+                  <th className="text-left p-3 text-white font-bold">Se o teste falhar</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">1</td><td className="p-3">Pergunte a um vizinho: o interfone dele toca?</td><td className="p-3">Morador</td><td className="p-3">Se não, o problema é coletivo (central/fonte)</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">2</td><td className="p-3">Volume da campainha está audível? Aparelho está no mudo?</td><td className="p-3">Morador</td><td className="p-3">Ajuste o volume ou desative o mudo</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">3</td><td className="p-3">Fone está bem encaixado no gancho?</td><td className="p-3">Morador</td><td className="p-3">Reencaixe ou verifique o gancho</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">4</td><td className="p-3">A fonte do aparelho (se houver) está ligada?</td><td className="p-3">Morador</td><td className="p-3">Reconecte ou troque a fonte</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">5</td><td className="p-3">Fios no borne do aparelho estão soltos ou oxidados?</td><td className="p-3">Morador (com cuidado)</td><td className="p-3">Limpe os contatos ou chame técnico</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">6</td><td className="p-3">A tensão GTOQ na fonte da central está entre 100-110 VDC?</td><td className="p-3">Síndico / Técnico</td><td className="p-3">Troque a placa fonte</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">7</td><td className="p-3">Fusíveis da central estão íntegros?</td><td className="p-3">Síndico / Técnico</td><td className="p-3">Substitua os fusíveis</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">8</td><td className="p-3">Placas de ramal estão funcionando?</td><td className="p-3">Técnico</td><td className="p-3">Substitua a placa defeituosa</td></tr>
+                <tr><td className="p-3 font-semibold text-white">9</td><td className="p-3">O ramal consegue chamar a portaria (Hot Portaria)?</td><td className="p-3">Técnico</td><td className="p-3">Se sim, o problema é só no ring; se não, é fiação</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico especializado',
+        content: (
+          <div className="space-y-4">
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Vários apartamentos sem toque — mexer na central ou fonte sem qualificação pode danificar o sistema inteiro.</li>
+              <li>Suspeita de fio rompido na tubulação — exige ferramentas e acesso à infraestrutura do prédio.</li>
+              <li>Central travada ou com programação alterada.</li>
+              <li>Aparelho que não toca mas a portaria ouve você — indica problema no circuito de ring, precisa de teste com multímetro.</li>
+              <li>Sistema com mais de 5 anos sem manutenção preventiva.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de interfonia em Curitiba e Região Metropolitana, tanto para moradores (ramal individual) quanto para síndicos (central e sistema coletivo).</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>Interfone que não toca no apartamento tem, na grande maioria dos casos, uma causa identificável — e a triagem correta evita gastos desnecessários e chamados técnicos precipitados. A regra de ouro: primeiro descubra se o problema é só do seu apartamento ou do prédio todo.</p>
+            <p>Para síndicos, uma sequência de testes na central e na fonte identifica com precisão onde está o defeito — e, para condomínios que já tiveram esse tipo de imprevisto, um <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">contrato de manutenção preventiva</Link> cobrindo interfonia evita que o sistema pare de vez sem aviso.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'O interfone não toca, mas quando atendo a portaria me ouve. O que pode ser?',
+        answer: 'Isso indica que a fiação de voz está funcionando, mas o sinal de ring não está chegando ao seu aparelho. As causas mais prováveis são: defeito no circuito de ring do aparelho, tensão GTOQ baixa na fonte da central (se afetar vários ramais) ou problema no par de fios do seu ramal.',
+      },
+      {
+        question: 'O interfone não toca e nem a portaria me ouve. O que fazer?',
+        answer: 'O problema é mais amplo: pode ser o fone com defeito, o ramal desconectado ou a central sem alimentação. Comece verificando se o fone está bem encaixado e se a fonte está ligada. Verifique com um vizinho se o interfone dele funciona para isolar se é só no seu apartamento ou no prédio todo.',
+      },
+      {
+        question: 'Quanto custa consertar um interfone que não toca?',
+        answer: 'Depende da causa. Um reparo simples no aparelho (limpeza de contatos, troca de fone) pode custar a partir de R$ 100. Já a substituição da placa fonte da central, quando o problema é coletivo, tem custo médio mais elevado — em condomínios, reparos na central costumam ficar na faixa de R$ 1.000, podendo chegar a R$ 4.500 em casos de substituição de equipamentos.',
+      },
+      {
+        question: 'O interfone de um apartamento específico não toca. O condomínio é responsável pelo conserto?',
+        answer: 'Em geral, a central e a fiação comum são de responsabilidade do condomínio. Já o aparelho interno costuma ser de responsabilidade do morador. A fiação privativa pode ser de um ou de outro, dependendo da convenção do condomínio — o ideal é consultar o síndico antes de decidir quem paga.',
+      },
+    ],
+    internalLink: {
+      text: 'Seu interfone não está tocando ou precisa de manutenção na central?',
+      url: '/servicos/interfonia/',
+      linkText: 'Ver Interfonia',
+    },
+    whatsappMessage: 'Vim do blog e meu interfone não está tocando',
+    ctaFinal: {
+      title: 'Seu interfone não está tocando? Precisa de ajuda para identificar o problema?',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de interfonia em Curitiba e Região Metropolitana, para moradores, síndicos e administradoras de condomínio.',
       buttonText: 'Falar no WhatsApp agora',
     },
   },

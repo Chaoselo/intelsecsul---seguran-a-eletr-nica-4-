@@ -22,6 +22,53 @@ function sitemapPlugin() {
 }
 
 /**
+ * Trava de segurança: falha o build se existirem dois arquivos de código com o mesmo nome
+ * e extensões diferentes na pasta src (ex.: blogArticles.ts e blogArticles.tsx).
+ * Nesse caso o Vite usa só um deles, e o site publica conteúdo antigo SEM dar erro.
+ */
+function duplicateModuleGuardPlugin() {
+  return {
+    name: 'guard-duplicate-module-files',
+    apply: 'build' as const,
+    buildStart() {
+      const srcDir = path.resolve(__dirname, 'src');
+      const duplicates: string[] = [];
+
+      const walk = (dir: string) => {
+        const byName = new Map<string, string[]>();
+        for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+          const fullPath = path.join(dir, entry.name);
+          if (entry.isDirectory()) {
+            walk(fullPath);
+            continue;
+          }
+          const match = entry.name.match(/^(.+)\.(tsx?|jsx?|mts|mjs)$/);
+          if (!match) continue;
+          const files = byName.get(match[1]) ?? [];
+          files.push(entry.name);
+          byName.set(match[1], files);
+        }
+        for (const files of byName.values()) {
+          if (files.length > 1) {
+            duplicates.push(`${path.relative(__dirname, dir)}/  ->  ${files.join('  e  ')}`);
+          }
+        }
+      };
+
+      walk(srcDir);
+
+      if (duplicates.length > 0) {
+        throw new Error(
+          '[guard] Arquivos duplicados em src (mesmo nome, extensões diferentes). ' +
+            'Apague a versão antiga de cada par abaixo:\n  - ' +
+            duplicates.join('\n  - ')
+        );
+      }
+    },
+  };
+}
+
+/**
  * Garante que o Chrome exigido pela versão instalada do Puppeteer exista ANTES do prerender.
  * Se não existir (cache do Netlify vazio, postinstall pulado etc.), baixa automaticamente
  * a versão exata. Assim o build não depende de cache nem de plugins externos.
@@ -72,6 +119,7 @@ function ensureChromePlugin() {
 export default defineConfig(() => {
   return {
     plugins: [
+      duplicateModuleGuardPlugin(),
       react(),
       tailwindcss(),
       sitemapPlugin(),

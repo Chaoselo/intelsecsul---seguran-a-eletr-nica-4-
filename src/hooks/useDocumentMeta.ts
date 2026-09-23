@@ -12,7 +12,7 @@ export interface SEOOptions {
   jsonLdSchema?: Record<string, any> | Array<Record<string, any>>;
 }
 
-const DEFAULT_OG_IMAGE = 'https://intelsecsul.com.br/og-image.jpg';
+const DEFAULT_OG_IMAGE = 'https://intelsecsul.com.br/og-image.png';
 const DOMAIN = 'https://intelsecsul.com.br';
 
 export function normalizeCanonicalUrl(urlOrPath?: string): string {
