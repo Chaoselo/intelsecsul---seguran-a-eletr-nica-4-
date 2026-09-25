@@ -1151,4 +1151,320 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       buttonText: 'Falar no WhatsApp agora',
     },
   },
+  {
+    id: 'sistema-de-seguranca-parou-o-que-fazer',
+    slug: 'sistema-de-seguranca-parou-o-que-fazer',
+    title: 'Todo o Sistema de Segurança Parou: O Que Fazer e o Que Não Mexer | Intelsecsul',
+    metaTitle: 'Todo o Sistema de Segurança Parou: O Que Fazer e o Que Não Mexer | Intelsecsul',
+    metaDescription: 'Câmeras, alarme, portão e interfone pararam ao mesmo tempo? Veja o que desligar com segurança, o que não mexer de jeito nenhum e quando chamar um técnico especializado.',
+    h1: 'Todo o sistema de segurança parou: o que desligar, o que não mexer e quando chamar técnico',
+    category: 'Manutenção',
+    readTime: '9 min de leitura',
+    publishedDate: '2026-09-22',
+    summary: 'Quando câmeras, alarme, portão e interfone param ao mesmo tempo, a causa quase nunca é um defeito isolado em cada equipamento — geralmente é um ponto único de falha: a mesma alimentação elétrica, a mesma rede ou a mesma central de integração.',
+    intro: 'Quando câmeras, alarme, portão eletrônico, interfone e controle de acesso param de funcionar simultaneamente, a causa quase nunca é um defeito isolado em cada equipamento. O que acontece, na prática, é que esses sistemas compartilham pontos em comum: a mesma alimentação elétrica, a mesma rede ou a mesma central de integração. Isso significa que o problema provavelmente está em um ponto único de falha — e boa parte da triagem inicial pode ser feita com segurança por você, desde que respeitando limites claros do que não se deve fazer.',
+    sections: [
+      {
+        h2: 'Primeiro: o que fazer antes de qualquer coisa',
+        content: (
+          <div className="space-y-4">
+            <p>Antes de tocar em qualquer equipamento, siga esta ordem de verificações — do mais simples e seguro ao mais complexo.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">1. Verifique se o problema é geral ou setorial</h3>
+            <p>Pergunte a vizinhos, funcionários ou moradores: o sistema de outros imóveis ou áreas também parou? Se sim, a causa provavelmente é externa — queda de energia no bairro, manutenção da internet, ou problema na rede elétrica do condomínio. Se não, o problema está dentro do seu imóvel.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">2. Verifique o disjuntor do sistema de segurança</h3>
+            <p>A maioria dos sistemas tem um disjuntor dedicado no quadro de distribuição. Se ele desarmou, todos os equipamentos ligados a ele param ao mesmo tempo.</p>
+            <p><strong className="text-white">O que fazer:</strong> localize o disjuntor e verifique se está na posição "ON". Se estiver desarmado, rearme uma única vez. Se desarmar de novo, não insista — indica curto-circuito ou sobrecarga que exige um eletricista ou técnico especializado.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">3. Verifique a alimentação dos equipamentos principais</h3>
+            <p>Para cada equipamento, verifique se o LED de power está aceso:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">DVR/NVR:</strong> se o LED frontal estiver apagado, verifique a fonte e o cabo de força. Se as gravações pararem de aparecer sem energia visível, vale conferir também as <Link to="/blog/camera-fora-do-ar-causas-solucoes" className="text-white underline hover:text-slate-300">causas mais comuns de câmera fora do ar</Link>.</li>
+              <li><strong className="text-white">Central de alarme:</strong> se o teclado estiver apagado, a central perdeu alimentação principal — pode estar operando só na bateria de backup, sem sinal de sensores sem fio. Se o alarme por acaso continuar <Link to="/blog/alarme-disparando-sozinho-causas-reduzir-falsos-alarmes" className="text-white underline hover:text-slate-300">disparando sozinho</Link> depois de normalizado, vale investigar à parte.</li>
+              <li><strong className="text-white">Portão eletrônico:</strong> se o motor não responde e não há LED na central, a alimentação foi interrompida.</li>
+              <li><strong className="text-white">Interfone/portaria:</strong> se o monitor ou fone não acende, verifique a fonte do aparelho.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">4. Verifique se há sinal de queimado ou dano visível</h3>
+            <p>Cheiro de queimado, marcas escuras em tomadas, fontes deformadas ou cabos com isolamento derretido são sinais de alerta grave. Nesses casos, não ligue nada de volta e chame um profissional imediatamente — danos elétricos podem causar incêndio.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que NÃO fazer (e por que é importante)',
+        content: (
+          <div className="space-y-4">
+            <p>Em situações de urgência, a tentação de "mexer para ver se resolve" é grande — mas algumas ações podem piorar o problema, danificar equipamentos ou comprometer evidências de um evento real.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Não abra o DVR/NVR nem remova a tampa</h3>
+            <p>Não há peças reparáveis pelo usuário dentro do gravador, e abrir o equipamento anula a garantia. O interior retém carga elétrica mesmo após o desligamento — o risco de choque é real.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não desconecte o HD do DVR para "testar"</h3>
+            <p>O disco rígido contém as gravações — evidências em caso de furto, invasão ou acidente. Remover, formatar ou conectar a outro computador pode alterar metadados, quebrar a cadeia de custódia e tornar as imagens inutilizáveis em um processo judicial.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não formate o HD nem reinicie o sistema repetidamente</h3>
+            <p>Formatar apaga todas as gravações. Não importa se o sistema está lento ou travando — nunca formate como tentativa de solução. Reinícios repetidos podem corromper o sistema de arquivos do gravador.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não mexa na fiação elétrica além do disjuntor</h3>
+            <p>Se o disjuntor rearmou e desarmou de novo, não fique rearmando — indica defeito que precisa ser diagnosticado com multímetro por um profissional.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não desmonte sensores, câmeras ou centrais</h3>
+            <p>Sensores fazem parte de um sistema de zonas — mexer sem entender a programação da central pode desconfigurar todo o sistema, além de danificar placas e anular garantias.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Preservação de evidências: por que isso importa',
+        content: (
+          <div className="space-y-4">
+            <p>Se o sistema parou após um evento real — furto, tentativa de invasão, acidente —, as gravações do DVR/NVR podem ser a única prova disponível. Nesse cenário, preservar as evidências é tão importante quanto reparar o sistema.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">O que fazer para preservar as gravações</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Não desligue o DVR/NVR.</strong> Enquanto ligado, ele continua gravando.</li>
+              <li><strong className="text-white">Anote a data e a hora do evento.</strong> Essencial para localizar as gravações no HD.</li>
+              <li><strong className="text-white">Não exporte nem copie arquivos sem orientação.</strong> Sem os procedimentos adequados (hash, cadeia de custódia), o valor probatório pode ser comprometido.</li>
+              <li><strong className="text-white">Documente o estado do sistema.</strong> Fotos do DVR/NVR, conexões, LEDs e mensagens de erro ajudam o técnico e, em caso de perícia, comprovam o estado do equipamento.</li>
+              <li><strong className="text-white">Não formate, não apague, não sobrescreva.</strong> Se precisar preservar um período específico, a configuração do DVR deve ser feita por um técnico.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico especializado',
+        content: (
+          <div className="space-y-4">
+            <p>A triagem inicial (disjuntor, LEDs, alimentação) pode ser feita por você. Mas há cenários em que a intervenção profissional é obrigatória:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>🚨 O disjuntor rearmou e desarmou novamente — curto-circuito ou sobrecarga.</li>
+              <li>🚨 Há cheiro de queimado ou dano visível em fontes, tomadas, cabos ou equipamentos.</li>
+              <li>🚨 O DVR/NVR liga mas não dá imagem em nenhum monitor.</li>
+              <li>🚨 O sistema parou após queda de energia ou descarga elétrica (raio).</li>
+              <li>🚨 O sistema parou após um evento real — além do reparo, é preciso preservar evidências.</li>
+              <li>🚨 Vários equipamentos de sistemas diferentes pararam juntos e o disjuntor não resolveu.</li>
+              <li>🚨 Você não se sente seguro para fazer as verificações.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que o técnico vai verificar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Medição de tensão na fonte e nos pontos de alimentação.</li>
+              <li>Teste de continuidade nos cabos de rede e alimentação.</li>
+              <li>Verificação do HD do DVR/NVR (saúde do disco, setores defeituosos, espaço disponível).</li>
+              <li>Teste de firmware e possibilidade de recuperação sem perda de dados.</li>
+              <li>Inspeção da central de alarme — bateria de backup, fusíveis, zonas.</li>
+              <li>Verificação da integração entre sistemas, se houver automação centralizada.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. Se o problema persistir mesmo após a triagem, um <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">contrato de manutenção preventiva</Link> reduz a chance desse tipo de parada acontecer de novo.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: 'Quando todo o sistema de segurança para de funcionar ao mesmo tempo, a reação mais comum é o desespero — mas a abordagem correta é metódica. Verifique o disjuntor, confira os LEDs, identifique se o problema é geral ou setorial. O que não fazer é igualmente importante: não abra o DVR, não remova o HD, não formate nada, não fique rearmando disjuntor que desarma repetidamente. Se houve um evento real, preserve as evidências. Se a triagem inicial não resolveu, ou há sinal de dano elétrico, a intervenção de um técnico especializado é o caminho mais seguro.',
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Todo o sistema parou de uma vez. É sinal de sabotagem?',
+        answer: 'Não necessariamente. Na grande maioria dos casos, a causa é elétrica (disjuntor, fonte, queda de energia) ou de rede (roteador, switch). Sabotagem é rara, mas se você suspeita — especialmente se o sistema parou logo após um evento ou tentativa de invasão —, preserve as evidências e chame a polícia antes de mexer em qualquer equipamento.',
+      },
+      {
+        question: 'Posso simplesmente desligar tudo e ligar de novo?',
+        answer: 'Não recomendamos. Um "reset geral" pode resolver travamentos simples, mas também pode interromper gravações não salvas, apagar configurações do DVR/NVR, reiniciar a central de alarme e perder a programação de zonas, ou piorar um problema de HD que já estava em falha. Verifique o disjuntor e os LEDs primeiro — o reset geral só deve ser feito com orientação de um técnico.',
+      },
+      {
+        question: 'O DVR está ligado (LED aceso) mas não aparece imagem. O que pode ser?',
+        answer: 'As causas mais comuns são: cabo de vídeo solto ou com defeito, monitor desligado ou na entrada errada, saída de vídeo configurada incorretamente, ou falha na placa de vídeo do gravador. Não abra o DVR para verificar — teste primeiro o cabo e o monitor.',
+      },
+      {
+        question: 'O alarme parou de funcionar junto com as câmeras. Isso é normal?',
+        answer: 'Sim, se os dois sistemas compartilham a mesma alimentação ou rede — é comum o DVR/NVR e a central de alarme serem alimentados pelo mesmo circuito ou conectados ao mesmo switch. Se o disjuntor desse circuito desarmar, ambos param juntos. A solução é verificar o disjuntor e, se persistir, avaliar a separação dos circuitos.',
+      },
+      {
+        question: 'Quanto tempo o sistema pode ficar parado sem perder gravações?',
+        answer: 'Depende da falha. Se o DVR/NVR está desligado, ele para de gravar e não há registro do período fora do ar. Se está ligado mas as câmeras estão offline, o DVR pode continuar gravando os canais que ainda funcionam. Em qualquer caso, o período sem gravação é uma lacuna que não pode ser recuperada depois.',
+      },
+    ],
+    internalLink: {
+      text: 'Seu sistema de segurança parou e você precisa de diagnóstico urgente?',
+      url: '/servicos/manutencao/',
+      linkText: 'Ver Manutenção de Sistemas',
+    },
+    whatsappMessage: 'Vim do blog e meu sistema de segurança parou',
+    ctaFinal: {
+      title: 'Todo o sistema de segurança parou? Precisa de diagnóstico técnico urgente?',
+      text: 'A Intelsecsul atende chamados de diagnóstico e manutenção de sistemas de segurança em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
+  {
+    id: 'porta-automatica-nao-abre-causas-sensor-alimentacao-mecanismo',
+    slug: 'porta-automatica-nao-abre-causas-sensor-alimentacao-mecanismo',
+    title: 'Porta Automática Não Abre: Causas do Sensor, Alimentação e Mecanismo | Intelsecsul',
+    metaTitle: 'Porta Automática Não Abre: Causas do Sensor, Alimentação e Mecanismo | Intelsecsul',
+    metaDescription: 'Porta automática não abre? Veja as causas mais comuns — sensor desalinhado ou sujo, falha de alimentação e problema no mecanismo — e saiba quando a manutenção é obrigatória por risco de esmagamento.',
+    h1: 'Porta automática não abre: causas do sensor, alimentação e mecanismo',
+    category: 'Portas Automáticas',
+    readTime: '10 min de leitura',
+    publishedDate: '2026-09-22',
+    summary: 'Quando uma porta automática não abre, o problema está quase sempre em um de três sistemas: o sensor de ativação, a alimentação elétrica ou o mecanismo (trilhos, correia, rolamentos e motor). Parte da triagem pode ser feita com segurança, mas qualquer intervenção além da verificação visual exige um técnico, por risco real de esmagamento.',
+    intro: 'Quando uma porta automática não abre, o problema está quase sempre em um de três sistemas: o sensor de ativação (que detecta a aproximação de pessoas), a alimentação elétrica (que fornece energia ao motor e à central) ou o mecanismo (trilhos, correia, rolamentos e motor). A boa notícia é que parte da triagem inicial pode ser feita com segurança por você, sem abrir o equipamento. A má notícia é que portas automáticas envolvem risco real de esmagamento — e qualquer intervenção que ultrapasse a verificação visual exige um técnico especializado, tanto por segurança quanto por conformidade com as normas vigentes.',
+    sections: [
+      {
+        h2: 'Antes de tudo: triagem segura em 3 passos',
+        content: (
+          <div className="space-y-4">
+            <p>Antes de investigar causas específicas, faça estas três verificações — todas seguras, sem abrir equipamentos.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">1. Verifique o interruptor de programa (seletor de funções)</h3>
+            <p>Muitas portas têm um seletor de programas com modos como Automático, Aberto, Fechado, Noturno e OFF. Se estiver em OFF ou Fechado, a porta não vai abrir por mais que o sensor detecte movimento — e isso não é um defeito.</p>
+            <p><strong className="text-white">O que fazer:</strong> localize o seletor e confirme se está em Automático ou Aberto. Se não souber qual posição é a correta, não force a chave — chame um técnico.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">2. Verifique se há obstáculo na área de detecção do sensor</h3>
+            <p>O sensor pode estar interpretando um objeto fixo — vaso, display, placa, tapete — como obstáculo permanente, mantendo a porta fechada por segurança.</p>
+            <p><strong className="text-white">O que fazer:</strong> remova temporariamente qualquer objeto na área de detecção (1 a 2 metros na frente da porta) e observe se ela volta a abrir. Se sim, reposicione o objeto para fora da zona.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">3. Verifique se há energia no sistema</h3>
+            <p>Se o display estiver apagado, o LED do sensor não acender e a porta não reagir a nenhum comando, verifique o disjuntor dedicado no quadro elétrico. Se estiver desarmado, rearme uma única vez. Se desarmar de novo, não insista — indica curto-circuito ou sobrecarga, e a intervenção de um eletricista é obrigatória.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 1: Sensor de ativação com problema',
+        content: (
+          <div className="space-y-4">
+            <p>O sensor de ativação é o componente que "vê" a aproximação de pessoas e envia o comando de abertura. Quando falha, a porta fica fechada mesmo com movimento na frente — ou abre e fecha de forma intermitente.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Sinais de problema no sensor</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>A porta não abre quando alguém se aproxima, mas abre pelo botão de emergência ou comando manual.</li>
+              <li>A porta abre e fecha sozinha, sem ninguém na frente.</li>
+              <li>O LED do sensor não acende quando alguém passa pela zona de detecção.</li>
+              <li>A porta abre apenas uma fresta e para, mesmo com pessoas na frente.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Causas mais comuns no sensor</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Sensor sujo ou com gotas de água.</strong> Poeira e resíduos na lente impedem a detecção correta — comum em entradas comerciais e ambientes externos.</li>
+              <li><strong className="text-white">Sensor desalinhado.</strong> Uma pancada, limpeza brusca ou desgaste do suporte pode desalinhar a zona de detecção.</li>
+              <li><strong className="text-white">Reflexos e interferências.</strong> Pisos refletores, superfícies espelhadas e correntes de ar podem criar falsas detecções ou bloquear a real.</li>
+              <li><strong className="text-white">Sensibilidade desregulada.</strong> Muito baixa não detecta pessoas; muito alta detecta movimento do lado de fora e abre sem necessidade.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que você pode fazer (e o que não pode)</h3>
+            <p><strong className="text-white">Pode fazer:</strong> limpar a lente com pano seco e macio — nunca álcool, thinner ou produtos abrasivos. Verificar visualmente se o sensor está apontado para a área correta. Remover objetos da zona de detecção.</p>
+            <p><strong className="text-white">Não pode fazer:</strong> abrir o sensor, alterar a sensibilidade, mudar o angle ou a profundidade da zona de detecção, ou mexer nos dip switches internos — esses ajustes podem comprometer a segurança anti-esmagamento se feitos incorretamente.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 2: Falha na alimentação elétrica',
+        content: (
+          <div className="space-y-4">
+            <p>A porta depende de energia para alimentar o motor, a central de controle e os sensores. Problemas de alimentação deixam a porta completamente inoperante.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Sinais de problema na alimentação</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Display do operador apagado e porta sem nenhuma reação.</li>
+              <li>Porta funcionando com bateria de reserva — movimento mais lento, LED aceso só durante o ciclo.</li>
+              <li>Fusível queimado na fonte ou no quadro de distribuição.</li>
+              <li>Tomada sem energia ou disjuntor desarmado.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Causas mais comuns na alimentação</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Disjuntor desarmado ou fusível queimado.</strong> Se o disjuntor rearmar e desarmar de novo, há um defeito no circuito que exige diagnóstico profissional.</li>
+              <li><strong className="text-white">Queda de energia.</strong> A porta pode manter-se fechada ou operar com bateria de reserva por tempo limitado; se a bateria estiver descarregada, pode não retomar o funcionamento normal.</li>
+              <li><strong className="text-white">Fonte de alimentação com defeito.</strong> Pode queimar após surtos elétricos ou desgaste natural — quando queima, o sistema todo para, não só o motor.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que você pode fazer</h3>
+            <p><strong className="text-white">Pode fazer:</strong> verificar se o disjuntor está em "ON" e rearmar uma única vez se estiver desarmado. Confirmar visualmente se a tomada do operador está energizada.</p>
+            <p><strong className="text-white">Não pode fazer:</strong> abrir a fonte de alimentação, trocar fusíveis internos sem conhecer a especificação, ou insistir no rearme repetido do disjuntor — isso pode causar dano elétrico ou incêndio.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 3: Problema no mecanismo',
+        content: (
+          <div className="space-y-4">
+            <p>Se o sensor está funcionando e a alimentação está presente, mas a porta continua sem abrir, o problema pode estar no mecanismo: trilhos, correia, rolamentos, motor ou sistema de travamento.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Sinais de problema no mecanismo</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>O motor faz ruído mas a porta não se move — a transmissão não está transferindo o movimento.</li>
+              <li>A porta abre apenas parcialmente e trava no meio do curso.</li>
+              <li>A porta está pesada e exige esforço manual para abrir.</li>
+              <li>Ruído excessivo durante a operação (rangido, estalo, batida).</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Causas mais comuns no mecanismo</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Sujeira no trilho inferior.</strong> Poeira, areia e resíduos aumentam o atrito e podem travar a porta — recorrente em portas externas.</li>
+              <li><strong className="text-white">Correia frouxa ou rompida.</strong> O motor "roda no vazio": você ouve o motor funcionando, mas a porta não se move.</li>
+              <li><strong className="text-white">Rolamentos desgastados.</strong> Aumentam o atrito e fazem a porta travar ou se mover de forma irregular.</li>
+              <li><strong className="text-white">Bloqueio mecânico ativado.</strong> Uma trava elétrica (magnética) ou mecânica (pino) pode estar acionada, impedindo a abertura.</li>
+              <li><strong className="text-white">Objeto entalado sob a porta.</strong> Pedras ou detritos podem ficar presos entre a folha e o piso.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que você pode fazer</h3>
+            <p><strong className="text-white">Pode fazer:</strong> remover sujeira visível do trilho inferior com escova macia ou aspirador. Verificar objetos entalados sob a folha. Observar se o motor faz ruído ao receber o comando.</p>
+            <p><strong className="text-white">Não pode fazer:</strong> forçar a porta manualmente quando travada, abrir o operador, ajustar a correia ou lubrificar componentes internos — qualquer intervenção no mecanismo exige desligamento seguro e conhecimento técnico.</p>
+          </div>
+        ),
+      },
+      {
+        h2: '⚠️ Quando parar imediatamente e chamar técnico',
+        content: (
+          <div className="space-y-4">
+            <p>Portas automáticas envolvem risco de esmagamento, impacto e corte — especialmente em portas de correr motorizadas. A norma europeia EN 16005 exige dispositivos de proteção contra esmagamento, impacto e cisalhamento em portas automáticas de pedestres. No Brasil, a NBR 9050:2020 exige dispositivo de segurança que impeça o fechamento sobre pessoas.</p>
+            <p className="font-bold text-white">Pare imediatamente e chame um técnico se:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>A porta fechou sobre uma pessoa, animal ou objeto — mesmo sem lesão, indica falha no sistema anti-esmagamento.</li>
+              <li>O sensor de segurança (cortina infravermelha) não está funcionando.</li>
+              <li>A porta abre e fecha repetidamente sem comando.</li>
+              <li>Há ruído de peça solta ou batida metálica dentro do operador.</li>
+              <li>A porta não reverte ao encontrar obstáculo — a reversão é obrigatória por norma.</li>
+              <li>Há cheiro de queimado ou dano visível em componentes elétricos.</li>
+              <li>O disjuntor rearmou e desarmou novamente.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de portas automáticas em Curitiba e Região Metropolitana, priorizando situações que envolvam falha de segurança. Esse tipo de risco vale ainda mais atenção se o seu sistema de segurança como um todo já apresentou <Link to="/blog/sistema-de-seguranca-parou-o-que-fazer" className="text-white underline hover:text-slate-300">outras paradas inesperadas</Link> — pode ser sinal de que uma revisão geral está atrasada.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Manutenção preventiva: a melhor forma de evitar a porta travada',
+        content: (
+          <div className="space-y-4">
+            <p>A maioria dos problemas que levam uma porta a não abrir pode ser prevenida com manutenção preventiva regular. A recomendação técnica é realizar manutenção a cada 3 a 6 meses, dependendo do volume de uso — ambientes de grande fluxo (shoppings, hospitais, supermercados) exigem revisões mais frequentes.</p>
+            <p className="font-bold text-white">A manutenção preventiva inclui:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Limpeza e ajuste dos sensores de ativação e de segurança.</li>
+              <li>Limpeza e lubrificação do trilho superior e inferior.</li>
+              <li>Verificação da tensão da correia e dos rolamentos.</li>
+              <li>Teste do sistema anti-esmagamento e da função de reversão.</li>
+              <li>Inspeção elétrica da fonte, cabeamento e fusíveis.</li>
+              <li>Verificação da bateria de reserva (se aplicável).</li>
+            </ul>
+            <p>Portas automáticas instaladas em Curitiba e Região Metropolitana que operam sem manutenção preventiva têm risco significativamente maior de falhas inesperadas — e, mais grave, de falhas nos dispositivos de segurança.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: 'Porta automática que não abre tem, na grande maioria dos casos, uma causa identificável em um dos três sistemas: sensor, alimentação ou mecanismo. A triagem segura — verificar o seletor de programa, remover obstáculos e checar a alimentação — resolve parte dos casos sem custo e sem risco. Mas portas automáticas não são portões residenciais: o risco de esmagamento é real, a legislação é específica, e qualquer intervenção além da limpeza externa exige um técnico qualificado. Se a triagem inicial não resolveu, a Intelsecsul realiza diagnóstico e manutenção de portas automáticas em Curitiba e Região Metropolitana, priorizando casos que envolvam falha de segurança.',
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'A porta automática não abre nem com o botão de emergência. O que pode ser?',
+        answer: 'Se a porta não responde a nenhum comando, o problema provavelmente está na alimentação elétrica ou na central de controle. Verifique o disjuntor e o display do operador. Se o display estiver apagado, está sem energia; se estiver aceso mas a porta não reage, pode ser falha na placa ou no motor. Não abra o operador — chame um técnico.',
+      },
+      {
+        question: 'Limpei o sensor e a porta continua não abrindo. O que mais pode ser?',
+        answer: 'As causas mais prováveis são: sensor desalinhado, sensibilidade desregulada, interferência de reflexo (piso brilhante, superfície espelhada) ou falha no próprio sensor. Ajustes de ângulo e sensibilidade podem ser feitos pelo técnico na visita; substituição do sensor exige peça nova.',
+      },
+      {
+        question: 'Porta automática abre sozinha, sem ninguém na frente. É perigoso?',
+        answer: 'Sim, é um comportamento de risco. Pode indicar sensor com sensibilidade excessiva, interferência eletromagnética ou falha na central. Pode causar acidentes se abrir no momento em que alguém está passando. O ideal é um técnico reduzir a sensibilidade ou reposicionar a zona de detecção com segurança.',
+      },
+      {
+        question: 'Quanto custa consertar uma porta automática que não abre?',
+        answer: 'Depende da causa. Problemas simples (sensor sujo, trilho obstruído, seletor em OFF) podem ser resolvidos em uma visita de manutenção preventiva. Problemas de alimentação e de mecanismo variam conforme a peça — problemas na central ou no motor costumam ser os mais caros. O diagnóstico técnico no local evita trocas desnecessárias.',
+      },
+      {
+        question: 'Porta automática funciona durante falta de energia?',
+        answer: 'Depende do modelo. A maioria mantém a porta fechada e trancada durante a falta de energia, ou opera com bateria de reserva por tempo limitado. A NBR 9050 exige que portas de rota de saída com abertura automática tenham sistema antipânico para abertura manual em caso de falta de energia.',
+      },
+    ],
+    internalLink: {
+      text: 'Sua porta automática precisa de diagnóstico ou manutenção técnica?',
+      url: '/servicos/portas-automaticas/',
+      linkText: 'Ver Portas Automáticas',
+    },
+    whatsappMessage: 'Vim do blog e minha porta automática não está abrindo',
+    ctaFinal: {
+      title: 'Sua porta automática não está abrindo? Precisa de diagnóstico técnico?',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de portas automáticas em Curitiba e Região Metropolitana, com avaliação técnica no local, priorizando casos que envolvam falha de segurança.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
 ];
