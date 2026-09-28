@@ -1467,4 +1467,459 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       buttonText: 'Falar no WhatsApp agora',
     },
   },
+  {
+    id: 'quantas-cameras-de-seguranca-preciso-para-minha-casa',
+    slug: 'quantas-cameras-de-seguranca-preciso-para-minha-casa',
+    title: 'Quantas Câmeras de Segurança Preciso para Minha Casa? Como Calcular | Intelsecsul',
+    metaTitle: 'Quantas Câmeras de Segurança Preciso para Minha Casa? Como Calcular | Intelsecsul',
+    metaDescription: 'Descubra quantas câmeras de segurança sua casa realmente precisa. Regra prática por tipo de imóvel, pontos de cobertura essenciais e como calcular sem comprar a mais nem a menos.',
+    h1: 'Quantas câmeras de segurança preciso para minha casa? Veja como calcular',
+    category: 'Câmeras de Segurança',
+    readTime: '10 min de leitura',
+    publishedDate: '2026-09-28',
+    summary: 'A resposta não está nos metros quadrados da casa, mas na contagem de pontos de acesso e ângulos cegos. Casas térreas simples ficam bem com 3 a 4 câmeras; sobrados, com 5 a 6; condomínios, com 8 a 16 ou mais.',
+    intro: 'Quase todo mundo começa pelo caminho inverso: "minha casa tem 150 m², quantas câmeras preciso?". Mas câmera de segurança não cobre metros quadrados — ela cobre pontos de vulnerabilidade. A pergunta certa não é "quantas câmeras", e sim "onde preciso de visão". Cobrir bem com 4 câmeras certas vale mais do que 8 mal posicionadas apontando para o mesmo lugar.',
+    sections: [
+      {
+        h2: 'Por que "quantas câmeras" é a pergunta errada?',
+        content: (
+          <div className="space-y-4">
+            <p>Duas casas do mesmo tamanho podem precisar de números completamente diferentes, dependendo de quantos acessos e ângulos cegos cada uma tem.</p>
+            <p>Pense como um instalador: o objetivo é não deixar nenhum acesso sem cobertura e nenhum canto cego onde alguém possa se aproximar sem aparecer. O número de câmeras é simplesmente a soma desses pontos, depois de eliminar sobreposições desnecessárias.</p>
+            <p>Este guia ajuda você a calcular o número certo para o seu caso — seja para compra de um sistema CFTV ou para locação de câmeras — sem gastar demais nem ficar desprotegido. Se você mora em Curitiba ou Região Metropolitana, a Intelsecsul faz essa avaliação gratuitamente na visita técnica.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Regra prática: quantas câmeras para cada tipo de casa',
+        content: (
+          <div className="space-y-4">
+            <p>Antes de entrar no detalhamento, uma referência rápida baseada em projetos residenciais reais:</p>
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full text-sm border-collapse min-w-[640px]">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left p-3 text-white font-bold">Tipo de imóvel</th>
+                    <th className="text-left p-3 text-white font-bold">Quantidade típica</th>
+                    <th className="text-left p-3 text-white font-bold">Pontos cobertos</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Casa térrea simples (até 2 dormitórios)</td><td className="p-3">3 a 4 câmeras</td><td className="p-3">Portão, garagem, fundos, área de serviço</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Casa térrea média (3 dormitórios, lateral)</td><td className="p-3">4 a 6 câmeras</td><td className="p-3">Portão, garagem, laterais, fundos, área de serviço</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Sobrado (2 pavimentos)</td><td className="p-3">5 a 6 câmeras</td><td className="p-3">Entrada, garagem, laterais externas, fundos + 1 externa no pavimento superior</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Casa grande com muro extenso</td><td className="p-3">6 a 8 câmeras</td><td className="p-3">Perímetro completo, acessos secundários, corredor lateral</td></tr>
+                  <tr><td className="p-3 font-semibold text-white">Condomínio residencial (áreas comuns)</td><td className="p-3">8 a 16+ câmeras</td><td className="p-3">Portaria, garagens, áreas de lazer, circulação, perimetral</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Esses números são referências de partida, não regras fixas. A maioria das casas fica bem atendida com 3 a 6 câmeras. O que define o número exato é a contagem de pontos de acesso e ângulos cegos do seu imóvel.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'O cálculo que realmente importa: conte os pontos, não os metros',
+        content: (
+          <div className="space-y-4">
+            <p>Em vez de chutar um número, faça uma volta no imóvel e anote cada ponto por onde alguém poderia entrar ou se esconder. A lista abaixo está em ordem de prioridade.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Pontos prioritários (toda casa precisa cobrir)</h3>
+            <ol className="space-y-2 list-decimal list-inside">
+              <li><strong className="text-white">Portão e entrada principal.</strong> O ponto número um — por onde a maioria das abordagens acontece. Uma câmera aqui é indispensável.</li>
+              <li><strong className="text-white">Garagem.</strong> Protege o carro e costuma ser um segundo acesso à casa.</li>
+              <li><strong className="text-white">Quintal e laterais (ângulos cegos).</strong> Os cantos que não se veem da rua são os preferidos de quem tenta pular o muro.</li>
+              <li><strong className="text-white">Área de serviço.</strong> Ponto clássico de invasão — isolada, pouco visível e com acesso fácil.</li>
+              <li><strong className="text-white">Porta dos fundos.</strong> Segunda via de entrada que muita gente esquece de cobrir.</li>
+            </ol>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Pontos complementares (para imóveis maiores ou orçamento mais alto)</h3>
+            <ol className="space-y-2 list-decimal list-inside" start={6}>
+              <li><strong className="text-white">Corredor lateral.</strong> Em casas maiores, o caminho estreito entre a casa e o muro merece uma câmera dedicada.</li>
+              <li><strong className="text-white">Área social interna (opcional).</strong> Para acompanhar o interior, pets ou uma área de valor.</li>
+              <li><strong className="text-white">Perímetro adicional.</strong> Em terrenos grandes ou esquinas, pode ser necessário mais de um ponto para cobrir todo o muro.</li>
+            </ol>
+          </div>
+        ),
+      },
+      {
+        h2: 'Exemplos práticos: casa térrea, sobrado e condomínio',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">Casa térrea simples — 3 a 4 câmeras</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Câmera 1: portão de entrada</li>
+              <li>Câmera 2: garagem</li>
+              <li>Câmera 3: área de serviço / porta dos fundos</li>
+              <li>Câmera 4 (opcional): quintal ou lateral, se houver ângulo cego</li>
+            </ul>
+            <p><strong className="text-white">Por que funciona:</strong> cobre os quatro acessos principais de uma casa térrea. Se não há corredor lateral nem quintal amplo, 3 câmeras podem ser suficientes.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Sobrado — 5 a 6 câmeras</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Câmera 1: portão de entrada (térreo)</li>
+              <li>Câmera 2: garagem (térreo)</li>
+              <li>Câmera 3: lateral externa</li>
+              <li>Câmera 4: fundos / área de serviço</li>
+              <li>Câmera 5: externa no pavimento superior</li>
+              <li>Câmera 6 (opcional): escada interna ou hall de entrada</li>
+            </ul>
+            <p><strong className="text-white">Por que funciona:</strong> o perímetro externo é maior e a visão do térreo não cobre ângulos superiores. Uma câmera no pavimento superior amplia a cobertura sem precisar de muitas no térreo.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Condomínio residencial — 8 a 16+ câmeras</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Portaria e guarita (2 a 3 câmeras)</li>
+              <li>Garagens e acesso de veículos (2 a 4 câmeras)</li>
+              <li>Áreas de lazer — piscina, salão, playground (2 a 3 câmeras)</li>
+              <li>Circulação de pedestres e corredores (1 a 2 câmeras)</li>
+              <li>Perimetral e muros externos (2 a 4 câmeras)</li>
+            </ul>
+            <p><strong className="text-white">Por que funciona:</strong> condomínios têm múltiplas áreas comuns que precisam de cobertura. O número final depende do tamanho, do número de blocos e da extensão do perímetro — pode facilmente passar de 16 câmeras.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Compra ou locação: como o cálculo muda',
+        content: (
+          <div className="space-y-4">
+            <p>O número de câmeras necessárias é o mesmo, independentemente de você comprar ou locar o sistema. O que muda é o modelo de investimento:</p>
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full text-sm border-collapse min-w-[640px]">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left p-3 text-white font-bold">Aspecto</th>
+                    <th className="text-left p-3 text-white font-bold">Compra (CFTV próprio)</th>
+                    <th className="text-left p-3 text-white font-bold">Locação de câmeras</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Investimento inicial</td><td className="p-3">Alto (equipamentos + instalação)</td><td className="p-3">Baixo ou zero (mensalidade)</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Custo mensal</td><td className="p-3">Manutenção (se contratada)</td><td className="p-3">Fixo, incluso equipamento e manutenção</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Ideal para</td><td className="p-3">Quem quer patrimônio e não se importa com custo inicial</td><td className="p-3">Quem quer previsibilidade e não quer imobilizar capital</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Manutenção</td><td className="p-3">Responsabilidade do proprietário</td><td className="p-3">Inclusa no contrato de locação</td></tr>
+                  <tr><td className="p-3 font-semibold text-white">Upgrade futuro</td><td className="p-3">Custo adicional para trocar equipamentos</td><td className="p-3">Possível trocar conforme necessidade</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Em Curitiba, a instalação de câmeras CFTV varia entre R$ 180 e R$ 450 por ponto (mão de obra), e kits residenciais com 4 câmeras e DVR ficam entre R$ 1.200 e R$ 2.500. Já a <Link to="/servicos/locacao-de-cameras-de-seguranca" className="text-white underline hover:text-slate-300">locação residencial</Link> pode começar a partir de R$ 149/mês para pacotes básicos, com instalação e manutenção inclusas — sem o compromisso de <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">avaliar separadamente um contrato de manutenção</Link>, já que ele vem embutido.</p>
+            <p>A Intelsecsul trabalha com <Link to="/servicos/cameras-de-seguranca" className="text-white underline hover:text-slate-300">venda</Link> e locação de câmeras de segurança. Na visita técnica, avaliamos o seu imóvel, calculamos a quantidade ideal de pontos e apresentamos as duas opções para você decidir qual faz mais sentido para o seu perfil.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Erros comuns ao calcular a quantidade de câmeras',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Comprar pelo preço do kit, não pela necessidade</h3>
+            <p>Kits prontos de 4 câmeras são atraentes pelo preço, mas podem deixar ângulos cegos críticos sem cobertura. O kit certo é o que atende ao seu imóvel — não o que está em promoção.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Espalhar câmeras sem critério</h3>
+            <p>Mais câmeras não significa mais segurança. Câmeras mal posicionadas, apontando para o mesmo lugar ou cobrindo áreas irrelevantes, geram mais imagens para revisar e menos resultado prático.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Esquecer a altura e o ângulo de instalação</h3>
+            <p>A altura ideal é entre 2,5 m e 3 m do chão, com a câmera angulada para baixo. Acima disso, a imagem captura apenas o topo da cabeça — péssimo para reconhecimento facial.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Ignorar a LGPD e a privacidade do vizinho</h3>
+            <p>No Brasil, gravar imagens de vias públicas é permitido, mas filmar quintal ou janelas de vizinhos pode gerar problemas legais. Configure máscaras de privacidade no DVR e evite apontar câmeras para dentro de propriedades alheias.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um profissional para o projeto',
+        content: (
+          <div className="space-y-4">
+            <p>Embora a contagem de pontos possa ser feita por você, o projeto CFTV envolve decisões técnicas que impactam diretamente a qualidade final:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Passagem de cabeamento</strong> — em casas prontas, o caminho do cabo define onde as câmeras podem ser instaladas.</li>
+              <li><strong className="text-white">Posicionamento e ângulo</strong> — uma câmera 30 cm mais alta ou mais baixa pode mudar completamente a qualidade da imagem.</li>
+              <li><strong className="text-white">Configuração do DVR/NVR</strong> — resolução, taxa de quadros, detecção de movimento e máscaras de privacidade.</li>
+              <li><strong className="text-white">Acesso remoto seguro</strong> — senha forte e rede segura para evitar invasões ao sistema.</li>
+              <li><strong className="text-white">Integração com outros sistemas</strong> — alarme, portão eletrônico, controle de acesso.</li>
+            </ul>
+            <p>A Intelsecsul realiza projetos de CFTV residencial em Curitiba e Região Metropolitana, com avaliação gratuita no local. Se depois de instalado o sistema apresentar problemas, vale conferir também as <Link to="/blog/camera-fora-do-ar-causas-solucoes" className="text-white underline hover:text-slate-300">causas mais comuns de câmera fora do ar</Link>.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: 'Quantas câmeras de segurança você precisa? A resposta não está nos metros quadrados da casa, mas na contagem de pontos de acesso e ângulos cegos. Portão, garagem, laterais, área de serviço e fundos são os pontos prioritários. Casas térreas simples ficam bem com 3 a 4 câmeras; sobrados, com 5 a 6; condomínios, com 8 a 16 ou mais. O cálculo certo evita os dois extremos: comprar menos do que o necessário e ficar com pontos cegos críticos, ou comprar mais do que o necessário e gastar à toa. E tanto para compra quanto para locação, o número de câmeras é o mesmo — o que muda é o modelo de investimento.',
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Quantas câmeras preciso para uma casa de 3 dormitórios?',
+        answer: 'Para uma casa térrea de 3 dormitórios, a faixa típica é de 4 a 6 câmeras, cobrindo portão, garagem, laterais, fundos e área de serviço. Se a casa tiver corredor lateral e quintal amplo, 6 câmeras garantem cobertura completa. Se for um sobrado, considere uma câmera adicional no pavimento superior.',
+      },
+      {
+        question: 'Posso começar com 2 câmeras e ampliar depois?',
+        answer: 'Sim, desde que o DVR/NVR escolhido tenha canais livres para expansão. Um gravador de 8 canais permite começar com 2 ou 3 câmeras e adicionar mais conforme necessidade. Na locação, a expansão também é possível, geralmente com ajuste no valor mensal.',
+      },
+      {
+        question: 'Quantas câmeras preciso para cobrir o perímetro da casa?',
+        answer: 'O cálculo é: 1 câmera a cada 8 a 12 metros de muro, dependendo da largura da lente e dos obstáculos visuais. Em terrenos com esquina ou muro muito extenso, podem ser necessárias 2 câmeras apenas para a frente.',
+      },
+      {
+        question: 'Câmera Wi-Fi ou com fio: qual escolher para a quantidade que preciso?',
+        answer: 'Para 1 a 3 pontos, câmeras Wi-Fi resolvem — especialmente em imóveis alugados onde não se pode fazer obra. Para 4 ou mais câmeras, o sistema com fio é mais estável e mais barato por câmera. Veja mais detalhes no nosso comparativo de câmera com fio ou Wi-Fi.',
+      },
+      {
+        question: 'Vale a pena contratar um projeto de CFTV ou comprar um kit pronto?',
+        answer: 'Se o seu imóvel tem particularidades (esquina, muro alto, múltiplos acessos, garagem para dois carros), um projeto personalizado evita comprar câmeras em excesso ou deixar pontos cegos. Se o imóvel é simples e bem padronizado, um kit pode atender — desde que você faça a contagem de pontos antes de comprar.',
+      },
+    ],
+    internalLink: {
+      text: 'Quer saber exatamente quantas câmeras sua casa precisa?',
+      url: '/servicos/locacao-de-cameras-de-seguranca/',
+      linkText: 'Ver Locação de Câmeras',
+    },
+    whatsappMessage: 'Vim do blog e quero saber quantas câmeras preciso',
+    ctaFinal: {
+      title: 'Quer saber exatamente quantas câmeras sua casa precisa?',
+      text: 'A Intelsecsul faz a avaliação gratuitamente em Curitiba e Região Metropolitana. Na visita, mapeamos os pontos de vulnerabilidade, definimos a quantidade ideal de câmeras e apresentamos as opções de compra e locação.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
+  {
+    id: 'portao-eletronico-faz-barulho-ajuste-ou-defeito',
+    slug: 'portao-eletronico-faz-barulho-ajuste-ou-defeito',
+    title: 'Portão Eletrônico Faz Barulho: Quando é Ajuste e Quando é Defeito | Intelsecsul',
+    metaTitle: 'Portão Eletrônico Faz Barulho: Quando é Ajuste e Quando é Defeito | Intelsecsul',
+    metaDescription: 'Portão eletrônico fazendo barulho? Veja como distinguir ruído normal de defeito, identificar a origem do som (trilho, engrenagem, rolamento ou esforço excessivo) e quando chamar assistência técnica.',
+    h1: 'Portão eletrônico faz barulho: quando é ajuste e quando é defeito',
+    category: 'Portão Eletrônico',
+    readTime: '10 min de leitura',
+    publishedDate: '2026-09-28',
+    summary: 'Ruído normal é constante e moderado. Quando o som muda, aumenta ou aparece um ruído novo, o portão está comunicando algo. Rangido geralmente é falta de lubrificação; estalo seco é peça desgastada; ronco forte é esforço excessivo; zumbido agudo é problema interno no motor.',
+    intro: 'Todo portão eletrônico faz algum ruído ao operar — o som do motor, o deslizamento da cremalheira, o encaixe do fim de curso. Ruído normal é constante, moderado e sem variações bruscas. Quando o som muda, aumenta de intensidade ou aparece um ruído novo, o portão está comunicando alguma coisa. Na maioria dos casos, um barulho anormal tem origem em um desajuste mecânico ou de infraestrutura — não em um defeito no motor. O trilho desnivelado, por exemplo, é apontado por instaladores com mais de 20 anos de experiência como a principal causa de sobrecarga e queima de motores: segundo um serralheiro entrevistado pelo Olhar Digital, 7 em cada 10 motores queimam pelo mesmo erro de nivelamento do trilho.',
+    sections: [
+      {
+        h2: 'Antes de tudo: como é o som normal do seu portão?',
+        content: (
+          <div className="space-y-4">
+            <p>O ruído saudável de um portão eletrônico é baixo, contínuo e previsível. Em modelos deslizantes, é o som do motor mais o deslizar suave das roldanas no trilho. Em basculantes, é o motor e a corrente ou correia trabalhando sem estalos. Em dias frios, é normal o motor operar um pouco mais "áspero" no primeiro ciclo — isso não é defeito.</p>
+            <div>
+              <p className="font-bold text-white mb-2">Ruído normal:</p>
+              <ul className="space-y-2 list-disc list-inside">
+                <li>Constante durante todo o percurso de abertura e fechamento.</li>
+                <li>Sem variações bruscas de intensidade ou tom.</li>
+                <li>Sem estalos, raspagens ou rangidos metálicos.</li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-bold text-white mb-2">Ruído crítico:</p>
+              <ul className="space-y-2 list-disc list-inside">
+                <li>Aparece ou aumenta progressivamente.</li>
+                <li>Varia de tom ou intensidade durante o percurso.</li>
+                <li>Acompanha trancos, lentidão ou paradas no meio do caminho.</li>
+                <li>Vem acompanhado de cheiro de queimado, vibração excessiva ou superaquecimento do motor.</li>
+              </ul>
+            </div>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela de diagnóstico: que tipo de barulho seu portão está fazendo?',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[720px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Tipo de ruído</th>
+                  <th className="text-left p-3 text-white font-bold">Causa mais provável</th>
+                  <th className="text-left p-3 text-white font-bold">Onde está o problema</th>
+                  <th className="text-left p-3 text-white font-bold">Nível de urgência</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Rangido metálico contínuo</td><td className="p-3">Falta de lubrificação no trilho, cremalheira ou roldanas</td><td className="p-3">Trilho / roldanas</td><td className="p-3">Ajuste — manutenção preventiva</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Raspagem de ferro</td><td className="p-3">Roldanas ou rolamentos desgastados, trilho sujo</td><td className="p-3">Trilho / roldanas</td><td className="p-3">Ajuste/peça — avaliação técnica</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Estalo seco (Tec-Tec)</td><td className="p-3">Roldanas quadradas (desgaste), cabo de aço desfiando</td><td className="p-3">Trilho / cabo</td><td className="p-3">Defeito — requer substituição</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Ronco forte no motor</td><td className="p-3">Esforço excessivo, portão desbalanceado ou trilho desnivelado</td><td className="p-3">Motor / infraestrutura</td><td className="p-3">Defeito — risco de queima do motor</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Zumbido agudo ou vibração persistente</td><td className="p-3">Rolamentos internos do motor com desgaste</td><td className="p-3">Motor (caixa de engrenagens)</td><td className="p-3">Defeito — requer técnico</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Golpes secos (batida metálica)</td><td className="p-3">Folgas em parafusos, corrente frouxa, componentes soltos</td><td className="p-3">Fixação / corrente</td><td className="p-3">Ajuste — manutenção preventiva</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Chiado que aumenta com a abertura</td><td className="p-3">Atrito interno, engrenagens gastas ou falta de lubrificação na rosca do motor</td><td className="p-3">Motor / engrenagens</td><td className="p-3">Defeito se persistir após lubrificação</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Ruído de arrasto + portão lento</td><td className="p-3">Trilho desnivelado, portão desbalanceado ou obstrução</td><td className="p-3">Infraestrutura / contrapeso</td><td className="p-3">Ajuste/defeito — avaliação urgente</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'Ruído 1: Rangido ou chiado metálico — o mais comum e o mais fácil de resolver',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">O que você está ouvindo</h3>
+            <p>Um som contínuo de metal raspando ou rangendo, que aparece principalmente no início do movimento e diminui (mas não desaparece) depois que o portão entra em velocidade.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que está acontecendo</h3>
+            <p>O rangido metálico é o som clássico de falta de lubrificação. O trilho, a cremalheira ou as roldanas estão trabalhando a seco, e o atrito do metal contra metal gera esse ruído. Com o tempo, a falta de lubrificação acelera o desgaste — roldanas que deveriam durar anos se desgastam em meses.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">É ajuste ou defeito?</h3>
+            <p><strong className="text-white">Ajuste.</strong> Na grande maioria dos casos, uma lubrificação adequada resolve o problema imediatamente. É a manutenção preventiva mais simples e mais eficaz para portões eletrônicos.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que você pode fazer</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Limpe o trilho com uma escova macia ou aspirador para remover poeira, areia e detritos.</li>
+              <li>Aplique graxa branca de boa qualidade na rosca do motor e nos pontos de contato do trilho — não atrai poeira como os óleos comuns.</li>
+              <li>Frequência: a lubrificação preventiva deve ser feita a cada três ou quatro meses.</li>
+              <li>Não use óleo comum, WD-40 ou derivados de petróleo — atraem poeira e pioram o problema a médio prazo.</li>
+            </ul>
+            <p>Se o rangido persistir após a lubrificação, o desgaste das peças pode já ter passado do ponto de ajuste — nesse caso, a avaliação de um técnico é necessária.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Ruído 2: Estalo seco (Tec-Tec) — sinal de desgaste de peça',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">O que você está ouvindo</h3>
+            <p>Um som de "tec-tec" ritmado, que acompanha o movimento do portão. Parece uma batida metálica seca, repetida.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que está acontecendo</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Roldanas "quadradas"</strong> — roldanas que deveriam ser redondas se desgastaram e agora têm facetas. A cada volta, batem no trilho, gerando o estalo.</li>
+              <li><strong className="text-white">Cabo de aço desfiando</strong> — em portões basculantes com cabo de aço, fios rompidos dentro do cabo batem contra a estrutura.</li>
+              <li><strong className="text-white">Engrenagens com dentes quebrados ou gastos</strong> — o contato irregular entre os dentes gera estalos a cada rotação.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">É ajuste ou defeito?</h3>
+            <p><strong className="text-white">Defeito — requer substituição de peça.</strong> Lubrificação não resolve estalo seco causado por desgaste. A peça precisa ser trocada.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que você pode fazer</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Não lubrifique esperando que o estalo passe — a causa é estrutural, não de atrito.</li>
+              <li>Identifique de onde vem o som (trilho, motor ou cabo) e informe ao técnico.</li>
+              <li>Interrompa o uso se o estalo for acompanhado de trancos — a peça pode se romper completamente e travar o portão.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Ruído 3: Ronco forte ou zumbido — esforço excessivo do motor',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">O que você está ouvindo</h3>
+            <p>Um som grave, contínuo, que parece o motor "sofrendo" para movimentar o portão. Pode ser acompanhado de lentidão, trancos ou aquecimento excessivo do motor.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que está acontecendo</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Trilho desnivelado ou desalinhado</strong> — o motor precisa compensar o desvio a cada abertura e fechamento, forçando engrenagens, corrente e sistema elétrico.</li>
+              <li><strong className="text-white">Portão desbalanceado</strong> — o peso está sendo sustentado pelo motor em vez dos contrapesos ou roldanas. O motor pode precisar de até 3x mais força do que o normal.</li>
+              <li><strong className="text-white">Obstrução no trilho</strong> — pedras, areia ou detritos aumentam o atrito e forçam o motor.</li>
+              <li><strong className="text-white">Corrente ou correia frouxa</strong> — perde eficiência na transmissão, exigindo mais esforço do motor.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">É ajuste ou defeito?</h3>
+            <p><strong className="text-white">Ajuste urgente — com risco de defeito grave se ignorado.</strong> O ronco forte não é um defeito em si, mas é o principal sinal de alerta de que o motor está sendo sobrecarregado. Ignorar esse ruído é o caminho mais rápido para a queima do motor. Se o problema persistir mesmo com o trilho verificado, os sintomas se aproximam do que já cobrimos em <Link to="/blog/portao-eletronico-nao-abre-ou-nao-fecha" className="text-white underline hover:text-slate-300">portão eletrônico que não abre ou não fecha</Link>.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que você pode fazer</h3>
+            <p className="font-bold text-white">Teste do desbalanceamento:</p>
+            <ol className="space-y-2 list-decimal list-inside">
+              <li>Feche o portão totalmente.</li>
+              <li>Coloque o motor no modo manual (destrave a chave).</li>
+              <li>Levante o portão com a mão até a metade do caminho e solte.</li>
+              <li>O portão deve ficar parado onde você soltou. Se ele cair com tudo ou subir sozinho disparado, está desbalanceado.</li>
+            </ol>
+            <p className="font-bold text-white pt-2">Teste do nível do trilho:</p>
+            <ol className="space-y-2 list-decimal list-inside">
+              <li>Desligue a alimentação do automatizador.</li>
+              <li>Destrave o portão para movimentação manual.</li>
+              <li>Apoie um nível de bolha sobre o trilho em diferentes pontos do percurso.</li>
+              <li>Se a bolha não ficar centralizada, o trilho está desnivelado.</li>
+            </ol>
+            <p>Se qualquer um dos testes indicar problema, não tente ajustar sozinho — trilho desnivelado e portão desbalanceado exigem ajuste técnico, e insistir no uso agrava o desgaste.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Ruído 4: Zumbido agudo ou vibração persistente — problema interno no motor',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">O que você está ouvindo</h3>
+            <p>Um zumbido fino, agudo, que não vem do trilho nem das roldanas, mas de dentro do motor. Pode ser acompanhado de vibração que se sente na carcaça.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que está acontecendo</h3>
+            <p>Esse ruído indica desgaste nos rolamentos internos do motor ou na caixa de engrenagens. Quando os rolamentos perdem eficiência, o motor vibra de forma anormal e emite um zumbido agudo. Se o som parece vir "de dentro" da carcaça, o problema é interno.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">É ajuste ou defeito?</h3>
+            <p><strong className="text-white">Defeito — requer técnico especializado.</strong> Rolamentos internos do motor não são peças de manutenção do usuário. A substituição exige desmontagem do motor e ferramentas específicas.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que você pode fazer</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Não tente abrir o motor — além do risco elétrico, a desmontagem incorreta pode danificar componentes internos.</li>
+              <li>Anote quando o ruído acontece (só na partida, durante todo o percurso, só no fechamento) — ajuda o técnico a isolar o problema.</li>
+              <li>Se o motor estiver esquentando além do normal, interrompa o uso. Motor quente + zumbido agudo é sinal de risco de queima.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que você pode ajustar sozinho (e o que não deve)',
+        content: (
+          <div className="space-y-4">
+            <div>
+              <p className="font-bold text-white mb-2">✅ Seguro para fazer:</p>
+              <ul className="space-y-2 list-disc list-inside">
+                <li>Lubrificação preventiva do trilho, cremalheira e rosca do motor com graxa branca.</li>
+                <li>Limpeza do trilho com escova macia ou aspirador.</li>
+                <li>Remoção de obstáculos visíveis (pedras, folhas, detritos) do caminho do portão.</li>
+                <li>Teste de desbalanceamento (manual, com o motor destravado).</li>
+                <li>Teste do nível de bolha no trilho.</li>
+                <li>Observação e registro do tipo de ruído, quando acontece e como evolui.</li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-bold text-white mb-2">❌ Não faça de jeito nenhum:</p>
+              <ul className="space-y-2 list-disc list-inside">
+                <li>Não abra o motor nem remova a tampa da caixa de engrenagens.</li>
+                <li>Não desmonte roldanas ou rolamentos para "verificar" — a remontagem incorreta pode travar o portão.</li>
+                <li>Não force o portão manualmente quando ele estiver travado ou com resistência anormal.</li>
+                <li>Não use óleo comum ou WD-40 como lubrificante.</li>
+                <li>Não ajuste a força do motor na central sem saber o que está fazendo — pode causar acidentes ou queima do motor.</li>
+              </ul>
+            </div>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico especializado',
+        content: (
+          <div className="space-y-4">
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Ronco forte persistente após verificação do trilho.</li>
+              <li>Estalo seco (Tec-Tec) — peça desgastada que precisa ser substituída.</li>
+              <li>Zumbido agudo vindo de dentro do motor.</li>
+              <li>Portão desbalanceado (teste manual confirmou).</li>
+              <li>Trilho desnivelado.</li>
+              <li>Cheiro de queimado.</li>
+              <li>Portão que trava, para no meio do percurso ou anda mais devagar que o normal.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. O diagnóstico identifica se o problema é ajuste ou defeito — e o orçamento é apresentado com clareza antes de qualquer intervenção.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>Portão eletrônico fazendo barulho é um aviso — e a maioria dos ruídos tem solução simples se identificada cedo. Rangido metálico geralmente é falta de lubrificação; estalo seco é peça desgastada; ronco forte é esforço excessivo; zumbido agudo é problema interno no motor.</p>
+            <p>O que não se deve fazer é ignorar o ruído esperando que ele passe. Um rangido não tratado evolui para desgaste de roldanas, depois para esforço excessivo do motor, e por fim para a queima do equipamento — cada etapa mais cara que a anterior. Um <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">contrato de manutenção preventiva</Link> é o que quebra esse ciclo antes que ele comece.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Portão eletrônico fazendo barulho alto é sempre defeito?',
+        answer: 'Não. Barulho alto pode ser apenas falta de lubrificação — a causa mais comum e a mais fácil de resolver. O que diferencia "ajuste" de "defeito" é o tipo de som: rangido metálico geralmente é lubrificação; estalo seco é peça desgastada; ronco forte é esforço excessivo; zumbido agudo é problema interno no motor.',
+      },
+      {
+        question: 'Posso lubrificar o portão eletrônico sozinho?',
+        answer: 'Sim, a lubrificação preventiva do trilho, cremalheira e rosca do motor é uma tarefa que o usuário pode fazer. Use graxa branca de boa qualidade e aplique a cada 3-4 meses. Não use óleo comum, WD-40 ou derivados de petróleo.',
+      },
+      {
+        question: 'Quanto custa consertar um portão eletrônico que está fazendo barulho?',
+        answer: 'Depende da causa. Uma visita de lubrificação e ajuste preventivo em Curitiba começa a partir de R$ 150,00 para serviços simples. Se envolver substituição de roldanas, engrenagens ou rolamentos, o custo varia conforme a peça. Se o motor já estiver comprometido, o reparo é mais caro.',
+      },
+      {
+        question: 'O barulho pode ser sinal de que o motor vai queimar?',
+        answer: 'Sim, especialmente se o ruído for um ronco forte ou zumbido agudo persistente. O ronco forte indica esforço excessivo, principal causa de superaquecimento e queima do motor. Se o portão está roncando e demorando mais para abrir ou fechar, pare de usá-lo e chame um técnico.',
+      },
+      {
+        question: 'Trilho desnivelado é a causa mais comum de barulho?',
+        answer: 'Segundo instaladores com décadas de experiência, sim — o nivelamento do trilho é a principal causa de sobrecarga no motor e, consequentemente, de ruídos e queima prematura. O teste do nível de bolha é uma forma simples de verificar.',
+      },
+    ],
+    internalLink: {
+      text: 'Seu portão eletrônico está fazendo barulho? Precisa de diagnóstico técnico?',
+      url: '/servicos/portao-eletronico/',
+      linkText: 'Ver Portão Eletrônico',
+    },
+    whatsappMessage: 'Vim do blog e meu portão está fazendo barulho',
+    ctaFinal: {
+      title: 'Seu portão eletrônico está fazendo barulho? Precisa de diagnóstico técnico?',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana. A visita técnica identifica a causa do ruído — ajuste ou defeito — e apresenta o orçamento antes de qualquer intervenção.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
 ];
