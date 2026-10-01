@@ -1922,4 +1922,469 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       buttonText: 'Falar no WhatsApp agora',
     },
   },
+  {
+    id: 'biometria-cartao-rfid-ou-reconhecimento-facial-qual-escolher',
+    slug: 'biometria-cartao-rfid-ou-reconhecimento-facial-qual-escolher',
+    title: 'Biometria, Cartão RFID ou Reconhecimento Facial: Qual Escolher? | Intelsecsul',
+    metaTitle: 'Biometria, Cartão RFID ou Reconhecimento Facial: Qual Escolher? | Intelsecsul',
+    metaDescription: 'Biometria, cartão RFID ou reconhecimento facial? Compare as três tecnologias por fluxo, higiene, privacidade, custo, visitantes e auditoria e descubra qual escolher para sua empresa ou condomínio.',
+    h1: 'Biometria, cartão RFID ou reconhecimento facial: qual controle de acesso escolher?',
+    category: 'Controle de Acesso',
+    readTime: '12 min de leitura',
+    publishedDate: '2026-09-30',
+    summary: 'A escolha do controle de acesso não é sobre eleger uma tecnologia superior — é sobre entender qual credencial faz sentido para o seu contexto, considerando fluxo de pessoas, nível de segurança, orçamento e obrigações de privacidade.',
+    intro: 'A pergunta "qual é melhor, biometria ou cartão RFID?" é, quase sempre, a pergunta errada. A escolha do controle de acesso não é sobre eleger uma tecnologia superior — é sobre entender qual credencial faz sentido para o seu contexto, considerando o fluxo de pessoas, o nível de segurança exigido, as condições do ambiente, o orçamento disponível e as obrigações legais de privacidade. Biometria digital autentica pela impressão digital — a credencial é o próprio corpo. Cartão RFID autentica por proximidade — é a tecnologia mais difundida em prédios comerciais. Reconhecimento facial autentica pelo mapeamento do rosto, sem contato — a experiência mais fluida, mas que exige cuidados maiores com privacidade.',
+    sections: [
+      {
+        h2: '1. Fluxo e velocidade de passagem',
+        content: (
+          <div className="space-y-4">
+            <p>Cartão RFID leva a dianteira em vazão. A leitura é praticamente instantânea — o usuário aproxima o cartão e a porta libera em menos de um segundo. Em horários de pico, é a tecnologia que menos forma fila.</p>
+            <p>Reconhecimento facial com leitor 3D moderno opera em menos de um segundo, com a vantagem de ser totalmente sem contato. O usuário simplesmente caminha e a porta abre.</p>
+            <p>Biometria digital é rápida quando funciona de primeira, mas cai bastante quando o dedo está sujo, molhado, machucado ou mal posicionado. Em ambientes industriais, cozinhas ou hospitais, a taxa de falha de leitura aumenta e a fila anda mais devagar.</p>
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full text-sm border-collapse min-w-[520px]">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left p-3 text-white font-bold">Tecnologia</th>
+                    <th className="text-left p-3 text-white font-bold">Velocidade típica</th>
+                    <th className="text-left p-3 text-white font-bold">Comportamento em pico</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">RFID</td><td className="p-3">&lt; 1 segundo</td><td className="p-3">Excelente — fluxo contínuo</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Reconhecimento facial</td><td className="p-3">&lt; 1 segundo</td><td className="p-3">Muito bom — sem contato</td></tr>
+                  <tr><td className="p-3 font-semibold text-white">Biometria digital</td><td className="p-3">1-3 segundos</td><td className="p-3">Variável — depende da qualidade da leitura</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ),
+      },
+      {
+        h2: '2. Higiene e contato físico',
+        content: (
+          <div className="space-y-4">
+            <p>A biometria digital exige contato físico com o leitor. Em ambientes onde a higiene é prioridade — hospitais, clínicas, cozinhas industriais, laboratórios — isso é uma desvantagem concreta. Leitores de impressão digital são superfícies compartilhadas, e a preocupação com contaminação é legítima.</p>
+            <p>RFID é sem contato no sentido de que o cartão apenas se aproxima do leitor, mas ainda exige que o usuário manuseie o cartão — o que pode ser um incômodo quando as mãos estão ocupadas.</p>
+            <p>Reconhecimento facial é totalmente touchless — o usuário não toca em nada. É a tecnologia mais adequada para ambientes onde a higiene é prioridade: hospitais, clínicas, indústrias alimentícias e qualquer local que exija operação com as mãos livres.</p>
+          </div>
+        ),
+      },
+      {
+        h2: '3. Privacidade e LGPD',
+        content: (
+          <div className="space-y-4">
+            <p>Este é o critério que mais tem mudado nos últimos anos — e o que exige mais atenção das empresas. Dados biométricos são classificados como dados pessoais sensíveis pela LGPD (Art. 5º, II). Isso significa que o tratamento desses dados exige consentimento explícito e destacado do titular, com finalidades específicas, além de garantias de transparência e segurança em todo o processo.</p>
+            <p>Reconhecimento facial é o mais sensível das três tecnologias sob a ótica da LGPD. Estudos apontam riscos de "racismo algorítmico" — taxas de erro maiores para determinados grupos raciais quando os dados de treinamento não são diversos. O TJSP já reconheceu a possibilidade de biometria facial em condomínios, desde que observados os limites da LGPD — princípios de finalidade, necessidade e proporcionalidade.</p>
+            <p>Biometria digital também é dado sensível, mas tem um histórico de uso mais consolidado. RFID é a tecnologia com menor exposição de privacidade — o cartão não contém dados biométricos, apenas um identificador.</p>
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full text-sm border-collapse min-w-[560px]">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left p-3 text-white font-bold">Tecnologia</th>
+                    <th className="text-left p-3 text-white font-bold">Classificação LGPD</th>
+                    <th className="text-left p-3 text-white font-bold">Exigência de consentimento</th>
+                    <th className="text-left p-3 text-white font-bold">Risco de privacidade</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">RFID</td><td className="p-3">Dado comum</td><td className="p-3">Não (para uso interno)</td><td className="p-3">Baixo</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Biometria digital</td><td className="p-3">Dado sensível</td><td className="p-3">Sim, explícito e destacado</td><td className="p-3">Médio</td></tr>
+                  <tr><td className="p-3 font-semibold text-white">Reconhecimento facial</td><td className="p-3">Dado sensível</td><td className="p-3">Sim, explícito e destacado</td><td className="p-3">Alto</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>A penalidade por não cumprimento da LGPD pode chegar a 2% do faturamento da empresa, limitada a R$ 50 milhões por infração, além de sanções como suspensão ou proibição do tratamento de dados. Para empresas que ainda não têm um programa de conformidade, o RFID é o caminho de menor risco regulatório.</p>
+          </div>
+        ),
+      },
+      {
+        h2: '4. Custo de implantação e operação',
+        content: (
+          <div className="space-y-4">
+            <p>O RFID é o mais barato das três tecnologias. Cartões avulsos custam entre US$ 2 e US$ 5 cada (aproximadamente R$ 10 a R$ 25), e os leitores são maduros, amplamente disponíveis e de baixo custo.</p>
+            <p>Biometria digital tem custo inicial intermediário. Leitores biométricos de entrada no mercado brasileiro começam em torno de R$ 379 a R$ 709 (modelos de mesa ou embutidos), enquanto leitores de maior capacidade podem chegar a R$ 1.280 ou mais.</p>
+            <p>Reconhecimento facial tem o maior custo inicial — espera-se US$ 200 a US$ 500 por dispositivo (aproximadamente R$ 1.000 a R$ 2.500) em modelos empresariais, mais a infraestrutura de rede e o backend de armazenamento de templates faciais.</p>
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full text-sm border-collapse min-w-[560px]">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left p-3 text-white font-bold">Tecnologia</th>
+                    <th className="text-left p-3 text-white font-bold">Custo inicial (leitor)</th>
+                    <th className="text-left p-3 text-white font-bold">Custo por credencial</th>
+                    <th className="text-left p-3 text-white font-bold">Custo operacional</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">RFID</td><td className="p-3">Baixo (R$ 100-500)</td><td className="p-3">R$ 10-25 por cartão</td><td className="p-3">Reposição de cartões perdidos</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Biometria digital</td><td className="p-3">Médio (R$ 380-1.300)</td><td className="p-3">Zero (credencial = pessoa)</td><td className="p-3">Cadastro inicial, manutenção</td></tr>
+                  <tr><td className="p-3 font-semibold text-white">Reconhecimento facial</td><td className="p-3">Alto (R$ 1.000-2.500+)</td><td className="p-3">Zero (credencial = rosto)</td><td className="p-3">Infraestrutura, conformidade</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ),
+      },
+      {
+        h2: '5. Gestão de visitantes e credenciais temporárias',
+        content: (
+          <div className="space-y-4">
+            <p>RFID é a tecnologia mais prática para visitantes e prestadores de serviço. Credenciais temporárias podem ser emitidas e revogadas em segundos, sem necessidade de cadastro biométrico. Para prédios comerciais multi-inquilino, o RFID é a escolha natural.</p>
+            <p>Biometria digital exige cadastro biométrico do visitante — impraticável para visitas rápidas (um entregador, um técnico, um cliente). Em condomínios, o visitante precisa ser cadastrado na portaria, o que adiciona tempo e burocracia.</p>
+            <p>Reconhecimento facial para visitantes é ainda mais complexo do ponto de vista regulatório: coletar dados biométricos de visitantes casuais exige consentimento explícito e finalidade específica, muitas vezes inviável em fluxos de curta duração.</p>
+            <p>A solução mais comum em recepções empresariais modernas é um kiosk de autoatendimento que combina leitura de documento com verificação facial para confirmar identidade — aumentando a auditabilidade sem exigir cadastro biométrico prévio do visitante.</p>
+          </div>
+        ),
+      },
+      {
+        h2: '6. Auditoria, rastreabilidade e integração com ponto eletrônico',
+        content: (
+          <div className="space-y-4">
+            <p>Biometria digital é a tecnologia com a melhor rastreabilidade individual. Como a credencial é intransferível, o registro de acesso comprova que foi exatamente aquela pessoa que passou pela porta — eliminando o "buddy punching" (um funcionário bater o ponto pelo outro).</p>
+            <p>RFID gera logs de acesso, mas com uma ressalva: o cartão pode ser compartilhado. Em áreas restritas (sala de servidores, financeiro, P&D), a transferência de credencial compromete a auditoria.</p>
+            <p>Reconhecimento facial oferece rastreabilidade individual sem contato — e, integrado a sistemas de CFTV, permite correlação entre eventos de acesso e imagens gravadas.</p>
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full text-sm border-collapse min-w-[560px]">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left p-3 text-white font-bold">Critério</th>
+                    <th className="text-left p-3 text-white font-bold">Biometria digital</th>
+                    <th className="text-left p-3 text-white font-bold">RFID</th>
+                    <th className="text-left p-3 text-white font-bold">Reconhecimento facial</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Rastreabilidade individual</td><td className="p-3">Excelente</td><td className="p-3">Limitada (compartilhável)</td><td className="p-3">Excelente</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Integração com ponto eletrônico</td><td className="p-3">Nativa</td><td className="p-3">Requer software adicional</td><td className="p-3">Nativa</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Integração com CFTV</td><td className="p-3">Limitada</td><td className="p-3">Limitada</td><td className="p-3">Excelente</td></tr>
+                  <tr><td className="p-3 font-semibold text-white">Auditabilidade para conformidade</td><td className="p-3">Alta</td><td className="p-3">Média</td><td className="p-3">Alta</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela comparativa resumida',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[680px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Critério</th>
+                  <th className="text-left p-3 text-white font-bold">Biometria digital</th>
+                  <th className="text-left p-3 text-white font-bold">Cartão RFID</th>
+                  <th className="text-left p-3 text-white font-bold">Reconhecimento facial</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Velocidade em pico</td><td className="p-3">Variável</td><td className="p-3">Excelente</td><td className="p-3">Muito boa</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Higiene / contato</td><td className="p-3">Contato obrigatório</td><td className="p-3">Contato leve</td><td className="p-3">Totalmente sem contato</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Privacidade / LGPD</td><td className="p-3">Dado sensível — consentimento</td><td className="p-3">Dado comum — menor risco</td><td className="p-3">Dado sensível — maior risco</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Custo inicial</td><td className="p-3">Médio</td><td className="p-3">Baixo</td><td className="p-3">Alto</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Custo operacional</td><td className="p-3">Cadastro inicial</td><td className="p-3">Reposição de cartões</td><td className="p-3">Infraestrutura + conformidade</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Visitantes</td><td className="p-3">Difícil</td><td className="p-3">Fácil</td><td className="p-3">Complexo (regulatório)</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Auditoria / ponto</td><td className="p-3">Excelente</td><td className="p-3">Média</td><td className="p-3">Excelente</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Integração CFTV</td><td className="p-3">Limitada</td><td className="p-3">Limitada</td><td className="p-3">Excelente</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Melhor para</td><td className="p-3">Áreas restritas, ponto eletrônico</td><td className="p-3">Escritórios, alto fluxo, visitantes</td><td className="p-3">Ambientes sem contato, campi, saúde</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'Qual escolher para cada cenário?',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">Escolha RFID se…</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>O fluxo de pessoas é alto e a velocidade de entrada é prioridade.</li>
+              <li>O orçamento é limitado e você precisa de escala sem custo elevado.</li>
+              <li>Você precisa gerenciar visitantes e prestadores de serviço com facilidade.</li>
+              <li>O nível de risco é moderado e a área não é altamente restrita.</li>
+              <li>Você quer menor exposição regulatória em relação à LGPD.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Escolha biometria digital se…</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Você precisa de verificação de identidade forte e não pode tolerar compartilhamento de credencial.</li>
+              <li>Há integração com ponto eletrônico e eliminação de fraudes de frequência.</li>
+              <li>Você tem áreas restritas (sala de servidores, financeiro, P&D) que exigem auditoria rigorosa.</li>
+              <li>O ambiente tem mãos frequentemente ocupadas ou sujas e você precisa de credencial que não se perde.</li>
+              <li>Você está disposto a investir em conformidade com a LGPD para dados biométricos.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Escolha reconhecimento facial se…</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Você quer experiência touchless — higiene é prioridade (saúde, alimentação, laboratórios).</li>
+              <li>Você busca experiência premium de smart building.</li>
+              <li>Há integração com CFTV e workflows de análise de segurança.</li>
+              <li>O ambiente tem alto fluxo onde leitores de digital formariam fila.</li>
+              <li>Você tem infraestrutura de rede e backend preparada para armazenar templates faciais com segurança.</li>
+              <li>Você está preparado para conformidade rigorosa com a LGPD.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'A resposta mais comum: combinação',
+        content: (
+          <div className="space-y-4">
+            <p>Na prática, a maioria das empresas não escolhe uma tecnologia — combina duas ou três. O padrão mais comum é:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">RFID</strong> para acesso geral (portas de escritório, áreas comuns, catracas de entrada).</li>
+              <li><strong className="text-white">Biometria</strong> para áreas restritas (sala de servidores, financeiro, almoxarifado) e ponto eletrônico.</li>
+              <li><strong className="text-white">Reconhecimento facial</strong> para entradas premium, áreas de saúde ou ambientes que exigem touchless.</li>
+            </ul>
+            <p>Essa arquitetura híbrida entrega conveniência em escala sem abrir mão de verificação forte onde ela realmente importa.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: 'Biometria, cartão RFID ou reconhecimento facial? A resposta não está em qual tecnologia é "mais avançada", mas em qual resolve o seu problema com o menor custo total e o menor risco regulatório. O RFID é imbatível em velocidade, custo e praticidade para visitantes. A biometria digital é insuperável em rastreabilidade individual e integração com ponto eletrônico. O reconhecimento facial é a melhor escolha quando higiene, experiência touchless e integração com CFTV são prioridades. Na maioria dos casos, a resposta certa é combinar tecnologias: RFID onde a conveniência importa, biometria onde a segurança é crítica, e reconhecimento facial onde o contato precisa ser zero.',
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Biometria digital funciona com dedo sujo ou molhado?',
+        answer: 'Não de forma confiável. Leitores de impressão digital têm dificuldade com dedos sujos, molhados, machucados ou desgastados. Em ambientes industriais, cozinhas e hospitais, a taxa de falha de leitura aumenta significativamente. Nesses casos, RFID ou reconhecimento facial são mais adequados.',
+      },
+      {
+        question: 'Cartão RFID pode ser clonado?',
+        answer: 'Depende do tipo de cartão. Cartões de proximidade legados (125 kHz, como EM4100 e HID Prox) transmitem um número fixo sem criptografia e são facilmente copiáveis. Cartões Mifare Classic também têm criptografia quebrada desde 2008. Já cartões criptografados de fato (DESFire EV2/EV3, Seos, iCLASS SE) usam AES-128 com autenticação mútua — comprometer um cartão não compromete o sistema.',
+      },
+      {
+        question: 'Reconhecimento facial funciona com máscara ou óculos?',
+        answer: 'Leitores faciais modernos com detecção de vivacidade (liveness detection) funcionam com óculos e, em muitos casos, com máscaras — embora a precisão possa variar. Modelos 3D com infravermelho são mais robustos que modelos 2D baseados em câmera RGB.',
+      },
+      {
+        question: 'Preciso de consentimento para usar biometria no controle de acesso?',
+        answer: 'Sim. Dados biométricos são classificados como dados pessoais sensíveis pela LGPD (Art. 5º, II), e o tratamento exige consentimento explícito e destacado do titular. Para reconhecimento facial, a exigência é ainda mais rigorosa. O descumprimento pode gerar multas de até 2% do faturamento, limitadas a R$ 50 milhões.',
+      },
+      {
+        question: 'Qual tecnologia é melhor para condomínio?',
+        answer: 'Depende do perfil do condomínio. RFID é prático para portarias com muitos visitantes e prestadores de serviço. Biometria digital é adequada para áreas restritas (academia, salão de festas, garagem). Reconhecimento facial é cada vez mais comum em condomínios de alto padrão, mas exige conformidade rigorosa com a LGPD. Em muitos casos, a melhor solução é combinar RFID para moradores e visitantes com biometria para áreas comuns.',
+      },
+    ],
+    internalLink: {
+      text: 'Precisa escolher o controle de acesso ideal para sua empresa ou condomínio?',
+      url: '/servicos/controle-de-acesso/',
+      linkText: 'Ver Controle de Acesso',
+    },
+    whatsappMessage: 'Vim do blog e quero avaliar o controle de acesso',
+    ctaFinal: {
+      title: 'Precisa escolher o controle de acesso ideal para sua empresa ou condomínio?',
+      text: 'A Intelsecsul realiza projetos de controle de acesso em Curitiba e Região Metropolitana, com avaliação técnica no local para definir a arquitetura mais adequada ao seu fluxo, ao seu orçamento e às suas obrigações de conformidade.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
+  {
+    id: 'comprar-ou-alugar-cameras-de-seguranca-comparacao-completa',
+    slug: 'comprar-ou-alugar-cameras-de-seguranca-comparacao-completa',
+    title: 'Comprar ou Alugar Câmeras de Segurança? Comparação Completa | Intelsecsul',
+    metaTitle: 'Comprar ou Alugar Câmeras de Segurança? Comparação Completa | Intelsecsul',
+    metaDescription: 'Comprar ou alugar câmeras de segurança? Compare investimento inicial, manutenção, atualização, contrato e previsibilidade — e descubra qual modelo faz mais sentido para o seu imóvel ou empresa.',
+    h1: 'Comprar ou alugar câmeras e equipamentos de segurança? Comparação completa',
+    category: 'Locação',
+    readTime: '11 min de leitura',
+    publishedDate: '2026-09-26',
+    summary: 'A decisão entre comprar e alugar câmeras de segurança não é apenas financeira — é estratégica. A compra exige investimento inicial alto; a locação distribui o custo em mensalidades fixas, com manutenção e suporte inclusos.',
+    intro: 'A decisão entre comprar e alugar um sistema de câmeras de segurança não é apenas financeira — é estratégica. Enquanto a compra exige um investimento inicial alto e transfere para você a responsabilidade sobre manutenção, atualização e substituição de equipamentos, a locação distribui esse custo em mensalidades fixas e previsíveis, com manutenção e suporte inclusos. Um estudo da Prefeitura de Londrina comparou os dois modelos para um projeto de videomonitoramento e concluiu que a locação apresentou valor inferior em relação à aquisição de novos equipamentos: R$ 505.425,60 contra R$ 546.522,48 — uma diferença de mais de R$ 40 mil a favor da locação.',
+    sections: [
+      {
+        h2: 'Investimento inicial: o critério que mais pesa na decisão',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">Compra</h3>
+            <p>A compra exige desembolso imediato de todo o valor do sistema. Para uma residência com 4 câmeras, um kit CFTV completo (DVR + câmeras + HD + cabos + fonte) custa entre R$ 1.200 e R$ 2.500. A isso soma-se a mão de obra de instalação, que em Curitiba varia entre R$ 180 e R$ 450 por ponto — ou seja, mais R$ 720 a R$ 1.800 para 4 câmeras.</p>
+            <p>O investimento total para um sistema residencial de 4 câmeras fica, portanto, entre R$ 1.920 e R$ 4.300. Para sistemas comerciais maiores (8 a 16 câmeras), o valor pode ultrapassar R$ 10.000 antes da primeira imagem gravada. Se você ainda não sabe quantas câmeras precisa, vale conferir nosso <Link to="/blog/quantas-cameras-de-seguranca-preciso-para-minha-casa" className="text-white underline hover:text-slate-300">guia de cálculo de câmeras por imóvel</Link> antes de fechar qualquer orçamento.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
+            <p>A locação elimina o CAPEX (investimento inicial). O modelo de aluguel funciona como OPEX (despesa operacional): você paga uma mensalidade que já inclui equipamentos, instalação, manutenção e suporte técnico. Valores de referência do mercado brasileiro para locação de CFTV:</p>
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full text-sm border-collapse min-w-[480px]">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left p-3 text-white font-bold">Sistema</th>
+                    <th className="text-left p-3 text-white font-bold">Quantidade de câmeras</th>
+                    <th className="text-left p-3 text-white font-bold">Valor médio mensal</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Básico</td><td className="p-3">2 a 4 câmeras</td><td className="p-3">R$ 340</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Intermediário</td><td className="p-3">5 a 7 câmeras</td><td className="p-3">R$ 410</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Intermediário</td><td className="p-3">8 câmeras</td><td className="p-3">R$ 520</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Avançado</td><td className="p-3">9 câmeras</td><td className="p-3">R$ 620</td></tr>
+                  <tr><td className="p-3 font-semibold text-white">Avançado</td><td className="p-3">10 a 16 câmeras</td><td className="p-3">R$ 880</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Esses valores incluem instalação, manutenção, suporte técnico e substituição de equipamentos defeituosos.</p>
+            <p><strong className="text-white">Vantagem na locação:</strong> zero investimento inicial. O sistema começa a funcionar com o primeiro pagamento mensal, sem descapitalizar o orçamento.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Custo total ao longo do tempo: a conta que realmente importa',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">Compra</h3>
+            <p>Além do investimento inicial, a compra carrega custos ocultos que só aparecem com o tempo:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Manutenção corretiva:</strong> cada chamado técnico é pago à parte. Uma troca de câmera avulsa pode custar entre R$ 400 e R$ 1.200.</li>
+              <li><strong className="text-white">Substituição de HD:</strong> o disco rígido do DVR tem vida útil limitada e precisa ser trocado a cada 3-5 anos.</li>
+              <li><strong className="text-white">Atualização tecnológica:</strong> câmeras e gravadores se tornam obsoletos em 7 a 9 anos em média.</li>
+              <li><strong className="text-white">Peças de desgaste:</strong> fontes, conectores e cabos têm vida útil mais curta que as câmeras.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
+            <p>Na locação, todos esses custos estão diluídos na mensalidade. A empresa locadora é responsável por manter o sistema funcionando, substituir equipamentos defeituosos sem custo adicional e arcar com a obsolescência tecnológica. O estudo de Londrina aponta que a locação dispensa provisionamentos para compra de novos equipamentos e elimina as variações de custo acarretadas por perda, furto, desastres naturais ou necessidade de manutenção e compra de peças.</p>
+            <p><strong className="text-white">Vantagem na locação:</strong> custo total mais previsível e, em muitos cenários, menor no longo prazo — especialmente quando se contabilizam manutenções emergenciais, substituições e atualizações.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Manutenção: quem cuida do sistema?',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">Compra</h3>
+            <p>Na compra, a manutenção é responsabilidade do proprietário. Se você não contrata um plano de manutenção preventiva, o sistema só recebe atenção quando quebra — e reparos corretivos custam significativamente mais do que ajustes preventivos. Se está em dúvida sobre qual modelo de manutenção faz mais sentido, vale ler nosso comparativo de <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">contrato de manutenção x chamado avulso</Link>.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
+            <p>Na locação, a manutenção está inclusa no contrato. A empresa locadora faz a manutenção preventiva programada, a manutenção corretiva sem custo adicional e a substituição de câmeras defeituosas sem taxa. Para o cliente, isso significa zero surpresas com custos de reparo.</p>
+            <p><strong className="text-white">Vantagem na locação:</strong> manutenção preventiva e corretiva inclusas, sem necessidade de gerenciar fornecedores ou arcar com reparos inesperados.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Atualização tecnológica: quem fica com o equipamento obsoleto?',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">Compra</h3>
+            <p>A tecnologia de segurança eletrônica evolui rapidamente. Câmeras que eram top de linha há cinco anos podem estar defasadas em resolução, visão noturna ou capacidade de análise inteligente. Na compra, você fica com o equipamento obsoleto e precisa arcar com a substituição quando decidir atualizar.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
+            <p>Na locação, a atualização tecnológica é responsabilidade da locadora. Ao renovar o contrato ou durante a vigência, o cliente pode ter acesso a equipamentos mais modernos sem precisar comprar tudo de novo.</p>
+            <p><strong className="text-white">Vantagem na locação:</strong> o sistema se mantém atualizado ao longo do contrato, sem custo adicional de aquisição.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Contrato e fidelidade: qual a flexibilidade de cada modelo?',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">Compra</h3>
+            <p>A compra não tem fidelidade. Você é dono do equipamento e pode fazer o que quiser com ele — vender, transferir, desmontar. Não há mensalidade, não há multa de cancelamento, não há obrigação contratual de longo prazo (exceto se você contratar manutenção separadamente).</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
+            <p>A locação é um contrato de prestação de serviço continuado, e os prazos variam entre fornecedores. É importante ler o contrato com atenção: o que está incluso, qual o prazo de fidelidade, qual a multa por cancelamento antecipado e o que acontece com os equipamentos ao final.</p>
+            <p><strong className="text-white">Vantagem na compra:</strong> liberdade total, sem fidelidade e sem mensalidade obrigatória. <strong className="text-white">Vantagem na locação:</strong> flexibilidade para ajustar o escopo conforme a necessidade, em alguns modelos de contrato.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Previsibilidade: o valor de saber quanto vai gastar',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">Compra</h3>
+            <p>O custo da compra é imprevisível no longo prazo. Você sabe quanto pagou pelo kit inicial, mas não sabe quanto vai gastar com manutenção nos próximos 5 anos, quantas câmeras vão queimar, se o HD vai falhar ou quando será necessário atualizar o sistema.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
+            <p>A locação entrega previsibilidade absoluta. A mensalidade é fixa, e todos os custos operacionais (manutenção, substituição, suporte) já estão embutidos.</p>
+            <p><strong className="text-white">Vantagem na locação:</strong> orçamento controlado. Você sabe exatamente quanto o sistema custa por mês, sem variáveis.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela comparativa resumida',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[600px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Critério</th>
+                  <th className="text-left p-3 text-white font-bold">Compra</th>
+                  <th className="text-left p-3 text-white font-bold">Locação</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Investimento inicial</td><td className="p-3">Alto (R$ 1.920 a R$ 4.300+ para 4 câmeras)</td><td className="p-3">Zero (primeiro pagamento após instalação)</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Custo mensal</td><td className="p-3">Nenhum (exceto manutenção contratada)</td><td className="p-3">Fixo (R$ 340 a R$ 880 para 2 a 16 câmeras)</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Manutenção</td><td className="p-3">Responsabilidade do proprietário</td><td className="p-3">Inclusa no contrato</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Substituição de equipamentos</td><td className="p-3">Custo do proprietário</td><td className="p-3">Inclusa, sem taxa adicional</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Atualização tecnológica</td><td className="p-3">Custo do proprietário</td><td className="p-3">Responsabilidade da locadora</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Previsibilidade de custo</td><td className="p-3">Baixa (custos ocultos ao longo do tempo)</td><td className="p-3">Alta (mensalidade fixa)</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Fidelidade</td><td className="p-3">Nenhuma</td><td className="p-3">Conforme contrato</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Propriedade do equipamento</td><td className="p-3">Sim (patrimônio)</td><td className="p-3">Não (comodato)</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Melhor para</td><td className="p-3">Quem fica no imóvel a longo prazo e tem capital disponível</td><td className="p-3">Quem quer previsibilidade, sem investimento inicial</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando alugar faz mais sentido?',
+        content: (
+          <ul className="space-y-2 list-disc list-inside">
+            <li><strong className="text-white">Quem não quer (ou não pode) descapitalizar.</strong> Empresas que precisam preservar capital de giro e residências com orçamento apertado encontram na locação uma forma de ter segurança sem comprometer o caixa.</li>
+            <li><strong className="text-white">Quem valoriza previsibilidade.</strong> Saber exatamente quanto gasta por mês com segurança facilita o planejamento financeiro.</li>
+            <li><strong className="text-white">Quem está em imóvel alugado ou temporário.</strong> Se você vai sair em 1 ou 2 anos, não compensa investir em sistema fixo.</li>
+            <li><strong className="text-white">Quem quer acesso à tecnologia atualizada.</strong> A locadora se encarrega de manter o sistema moderno, sem custo de upgrade.</li>
+            <li><strong className="text-white">Quem não quer gerenciar manutenção.</strong> A locação terceiriza toda a operação do sistema — você só usa.</li>
+          </ul>
+        ),
+      },
+      {
+        h2: 'Quando comprar faz mais sentido?',
+        content: (
+          <ul className="space-y-2 list-disc list-inside">
+            <li><strong className="text-white">Quem pretende ficar no imóvel por muitos anos.</strong> A partir do segundo ou terceiro ano, o custo total da compra tende a se equalizar com o da locação, e a partir daí a compra sai mais barata.</li>
+            <li><strong className="text-white">Quem quer patrimônio.</strong> O equipamento é seu, e você pode vendê-lo, transferi-lo ou reutilizá-lo quando quiser.</li>
+            <li><strong className="text-white">Quem tem capital disponível e prefere não ter mensalidade.</strong> Se o orçamento permite o desembolso inicial, a compra elimina a obrigação mensal.</li>
+            <li><strong className="text-white">Quem quer personalizar o sistema.</strong> A compra permite escolher cada componente, marca e modelo sem as restrições de pacotes de locação.</li>
+          </ul>
+        ),
+      },
+      {
+        h2: 'Como a Intelsecsul pode ajudar',
+        content: (
+          <div className="space-y-4">
+            <p>A Intelsecsul trabalha com <Link to="/servicos/cameras-de-seguranca" className="text-white underline hover:text-slate-300">venda</Link> e locação de câmeras de segurança em Curitiba e Região Metropolitana. Nosso plano de locação para 8 câmeras, por exemplo, sai por R$ 489/mês — abaixo da média de mercado citada acima para essa mesma faixa. Na visita técnica gratuita, avaliamos o seu imóvel, calculamos a quantidade ideal de câmeras e apresentamos as duas opções com simulação de custo total para o seu cenário específico.</p>
+            <p>Se você está avaliando uma oferta de locação, nossa equipe explica o que está incluso no plano, qual o prazo de fidelidade e como funciona a manutenção e a substituição de equipamentos. Sem letras miúdas.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: 'Comprar ou alugar câmeras de segurança? A resposta depende do seu prazo de permanência no imóvel, do capital disponível e de quanto você valoriza previsibilidade. A locação elimina o investimento inicial, inclui manutenção e atualização, e entrega custo mensal fixo — ideal para quem quer segurança sem descapitalizar ou gerenciar equipamentos. A compra é um investimento de longo prazo que faz sentido para quem vai ficar no imóvel por muitos anos e quer patrimônio. O que não faz sentido é decidir sem comparar.',
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Posso cancelar a locação a qualquer momento?',
+        answer: 'Depende do contrato. Verifique o prazo mínimo e as condições de cancelamento antecipado antes de assinar — alguns modelos oferecem contratos mais flexíveis que outros.',
+      },
+      {
+        question: 'O que acontece com os equipamentos ao final do contrato de locação?',
+        answer: 'Em modelos de comodato, os equipamentos são devolvidos à locadora. Em alguns contratos, pode haver opção de compra ao final do prazo. O destino dos equipamentos deve estar claro no contrato.',
+      },
+      {
+        question: 'A locação inclui a manutenção preventiva?',
+        answer: 'Sim, na maioria dos planos de locação profissional. A manutenção preventiva (limpeza, ajustes, verificação de firmware) e a corretiva (substituição de peças defeituosas) estão inclusas na mensalidade.',
+      },
+      {
+        question: 'Locação é mais barata que comprar?',
+        answer: 'Depende do prazo de uso. No curto e médio prazo (até 2 anos), a locação costuma ser mais barata por não exigir investimento inicial. No longo prazo (5 anos ou mais), a compra tende a ser mais econômica, desde que você contabilize os custos de manutenção e atualização.',
+      },
+      {
+        question: 'Posso alugar câmeras e depois comprar?',
+        answer: 'Em alguns contratos de locação há opção de compra ao final do prazo, podendo o valor pago na locação ser parcialmente abatido do preço de compra. Verifique as condições com a locadora.',
+      },
+    ],
+    internalLink: {
+      text: 'Quer comparar compra e locação para o seu imóvel?',
+      url: '/servicos/locacao-de-cameras-de-seguranca/',
+      linkText: 'Ver Locação de Câmeras',
+    },
+    whatsappMessage: 'Vim do blog e quero comparar compra e locação de câmeras',
+    ctaFinal: {
+      title: 'Quer comparar compra e locação para o seu imóvel?',
+      text: 'A Intelsecsul faz essa comparação gratuitamente na visita técnica, com simulação de custo total para o seu cenário em Curitiba e Região Metropolitana.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
 ];
