@@ -2387,4 +2387,446 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       buttonText: 'Falar no WhatsApp agora',
     },
   },
+  {
+    id: 'porta-automatica-de-correr-ou-giratoria-qual-escolher',
+    slug: 'porta-automatica-de-correr-ou-giratoria-qual-escolher',
+    title: 'Porta Automática de Correr ou Giratória: Qual Escolher para Comércio e Clínica? | Intelsecsul',
+    metaTitle: 'Porta Automática de Correr ou Giratória: Qual Escolher para Comércio e Clínica? | Intelsecsul',
+    metaDescription: 'Porta automática de correr ou giratória? Compare espaço, fluxo, acessibilidade (NBR 9050), manutenção e tipo de entrada para escolher a melhor opção para comércio ou clínica.',
+    h1: 'Porta automática de correr ou giratória: qual a diferença?',
+    category: 'Portas Automáticas',
+    readTime: '12 min de leitura',
+    publishedDate: '2026-10-01',
+    summary: 'A escolha entre porta de correr e porta giratória envolve acessibilidade, fluxo, segurança e conformidade com a NBR 9050. A porta de correr é mais versátil e acessível; a giratória oferece isolamento superior, mas nunca pode ser a entrada única de um estabelecimento acessível.',
+    intro: 'A escolha entre uma porta automática de correr e uma porta giratória não é uma questão de preferência estética — é uma decisão técnica que envolve acessibilidade, fluxo de pessoas, segurança e conformidade com a NBR 9050. A NBR 9050:2020 é clara: em portas giratórias, é obrigatória a existência de uma entrada alternativa acessível para cadeirantes, pessoas com mobilidade reduzida e usuários de dispositivos de rodas. Em portas de correr, o vão livre de 0,80 m deve ser garantido quando a porta está aberta. Isso significa que a porta giratória nunca pode ser a única entrada de um estabelecimento que precisa ser acessível — para muitos comércios e clínicas, essa exigência já elimina a giratória como opção viável.',
+    sections: [
+      {
+        h2: '1. Espaço necessário',
+        content: (
+          <div className="space-y-4">
+            <p>Porta de correr exige espaço lateral para as folhas deslizarem. Em locais com espaço lateral limitado, a versão telescópica permite ampliar o passo aproveitando melhor o vão, com as folhas deslizando sobrepostas. Não exige espaço de giro na frente ou atrás, o que a torna ideal para fachadas de vidro e corredores estreitos.</p>
+            <p>Porta giratória exige espaço circular para o tambor girar — diâmetro mínimo de 1,50 m (alguns modelos chegam a 2,40 m), com área ao redor livre de obstáculos. Em compensação, não precisa de espaço lateral para folhas abrirem.</p>
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full text-sm border-collapse min-w-[560px]">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left p-3 text-white font-bold">Critério de espaço</th>
+                    <th className="text-left p-3 text-white font-bold">Porta de correr</th>
+                    <th className="text-left p-3 text-white font-bold">Porta giratória</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Espaço lateral</td><td className="p-3">Necessário (exceto telescópica)</td><td className="p-3">Não necessário</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Espaço de giro</td><td className="p-3">Não necessário</td><td className="p-3">Necessário (diâmetro mínimo 1,50 m)</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Espaço no piso</td><td className="p-3">Trilho superior (recomendado)</td><td className="p-3">Base circular no piso</td></tr>
+                  <tr><td className="p-3 font-semibold text-white">Ideal para</td><td className="p-3">Fachadas de vidro, corredores estreitos</td><td className="p-3">Fachadas amplas, halls espaçosos</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ),
+      },
+      {
+        h2: '2. Fluxo e volume de pessoas',
+        content: (
+          <div className="space-y-4">
+            <p>Porta de correr é a tecnologia de maior vazão. A abertura horizontal permite passagem contínua, sem interrupção, e o fluxo bidirecional é natural. Sistemas de alto desempenho abrem e fecham cerca de 4.000 vezes por dia.</p>
+            <p>Porta giratória impõe um fluxo sequencial: cada pessoa ocupa um compartimento do tambor, e a rotação precisa ser completada antes do próximo usuário entrar. Em horários de pico, isso cria filas — é mais indicada para fluxo moderado e controlado, como entradas corporativas e bancos.</p>
+            <p>Em clínicas e consultórios, a porta de correr é quase sempre a escolha mais adequada: o fluxo de pacientes, acompanhantes e profissionais é contínuo, e a acessibilidade é prioridade absoluta.</p>
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full text-sm border-collapse min-w-[560px]">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left p-3 text-white font-bold">Fluxo</th>
+                    <th className="text-left p-3 text-white font-bold">Porta de correr</th>
+                    <th className="text-left p-3 text-white font-bold">Porta giratória</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Vazão</td><td className="p-3">Alta (passagem contínua)</td><td className="p-3">Moderada (fluxo sequencial)</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Bidirecional</td><td className="p-3">Sim, natural</td><td className="p-3">Limitado (compartimentos)</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Ideal para</td><td className="p-3">Comércio, clínicas, shoppings</td><td className="p-3">Bancos, corporativo, edifícios premium</td></tr>
+                  <tr><td className="p-3 font-semibold text-white">Risco de fila</td><td className="p-3">Baixo</td><td className="p-3">Moderado a alto em pico</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ),
+      },
+      {
+        h2: '3. Acessibilidade e NBR 9050',
+        content: (
+          <div className="space-y-4">
+            <p>Este é o critério mais crítico da comparação. Porta de correr, quando aberta, deve ter vão livre maior ou igual a 0,80 m de largura e 2,10 m de altura. Os trilhos devem ficar na parte superior, e as frestas dos trilhos inferiores devem ser inferiores a 1,5 cm para não obstruir cadeiras de rodas. Sensores devem ser ajustados para detectar pessoas de baixa estatura, crianças e usuários de cadeiras de rodas.</p>
+            <p>Porta giratória: a NBR 9050 é explícita — locais com portas giratórias devem fornecer entrada alternativa acessível e sinalizada. A giratória não é acessível por si só — é uma barreira física para cadeirantes, carrinhos de bebê, idosos com mobilidade reduzida e usuários de muletas.</p>
+            <p><strong className="text-white">Implicação prática:</strong> em uma clínica, a porta de correr é a escolha natural. Em um comércio que opte pela giratória como entrada principal, será necessário instalar uma segunda porta acessível ao lado — o que aumenta custo e espaço.</p>
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full text-sm border-collapse min-w-[560px]">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left p-3 text-white font-bold">Acessibilidade</th>
+                    <th className="text-left p-3 text-white font-bold">Porta de correr</th>
+                    <th className="text-left p-3 text-white font-bold">Porta giratória</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Acessível sozinha</td><td className="p-3">Sim (vão livre ≥ 0,80 m)</td><td className="p-3">Não (exige entrada alternativa)</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Cadeirante</td><td className="p-3">Acesso direto</td><td className="p-3">Acesso apenas pela porta alternativa</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Carrinho de bebê</td><td className="p-3">Acesso direto</td><td className="p-3">Difícil ou impossível</td></tr>
+                  <tr><td className="p-3 font-semibold text-white">Conformidade NBR 9050</td><td className="p-3">Atende como entrada única</td><td className="p-3">Exige entrada alternativa sinalizada</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ),
+      },
+      {
+        h2: '4. Segurança e risco de esmagamento',
+        content: (
+          <div className="space-y-4">
+            <p>Porta de correr oferece risco de esmagamento menor e mais controlável — movimento horizontal, forças de impacto limitadas, e dispositivos de segurança (fotocélulas, cortinas infravermelhas) mais simples de implementar e testar.</p>
+            <p>Porta giratória apresenta riscos mais complexos: entalamento, pinçamento e cisalhamento entre bordas móveis e fixas do tambor. A EN 16005 aborda explicitamente riscos de esmagamento, impacto, cisalhamento, arrasto e movimentos incontrolados em portas giratórias. Em um estudo conduzido na Alemanha, 12 de 14 tipos de portas giratórias foram recomendados para desligamento imediato por não atenderem aos requisitos de segurança.</p>
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full text-sm border-collapse min-w-[560px]">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left p-3 text-white font-bold">Segurança</th>
+                    <th className="text-left p-3 text-white font-bold">Porta de correr</th>
+                    <th className="text-left p-3 text-white font-bold">Porta giratória</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Risco de esmagamento</td><td className="p-3">Menor (movimento horizontal)</td><td className="p-3">Maior (pontos de pinçamento e cisalhamento)</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Dispositivos de segurança</td><td className="p-3">Fotocélulas e cortinas</td><td className="p-3">Sensores de borda + sistemas complexos</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Complexidade de conformidade</td><td className="p-3">Moderada</td><td className="p-3">Alta (EN 16005, calibração rigorosa)</td></tr>
+                  <tr><td className="p-3 font-semibold text-white">Risco para crianças/idosos</td><td className="p-3">Baixo</td><td className="p-3">Moderado a alto</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ),
+      },
+      {
+        h2: '5. Manutenção e custo',
+        content: (
+          <div className="space-y-4">
+            <p>Porta de correr: manutenção relativamente simples — limpeza do trilho, verificação da correia ou corrente, lubrificação de roletes e rolamentos, teste dos sensores. A cada 3-6 meses mantém o sistema confiável. Se o seu sistema já apresenta sintomas de falha, vale conferir nosso guia de <Link to="/blog/porta-automatica-nao-abre-causas-sensor-alimentacao-mecanismo" className="text-white underline hover:text-slate-300">causas de porta automática que não abre</Link>.</p>
+            <p>Porta giratória: manutenção mais complexa e cara — verificação de sensores EN 16005, calibração de velocidade, afinação de bordas de segurança, controle de sistemas de bloqueio eletromagnético, avaliação do motor. Intervalo mínimo recomendado: uma vez ao ano, mais em alto fluxo.</p>
+            <p><strong className="text-white">Custo:</strong> uma porta de correr automática de vidro (deslizante simples, 3 m, 2 folhas, com instalação) parte de R$ 7.600. Uma porta giratória automática de aço inoxidável e vidro, com 2,40 m de altura, tem custo direto estimado em R$ 72.112,98, com custo de manutenção decenal de R$ 19.550,98 nos primeiros 10 anos — a giratória pode custar até 10 vezes mais que uma porta de correr equivalente.</p>
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full text-sm border-collapse min-w-[560px]">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left p-3 text-white font-bold">Manutenção e custo</th>
+                    <th className="text-left p-3 text-white font-bold">Porta de correr</th>
+                    <th className="text-left p-3 text-white font-bold">Porta giratória</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Complexidade de manutenção</td><td className="p-3">Moderada</td><td className="p-3">Alta</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Frequência recomendada</td><td className="p-3">A cada 3-6 meses</td><td className="p-3">Pelo menos 1x/ano (mais em alto fluxo)</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Custo inicial (referência)</td><td className="p-3">A partir de R$ 7.600</td><td className="p-3">R$ 70.000+</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Custo de manutenção decenal</td><td className="p-3">Moderado</td><td className="p-3">R$ 19.550+ (referência)</td></tr>
+                  <tr><td className="p-3 font-semibold text-white">Pontos críticos</td><td className="p-3">Trilho, correia, sensores</td><td className="p-3">Sensores EN 16005, bordas, motor</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ),
+      },
+      {
+        h2: '6. Tipo de entrada e adequação por segmento',
+        content: (
+          <div className="space-y-4">
+            <p><strong className="text-white">Comércio (lojas, farmácias, supermercados):</strong> porta de correr é a escolha padrão. O fluxo é alto, os clientes entram e saem com carrinhos, sacolas e crianças — a porta de correr oferece passagem contínua, sem barreiras, com acessibilidade garantida.</p>
+            <p><strong className="text-white">Clínica e consultório:</strong> porta de correr é praticamente obrigatória. A acessibilidade é um requisito legal e ético, e a maioria dos pacientes tem alguma limitação de mobilidade. Permite também integração com controle de acesso e versão hermética para centros cirúrgicos e laboratórios.</p>
+            <p><strong className="text-white">Edifícios corporativos e bancos:</strong> a porta giratória é mais comum — por isolamento térmico e acústico, controle de fluxo e estética premium, geralmente com uma porta de correr acessível ao lado.</p>
+            <p><strong className="text-white">Hospital e laboratório:</strong> porta de correr hermética é a escolha para áreas que exigem controle de contaminação.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela comparativa resumida',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[680px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Critério</th>
+                  <th className="text-left p-3 text-white font-bold">Porta de correr</th>
+                  <th className="text-left p-3 text-white font-bold">Porta giratória</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Espaço lateral</td><td className="p-3">Necessário (telescópica resolve)</td><td className="p-3">Não necessário</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Espaço de giro</td><td className="p-3">Não necessário</td><td className="p-3">Necessário (diâmetro ≥ 1,50 m)</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Fluxo</td><td className="p-3">Alto, contínuo, bidirecional</td><td className="p-3">Moderado, sequencial</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Acessibilidade NBR 9050</td><td className="p-3">Atende como entrada única</td><td className="p-3">Exige entrada alternativa acessível</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Risco de esmagamento</td><td className="p-3">Menor</td><td className="p-3">Maior (pontos de pinçamento)</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Manutenção</td><td className="p-3">Moderada, simples</td><td className="p-3">Alta, complexa</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Custo inicial</td><td className="p-3">A partir de R$ 7.600</td><td className="p-3">R$ 70.000+</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Isolamento térmico/acústico</td><td className="p-3">Bom (versão hermética)</td><td className="p-3">Excelente</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Ideal para</td><td className="p-3">Comércio, clínicas, hospitais, shoppings</td><td className="p-3">Bancos, corporativo, edifícios premium</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando escolher cada uma?',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">Escolha porta de correr se…</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Você tem comércio ou clínica e precisa de acessibilidade garantida sem entrada alternativa.</li>
+              <li>O fluxo de pessoas é alto e você precisa de passagem contínua e bidirecional.</li>
+              <li>Você quer custo de instalação e manutenção mais acessível.</li>
+              <li>O espaço lateral é limitado — a versão telescópica resolve.</li>
+              <li>Você precisa de integração com controle de acesso e possibilidade de versão hermética.</li>
+              <li>Você quer conformidade simples com a NBR 9050 sem precisar de uma segunda porta acessível.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Escolha porta giratória se…</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Você tem edifício corporativo, banco ou entrada premium e quer isolamento térmico e acústico superior.</li>
+              <li>O fluxo é moderado e você não tem pico de circulação intenso.</li>
+              <li>Você tem espaço lateral limitado e espaço interno amplo para o tambor.</li>
+              <li>Você está disposto a instalar uma segunda porta acessível ao lado para conformidade com a NBR 9050.</li>
+              <li>Você valoriza a estética arquitetônica e o aspecto premium da entrada.</li>
+              <li>Você tem orçamento para manutenção rigorosa e equipamentos de segurança de alta qualidade.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: 'Porta automática de correr ou giratória? Para comércio e clínica, a porta de correr é a escolha mais segura, acessível e econômica na grande maioria dos casos. Ela atende à NBR 9050 como entrada única, oferece fluxo contínuo e tem custo inicial e de manutenção menores. A porta giratória tem seu lugar em edifícios corporativos, bancos e entradas premium — mas sempre acompanhada de uma entrada alternativa acessível. Para clínicas, a giratória simplesmente não é uma opção viável como entrada única.',
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Porta giratória é permitida pela NBR 9050?',
+        answer: 'Sim, mas com uma condição obrigatória: locais com portas giratórias devem fornecer entrada alternativa acessível e sinalizada. A giratória em si é uma barreira para cadeirantes, carrinhos de bebê e pessoas com mobilidade reduzida — se ela for a entrada principal, é obrigatório ter uma porta acessível ao lado.',
+      },
+      {
+        question: 'Porta automática de correr é acessível para cadeirantes?',
+        answer: 'Sim. Quando aberta, deve ter vão livre de no mínimo 0,80 m de largura e 2,10 m de altura. Os trilhos inferiores devem ter frestas inferiores a 1,5 cm, e os sensores devem detectar pessoas de baixa estatura e usuários de cadeiras de rodas.',
+      },
+      {
+        question: 'Porta giratória é mais segura contra furtos?',
+        answer: 'Não necessariamente. A giratória oferece controle de fluxo, mas não é um dispositivo de segurança contra furto. O controle de acesso real é feito por catracas, leitores biométricos ou sistemas de alarme — a giratória não substitui essas soluções.',
+      },
+      {
+        question: 'Quanto custa uma porta automática de correr para comércio?',
+        answer: 'Uma porta de correr automática de vidro (deslizante simples, 3 m, 2 folhas, com instalação) parte de R$ 7.600, conforme referência de mercado. Modelos telescópicos, herméticos ou com controle de acesso integrado têm custo superior. O prazo médio de instalação é de 15 dias úteis.',
+      },
+      {
+        question: 'Porta giratória precisa de manutenção com que frequência?',
+        answer: 'O intervalo mínimo recomendado é de pelo menos uma vez por ano, incluindo verificação de sensores EN 16005, calibração de velocidade, afinação de bordas de segurança e avaliação do desgaste do motor. Em ambientes de alto fluxo, a frequência deve ser maior.',
+      },
+      {
+        question: 'Qual é melhor para clínica: correr ou giratória?',
+        answer: 'Porta de correr, sem dúvida. Clínicas precisam de acessibilidade garantida — a giratória exigiria uma segunda entrada acessível. Além disso, a porta de correr permite versão hermética para áreas que exigem controle de contaminação e integração com controle de acesso.',
+      },
+    ],
+    internalLink: {
+      text: 'Precisa escolher a porta automática ideal para seu comércio ou clínica?',
+      url: '/servicos/portas-automaticas/',
+      linkText: 'Ver Portas Automáticas',
+    },
+    whatsappMessage: 'Vim do blog e quero avaliar a porta automática ideal',
+    ctaFinal: {
+      title: 'Precisa escolher a porta automática ideal para seu comércio ou clínica?',
+      text: 'A Intelsecsul realiza projetos de portas automáticas em Curitiba e Região Metropolitana, com avaliação técnica no local para definir a solução mais adequada ao seu tipo de estabelecimento, ao fluxo de pessoas e às exigências de acessibilidade.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
+  {
+    id: 'cancela-automatica-condominio-empresa-como-dimensionar-fluxo',
+    slug: 'cancela-automatica-condominio-empresa-como-dimensionar-fluxo',
+    title: 'Cancela Automática para Condomínio ou Empresa: Como Dimensionar o Fluxo | Intelsecsul',
+    metaTitle: 'Cancela Automática para Condomínio ou Empresa: Como Dimensionar o Fluxo | Intelsecsul',
+    metaDescription: 'Cancela automática para condomínio ou empresa? Aprenda a dimensionar o fluxo de veículos por volume, horários de pico, tecnologia de identificação e contingência — e evite filas na portaria.',
+    h1: 'Cancela automática para condomínio ou empresa: como dimensionar o fluxo de veículos',
+    category: 'Cancelas e Catracas',
+    readTime: '11 min de leitura',
+    publishedDate: '2026-10-01',
+    summary: 'Fila na portaria não é falta de sorte — é projeto mal dimensionado. O dimensionamento correto parte de três variáveis: volume de veículos no pico, tempo de ciclo de identificação e capacidade de ciclos por hora da cancela.',
+    intro: 'Fila na portaria não é falta de sorte — é projeto mal dimensionado. Quando a cancela automática é escolhida pelo preço ou pelo modelo mais vendido, sem considerar o volume real de veículos, os horários de pico, a tecnologia de identificação e o layout da pista, o resultado aparece rapidamente: congestionamento na entrada, atrasos na saída, moradores irritados e sensação de insegurança. O dimensionamento correto parte de uma pergunta simples: quantos veículos precisam passar por aquela pista no horário mais crítico? A partir daí, calcula-se o tempo de ciclo e verifica-se se uma pista é suficiente ou se o projeto precisa de duas ou mais cancelas por sentido.',
+    sections: [
+      {
+        h2: 'O que é dimensionar o fluxo de veículos de uma cancela?',
+        content: (
+          <div className="space-y-4">
+            <p>Dimensionar o fluxo significa garantir que a pista de acesso consiga absorver o volume de veículos no horário de pico sem formar fila. Para isso, três variáveis precisam ser conhecidas:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Volume de veículos por hora (no pico).</strong> Em condomínios residenciais, o pico costuma ser entre 7h e 9h (saída) e entre 18h e 20h (entrada). Em empresas, o pico é na entrada (8h) e na saída (18h).</li>
+              <li><strong className="text-white">Tempo de ciclo de cada veículo.</strong> É a soma do tempo de identificação (tag RFID, leitura de placa, cartão, QR Code, interfone), mais abertura, passagem e fechamento. Cada tecnologia tem tempos diferentes.</li>
+              <li><strong className="text-white">Capacidade de ciclos por hora da cancela.</strong> Modelos de alto fluxo chegam a 500 a 600 ciclos/hora; modelos de médio fluxo operam entre 200 e 400 ciclos/hora.</li>
+            </ul>
+            <p>A regra de ouro é: a demanda no horário de pico deve ser menor que a capacidade da pista. Se a demanda se aproxima ou ultrapassa a capacidade, o projeto precisa de duas pistas (ou mais) por sentido.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Fatores que determinam o dimensionamento',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">Volume de veículos e horários de pico</h3>
+            <p>O primeiro passo é medir ou estimar o volume real. Em condomínios residenciais, a regra prática é:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Condomínio pequeno</strong> (até 50 unidades): pico de 30 a 60 veículos/hora.</li>
+              <li><strong className="text-white">Condomínio médio</strong> (50 a 150 unidades): pico de 60 a 150 veículos/hora.</li>
+              <li><strong className="text-white">Condomínio grande</strong> (150 a 500 unidades): pico de 150 a 400 veículos/hora.</li>
+              <li><strong className="text-white">Condomínio empresarial ou centro logístico:</strong> pico pode ultrapassar 900 veículos/hora.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Tecnologia de identificação: o fator que mais impacta o tempo de ciclo</h3>
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full text-sm border-collapse min-w-[640px]">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left p-3 text-white font-bold">Tecnologia</th>
+                    <th className="text-left p-3 text-white font-bold">Tempo de identificação</th>
+                    <th className="text-left p-3 text-white font-bold">Observações</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Tag RFID UHF</td><td className="p-3">0,3 a 1 segundo</td><td className="p-3">Abertura automática com aproximação de até 6 metros, sem parar</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Leitura de placas (LPR)</td><td className="p-3">1 a 2 segundos</td><td className="p-3">Câmera lê a placa e libera automaticamente, sem parada total</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Cartão RFID / proximidade</td><td className="p-3">1 segundo</td><td className="p-3">Exige que o motorista pare, abaixe o vidro e aproxime o cartão</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">QR Code</td><td className="p-3">2 a 4 segundos</td><td className="p-3">Exige abrir o app, encontrar o código e apontar para o leitor</td></tr>
+                  <tr><td className="p-3 font-semibold text-white">Interfone / porteiro</td><td className="p-3">5 a 15 segundos</td><td className="p-3">Depende da resposta do morador ou operador — o método mais lento</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Tag RFID UHF e LPR são as tecnologias que mais reduzem o tempo de ciclo — e, portanto, as que mais aumentam a capacidade de uma pista. Em projetos de alto fluxo, a combinação de tag RFID para moradores e LPR para visitantes é o padrão mais adotado.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Tipos de veículos</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Motocicletas:</strong> passagem rápida, em média 2 segundos após a abertura.</li>
+              <li><strong className="text-white">Carros:</strong> passagem em 3 a 4 segundos, dependendo da largura da pista.</li>
+              <li><strong className="text-white">Caminhões e veículos grandes:</strong> passagem em 5 a 8 segundos, podendo exigir pista mais larga e raio de giro maior.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Layout da pista e posicionamento da cancela</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Recuo da cancela:</strong> deve ficar no mínimo 5 metros da divisa do imóvel em relação à via pública, para o veículo não parar na calçada aguardando a abertura.</li>
+              <li><strong className="text-white">Largura da pista:</strong> no mínimo 7 metros para circulação de veículos e calçadas de 2 metros de cada lado. Em estacionamentos, a largura típica é de 2,5 a 3,5 metros por cancela.</li>
+              <li><strong className="text-white">Posição do laço indutivo:</strong> deve ficar antes da cancela, para detectar o veículo a tempo. Se estiver muito próximo, o veículo pode ser detectado já em cima da cancela, causando travamento.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Cálculo prático: quantos veículos uma cancela atende por hora?',
+        content: (
+          <div className="space-y-4">
+            <p className="font-bold text-white">A fórmula básica é: Capacidade por hora = 3.600 ÷ tempo de ciclo (em segundos)</p>
+            <p>Exemplo com tag RFID UHF e tempo de ciclo de 5 segundos (1 s identificação + 1,5 s abertura + 2 s passagem + 0,5 s fechamento): 3.600 ÷ 5 = 720 veículos/hora — mas esse número é teórico. Na prática, a capacidade real é menor por causa de variações de motorista, falhas de leitura e tempos de reação. Projetos reais usam fatores de segurança de 0,6 a 0,7, o que resulta em 430 a 500 veículos/hora por pista.</p>
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full text-sm border-collapse min-w-[640px]">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left p-3 text-white font-bold">Tecnologia</th>
+                    <th className="text-left p-3 text-white font-bold">Tempo de ciclo</th>
+                    <th className="text-left p-3 text-white font-bold">Capacidade teórica/hora</th>
+                    <th className="text-left p-3 text-white font-bold">Capacidade real estimada/hora</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Tag RFID UHF</td><td className="p-3">4 a 6 s</td><td className="p-3">600 a 900</td><td className="p-3">400 a 600</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Leitura de placas (LPR)</td><td className="p-3">5 a 7 s</td><td className="p-3">510 a 720</td><td className="p-3">350 a 500</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Cartão RFID</td><td className="p-3">6 a 8 s</td><td className="p-3">450 a 600</td><td className="p-3">300 a 420</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">QR Code</td><td className="p-3">8 a 12 s</td><td className="p-3">300 a 450</td><td className="p-3">200 a 300</td></tr>
+                  <tr><td className="p-3 font-semibold text-white">Interfone / porteiro</td><td className="p-3">15 a 25 s</td><td className="p-3">144 a 240</td><td className="p-3">100 a 170</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p><strong className="text-white">Interpretação prática:</strong> uma pista com tag RFID UHF atende bem até 400 veículos/hora com conforto. Se o pico do seu condomínio é de 500 veículos/hora, uma pista única vai formar fila — o projeto precisa de duas pistas ou de uma pista com LPR + tag para aumentar a capacidade.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Cenários práticos de dimensionamento',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">Condomínio residencial médio (100 unidades)</h3>
+            <p><strong className="text-white">Volume no pico:</strong> 80 veículos/hora (saída entre 7h e 9h). <strong className="text-white">Tecnologia:</strong> tag RFID UHF para moradores + interfone para visitantes. <strong className="text-white">Cálculo:</strong> 80 ÷ 400 (capacidade real por pista) = 0,2 pista.</p>
+            <p><strong className="text-white">Conclusão:</strong> uma pista de entrada e uma de saída são suficientes. O gargalo não é a capacidade da cancela, mas o tempo de resposta do interfone para visitantes — a solução é priorizar moradores com tag e ter portaria remota para agilizar visitantes.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Condomínio empresarial (500 colaboradores)</h3>
+            <p><strong className="text-white">Volume no pico:</strong> 250 veículos/hora (entrada entre 7h30 e 8h30). <strong className="text-white">Tecnologia:</strong> tag RFID UHF para colaboradores + LPR para visitantes. <strong className="text-white">Cálculo:</strong> 250 ÷ 500 (capacidade real com LPR + tag) = 0,5 pista.</p>
+            <p><strong className="text-white">Conclusão:</strong> uma pista de entrada atende, mas com fila moderada. Para conforto total, o projeto deve prever duas pistas de entrada — uma exclusiva para tag e outra para visitantes/LPR.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Centro logístico (900 veículos/hora)</h3>
+            <p><strong className="text-white">Volume no pico:</strong> 900 veículos/hora. <strong className="text-white">Tecnologia:</strong> tag RFID UHF para frota + LPR para visitantes + pistas separadas por tipo de veículo. <strong className="text-white">Cálculo:</strong> 900 ÷ 500 = 1,8 pista.</p>
+            <p><strong className="text-white">Conclusão:</strong> o projeto precisa de pelo menos duas pistas de entrada e duas de saída, com separação por tipo de veículo. Pistas exclusivas para caminhões exigem cancela com braço mais longo e motor mais potente.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Contingência: o que acontece na falta de energia?',
+        content: (
+          <div className="space-y-4">
+            <p>Uma cancela automática bem projetada precisa funcionar mesmo quando a energia acaba. A maioria dos modelos profissionais inclui bateria de reserva que garante operação por pelo menos 1 hora em caso de queda de energia. Outros recursos importantes:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Sistema de escamoteamento da barreira:</strong> a haste pode ser levantada manualmente ou liberada automaticamente para permitir a passagem.</li>
+              <li><strong className="text-white">Abertura de emergência:</strong> em situações críticas (incêndio, evacuação), a cancela deve permitir abertura imediata sem depender de energia.</li>
+              <li><strong className="text-white">Sinalização luminosa:</strong> LEDs indicam o estado da cancela e alertam em caso de falha.</li>
+            </ul>
+            <p>Na especificação da cancela, verifique se o modelo inclui bateria de reserva, abertura manual de emergência e sinalização luminosa. Esses recursos não são opcionais em condomínios e empresas — são requisitos de segurança e continuidade operacional.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico para o projeto',
+        content: (
+          <div className="space-y-4">
+            <p>O dimensionamento pode ser feito com dados de fluxo e uma planilha simples, mas o projeto completo envolve decisões técnicas que impactam diretamente o resultado:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Escolha do modelo de cancela</strong> — tempo de abertura, ciclos por hora, comprimento do braço, tipo de motor.</li>
+              <li><strong className="text-white">Tecnologia de identificação</strong> — tag RFID UHF, LPR, cartão, QR Code, interfone.</li>
+              <li><strong className="text-white">Integração com CFTV</strong> — câmeras de leitura de placas, gravação de eventos, auditoria de acesso.</li>
+              <li><strong className="text-white">Layout da pista</strong> — recuo, largura, laço indutivo, sinalização.</li>
+              <li><strong className="text-white">Contingência</strong> — bateria, abertura de emergência, operação manual.</li>
+              <li><strong className="text-white">Software de gestão</strong> — cadastro de veículos, relatórios de acesso, integração com portaria remota.</li>
+            </ul>
+            <p>A Intelsecsul realiza projetos de cancelas e catracas em Curitiba e Região Metropolitana, com avaliação técnica no local para medir o fluxo real, definir a tecnologia mais adequada e dimensionar o número de pistas necessário.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: 'Dimensionar o fluxo de veículos de uma cancela automática é mais do que escolher um modelo — é garantir que a pista absorva o volume no horário de pico sem fila. O cálculo parte de três variáveis: volume de veículos por hora, tempo de ciclo por tecnologia de identificação e capacidade de ciclos da cancela. Tag RFID UHF e leitura de placas (LPR) são as tecnologias que mais aumentam a capacidade de uma pista. Para condomínios residenciais, uma pista de entrada e uma de saída costumam ser suficientes; para empresas e centros logísticos com picos acima de 400 veículos/hora, o projeto precisa de duas ou mais pistas — e de contingência para falta de energia. E assim como o fluxo de veículos exige dimensionamento, o sistema que sustenta isso no dia a dia também precisa de manutenção: vale sempre revisar se compensa um contrato de manutenção preventiva em vez de depender só de chamados corretivos.',
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Quantas cancelas preciso para meu condomínio?',
+        answer: 'Depende do volume no horário de pico. A regra prática é: uma pista de entrada e uma de saída para condomínios com até 150 unidades. Se o pico ultrapassar 400 veículos/hora, ou se o tempo de resposta do interfone para visitantes for alto, o projeto deve prever duas pistas de entrada.',
+      },
+      {
+        question: 'Qual a cancela mais rápida para alto fluxo?',
+        answer: 'Cancelas com motor 24 VDC com encoder e tempo de abertura de 0,9 a 2 segundos são as mais rápidas do mercado, chegando a 500-600 ciclos/hora. Para alto fluxo, a combinação ideal é cancela rápida + tag RFID UHF ou LPR.',
+      },
+      {
+        question: 'Tag RFID ou leitura de placas: qual é melhor para condomínio?',
+        answer: 'As duas tecnologias podem ser combinadas. A tag RFID UHF é mais rápida e confiável para moradores. A leitura de placas (LPR) é melhor para visitantes e prestadores de serviço, que não têm tag. O projeto ideal usa tag para moradores e LPR para visitantes.',
+      },
+      {
+        question: 'Cancela automática funciona sem energia?',
+        answer: 'Sim, se o modelo incluir bateria de reserva — a maioria das cancelas profissionais garante pelo menos 1 hora de operação. Modelos com sistema de escamoteamento também permitem que a haste seja levantada manualmente em caso de queda de energia.',
+      },
+      {
+        question: 'Quanto custa instalar uma cancela automática em Curitiba?',
+        answer: 'Varia conforme o modelo, a tecnologia de identificação e a infraestrutura necessária. Uma cancela de alto fluxo com bateria e sinalização pode custar a partir de R$ 5.980 (equipamento), com instalação à parte. Projetos completos (cancela + tag + LPR + software) têm custo maior.',
+      },
+    ],
+    internalLink: {
+      text: 'Sua portaria está com fila? Precisa dimensionar a cancela para o fluxo real?',
+      url: '/servicos/cancelas-e-catracas/',
+      linkText: 'Ver Cancelas e Catracas',
+    },
+    whatsappMessage: 'Vim do blog e quero dimensionar a cancela para o fluxo real',
+    ctaFinal: {
+      title: 'Sua portaria está com fila? Precisa dimensionar a cancela para o fluxo real?',
+      text: 'A Intelsecsul realiza projetos de cancelas e catracas em Curitiba e Região Metropolitana. A visita técnica mede o fluxo real, define a tecnologia ideal e dimensiona o número de pistas necessário.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
 ];
