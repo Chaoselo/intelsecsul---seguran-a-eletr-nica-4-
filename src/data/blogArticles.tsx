@@ -25,6 +25,7 @@ export interface BlogArticleMeta {
     text: string;
     buttonText?: string;
   };
+  keywords?: string[];
   ogImage?: string;
   whatsappMessage?: string;
   internalLink?: {
@@ -2829,4 +2830,623 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       buttonText: 'Falar no WhatsApp agora',
     },
   },
+  {
+    id: 'dvr-mostra-imagem-ao-vivo-mas-nao-grava',
+    slug: 'dvr-mostra-imagem-ao-vivo-mas-nao-grava',
+    title: 'DVR Mostra Imagem ao Vivo mas Não Grava: O Que Verificar Antes de Perder Provas | Intelsecsul',
+    metaTitle: 'DVR Mostra Imagem ao Vivo mas Não Grava: O Que Verificar Antes de Perder Provas | Intelsecsul',
+    metaDescription: 'DVR mostra imagem ao vivo mas não grava? Veja o que verificar antes de formatar o HD, como testar o playback e quando chamar diagnóstico de CFTV para não perder gravações importantes.',
+    h1: 'DVR mostra imagem ao vivo, mas não grava: o que verificar antes de perder provas',
+    category: 'Câmeras de Segurança',
+    readTime: '9 min de leitura',
+    publishedDate: '2026-10-05',
+    summary: 'Imagem ao vivo e gravação são funções separadas dentro do DVR: a primeira depende do processador de vídeo, a segunda depende do HD e da fonte de alimentação. Veja as causas mais comuns e como verificar.',
+    keywords: [
+      'dvr mostra imagem mas nao grava',
+      'dvr nao grava imagem ao vivo',
+      'dvr nao reconhece hd',
+      'cftv nao esta gravando',
+      'cameras funcionam mas dvr nao grava',
+      'como saber se o dvr esta gravando',
+      'hd do dvr parou de gravar',
+    ],
+    intro: (
+      <div className="space-y-4">
+        <p>
+          Este é um dos cenários mais comuns e perigosos em sistemas de CFTV: todas as câmeras aparecem na tela, o monitor mostra o que está acontecendo em tempo real, mas quando alguém precisa resgatar uma gravação de ontem ou da semana passada, descobre que <strong>o sistema não grava nada há dias ou semanas</strong>.
+        </p>
+        <p>
+          Isso acontece porque a exibição de imagem ao vivo e a gravação em disco são <strong>processos completamente independentes</strong> dentro do DVR. O fato de haver imagem no monitor significa apenas que o sinal de vídeo está chegando e sendo processado pelo chip gráfico — não garante que o disco rígido esteja gravando um único segundo sequer.
+        </p>
+        <p>
+          Neste guia, você vai entender por que isso acontece, quais são as causas mais comuns, como verificar o status real de gravação em menos de cinco minutos e o que fazer antes que uma ocorrência aconteça e você perceba tarde demais que não tem imagens salvas.
+        </p>
+      </div>
+    ),
+    sections: [
+      {
+        h2: 'Por que isso acontece: imagem ao vivo e gravação são processos separados',
+        content: (
+          <div className="space-y-4">
+            <p>
+              Para entender o problema, vale saber como o DVR lida com os sinais que recebe. Ele executa dois fluxos de trabalho paralelos:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>
+                <strong>Fluxo de exibição ao vivo (Display):</strong> O cabo coaxial ou de rede traz o sinal da câmera, o processador decodifica o vídeo e o envia diretamente para a saída HDMI ou VGA. O HD não participa dessa etapa.
+              </li>
+              <li>
+                <strong>Fluxo de gravação (Storage):</strong> O vídeo comprimido (H.264, H.265) é enfileirado na memória RAM do DVR e gravado continuamente ou por eventos no disco rígido conectado à interface SATA. Esse processo exige comunicação estável com o HD, alimentação elétrica suficiente e permissão de escrita do sistema de arquivos.
+              </li>
+            </ul>
+            <p>
+              Se o HD falhar, o cabo de dados desconectar, a fonte perder potência ou a agenda de gravação for desconfigurada, o fluxo de exibição continuará funcionando normalmente enquanto o fluxo de armazenamento para por completo — criando uma <strong>falsa sensação de segurança</strong> para quem apenas olha o monitor de tempos em tempos.
+            </p>
+          </div>
+        ),
+      },
+      {
+        h2: 'As causas mais comuns para o DVR não gravar',
+        content: (
+          <div className="space-y-4">
+            <p>
+              Na rotina de campo, a Intelsecsul costuma identificar seis causas principais quando um DVR reproduz imagem ao vivo mas não grava:
+            </p>
+
+            <h3 className="text-xl font-semibold text-white mt-4">1. HD não reconhecido ou desconectado</h3>
+            <p>
+              O disco rígido pode ter sido desconectado fisicamente por vibração contínua, mau contato no cabo SATA de dados ou queima da controladora do próprio HD. O DVR inicia sem acusar erro visual evidente no mosaico de câmeras, mas na tela de gerenciamento de disco o status aparece como <em>"Nenhum disco encontrado"</em> ou <em>"Sem HD"</em>.
+            </p>
+
+            <h3 className="text-xl font-semibold text-white mt-4">2. HD corrompido, com setores defeituosos (bad blocks) ou travado</h3>
+            <p>
+              Discos rígidos comuns de desktop (linha comum de computador) usados em DVRs sofrem desgaste acelerado porque trabalham 24 horas por dia gravando sem parar. Quando surgem setores defeituosos na área onde o sistema operacional do DVR grava os índices de vídeo, o processo de escrita trava e o DVR suspende a gravação para proteger o restante dos dados.
+            </p>
+
+            <h3 className="text-xl font-semibold text-white mt-4">3. Fonte de alimentação do DVR desgastada ou de amperagem insuficiente</h3>
+            <p>
+              Esta é uma das causas mais subestimadas. O DVR precisa de energia tanto para sua placa-mãe quanto para girar o motor do HD mecânico (3.5 polegadas consome pico de corrente ao ligar e manter rotação). Fontes chaveadas genéricas perdem capacidade com o tempo. A fonte de 12V 2A ou 3A enfraquecida consegue manter a placa do DVR e a tela vivas, mas não fornece corrente suficiente para manter os pratos do HD girando com estabilidade. O HD simplesmente desliga ou reinicia sozinho.
+            </p>
+
+            <h3 className="text-xl font-semibold text-white mt-4">4. Gravação por detecção de movimento mal configurada</h3>
+            <p>
+              Se o DVR estiver configurado para gravar <em>somente por movimento</em> (em vez de gravação contínua), e a área de detecção não foi desenhada na tela ou a sensibilidade ficou muito baixa, o sistema não dispara o gatilho de gravação. O resultado é que a imagem ao vivo existe, mas nenhuma gravação é registrada porque o DVR "acredita" que nada aconteceu na cena.
+            </p>
+
+            <h3 className="text-xl font-semibold text-white mt-4">5. Sobrescrita de disco (overwrite) desativada</h3>
+            <p>
+              Por padrão, DVRs funcionam no modo sobrescrita contínua: quando o disco atinge 100% de capacidade, os vídeos mais antigos são apagados para dar espaço aos novos. Se essa opção for desmarcada por engano ou se a política de retenção for alterada, assim que o HD enche, o DVR para completamente de gravar e aguarda intervenção manual.
+            </p>
+
+            <h3 className="text-xl font-semibold text-white mt-4">6. Agenda de gravação vazia ou desmarcada</h3>
+            <p>
+              Na tela de agendamento (Schedule), cada dia da semana e cada faixa de horário precisa estar pintada na cor correspondente (geralmente verde para gravação contínua ou amarela para movimento). Uma reinicialização com perda de configurações ou um perfil incorreto pode deixar a grade horária em branco para um ou todos os canais.
+            </p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela: Diagnóstico rápido do problema',
+        content: (
+          <div className="space-y-4">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-sm text-slate-300 border border-slate-700">
+                <thead className="bg-slate-800 text-white font-semibold">
+                  <tr>
+                    <th className="p-3 border-b border-slate-700">Sintoma Observado</th>
+                    <th className="p-3 border-b border-slate-700">Causa Mais Provável</th>
+                    <th className="p-3 border-b border-slate-700">O Que Checar Primeiro</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-800">
+                  <tr>
+                    <td className="p-3 font-medium text-white">Menu diz "Sem HD" ou capacidade zerada</td>
+                    <td className="p-3">Cabo SATA solto, alimentação SATA rompida ou HD queimado</td>
+                    <td className="p-3">Conexões internas do cabo SATA e escutar se o HD vibra/gira</td>
+                  </tr>
+                  <tr>
+                    <td className="p-3 font-medium text-white">HD aparece como "Não Formatado" ou "Erro"</td>
+                    <td className="p-3">Partição corrompida por queda de energia ou setores ruins</td>
+                    <td className="p-3">Tentar formatar pelo DVR; se falhar, substituir por HD CFTV</td>
+                  </tr>
+                  <tr>
+                    <td className="p-3 font-medium text-white">HD some depois de alguns minutos ligado</td>
+                    <td className="p-3">Fonte de alimentação do DVR fraca / perdendo tensão</td>
+                    <td className="p-3">Trocar fonte de alimentação do DVR por modelo original ou de maior amperagem</td>
+                  </tr>
+                  <tr>
+                    <td className="p-3 font-medium text-white">HD está 100% cheio e sem gravação recente</td>
+                    <td className="p-3">Opção de sobrescrita (overwrite) desligada</td>
+                    <td className="p-3">Menu Armazenamento &gt; Avançado &gt; marcar "Sobrescrever: Sim"</td>
+                  </tr>
+                  <tr>
+                    <td className="p-3 font-medium text-white">Ícone de gravação ausente nas telas das câmeras</td>
+                    <td className="p-3">Agenda desmarcada ou canal configurado apenas para evento sem gatilho</td>
+                    <td className="p-3">Menu Gravação &gt; Agenda: conferir se todas as horas estão marcadas</td>
+                  </tr>
+                  <tr>
+                    <td className="p-3 font-medium text-white">Data e hora do DVR estão em 2000 ou 1970</td>
+                    <td className="p-3">Bateria interna CR2032 esgotada + queda de energia</td>
+                    <td className="p-3">Ajustar horário e trocar bateria tipo moeda da placa-mãe</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ),
+      },
+      {
+        h2: 'Passo a passo: o que verificar antes de chamar um técnico',
+        content: (
+          <div className="space-y-4">
+            <p>
+              Você pode fazer uma triagem em poucos minutos usando apenas o mouse conectado ao DVR ou o aplicativo no celular:
+            </p>
+            <ol className="list-decimal pl-6 space-y-3">
+              <li>
+                <strong>Verifique os ícones nos cantos das telas:</strong> A maioria dos DVRs (Intelbras, Hikvision, Tecvoz, Giga) exibe um pequeno ícone de claquete, fita cassete ou círculo vermelho/verde quando o canal está efetivamente gravando. Se a imagem está ao vivo e esse ícone não aparece, aquele canal não está gravando naquele instante.
+              </li>
+              <li>
+                <strong>Tente fazer uma busca de reprodução (Playback):</strong> Entre no menu de busca, selecione a data de hoje e clique na barra de tempo. Se a linha do tempo estiver cinza (vazia) ou acusar "Nenhum arquivo encontrado", o DVR não gravou nada nesse período.
+              </li>
+              <li>
+                <strong>Acesse o menu Gerenciamento de HD / Armazenamento:</strong>
+                <ul className="list-disc pl-6 mt-1 space-y-1">
+                  <li>O status deve estar como <em>Normal</em> ou <em>Leitura/Escrita</em>.</li>
+                  <li>Se estiver como <em>Não inicializado</em>, <em>Anormal</em> ou <em>Erro</em>, o disco está com falha lógica ou física.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Escute o aparelho de perto:</strong> Aproxime o ouvido do DVR. Um HD mecânico em funcionamento emite uma leve vibração e um suave zumbido de rotação. Se o DVR estiver totalmente silencioso por dentro (exceto cooler, se houver), o HD não está girando por falta de energia ou queima do motor.
+              </li>
+              <li>
+                <strong>Atenção à data e hora do sistema:</strong> Se o DVR resetou a data para o ano de fabricação (como 2000 ou 2015), as gravações novas podem estar sendo salvas nessa data antiga. Ao buscar por 2026, você não encontrará nada porque o sistema gravou no passado virtual do aparelho.
+              </li>
+            </ol>
+            <p>
+              Se você está em dúvida sobre o dimensionamento do seu sistema como um todo, vale a pena ver também nosso guia sobre <Link to="/blog/quantas-cameras-de-seguranca-preciso-para-minha-casa" className="text-white underline hover:text-slate-300">quantas câmeras de segurança sua casa realmente precisa</Link>.
+            </p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Cuidado: o perigo de formatar o HD às cegas',
+        content: (
+          <div className="space-y-4">
+            <p>
+              Muitos usuários e até técnicos inexperientes correm para clicar no botão <strong>"Formatar HD"</strong> assim que encontram um erro de gravação. Essa atitude tem dois riscos graves:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>
+                <strong>Destruição de provas:</strong> Se houve um incidente recente (um furto, uma batida no portão, uma invasão) que pode ter sido gravado dias atrás antes do travamento, a formatação apagará irrevogavelmente os arquivos de vídeo remanescentes.
+              </li>
+              <li>
+                <strong>Ilusão temporária de solução:</strong> Se o disco tem setores defeituosos ou se a fonte de alimentação está fraca, a formatação até pode ser concluída com sucesso aparente, mas o DVR voltará a parar de gravar em menos de 48 ou 72 horas — deixando o local desprotegido novamente.
+              </li>
+            </ul>
+            <p>
+              Se você suspeita de falha no disco mas precisa recuperar imagens passadas, não tente formatar. Desligue o DVR da tomada para evitar que novas escritas sobrescrevam setores e solicite a extração pericial ou diagnóstico técnico especializado.
+            </p>
+          </div>
+        ),
+      },
+      {
+        h2: 'HD para PC vs. HD Purple/SkyHawk: por que o disco comum falha no DVR',
+        content: (
+          <div className="space-y-4">
+            <p>
+              Um dos erros mais recorrentes encontrados em manutenções preventivas é o uso de <strong>HDs comuns de computador (desktop)</strong> dentro de gravadores de CFTV. Embora o conector SATA seja idêntico, a arquitetura interna é completamente diferente:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>
+                <strong>HD Comum de Desktop (Desktop Drive):</strong> Projetado para funcionar cerca de 8 horas por dia, 5 dias por semana, com carga de 80% de leitura e 20% de escrita. Não tolera vibração contínua e possui firmware voltado para recuperação de erros de sistema operacional (se um setor falhar, ele para tudo e tenta ler novamente, o que faz o fluxo de vídeo engasgar).
+              </li>
+              <li>
+                <strong>HD Próprio para CFTV (WD Purple, Seagate SkyHawk):</strong> Projetado para operação ininterrupta <strong>24 horas por dia, 7 dias por semana (24x7)</strong>, com ciclo de 90% a 95% de escrita contínua. Conta com firmware inteligente (como o AllFrame da WD) que prioriza a gravação ininterrupta de múltiplos fluxos de câmera sem travar, além de suportar temperaturas mais altas e vibração mecânica dentro do chassi do DVR.
+              </li>
+            </ul>
+            <p>
+              Substituir um HD danificado por outro HD de desktop comum é garantia de ter a mesma dor de cabeça daqui a 6 ou 12 meses. Para CFTV, utilize sempre discos certificados para segurança eletrônica. Se você prefere não se preocupar com reposição de peças e queimas de disco, confira as vantagens em nosso comparativo sobre <Link to="/blog/comprar-ou-alugar-cameras-de-seguranca-comparacao-completa" className="text-white underline hover:text-slate-300">comprar ou alugar câmeras e equipamentos de segurança</Link>.
+            </p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Como saber se o DVR está realmente gravando sem abrir o menu?',
+        answer: 'Observe as telas das câmeras no monitor: a grande maioria dos aparelhos exibe um pequeno ícone de gravação (uma fita, claquete ou bolinha vermelha/verde) no canto de cada imagem quando a gravação está ativa. No painel frontal de alguns DVRs também há um LED indicador chamado "REC" ou "HDD" que pisca durante a gravação.',
+      },
+      {
+        question: 'Por que o DVR grava apenas alguns segundos e para?',
+        answer: 'Geralmente ocorre por gravação configurada para detecção de movimento com pós-gravação muito curta, por setores defeituosos no HD que travam a escrita em blocos específicos, ou por fonte de alimentação enfraquecida que reinicia o HD assim que a corrente de pico é exigida.',
+      },
+      {
+        question: 'Posso usar pen drive ou HD externo USB para gravar no DVR?',
+        answer: 'Não para gravação contínua. A porta USB do DVR serve exclusivamente para backup pontual de trechos de vídeo já gravados ou para conexão do mouse. Para gravar as câmeras continuamente, o DVR exige um HD interno conectado diretamente à porta SATA.',
+      },
+      {
+        question: 'O DVR apaga sozinho as gravações velhas?',
+        answer: 'Sim, desde que a função de sobrescrita (overwrite) esteja ativada nas configurações de armazenamento. Quando o HD atinge 100% de ocupação, o sistema apaga automaticamente as horas mais antigas para abrir espaço para os novos vídeos.',
+      },
+      {
+        question: 'Quanto tempo dura um HD próprio para CFTV?',
+        answer: 'Discos dedicados a vigilância como WD Purple ou Seagate SkyHawk costumam operar de 3 a 5 anos continuamente em condições adequadas de temperatura e alimentação estável com nobreak. Discos de desktop comuns costumam falhar entre 6 e 18 meses de uso contínuo em DVRs.',
+      },
+    ],
+    internalLink: {
+      text: 'Seu DVR parou de gravar ou não reconhece o HD? Precisa de diagnóstico e suporte técnico?',
+      url: '/servicos/cameras-de-seguranca/',
+      linkText: 'Ver Câmeras de Segurança',
+    },
+    whatsappMessage: 'Vim do blog e meu DVR mostra imagem mas não grava, preciso de manutenção',
+    ctaFinal: {
+      title: 'Seu sistema de CFTV parou de gravar e você não pode arriscar ficar sem provas?',
+      text: 'A Intelsecsul realiza diagnóstico técnico, substituição de HD para vigilância 24x7, troca de fontes e manutenção preventiva de CFTV em Curitiba e Região Metropolitana. Não espere um incidente acontecer para descobrir que o sistema estava sem gravar.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
+  {
+    id: 'hd-do-dvr-nao-e-reconhecido-defeito-disco-cabo-ou-gravador',
+    slug: 'hd-do-dvr-nao-e-reconhecido-defeito-disco-cabo-ou-gravador',
+    title: 'HD do DVR Não é Reconhecido: Defeito no Disco, Cabo ou Gravador? | Intelsecsul',
+    metaTitle: 'HD do DVR Não é Reconhecido: Defeito no Disco, Cabo ou Gravador? | Intelsecsul',
+    metaDescription: 'DVR não reconhece HD? Veja como distinguir defeito no disco, cabo SATA ou gravador, meça a alimentação de 5V e 12V, verifique a lista de compatibilidade Intelbras e evite perder gravações importantes.',
+    h1: 'HD do DVR não é reconhecido: é defeito no disco, cabo ou gravador?',
+    category: 'Câmeras de Segurança',
+    readTime: '10 min de leitura',
+    publishedDate: '2026-10-05',
+    summary: 'Quando o DVR deixa de reconhecer o HD, o problema pode estar em quatro pontos: o próprio disco, o cabo SATA, a alimentação que o DVR fornece ao HD, ou a placa do gravador. A ordem de verificação faz toda a diferença.',
+    intro: 'Quando o DVR deixa de reconhecer o HD — exibindo "Sem HD", "HDD não encontrado" ou simplesmente não listando o disco no menu de armazenamento —, o problema pode estar em quatro pontos distintos: o próprio disco rígido (setores defeituosos, desgaste ou falha física), o cabo SATA (conexão solta, oxidação ou rompimento), a alimentação que o DVR fornece ao HD (tensão fora do padrão), ou a placa do gravador (porta SATA queimada ou falha no circuito de alimentação). A Intelbras, em seu manual oficial, orienta que, em primeiro lugar, deve-se verificar se o HD está danificado e, em seguida, a conexão do cabo SATA e o cabo de força. Antes de qualquer coisa, uma regra absoluta: se há qualquer chance de existirem gravações importantes no disco, não formate, não inicialize e não substitua o HD sem antes esgotar as verificações abaixo.',
+    sections: [
+      {
+        h2: 'Primeiro: confirme se o problema é o HD ou o DVR',
+        content: (
+          <div className="space-y-4">
+            <p>O teste mais rápido para saber se o problema está no disco ou no gravador é testar o HD em outro equipamento — ou testar outro HD no mesmo DVR.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Se você tem outro DVR ou um computador disponível</h3>
+            <ol className="space-y-2 list-decimal list-inside">
+              <li>Desligue o DVR e remova o HD com cuidado.</li>
+              <li>Conecte o HD a outro DVR (de preferência, compatível) ou a um computador, usando um adaptador SATA-USB.</li>
+              <li>Se o HD for reconhecido e funcionar normalmente em outro equipamento, o problema está no DVR (porta SATA, alimentação ou placa).</li>
+              <li>Se o HD não for reconhecido em nenhum equipamento, o problema está no próprio disco.</li>
+            </ol>
+            <p>Atenção: se o HD contiver gravações importantes, não o formate em nenhum momento durante esse teste. Apenas verifique se ele é reconhecido.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Se você tem outro HD para testar no DVR</h3>
+            <ol className="space-y-2 list-decimal list-inside">
+              <li>Desligue o DVR, remova o HD original e conecte o HD de teste.</li>
+              <li>Ligue o DVR e verifique no menu de armazenamento se o novo HD é reconhecido.</li>
+              <li>Se o novo HD for reconhecido, o problema é o HD original.</li>
+              <li>Se o novo HD também não for reconhecido, o problema está no DVR (cabo, alimentação ou porta SATA).</li>
+            </ol>
+            <p>Esse teste cruzado é a forma mais confiável de isolar se o defeito está no disco ou no gravador — e evita que você troque um HD que ainda funciona ou descarte um DVR que só precisa de um cabo novo.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Verificações na ordem certa (sem formatar o disco)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">1. O HD aparece no menu de armazenamento?</h3>
+            <p>Acesse o menu de Armazenamento / Disco / HDD do DVR e verifique: o HD é listado pelo sistema? O status está como Normal ou Read/Write? A capacidade está correta? Há algum alerta ou erro na tela? Se o HD não aparece na lista, o DVR não tem onde gravar — mesmo que a imagem ao vivo continue funcionando normalmente, igual vimos no caso de <Link to="/blog/dvr-mostra-imagem-ao-vivo-mas-nao-grava" className="text-white underline hover:text-slate-300">DVR que mostra imagem mas não grava</Link>.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">2. Verifique a alimentação que o DVR fornece ao HD</h3>
+            <p>Este é um dos pontos mais críticos e menos conhecidos. O DVR fornece energia ao HD através de um cabo de alimentação que fica ao lado do cabo SATA. A Intelbras orienta que essa alimentação seja verificada com um multímetro:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Entre o fio preto e o amarelo: a tensão deve ser de 12 V (podendo variar até 10%).</li>
+              <li>Entre o fio preto e o vermelho: a tensão deve ser de 5 V (podendo variar até 10%).</li>
+            </ul>
+            <p>Se as tensões estiverem fora desses valores, o problema pode estar na fonte do DVR — e não no HD. A medição deve ser feita com o DVR ligado e o HD conectado, para que a tensão seja medida sob carga. Se você não tem multímetro ou não se sente seguro para fazer a medição, não abra o equipamento — encaminhe para um técnico.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">3. Verifique o cabo SATA e a conexão física</h3>
+            <p>Problemas comuns incluem conector solto, oxidação nos contatos (especialmente em ambientes úmidos), cabo rompido ou com mau contato interno, ou porta SATA danificada na placa do DVR.</p>
+            <p className="font-bold text-white">O que fazer:</p>
+            <ol className="space-y-2 list-decimal list-inside">
+              <li>Desligue o DVR da tomada.</li>
+              <li>Reconecte o cabo SATA firmemente nas duas pontas (no HD e na placa do DVR).</li>
+              <li>Reconecte o cabo de alimentação do HD.</li>
+              <li>Ligue o DVR e verifique novamente o menu de armazenamento.</li>
+            </ol>
+            <p>Se o HD voltar a ser reconhecido, o problema era mau contato. Se continuar sem reconhecer, substitua o cabo SATA por um novo e teste novamente — é barato e elimina uma variável importante do diagnóstico.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">4. O HD é compatível com o DVR?</h3>
+            <p>A Intelbras garante o funcionamento correto do DVR apenas com HDs compatíveis e disponibiliza uma lista de HDs homologados em seu site. O modelo do seu HD está na lista? É específico para vigilância (como WD Purple, Seagate SkyHawk), ou é um HD comum de computador?</p>
+            <p>HDs de computador comum não são projetados para operação 24/7 e podem apresentar falhas de reconhecimento, superaquecimento e desgaste prematuro em sistemas de CFTV.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">5. Atualize o firmware do DVR (se aplicável)</h3>
+            <p>Em alguns casos, um HD novo — mesmo homologado — pode não ser reconhecido porque o firmware do DVR está desatualizado. Verifique a versão atual no menu de informações, compare com a mais recente no site da Intelbras e, se houver atualização, siga as instruções oficiais — use apenas arquivos do fabricante e não interrompa a atualização.</p>
+            <p>Cuidado: a atualização de firmware pode corromper o sistema se interrompida ou feita com o arquivo errado. Se você não se sente seguro, encaminhe o DVR para um técnico.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela de diagnóstico rápido',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[720px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Sintoma</th>
+                  <th className="text-left p-3 text-white font-bold">Verificação prioritária</th>
+                  <th className="text-left p-3 text-white font-bold">Causa provável</th>
+                  <th className="text-left p-3 text-white font-bold">Ação segura</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">"Sem HD" no DVR</td><td className="p-3">HD reconhecido em outro equipamento?</td><td className="p-3">HD com falha física</td><td className="p-3">Testar HD em outro DVR/PC; não formatar</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">HD não aparece no menu</td><td className="p-3">Tensão de 12V e 5V no cabo de alimentação</td><td className="p-3">Fonte do DVR com defeito</td><td className="p-3">Medir tensões; se fora do padrão, encaminhar</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">HD reconhecido intermitentemente</td><td className="p-3">Cabo SATA bem conectado? Oxidação?</td><td className="p-3">Mau contato no cabo SATA</td><td className="p-3">Reconectar; substituir cabo SATA</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">HD novo não é reconhecido</td><td className="p-3">Modelo está na lista de compatibilidade?</td><td className="p-3">HD não homologado</td><td className="p-3">Consultar lista; substituir por modelo compatível</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">HD homologado não é reconhecido</td><td className="p-3">Versão do firmware do DVR</td><td className="p-3">Firmware desatualizado</td><td className="p-3">Atualizar firmware conforme orientação oficial</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Após queda de energia, HD sumiu</td><td className="p-3">Porta SATA, alimentação, placa</td><td className="p-3">Falha na placa do DVR ou fonte</td><td className="p-3">Não insistir; encaminhar para diagnóstico técnico</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que NÃO fazer (e por quê)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Não formate o HD antes de preservar as gravações</h3>
+            <p>Formatar o HD apaga todas as gravações. Se houver qualquer chance de existirem imagens importantes, a formatação deve ser a última opção. Mesmo que o HD pareça "vazio" ou "não reconhecido", os dados podem estar recuperáveis. A Intelbras recomenda formatar apenas HDs novos, antes do primeiro uso — não discos com gravações que você precisa manter.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não inicialize o disco</h3>
+            <p>A inicialização (initialize) apaga e recria a estrutura de arquivos do HD. O resultado é o mesmo da formatação: perda de dados. Não confunda "inicializar" com "reconhecer" — inicializar não resolve problemas de conexão, alimentação ou compatibilidade.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não troque o HD sem antes testar alimentação e cabo</h3>
+            <p>Muitos HDs são substituídos desnecessariamente porque o problema era alimentação insuficiente ou cabo SATA com mau contato. Antes de comprar um HD novo, meça as tensões (12V e 5V), substitua o cabo SATA e teste o HD em outro equipamento.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não abra o DVR se não tiver experiência</h3>
+            <p>Abrir o DVR para mexer no HD, nos cabos ou na placa expõe você a risco de choque elétrico e pode danificar componentes sensíveis. Se você não tem multímetro ou não se sente seguro, encaminhe para um técnico especializado.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não ignore o histórico do equipamento</h3>
+            <p>Se o DVR já apresentou outros problemas (reinícios, travamentos, superaquecimento, perda de configuração), o HD não reconhecido pode ser sintoma de um problema maior — como fonte instável ou placa com defeito.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando encaminhar o gravador para assistência técnica',
+        content: (
+          <div className="space-y-4">
+            <ul className="space-y-2 list-disc list-inside">
+              <li>As tensões de alimentação do HD estão fora do padrão (12V e 5V com variação superior a 10%).</li>
+              <li>O HD funciona em outro equipamento, mas não é reconhecido no DVR.</li>
+              <li>O HD é homologado, as conexões estão corretas, a alimentação está no padrão e o firmware está atualizado — mas o DVR continua sem reconhecer o disco.</li>
+              <li>O DVR reinicia, trava ou apresenta outros sintomas além do HD não reconhecido.</li>
+              <li>Você precisa preservar gravações importantes.</li>
+              <li>O equipamento está na garantia — abrir o DVR sem autorização pode anulá-la.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de CFTV em Curitiba e Região Metropolitana. O atendimento prioriza a preservação das gravações existentes antes de qualquer intervenção. Se o problema não for isolado ao HD — por exemplo, se outros equipamentos pararam junto — vale conferir nosso guia de <Link to="/blog/sistema-de-seguranca-parou-o-que-fazer" className="text-white underline hover:text-slate-300">quando todo o sistema de segurança para ao mesmo tempo</Link>.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: 'HD do DVR não reconhecido pode ser defeito no disco, no cabo SATA, na alimentação ou no gravador — e a ordem de verificação faz toda a diferença. Comece pelo teste cruzado, depois verifique alimentação (12V e 5V), conexão do cabo SATA, compatibilidade do modelo e, por fim, firmware do DVR. A regra mais importante vale para todos os cenários: não formate, não inicialize e não substitua o HD antes de esgotar as verificações e confirmar que não há gravações a preservar. Esse tipo de triagem — junto com a de câmeras que ficam fora do ar — é o que evita trocas de equipamento desnecessárias e perda de gravações importantes.',
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'O HD funciona no computador, mas não é reconhecido no DVR. O que pode ser?',
+        answer: 'As causas mais prováveis são: alimentação insuficiente (o DVR pode não estar fornecendo 12V e 5V corretos), porta SATA danificada na placa do DVR, cabo SATA com problema ou incompatibilidade (HD não homologado). Meça as tensões, substitua o cabo SATA e verifique se o modelo está na lista de compatibilidade da Intelbras.',
+      },
+      {
+        question: 'Posso formatar o HD para o DVR reconhecer?',
+        answer: 'Formatar apaga todas as gravações. Se o HD tiver imagens que você precisa manter, não formate — além disso, formatar não resolve problemas de conexão, alimentação ou compatibilidade. A formatação só é recomendada para HDs novos, antes do primeiro uso.',
+      },
+      {
+        question: 'Qual a tensão correta de alimentação do HD no DVR?',
+        answer: 'Entre o fio preto e o amarelo, a tensão deve ser de 12V, e entre o fio preto e o vermelho, de 5V — podendo variar até 10% para mais ou para menos. Se as tensões estiverem fora desse intervalo, o problema pode estar na fonte do DVR, e não no HD.',
+      },
+      {
+        question: 'Preciso comprar um HD específico para DVR?',
+        answer: 'Sim, é altamente recomendável. HDs de vigilância (como WD Purple e Seagate SkyHawk) são projetados para operação 24/7 e têm maior durabilidade em sistemas de CFTV. HDs de computador comum podem funcionar temporariamente, mas não têm garantia de reconhecimento estável nem de durabilidade.',
+      },
+      {
+        question: 'O HD não é reconhecido após queda de energia. O que fazer?',
+        answer: 'Quedas de energia podem danificar o sistema de arquivos do HD, a fonte do DVR ou a placa do gravador. Verifique primeiro as tensões de alimentação, reconecte o cabo SATA e teste o HD em outro equipamento. Se funcionar em outro lugar mas não no DVR, o problema é no gravador. Não formate o HD se houver gravações importantes.',
+      },
+    ],
+    internalLink: {
+      text: 'Seu DVR não está reconhecendo o HD? Precisa de diagnóstico sem perder as gravações?',
+      url: '/servicos/manutencao/',
+      linkText: 'Ver Manutenção de Sistemas',
+    },
+    whatsappMessage: 'Vim do blog e meu DVR não reconhece o HD',
+    ctaFinal: {
+      title: 'Seu DVR não está reconhecendo o HD? Precisa de diagnóstico sem perder as gravações?',
+      text: 'A Intelsecsul realiza diagnóstico de CFTV em Curitiba e Região Metropolitana, com prioridade para a preservação das gravações existentes antes de qualquer intervenção.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
+  {
+    id: 'dvr-apitando-sem-parar-o-que-significa',
+    slug: 'dvr-apitando-sem-parar-o-que-significa',
+    title: 'DVR Apitando Sem Parar: O Que Significa e Quando Chamar Assistência | Intelsecsul',
+    metaTitle: 'DVR Apitando Sem Parar: O Que Significa e Quando Chamar Assistência | Intelsecsul',
+    metaDescription: 'DVR apitando sem parar? Entenda o que cada bipe significa (HD, perda de vídeo, rede ou alimentação), como identificar a causa pelo menu de anormalidade e quando chamar assistência técnica.',
+    h1: 'DVR apitando sem parar: o que significa e quando chamar assistência',
+    category: 'Câmeras de Segurança',
+    readTime: '10 min de leitura',
+    publishedDate: '2026-10-09',
+    summary: 'O apito do DVR é um alarme de anormalidade (buzzer). Nos gravadores Intelbras da linha MHDX, cinco eventos o acionam — sem HD, erro no HD, HD sem espaço, rede ausente e conflito de IP — e três deles são problemas de HD. Desligar o buzzer sem investigar mantém o problema.',
+    intro: 'O DVR não apita por acaso. O som é um alarme de anormalidade (buzzer) que o próprio gravador dispara quando identifica um evento que compromete o funcionamento do sistema. Nos gravadores Intelbras da linha MHDX, são cinco os eventos que acionam o buzzer: sem HD, erro no HD, HD sem espaço, rede ausente e conflito de IP — e três dos cinco são problemas de HD, por isso o disco é o primeiro lugar onde se deve olhar. O apito é um aviso de que o sistema pode estar sem gravar: desligar o buzzer sem investigar resolve o barulho e mantém o problema, e você só vai descobrir quando precisar da gravação e ela não existir. Antes de qualquer ação, uma regra vale para todos os cenários: não formate o HD, não inicialize o disco e não restaure o DVR para configurações de fábrica enquanto houver qualquer chance de existirem gravações importantes.',
+    sections: [
+      {
+        h2: 'O que é o buzzer e o que ele monitora',
+        content: (
+          <div className="space-y-4">
+            <p>O buzzer é o alarme sonoro interno do DVR. Ele não é transmitido pelo HDMI para a TV — o som é emitido apenas pelo próprio gravador. Isso significa que, mesmo com o monitor ligado, o apito vem diretamente do equipamento.</p>
+            <p>O DVR monitora continuamente quatro categorias de eventos que podem acionar o buzzer:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Armazenamento (HD):</strong> disco ausente, disco com erro, disco cheio sem sobrescrita.</li>
+              <li><strong className="text-white">Vídeo:</strong> perda de sinal de uma ou mais câmeras.</li>
+              <li><strong className="text-white">Rede:</strong> ausência de conexão de rede ou conflito de endereço IP.</li>
+              <li><strong className="text-white">Sistema:</strong> temperatura elevada, falha de inicialização ou travamento.</li>
+            </ul>
+            <p>Cada um desses eventos pode ser configurado para acionar ou não o buzzer de forma independente. Quando o DVR apita, ele está reagindo a um desses eventos — e o log do sistema registra exatamente qual foi, com data e hora.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Existe um código secreto de bipes (3 bipes, 4 bipes, 5 bipes)?',
+        content: (
+          <div className="space-y-4">
+            <p>Uma das buscas mais comuns é "DVR apitando 4 vezes" ou "DVR apitando 5 vezes", como se a quantidade de bipes fosse um código de erro de BIOS de computador. Não é assim que funciona nos DVRs de CFTV. O buzzer do DVR Intelbras é orientado a eventos, não a contagem. Não existe uma tabela oficial onde 3 bipes = HD com erro ou 4 bipes = câmera offline. O que varia é o padrão do som (contínuo, intermitente, em rajadas), que muda conforme o modelo e o firmware — mas não corresponde a um código de erro publicável.</p>
+            <p>O cenário mais frequente por trás de "4 bipes" é simples: 4 câmeras perderam o sinal ao mesmo tempo — por queda de energia momentânea, conector solto ou fonte com problema. O DVR dispara o buzzer para cada canal afetado, resultando em múltiplos bipes em sequência. Ao verificar a tela principal, 4 canais vão mostrar "Perda de Vídeo" ou "Sem Sinal". Se for o seu caso, vale conferir as <Link to="/blog/camera-fora-do-ar-causas-solucoes" className="text-white underline hover:text-slate-300">causas mais comuns de câmera fora do ar</Link>.</p>
+            <p>O que realmente funciona não é contar bipes, mas fazer o DVR "falar" em vez de apitar. No menu de Anormalidade, além do buzzer, existe a opção de exibir mensagem na tela. Ative a mensagem para cada evento e, na próxima vez que o alarme disparar, o próprio gravador escreve o motivo no monitor — sem adivinhação.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela de padrões de apito e causas prováveis',
+        content: (
+          <div className="space-y-4">
+            <p>A tabela abaixo reúne padrões observados com frequência na prática. Eles variam conforme o modelo e o firmware e não substituem a consulta ao menu de Anormalidade, que é a forma confiável de confirmar a causa.</p>
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full text-sm border-collapse min-w-[640px]">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left p-3 text-white font-bold">Padrão do apito</th>
+                    <th className="text-left p-3 text-white font-bold">Causa mais provável</th>
+                    <th className="text-left p-3 text-white font-bold">Como confirmar</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-300">
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">1 bipe curto ao ligar</td><td className="p-3">Inicialização normal do sistema</td><td className="p-3">Nenhuma ação necessária</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Bipes contínuos sem pausa</td><td className="p-3">Uma ou mais câmeras com perda de vídeo ativa</td><td className="p-3">Verificar canais na tela principal</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Múltiplos bipes rápidos seguidos</td><td className="p-3">Múltiplas câmeras offline ao mesmo tempo</td><td className="p-3">Verificar quantos canais estão sem imagem</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Bipes periódicos a cada 1-2 minutos</td><td className="p-3">HD com erro, HD cheio ou HD ausente</td><td className="p-3">Menu Principal &gt; Armazenamento &gt; Disco Rígido</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Bipe isolado ao desconectar o cabo de rede</td><td className="p-3">Alerta de rede ativo no menu</td><td className="p-3">Configurável em Evento &gt; Anormalidade</td></tr>
+                  <tr><td className="p-3 font-semibold text-white">Bipes que somem após alguns minutos</td><td className="p-3">Câmera oscilou e reconectou</td><td className="p-3">Verificar log de eventos</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-slate-400">Fonte: Leste Câmeras.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'As 5 causas do apito, uma a uma',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">1. Sem HD (HD ausente ou não detectado)</h3>
+            <p><strong className="text-white">O que está acontecendo:</strong> o DVR não encontrou nenhum disco rígido. As causas mais comuns são: HD ausente (o equipamento está operando sem disco, o que é possível em alguns modelos), cabo SATA solto ou danificado, HD queimado ou modelo incompatível (fora da lista de homologados do fabricante).</p>
+            <p><strong className="text-white">Como confirmar:</strong> acesse Menu Principal &gt; Armazenamento &gt; Disco Rígido e verifique se o disco aparece na lista. Se não aparecer, o problema é de conexão, compatibilidade ou falha física no disco.</p>
+            <p><strong className="text-white">O que fazer:</strong> desligue o DVR, verifique as conexões do cabo SATA e do cabo de alimentação do HD e reconecte firmemente. Se o HD continuar sem ser reconhecido, teste-o em outro equipamento (DVR ou computador) para isolar se o problema é o disco ou o gravador. Não formate o HD se houver gravações a preservar. O passo a passo completo está no guia sobre <Link to="/blog/hd-do-dvr-nao-e-reconhecido-defeito-disco-cabo-ou-gravador" className="text-white underline hover:text-slate-300">HD do DVR que não é reconhecido</Link>.</p>
+            <p><strong className="text-white">Observação importante:</strong> se o DVR nunca teve um HD instalado, ele continuará apitando e o som não poderá ser desativado até que um disco seja instalado e formatado. Nesse caso, a solução é instalar um HD compatível.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">2. Erro no HD (falha de leitura/gravação)</h3>
+            <p><strong className="text-white">O que está acontecendo:</strong> o disco foi detectado, mas apresenta falha de leitura ou gravação — o quadro clássico de HD chegando ao fim da vida útil. Setores defeituosos (bad blocks), desgaste mecânico ou corrupção do sistema de arquivos são as causas mais comuns. O DVR continua mostrando imagem ao vivo, mas pode não estar gravando corretamente ou estar gravando de forma intermitente.</p>
+            <p><strong className="text-white">Como confirmar:</strong> acesse Menu Principal &gt; Armazenamento &gt; Disco Rígido e verifique o status do HD. Se estiver como "Erro" ou "Anormal", o disco está falhando.</p>
+            <p><strong className="text-white">O que fazer:</strong> não formate o HD como primeira medida. Se houver gravações importantes, tente exportá-las antes de qualquer intervenção. Em alguns casos, uma verificação de disco (check disk) pelo próprio DVR pode corrigir pequenos erros de índice de arquivos. Se o erro persistir, o HD provavelmente precisa ser substituído por um modelo novo e homologado.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">3. HD sem espaço (disco cheio sem sobrescrita)</h3>
+            <p><strong className="text-white">O que está acontecendo:</strong> o disco encheu e a sobrescrita automática está desativada. Sem espaço para gravar novos vídeos, o DVR para de gravar e dispara o alarme sonoro.</p>
+            <p><strong className="text-white">Como confirmar:</strong> acesse Menu Principal &gt; Armazenamento e verifique o percentual de uso do HD. Se estiver em 100% e a opção de sobrescrita (Overwrite / Recycle) estiver desativada, essa é a causa. Como imagem ao vivo e gravação são funções separadas, confirme também se o DVR está gravando — veja como fazer o teste de playback em <Link to="/blog/dvr-mostra-imagem-ao-vivo-mas-nao-grava" className="text-white underline hover:text-slate-300">DVR que mostra imagem ao vivo mas não grava</Link>.</p>
+            <p><strong className="text-white">O que fazer:</strong> ative a sobrescrita automática no menu de armazenamento, o que permite ao DVR continuar gravando e substituir as gravações mais antigas pelas mais recentes. Atenção: se você precisa preservar gravações de um período específico, exporte esses arquivos antes de ativar a sobrescrita.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">4. Rede ausente (cabo desconectado ou sem conexão)</h3>
+            <p><strong className="text-white">O que está acontecendo:</strong> o DVR perdeu a conexão de rede — o cabo foi desconectado, o roteador está desligado ou a rede caiu. Se o alerta de rede estiver ativo no menu, o DVR emite um bipe isolado no momento da desconexão.</p>
+            <p><strong className="text-white">Como confirmar:</strong> verifique se o cabo de rede está conectado firmemente na traseira do DVR e no roteador/switch e se os LEDs da porta de rede estão acesos. Acesse o menu de Configurações de Rede e veja se o DVR está com endereço IP válido.</p>
+            <p><strong className="text-white">O que fazer:</strong> reconecte o cabo de rede. Se a rede voltar, o bipe deve parar. Se o bipe continuar mesmo com a rede funcionando, o problema pode ser outro evento — verifique o log do sistema.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">5. Conflito de IP (dois dispositivos com o mesmo endereço)</h3>
+            <p><strong className="text-white">O que está acontecendo:</strong> o DVR está usando o mesmo endereço IP de outro dispositivo na rede (roteador, computador, outra câmera IP). O conflito causa instabilidade na comunicação e aciona o buzzer.</p>
+            <p><strong className="text-white">Como confirmar:</strong> acesse as Configurações de Rede do DVR, verifique o endereço IP atual e compare com os IPs de outros dispositivos. O DVR pode estar com IP fixo fora da faixa de DHCP, ou o roteador pode ter atribuído o mesmo IP para dois dispositivos.</p>
+            <p><strong className="text-white">O que fazer:</strong> altere o endereço IP do DVR para um endereço livre na rede ou ative o DHCP para que o roteador atribua um IP automaticamente. Em alguns casos, a solução é desativar o DHCP e configurar um IP fixo fora da faixa de distribuição do roteador.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Como identificar a causa exata pelo menu e pelos logs',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">Passo 1: acesse o menu de Anormalidade</h3>
+            <p>O caminho varia conforme o modelo do DVR, mas a lógica é a mesma:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Modelos Intelbras MHDX (mais recentes):</strong> Menu Principal &gt; Evento &gt; Anormalidade.</li>
+              <li><strong className="text-white">Modelos Intelbras MHDX (mais antigos):</strong> Menu Principal &gt; Avançado &gt; Anormalidade.</li>
+            </ul>
+            <p>Nessa tela, você vê cada evento configurável (sem HD, erro no HD, HD sem espaço, rede ausente, conflito de IP) e pode verificar qual deles está com o buzzer habilitado. O evento com o buzzer ativo é o que está causando o apito.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Passo 2: ative a mensagem na tela</h3>
+            <p>Em vez de só ouvir o bipe, faça o DVR mostrar o motivo na tela. No mesmo menu de Anormalidade, ative a opção de exibir mensagem na tela para cada evento. Na próxima vez que o alarme disparar, o próprio gravador escreve o motivo no monitor.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Passo 3: consulte os logs do sistema</h3>
+            <p>O log registra com data e hora cada evento que acionou o buzzer. Acesse Menu Principal &gt; Registros / Log e procure pelos eventos mais recentes. O log mostra exatamente qual anormalidade ocorreu e quando — o que ajuda a correlacionar o apito com um evento real (uma câmera que caiu, uma oscilação de rede, um erro de HD).</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que NÃO fazer (e por quê)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Não desligue o buzzer sem investigar a causa</h3>
+            <p>Desligar o buzzer resolve o barulho, mas mantém o problema. Se o DVR está apitando por erro no HD, você desliga o som e continua sem gravação — e só vai descobrir quando precisar das imagens. O buzzer existe justamente para chamar atenção para um problema que pode comprometer a segurança.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não formate o HD como primeira medida</h3>
+            <p>Formatar o HD apaga todas as gravações. Se o apito é por erro no HD, a formatação pode até resolver temporariamente o alarme, mas destrói o histórico de imagens. Exporte as gravações importantes antes de qualquer formatação.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não inicialize o disco</h3>
+            <p>A inicialização (initialize) apaga e recria a estrutura de arquivos do HD. O resultado é o mesmo da formatação: perda de dados. Não confunda "inicializar" com "reconhecer".</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não restaure o DVR para configurações de fábrica</h3>
+            <p>O reset de fábrica pode apagar configurações de rede, senhas de acesso, agenda de gravação e, em alguns modelos, a estrutura de arquivos do HD. Se o problema é de configuração, você pode corrigi-lo manualmente sem reset.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não abra o DVR se não tiver experiência</h3>
+            <p>Abrir o DVR para mexer no HD ou nos cabos expõe você a risco de choque elétrico e pode danificar componentes sensíveis. Se você não tem multímetro, não sabe medir tensões ou não se sente seguro, não abra o equipamento — encaminhe para um técnico especializado.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico especializado',
+        content: (
+          <div className="space-y-4">
+            <p>A triagem pelo menu de Anormalidade e pelos logs pode ser feita por você. Mas alguns cenários exigem diagnóstico profissional:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>HD com erro persistente mesmo após verificação das conexões — pode ser falha física no disco que exige substituição.</li>
+              <li>HD não reconhecido após testar em outro equipamento — pode ser falha na porta SATA ou na placa do DVR.</li>
+              <li>Apito continua mesmo após desativar todos os eventos de anormalidade — pode ser falha no firmware ou na placa do gravador.</li>
+              <li>DVR reinicia, trava ou superaquece junto com o apito — problema de hardware que exige avaliação técnica.</li>
+              <li>Existem gravações importantes que precisam ser preservadas — um técnico pode tentar exportar as imagens antes de qualquer intervenção.</li>
+              <li>O equipamento está na garantia — abrir o DVR ou mexer no HD sem autorização pode anular a garantia.</li>
+              <li>Você não se sente seguro para navegar nos menus ou fazer as verificações.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de CFTV em Curitiba e Região Metropolitana. O atendimento prioriza a preservação das gravações existentes antes de qualquer intervenção — e o orçamento é apresentado com clareza depois do diagnóstico.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>DVR apitando sem parar é um alarme de anormalidade — e o som está comunicando um problema real. As cinco causas mais comuns são: sem HD, erro no HD, HD sem espaço, rede ausente e conflito de IP — e três delas envolvem o disco rígido. A triagem correta começa pelo menu de Anormalidade, onde você identifica qual evento está com o buzzer ativo, e segue pelos logs do sistema, para confirmar o que aconteceu e quando.</p>
+            <p>A regra mais importante: não desligue o buzzer sem investigar, não formate o HD sem preservar as gravações e não restaure o DVR sem necessidade. Se a triagem não resolveu, ou se existem gravações importantes que precisam ser preservadas, a avaliação de um técnico especializado é o caminho mais seguro.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'DVR apitando 4 vezes: o que significa?',
+        answer: 'Não existe um código oficial onde 4 bipes correspondem a um erro específico. O que acontece na maioria dos casos é que 4 câmeras perderam o sinal ao mesmo tempo — por queda de energia, conector solto ou fonte com problema. O DVR dispara o buzzer para cada canal afetado, resultando em múltiplos bipes em sequência. Verifique na tela principal quantos canais estão mostrando "Perda de Vídeo" ou "Sem Sinal".',
+      },
+      {
+        question: 'Posso simplesmente desligar o buzzer para parar o barulho?',
+        answer: 'Pode, mas não é recomendado sem antes investigar a causa. Desligar o buzzer silencia o alarme, mas mantém o problema — se o DVR está apitando por erro no HD, você continua sem gravação. O ideal é identificar o evento que disparou o alarme (pelo menu de Anormalidade ou pelos logs), resolver a causa e, só então, decidir se o buzzer deve ser desativado.',
+      },
+      {
+        question: 'Como desativar o buzzer do DVR Intelbras?',
+        answer: 'Acesse Menu Principal > Evento > Anormalidade (ou Menu Principal > Avançado > Anormalidade em modelos mais antigos) e verifique se a opção de buzzer está desabilitada para os eventos como sem HD, erro no HD, HD sem espaço, rede ausente e conflito de IP. Para o buzzer de detecção de movimento, acesse Menu Principal > Evento > Detectar e desabilite a opção de buzzer para todos os canais nas abas de Movimento, Mascaramento e Perda de Vídeo.',
+      },
+      {
+        question: 'O DVR apita mesmo sem HD instalado. É normal?',
+        answer: 'Sim, e nesse caso o apito não pode ser desativado enquanto não houver um disco instalado. O DVR continua apitando para alertar que não tem onde gravar. A solução é instalar um HD compatível e formatá-lo pelo próprio DVR.',
+      },
+      {
+        question: 'O apito pode indicar que o DVR não está gravando?',
+        answer: 'Sim, e essa é a principal preocupação. A maioria dos eventos que disparam o apito (sem HD, erro no HD, HD sem espaço) afeta diretamente a gravação. Se o DVR está apitando, verifique imediatamente se está gravando acessando o menu de Playback e testando a reprodução de uma data recente. Imagem ao vivo e gravação são funções separadas.',
+      },
+      {
+        question: 'O apito para sozinho depois de alguns minutos. Devo me preocupar?',
+        answer: 'Se o apito para sozinho, pode ter sido um evento momentâneo — uma câmera que oscilou e reconectou, uma oscilação rápida de rede ou um pico de temperatura. Ainda assim, vale verificar o log do sistema para identificar qual evento ocorreu e se ele pode se repetir, porque eventos intermitentes podem evoluir para falhas permanentes.',
+      },
+    ],
+    internalLink: {
+      text: 'Seu DVR está apitando sem parar? Precisa de diagnóstico sem perder as gravações?',
+      url: '/servicos/manutencao/',
+      linkText: 'Ver Manutenção de Sistemas',
+    },
+    whatsappMessage: 'Vim do blog e meu DVR está apitando',
+    ctaFinal: {
+      title: 'Seu DVR está apitando sem parar? Precisa de diagnóstico sem perder as gravações?',
+      text: 'A Intelsecsul realiza diagnóstico de CFTV em Curitiba e Região Metropolitana, com prioridade para a preservação das gravações existentes antes de qualquer intervenção.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
 ];
+
