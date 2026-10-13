@@ -3448,5 +3448,413 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       buttonText: 'Falar no WhatsApp agora',
     },
   },
+  {
+    id: 'nvr-nao-reconhece-camera-ip-depois-de-trocar-roteador',
+    slug: 'nvr-nao-reconhece-camera-ip-depois-de-trocar-roteador',
+    title: 'NVR Não Reconhece Câmeras IP Depois de Trocar o Roteador: O Que Fazer | Intelsecsul',
+    metaTitle: 'NVR Não Reconhece Câmeras IP Depois de Trocar o Roteador: O Que Fazer | Intelsecsul',
+    metaDescription: 'Trocou o roteador e o NVR parou de reconhecer as câmeras IP? Veja como diagnosticar DHCP, faixa de IP, PoE e credenciais — sem resetar o NVR nem perder as configurações.',
+    h1: 'NVR não reconhece câmeras IP depois de trocar o roteador',
+    category: 'Câmeras de Segurança',
+    readTime: '10 min de leitura',
+    publishedDate: '2026-10-13',
+    summary: 'Quando o roteador é trocado, três coisas mudam silenciosamente: a faixa de endereços IP, o comportamento do DHCP e, às vezes, as credenciais das câmeras. Na maioria dos casos, basta alinhar a faixa de IP entre NVR, câmeras e roteador — sem resetar nada.',
+    intro: 'Quando você troca o roteador, o NVR e as câmeras IP continuam ligados, os cabos continuam conectados e o sistema parece intacto. Mas por trás disso, três coisas mudam silenciosamente: a faixa de endereços IP da rede (o roteador novo pode usar 192.168.1.x, enquanto o antigo usava 192.168.0.x), as credenciais de acesso (a câmera pode ter usuário e senha diferentes do que o NVR espera) e o comportamento do servidor DHCP. O resultado é sempre o mesmo sintoma: o NVR lista os canais como "Offline", "Sem Host de Rede" ou simplesmente não encontra nenhuma câmera na busca automática. O erro mais comum é a mudança de faixa de IP: se o roteador antigo usava 192.168.0.1 e o novo usa 192.168.1.1, todas as câmeras configuradas com IP fixo na faixa antiga ficam inalcançáveis pelo NVR. A boa notícia é que, na maioria dos casos, a solução não exige resetar o NVR nem reinstalar as câmeras. Antes de qualquer ação: não restaure o NVR para configurações de fábrica, não formate o HD e não resete as câmeras.',
+    sections: [
+      {
+        h2: 'Primeiro: entenda onde está o problema (rede local, PoE ou configuração)',
+        content: (
+          <div className="space-y-4">
+            <p>A falha pode estar em três camadas diferentes, e cada uma exige um tipo de verificação:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Rede local (LAN):</strong> o NVR e as câmeras precisam estar na mesma sub-rede. Se o roteador mudou a faixa de IP, os dispositivos ficam em "ilhas" separadas e não se enxergam.</li>
+              <li><strong className="text-white">Alimentação PoE:</strong> se as câmeras são alimentadas pelas portas PoE do próprio NVR, a troca do roteador não afeta a alimentação. Mas se houver um switch PoE externo entre o roteador e as câmeras, a troca pode ter interrompido a comunicação com esse switch.</li>
+              <li><strong className="text-white">Configuração de cada câmera:</strong> mesmo com a rede alinhada, o NVR precisa das credenciais corretas (usuário e senha) para acessar cada câmera. Se a câmera foi reiniciada ou perdeu configuração, o NVR não consegue autenticar.</li>
+            </ul>
+            <p>A ordem de verificação segue essa lógica: primeiro a rede, depois a alimentação, depois as credenciais. Pular etapas gera tentativas aleatórias que podem piorar o problema.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Verificações na ordem certa (sem resetar nada)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">1. Confirme a faixa de IP do novo roteador</h3>
+            <p>Acesse o painel do roteador novo (geralmente 192.168.1.1 ou 192.168.0.1, conforme a etiqueta do aparelho) e verifique qual é a faixa de IP da rede local. Anote o gateway (endereço do roteador) e a máscara de sub-rede (geralmente 255.255.255.0).</p>
+            <p>Exemplo: se o roteador novo usa 192.168.2.1 como gateway, todos os dispositivos da rede precisam estar na faixa 192.168.2.x para se comunicarem entre si. Se o NVR está em 192.168.1.108 (faixa antiga) e as câmeras também, eles não conseguem se alcançar pelo novo roteador.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">2. Verifique o IP atual do NVR</h3>
+            <p>No menu do NVR, acesse Menu Principal &gt; Ajustes &gt; Rede &gt; TCP/IP e confira: o endereço IP do NVR está na mesma faixa do roteador novo? A máscara de sub-rede corresponde à do roteador? O gateway está configurado com o IP do roteador novo?</p>
+            <p>Se o NVR estiver na faixa antiga (192.168.1.x) e o roteador novo for 192.168.2.x, o NVR está em uma sub-rede diferente. Nesse caso, você precisa alterar o IP do NVR para a faixa nova — ou alterar a faixa do roteador para a faixa antiga, se for possível e não afetar outros dispositivos.</p>
+            <p><strong className="text-white">Cuidado:</strong> alterar o IP do NVR pode exigir que você acesse o equipamento pela interface local (monitor e mouse conectados diretamente) se o acesso remoto pelo navegador parar de funcionar. Faça a alteração com o NVR conectado a um monitor.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">3. Verifique se as câmeras estão na mesma faixa</h3>
+            <p>Se as câmeras estão conectadas diretamente nas portas PoE do NVR, o próprio NVR distribui IPs para elas (geralmente em uma faixa interna, como 10.1.1.x). Nesse caso, a troca do roteador não afeta a comunicação entre NVR e câmeras — o problema pode ser outro.</p>
+            <p>Se as câmeras estão conectadas a um switch externo (com ou sem PoE), elas precisam estar na mesma faixa do NVR. Para verificar o IP de cada câmera, use a ferramenta de busca do NVR (geralmente no menu Disp. Remoto &gt; Buscar) ou um software de descoberta do fabricante da câmera.</p>
+            <p>Se a câmera não aparece na busca, o problema pode ser: câmera sem alimentação (PoE), cabo de rede desconectado, ou câmera em uma sub-rede inalcançável. Vale conferir também as <Link to="/blog/camera-fora-do-ar-causas-solucoes" className="text-white underline hover:text-slate-300">causas mais comuns de câmera fora do ar</Link>.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">4. Verifique a alimentação PoE</h3>
+            <p>Se as câmeras são alimentadas por PoE (pelo NVR ou por um switch externo), confirme: o LED da porta PoE está aceso? O cabo de rede está firmemente conectado nas duas pontas? O switch PoE (se externo) está ligado e conectado ao roteador novo?</p>
+            <p>Se o LED da porta PoE estiver apagado, tente mover a câmera para outra porta PoE ou substituir o cabo de rede. Se o LED continuar apagado, a câmera pode não estar recebendo energia — o que pode indicar problema no switch PoE ou no próprio cabo.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">5. Verifique as credenciais de acesso</h3>
+            <p>Mesmo com a rede alinhada e a alimentação correta, o NVR precisa das credenciais certas para acessar cada câmera. No menu do NVR, acesse Disp. Remoto e verifique se cada canal está configurado com:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Usuário correto</strong> (por padrão, admin — mas pode ter sido alterado).</li>
+              <li><strong className="text-white">Senha correta</strong> (se a câmera foi resetada, a senha volta ao padrão de fábrica e pode ser diferente da que o NVR tem salva).</li>
+              <li><strong className="text-white">Protocolo correto</strong> (Intelbras-1 para câmeras Intelbras, ONVIF para câmeras de outras marcas).</li>
+            </ul>
+            <p>Se a câmera aparece na busca mas não conecta, o problema é de credencial ou protocolo. Edite o canal, insira a senha correta e teste novamente.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">6. Renove o DHCP ou defina IP fixo</h3>
+            <p>Se as câmeras estão configuradas como DHCP, elas precisam renovar o endereço IP com o novo roteador. A forma mais simples é reiniciar as câmeras (desligar e ligar) para que solicitem um novo IP ao servidor DHCP do roteador novo.</p>
+            <p>Se as câmeras estão com IP fixo, você precisa alterar manualmente o IP de cada uma para a faixa do roteador novo. Isso exige acessar a interface web de cada câmera (pelo IP antigo, em um computador configurado na mesma faixa) e alterar o endereço.</p>
+            <p><strong className="text-white">Recomendação prática:</strong> para evitar que esse problema se repita na próxima troca de roteador, use a reserva de IP (DHCP reservation) no roteador. Assim, o NVR e as câmeras mantêm sempre o mesmo endereço sem precisar configurá-lo manualmente em cada dispositivo. Deixar tudo em DHCP puro também funciona, mas o IP pode mudar a qualquer reinício, e o NVR pode perder as câmeras.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela de diagnóstico rápido',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[720px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Sintoma</th>
+                  <th className="text-left p-3 text-white font-bold">Verificação prioritária</th>
+                  <th className="text-left p-3 text-white font-bold">Causa provável</th>
+                  <th className="text-left p-3 text-white font-bold">Ação segura</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">NVR não encontra nenhuma câmera</td><td className="p-3">Faixa de IP do NVR e do roteador</td><td className="p-3">Sub-redes diferentes</td><td className="p-3">Alinhar IP do NVR à faixa do roteador</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Câmera aparece na busca mas fica offline</td><td className="p-3">Credenciais (usuário/senha)</td><td className="p-3">Senha da câmera diferente do NVR</td><td className="p-3">Editar canal e inserir senha correta</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">LED da porta PoE apagado</td><td className="p-3">Alimentação PoE</td><td className="p-3">Cabo desconectado ou porta com defeito</td><td className="p-3">Trocar cabo ou porta PoE</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Câmeras DHCP não aparecem após troca</td><td className="p-3">Renovação de DHCP</td><td className="p-3">Câmeras mantiveram IP da faixa antiga</td><td className="p-3">Reiniciar câmeras para renovar DHCP</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Câmera com IP fixo não aparece</td><td className="p-3">Faixa de IP da câmera</td><td className="p-3">IP fora da faixa do roteador novo</td><td className="p-3">Acessar câmera e alterar IP manualmente</td></tr>
+                <tr><td className="p-3 font-semibold text-white">NVR perde configuração após reinício</td><td className="p-3">Modo DHCP do NVR</td><td className="p-3">NVR recebe IP diferente a cada reinício</td><td className="p-3">Reservar IP no roteador ou fixar IP estático</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'Passo a passo para reconectar as câmeras ao NVR',
+        content: (
+          <div className="space-y-4">
+            <p>Se as verificações acima não resolveram, siga esta sequência para forçar a redescoberta:</p>
+            <ol className="space-y-2 list-decimal list-inside">
+              <li>Reinicie o NVR (desligue e ligue pela fonte) para que ele solicite um novo IP ao roteador novo, caso esteja em DHCP.</li>
+              <li>Reinicie as câmeras (desligue e ligue a alimentação) para que renovem o DHCP.</li>
+              <li>No NVR, acesse Disp. Remoto e clique em Buscar. Aguarde a listagem dos dispositivos encontrados na mesma rede.</li>
+              <li>Selecione as câmeras que aparecerem e clique em Adicionar (ou dê duplo clique).</li>
+              <li>Se a câmera não aparecer na busca, use a função Adicionar Manualmente e preencha o endereço IP, porta, protocolo e credenciais.</li>
+              <li>Após adicionar, aguarde alguns segundos para que o NVR estabilize a conexão e a detecção de movimento.</li>
+              <li>Se a imagem não aparecer, acesse Disp. Remoto, selecione o canal e verifique os parâmetros de configuração (protocolo, porta, credenciais).</li>
+            </ol>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que NÃO fazer (e por quê)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Não restaure o NVR para configurações de fábrica</h3>
+            <p>O reset de fábrica pode apagar configurações de rede, senhas de acesso, agenda de gravação e, em alguns modelos, a estrutura de arquivos do HD. Se o problema é de faixa de IP ou credenciais, você pode corrigir manualmente sem reset. O reset só deve ser considerado depois de esgotar todas as outras possibilidades.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não resete as câmeras sem necessidade</h3>
+            <p>Resetar uma câmera IP apaga todas as configurações dela — incluindo IP, senha, configurações de stream e detecção de movimento. Se o problema é de faixa de IP, você pode alterar o IP sem resetar. Se a câmera foi resetada acidentalmente, será necessário reconfigurá-la do zero, o que pode exigir acesso físico e um aplicativo do fabricante.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não altere o IP do NVR sem ter acesso local</h3>
+            <p>Se você alterar o IP do NVR para uma faixa diferente da que o seu computador está usando, perderá o acesso remoto ao equipamento. Faça alterações de IP com o NVR conectado a um monitor e mouse (acesso local), para não ficar sem interface de configuração.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não ignore a possibilidade de conflito de IP</h3>
+            <p>Se o roteador novo atribuiu o mesmo IP para o NVR e para outro dispositivo (ou para uma câmera), a rede fica instável e a comunicação falha. Verifique a lista de dispositivos conectados no painel do roteador e procure por IPs duplicados.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico especializado',
+        content: (
+          <div className="space-y-4">
+            <p>A triagem de rede pode ser feita por você, mas alguns cenários exigem diagnóstico profissional:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>As câmeras não aparecem na busca mesmo com NVR e câmeras na mesma faixa de IP.</li>
+              <li>O NVR não aceita alteração de IP ou perde a configuração após reiniciar.</li>
+              <li>As câmeras estão em locais de difícil acesso e exigem remoção para teste.</li>
+              <li>Há múltiplos switches PoE na rede e a topologia é complexa.</li>
+              <li>O sistema tem câmeras de marcas diferentes (Intelbras, Hikvision, Dahua) e a compatibilidade ONVIF está falhando.</li>
+              <li>Você não se sente seguro para mexer nas configurações de rede — uma alteração errada pode deixar o sistema inteiro inacessível.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de configuração e manutenção de CFTV IP em Curitiba e Região Metropolitana. O diagnóstico identifica se o problema é de rede, PoE, credenciais ou configuração do NVR — e o orçamento é apresentado com clareza antes de qualquer intervenção.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>NVR que não reconhece câmeras IP depois de trocar o roteador é um problema de rede, não de equipamento. A causa mais comum é a mudança de faixa de IP: o roteador novo usa uma sub-rede diferente da que o NVR e as câmeras estavam configurados, e nenhum dispositivo consegue alcançar o outro.</p>
+            <p>A solução segue uma ordem clara: confirme a faixa do roteador, verifique o IP do NVR, alinhe as câmeras à mesma faixa, verifique a alimentação PoE e, por fim, confirme as credenciais. Em muitos casos, basta reiniciar as câmeras para que renovem o DHCP e voltem a aparecer. A regra que vale para todos os cenários: não resete o NVR, não resete as câmeras e não restaure configurações de fábrica antes de esgotar as verificações de rede.</p>
+            <p>Quando as câmeras voltarem, confirme que o NVR está realmente gravando — imagem ao vivo não garante gravação, como explicamos em <Link to="/blog/dvr-mostra-imagem-ao-vivo-mas-nao-grava" className="text-white underline hover:text-slate-300">DVR que mostra imagem ao vivo mas não grava</Link>. E se a troca de roteador veio junto com a ampliação do sistema, vale conferir <Link to="/blog/quantas-cameras-de-seguranca-preciso-para-minha-casa" className="text-white underline hover:text-slate-300">quantas câmeras o seu imóvel realmente precisa</Link> antes de adicionar novos pontos.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Preciso resetar o NVR depois de trocar o roteador?',
+        answer: 'Não. Na grande maioria dos casos, o problema é apenas de faixa de IP ou credenciais. Resetar o NVR apaga configurações e não resolve o problema de rede. O caminho correto é alinhar o IP do NVR à faixa do roteador novo e renovar o DHCP das câmeras.',
+      },
+      {
+        question: 'As câmeras estão em DHCP. Por que não aparecem no NVR?',
+        answer: 'Se as câmeras estão em DHCP, elas precisam renovar o endereço IP com o novo roteador. Reinicie as câmeras (desligue e ligue a alimentação) para que solicitem um novo IP. Se elas mantiverem o IP da faixa antiga (por exemplo, 192.168.1.x enquanto o roteador novo usa 192.168.2.x), não serão alcançadas pelo NVR.',
+      },
+      {
+        question: 'Como saber o IP atual das câmeras?',
+        answer: 'Use a ferramenta de busca do NVR (menu Disp. Remoto > Buscar) ou um software de descoberta do fabricante da câmera (Intelbras IP Utility, Hikvision SADP, Dahua ConfigTool). Esses programas escaneiam a rede e listam todos os dispositivos IP encontrados, com seus respectivos endereços.',
+      },
+      {
+        question: 'O NVR não encontra as câmeras nem na busca manual. O que fazer?',
+        answer: 'Verifique: alimentação PoE (LED da porta aceso), cabo de rede (substitua por um novo), faixa de IP (NVR e câmeras na mesma sub-rede) e firewall do roteador (pode estar bloqueando a comunicação entre dispositivos na rede local). Se tudo estiver correto e o problema persistir, o diagnóstico técnico é necessário.',
+      },
+      {
+        question: 'A troca do roteador afeta a gravação do NVR?',
+        answer: 'A gravação continua normalmente enquanto o NVR tiver um HD reconhecido e configurado para gravar. A troca do roteador afeta a comunicação com as câmeras IP: se o NVR perde contato com uma câmera, ele para de gravar aquele canal. Os canais cujas câmeras continuam alcançáveis seguem gravando normalmente.',
+      },
+    ],
+    internalLink: {
+      text: 'Seu NVR não está reconhecendo as câmeras IP depois de trocar o roteador? Precisa de ajuda para alinhar a rede?',
+      url: '/servicos/cameras-de-seguranca/',
+      linkText: 'Ver Câmeras de Segurança',
+    },
+    whatsappMessage: 'Vim do blog e meu NVR não reconhece as câmeras IP',
+    ctaFinal: {
+      title: 'Seu NVR não está reconhecendo as câmeras IP depois de trocar o roteador?',
+      text: 'A Intelsecsul realiza configuração e manutenção de CFTV IP em Curitiba e Região Metropolitana, com diagnóstico no local e orçamento claro antes de qualquer intervenção.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
+  {
+    id: 'alarme-nao-arma-causas-zona-aberta-bateria-falha-comunicacao',
+    slug: 'alarme-nao-arma-causas-zona-aberta-bateria-falha-comunicacao',
+    title: 'Alarme Não Arma: Causas de Zona Aberta, Bateria e Falha de Comunicação | Intelsecsul',
+    metaTitle: 'Alarme Não Arma: Causas de Zona Aberta, Bateria e Falha de Comunicação | Intelsecsul',
+    metaDescription: 'Seu alarme não arma? Veja as causas mais comuns — zona aberta, bateria fraca, falha de comunicação e senha incorreta — e aprenda a diagnosticar cada uma antes de chamar assistência técnica.',
+    h1: 'Alarme não arma: causas de zona aberta, bateria e falha de comunicação',
+    category: 'Alarmes',
+    readTime: '10 min de leitura',
+    publishedDate: '2026-10-13',
+    summary: 'Quando o alarme não arma, o problema quase sempre está em uma de quatro categorias: zona aberta, bateria fraca ou ausente, falha de comunicação ou senha e teclado com problema. A falha é silenciosa: o imóvel parece protegido, mas não está.',
+    intro: 'Quando você digita a senha, ouve o bipe de confirmação e espera o alarme armar — mas ele simplesmente não ativa, ou exibe uma mensagem de erro no teclado, o problema quase sempre está em uma destas quatro categorias: zona aberta (algum sensor ou contato está violado), bateria fraca ou ausente (a central não tem energia suficiente para completar o arme), falha de comunicação (a central não consegue se conectar à rede ou à empresa de monitoramento) ou senha ou teclado com problema (a central não reconhece o código digitado). A dor aqui é silenciosa e perigosa: o sistema parece instalado, mas não está protegendo. Você fecha o imóvel acreditando que está seguro, e o alarme está desarmado ou inoperante.',
+    sections: [
+      {
+        h2: 'Primeiro: identifique a mensagem de erro no teclado',
+        content: (
+          <div className="space-y-4">
+            <p>O teclado da central é o seu principal instrumento de diagnóstico. Antes de abrir qualquer coisa ou mexer na fiação, observe o que ele está informando. As centrais Intelbras (linhas AMT e ANM) usam um sistema de indicação por teclas numéricas acesas ou piscando:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Tecla acesa:</strong> zona aberta (sensor violado naquela zona).</li>
+              <li><strong className="text-white">Tecla apagada:</strong> zona fechada (normal).</li>
+              <li><strong className="text-white">Tecla piscando:</strong> zona disparada (o alarme já ocorreu naquela zona).</li>
+            </ul>
+            <p>Para ver quais zonas estão abertas no momento, pressione a tecla Menu, acesse Sens. abertos (ou o equivalente no seu modelo) e depois Enter. O teclado exibirá os sensores violados.</p>
+            <p>Se o LED "Problema" estiver piscando, pressione a tecla F1 uma vez: a tecla numérica correspondente ao problema ficará acesa. Nas centrais ANM, por exemplo, a tecla 1 indica falha na rede elétrica e a tecla 2 indica falha de supervisão (sensor sem comunicação).</p>
+            <p>Essa leitura inicial evita que você tente armar o alarme repetidamente enquanto um sensor está aberto, ou que troque a bateria quando o problema é de rede.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 1: Zona aberta — o sensor está violado',
+        content: (
+          <div className="space-y-4">
+            <p>Esta é, de longe, a causa mais comum de alarme que não arma. A central se recusa a armar enquanto houver qualquer zona aberta — é uma proteção para que você não saia de casa com uma porta ou janela desprotegida.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">O que é uma zona aberta</h3>
+            <p>Uma zona é considerada aberta quando o sensor conectado a ela está no estado de "violado". Isso acontece quando:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Porta ou janela está aberta:</strong> o ímã do sensor de abertura está longe do contato, e a central interpreta como "porta aberta".</li>
+              <li><strong className="text-white">Sensor de presença detectou movimento:</strong> o PIR (infravermelho passivo) acionou e a zona ficou violada. Se ele dispara sem motivo aparente, veja também as <Link to="/blog/alarme-disparando-sozinho-causas-reduzir-falsos-alarmes" className="text-white underline hover:text-slate-300">causas de alarme disparando sozinho</Link>.</li>
+              <li><strong className="text-white">Sensor com fio mal instalado:</strong> o contato seco não está fechando o circuito, e a central interpreta a zona como permanentemente aberta.</li>
+              <li><strong className="text-white">Sensor sem fio com problema de comunicação:</strong> a central não recebe o sinal de "zona fechada" e mantém a zona aberta por segurança.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Como diagnosticar e resolver</h3>
+            <ol className="space-y-2 list-decimal list-inside">
+              <li><strong className="text-white">Verifique fisicamente portas e janelas.</strong> Faça uma volta pelo imóvel e confira se tudo está bem fechado. Uma janela entreaberta ou uma porta mal encostada é suficiente para manter a zona aberta.</li>
+              <li><strong className="text-white">Consulte as zonas abertas no teclado.</strong> Pressione Menu &gt; Sens. abertos &gt; Enter, anote o número da zona e identifique qual sensor corresponde a ela.</li>
+              <li><strong className="text-white">Se for um sensor sem fio,</strong> verifique se a bateria dele está fraca ou se foi movido de posição. Bateria baixa pode impedir a transmissão correta do sinal de "zona fechada".</li>
+              <li><strong className="text-white">Se for um sensor com fio,</strong> o problema pode ser contato seco que não fecha o circuito ou fiação invertida. Um técnico pode testar fechando a zona com um pedaço de fio no lugar do sensor para ver o comportamento da central.</li>
+              <li><strong className="text-white">Considere a anulação de zonas abertas.</strong> Algumas centrais (como a AMT 8000) permitem anular zonas abertas antes de armar, fazendo a central ignorar aquela zona e armar o restante. Atenção: é uma solução temporária — não deve virar prática regular, porque deixa parte do imóvel desprotegida.</li>
+            </ol>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 2: Bateria fraca ou ausente — a central não tem energia',
+        content: (
+          <div className="space-y-4">
+            <p>A bateria da central mantém o sistema funcionando durante uma queda de energia. Mas ela também se desgasta com o tempo — e, quando está fraca ou ausente, a central pode se recusar a armar.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Sinais de problema na bateria</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>LED de problema aceso ou piscando no teclado.</li>
+              <li>A central não liga mesmo com a energia da tomada presente — em alguns modelos, ela não inicializa sem a bateria conectada.</li>
+              <li>A central desarma sozinha após alguns segundos de arme.</li>
+              <li>O teclado exibe falha de bateria no menu de problemas.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Como diagnosticar e resolver</h3>
+            <ol className="space-y-2 list-decimal list-inside">
+              <li><strong className="text-white">Verifique o LED de energia.</strong> Se o LED que indica a presença de energia elétrica estiver apagado ou piscando, o fusível da rede ou a fonte AC da central podem estar com problema. Nesse caso, a falha é na alimentação elétrica, não na bateria.</li>
+              <li><strong className="text-white">Verifique a conexão da bateria.</strong> Ela é ligada por dois fios (vermelho e preto). Confira se os terminais estão firmes e sem oxidação.</li>
+              <li><strong className="text-white">Verifique a tensão da bateria.</strong> Com um multímetro e a central ligada à energia elétrica, meça nos terminais: uma bateria de chumbo-ácido de 12V em bom estado marca entre 13 e 14 VDC. Abaixo de 12V, ela está descarregada ou danificada.</li>
+              <li><strong className="text-white">Se estiver descarregada,</strong> deixe a central conectada à energia por cerca de 24 horas para recarregar. Se depois disso a bateria não mantiver a carga, ela precisa ser substituída. Baterias de centrais de alarme duram, em média, 3 a 5 anos.</li>
+            </ol>
+            <p><strong className="text-white">Atenção:</strong> em algumas centrais (como a AMT 8000 Lite), a central não liga se a bateria estiver desconectada — mesmo com a energia AC presente. A bateria precisa estar conectada para que a central inicialize.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 3: Falha de comunicação — a central não conecta',
+        content: (
+          <div className="space-y-4">
+            <p>Se a central tem monitoramento (empresa de segurança) ou acesso remoto pelo aplicativo, uma falha de comunicação pode impedir o arme ou gerar alertas de erro.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Sinais de falha de comunicação</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>LED de problema piscando e tecla 2 acesa (falha de supervisão): a central não recebe sinal de algum sensor sem fio.</li>
+              <li>A central não envia eventos para a empresa de monitoramento ou para o aplicativo.</li>
+              <li>O aplicativo mostra a central offline, mesmo com o imóvel conectado à internet.</li>
+              <li>A central não responde a comandos remotos de arme e desarme.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Como diagnosticar e resolver</h3>
+            <ol className="space-y-2 list-decimal list-inside">
+              <li><strong className="text-white">Verifique a conexão de rede (Ethernet).</strong> O cabo está firme na central e no roteador ou switch? Os LEDs da porta de rede estão acesos? O endereço IP da central está correto? Conferir o IP pelo teclado exige entrar na programação da central com a senha do instalador, procedimento que consta no manual do modelo e que, em caso de dúvida, deve ficar com um técnico.</li>
+              <li><strong className="text-white">Teste a conectividade com ping.</strong> Em um computador na mesma rede, abra o Prompt de Comando e execute ping seguido do IP da central. Se houver resposta, a central está na rede local; se não houver, o problema é físico (cabo, porta ou switch).</li>
+              <li><strong className="text-white">Verifique a conexão GPRS/GSM (se aplicável).</strong> O chip está ativo (com crédito, se for pré-pago)? A antena está bem conectada? Há sinal da operadora no local? A central envia periodicamente uma mensagem de verificação (heartbeat) ao receptor; se ela não chega dentro do intervalo programado (padrão de fábrica: 5 minutos), um evento de falha é gerado.</li>
+              <li><strong className="text-white">Verifique DNS e gateway.</strong> Se a central não consegue falar com a nuvem ou com a empresa de monitoramento, confira se o gateway e o DNS estão corretos. Em muitos casos, fixar manualmente o endereço da nuvem ou do receptor IP resolve.</li>
+            </ol>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 4: Senha ou teclado com problema',
+        content: (
+          <div className="space-y-4">
+            <p>Se a central rejeita a senha digitada, o problema pode estar no teclado, na senha ou na própria programação da central.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Sinais de problema de senha ou teclado</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>O teclado exibe "Senha incorreta" ou mensagem equivalente.</li>
+              <li>As teclas não respondem ao toque.</li>
+              <li>A central aceita a senha para desarmar, mas não arma.</li>
+              <li>O teclado está travado ou piscando de forma errática.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Como diagnosticar e resolver</h3>
+            <ol className="space-y-2 list-decimal list-inside">
+              <li><strong className="text-white">Confirme a senha correta.</strong> Se a senha nunca foi alterada, a de fábrica consta no manual do seu modelo — e é importante trocá-la, porque senhas de fábrica são de conhecimento público.</li>
+              <li><strong className="text-white">Verifique se o teclado está no modo correto.</strong> Alguns teclados têm modos de operação diferentes (usuário, instalador, programação). No modo de programação, ele não aceita comandos de arme e desarme.</li>
+              <li><strong className="text-white">Se for preciso acessar a programação</strong> para checar se as zonas estão habilitadas ou se alguma configuração impede o arme, isso exige a senha do instalador. Deixe esse passo com um técnico.</li>
+              <li><strong className="text-white">Se o teclado não responde,</strong> verifique a conexão dele com a central e se há energia chegando ao teclado. Um teclado sem energia não se comunica com a central.</li>
+            </ol>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela de diagnóstico rápido',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[720px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Sintoma</th>
+                  <th className="text-left p-3 text-white font-bold">Verificação prioritária</th>
+                  <th className="text-left p-3 text-white font-bold">Causa provável</th>
+                  <th className="text-left p-3 text-white font-bold">Ação segura</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Teclado exibe "zona aberta"</td><td className="p-3">Menu &gt; Sens. abertos</td><td className="p-3">Porta/janela aberta ou sensor violado</td><td className="p-3">Fechar acessos; verificar sensor</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">LED Problema piscando, tecla 1 acesa</td><td className="p-3">Alimentação elétrica</td><td className="p-3">Falha na rede elétrica ou fonte</td><td className="p-3">Verificar disjuntor e fusível</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">LED Problema piscando, tecla 2 acesa</td><td className="p-3">Supervisão dos sensores sem fio</td><td className="p-3">Sensor sem comunicação ou bateria baixa</td><td className="p-3">Verificar sensor e bateria</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Central não liga nem com energia AC</td><td className="p-3">Bateria conectada?</td><td className="p-3">Bateria ausente ou desconectada</td><td className="p-3">Conectar ou substituir a bateria</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Central não conecta ao app ou ao monitoramento</td><td className="p-3">Cabo de rede, IP, chip GPRS</td><td className="p-3">Falha de comunicação</td><td className="p-3">Testar cabo; verificar IP e chip</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Teclado exibe "Senha incorreta"</td><td className="p-3">Senha digitada e manual do modelo</td><td className="p-3">Senha errada ou teclado com problema</td><td className="p-3">Conferir senha no manual; verificar teclado</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Central arma mas desarma sozinha</td><td className="p-3">Zona aberta momentânea ou bateria</td><td className="p-3">Sensor com falha intermitente</td><td className="p-3">Verificar histórico de eventos; testar sensor</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que NÃO fazer (e por quê)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Não fique tentando armar repetidamente com zona aberta</h3>
+            <p>Se o teclado indica zona aberta, armar repetidamente não resolve — a central vai continuar recusando. Identifique qual zona está aberta e resolva a causa antes de tentar de novo.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não anule zonas abertas como prática regular</h3>
+            <p>A anulação é uma solução temporária para emergências, como um sensor com defeito que você não consegue consertar naquele momento. Usada como rotina, deixa partes do imóvel desprotegidas e mascara problemas reais (sensor com bateria fraca, fiação com mau contato).</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não desconecte a bateria para "testar"</h3>
+            <p>Em algumas centrais, desconectar a bateria impede a central de ligar, mesmo com a energia AC presente. Além disso, a bateria é o que mantém o sistema funcionando durante uma queda de energia — desconectá-la sem necessidade deixa o imóvel vulnerável.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não restaure a central para configurações de fábrica sem orientação</h3>
+            <p>O reset de fábrica apaga todas as programações: zonas, senhas, números de telefone, configurações de comunicação. Se o problema é zona aberta ou senha errada, dá para corrigir sem reset. Ele só deve ser considerado depois de esgotar as outras possibilidades e, de preferência, com um técnico.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não abra a central se não tiver experiência</h3>
+            <p>Abrir a central expõe você a risco de choque elétrico e pode danificar componentes sensíveis. Se você não tem multímetro, não sabe medir tensões ou não se sente seguro, não abra o equipamento — encaminhe para um técnico especializado.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico especializado',
+        content: (
+          <div className="space-y-4">
+            <p>A triagem pelo teclado e as verificações de bateria e rede podem ser feitas por você. Mas alguns cenários exigem diagnóstico profissional:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Zona aberta persistente mesmo com portas e janelas fechadas — pode ser sensor com defeito, fiação rompida ou contato seco mal instalado.</li>
+              <li>Bateria que não recarrega após 24 horas conectada à energia — ela precisa ser substituída.</li>
+              <li>Central que não conecta à rede mesmo com cabo e IP corretos — pode ser falha na placa de rede ou no módulo GPRS.</li>
+              <li>Teclado que não responde ou exibe mensagens inconsistentes — pode ser problema no teclado ou na comunicação com a central.</li>
+              <li>Central que reinicia, trava ou desarma sozinha — problema de hardware ou firmware.</li>
+              <li>Você não se sente seguro para navegar nos menus ou fazer as verificações.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de alarmes em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. Para evitar que a falha só apareça quando você mais precisa, vale considerar um <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">contrato de manutenção preventiva</Link>, que inclui a revisão periódica de bateria, sensores e comunicação.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>Alarme que não arma tem, na grande maioria dos casos, uma causa identificável, e o teclado da central é o seu principal aliado no diagnóstico. As quatro causas mais comuns são zona aberta, bateria fraca ou ausente, falha de comunicação e senha ou teclado com problema.</p>
+            <p>A triagem começa pela leitura do que o teclado indica: teclas acesas (zonas abertas), teclas piscando (zonas disparadas), LED de problema e teclas de diagnóstico. Daí em diante, as verificações são simples: fechar portas e janelas, conferir a bateria, testar a rede e confirmar a senha.</p>
+            <p>A regra vale para todos os cenários: não anule zonas abertas como prática regular, não desconecte a bateria para "testar" e não restaure a central para configurações de fábrica antes de esgotar as verificações. Se a triagem não resolveu, a avaliação de um técnico especializado é o caminho mais seguro.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Meu alarme não arma e o teclado mostra "zona aberta". O que faço?',
+        answer: 'Verifique fisicamente todas as portas e janelas — uma delas pode estar entreaberta. Depois, no teclado, acesse Menu > Sens. abertos e veja qual zona está violada. Se todos os acessos estiverem fechados e a zona continuar aberta, o sensor pode estar com defeito ou com fiação mal conectada, e é necessário testar o sensor ou a fiação.',
+      },
+      {
+        question: 'Posso armar o alarme com uma zona aberta?',
+        answer: 'Algumas centrais permitem anular zonas abertas antes de armar, fazendo a central ignorar temporariamente aquela zona e armar o restante do sistema. Não é recomendado como prática regular, porque deixa uma parte do imóvel desprotegida. Use apenas como solução temporária, até resolver a causa da zona aberta.',
+      },
+      {
+        question: 'A bateria da central de alarme precisa ser trocada com que frequência?',
+        answer: 'Em média, a cada 3 a 5 anos. A bateria é um consumível e perde capacidade com o tempo. Se a central não mantém a operação durante uma queda de energia, ou se a bateria não recarrega após 24 horas ligada à energia, é hora de substituí-la.',
+      },
+      {
+        question: 'A central não liga nem com a energia da tomada. O que pode ser?',
+        answer: 'Verifique se a bateria está conectada: em algumas centrais, ela não liga sem a bateria, mesmo com a energia AC presente. Se a bateria estiver conectada e a central continuar sem ligar, verifique o fusível da rede e a fonte AC. Se o fusível estiver queimado, a substituição exige um técnico.',
+      },
+      {
+        question: 'O alarme não arma e o LED "Problema" está piscando. O que significa?',
+        answer: 'Pressione a tecla F1 no teclado: a tecla numérica que acender corresponde ao problema. Nas centrais ANM, a tecla 1 indica falha na rede elétrica e a tecla 2 indica falha de supervisão (sensor sem comunicação ou bateria baixa). Se a tecla 2 estiver acesa, verifique a bateria e a comunicação dos sensores sem fio.',
+      },
+      {
+        question: 'Zona aberta pode ser problema de fiação?',
+        answer: 'Sim. Se o sensor é com fio e a central indica zona aberta mesmo com a porta ou janela fechada, pode haver fiação rompida, contato seco mal instalado ou fio invertido. Um técnico pode testar fechando a zona com um pedaço de fio no lugar do sensor para verificar o comportamento da central.',
+      },
+    ],
+    internalLink: {
+      text: 'Seu alarme não está armando? Precisa de ajuda para identificar a causa?',
+      url: '/servicos/instalacao-de-alarmes/',
+      linkText: 'Ver Instalação de Alarmes',
+    },
+    whatsappMessage: 'Vim do blog e meu alarme não está armando',
+    ctaFinal: {
+      title: 'Seu alarme não está armando? Precisa de ajuda para identificar a causa?',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de alarmes em Curitiba e Região Metropolitana, com prioridade para que o seu sistema volte a proteger o imóvel o mais rápido possível.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
 ];
 
