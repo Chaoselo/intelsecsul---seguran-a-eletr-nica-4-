@@ -3856,5 +3856,480 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       buttonText: 'Falar no WhatsApp agora',
     },
   },
+  {
+    id: 'cerca-eletrica-dispara-depois-da-chuva-isoladores-fuga-corrente-instalacao',
+    slug: 'cerca-eletrica-dispara-depois-da-chuva-isoladores-fuga-corrente-instalacao',
+    title: 'Cerca Elétrica Dispara Depois da Chuva: Isoladores, Fuga de Corrente ou Instalação | Intelsecsul',
+    metaTitle: 'Cerca Elétrica Dispara Depois da Chuva: Isoladores, Fuga de Corrente ou Instalação | Intelsecsul',
+    metaDescription: 'Sua cerca elétrica dispara depois da chuva? Veja as causas mais comuns — isoladores rachados, fuga de corrente, aterramento inadequado e vegetação — e como diagnosticar cada uma antes de chamar assistência técnica.',
+    h1: 'Cerca elétrica dispara depois da chuva: isoladores, fuga de corrente ou instalação',
+    category: 'Cerca Elétrica',
+    readTime: '10 min de leitura',
+    publishedDate: '2026-10-16',
+    summary: 'Cerca elétrica que dispara depois da chuva não é normal: a água é o agente revelador de um problema de isolamento ou manutenção. As causas mais comuns são isolador rachado ou ressecado (a mais frequente), fuga de corrente no perímetro, aterramento inadequado, vegetação encostando nos fios e umidade no eletrificador.',
+    intro: 'Uma cerca elétrica que dispara depois da chuva — ou durante ela — está revelando um problema de isolamento ou manutenção que fica mascarado no tempo seco. A água da chuva, por si só, não é a causa do disparo: ela é o agente revelador. Quando a umidade entra em contato com um ponto falho do sistema, a corrente de alta tensão encontra um caminho para o solo (fuga) e a central interpreta isso como uma violação do perímetro, disparando o alarme. A boa notícia é que, na maioria dos casos, o problema é identificável e solucionável sem substituir a central. A triagem abaixo ajuda você a distinguir entre chuva normal (que não deveria causar disparo) e problema real: isolador rachado, fuga de corrente, aterramento inadequado ou vegetação encostando nos fios.',
+    sections: [
+      {
+        h2: 'Primeiro: entenda por que a chuva revela o problema',
+        content: (
+          <div className="space-y-4">
+            <p>A Intelbras, em seu material técnico "TOP 10 Problemas de Cercas Elétricas", aponta a causa de forma direta: "Central dispara com chuva e/ou neblina. Causa: Instalação da cerca susceptível a fuga / Choque muito forte para cercas de perímetro pequeno / isolador da haste com fissuras, rachaduras segurando umidade, fuga no perímetro onde deve checar os fios de inox estão com 'barriga'."</p>
+            <p>Em fóruns técnicos da Intelbras, a avaliação de técnicos converge: "os isoladores normalmente são a causa mais frequente de disparos que ocorrem na chuva". A lógica é simples: isoladores rachados, ressecados pelo sol ou acumulando água criam um caminho de fuga para a corrente de alta tensão quando estão molhados.</p>
+            <p>Em tempo seco, a resistência elétrica do ar e dos materiais isolantes é alta o suficiente para conter a corrente de alta tensão nos fios da cerca. Quando chove:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">A umidade no ar aumenta a condutividade elétrica.</strong> Pequenas fugas que não aconteciam no seco começam a acontecer.</li>
+              <li><strong className="text-white">Isoladores rachados ou com fissuras seguram umidade.</strong> A água penetra nas fissuras e cria um caminho condutor entre o fio de alta tensão e a haste metálica (que está aterrada).</li>
+              <li><strong className="text-white">Vegetação molhada encosta nos fios.</strong> Folhas e galhos que estavam secos e afastados se tornam condutores quando encharcados.</li>
+              <li><strong className="text-white">O solo encharcado altera o aterramento.</strong> Em alguns casos o aterramento fica mais eficiente; em outros, a água acumulada cria caminhos de fuga inesperados.</li>
+            </ul>
+            <p>A Belgo Arames, fabricante de arames e soluções para cercas, alerta que "chuvas intensas afetam diretamente o funcionamento das cercas elétricas" e que "condições climáticas extremas, como altas taxas de umidade e incidência de raios, podem comprometer o desempenho das cercas elétricas, aumentando o risco de curto-circuito e danos aos componentes do sistema".</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 1: Isolador rachado, ressecado ou com fissuras — a causa mais frequente',
+        content: (
+          <div className="space-y-4">
+            <p>O isolador é a peça que impede que o fio de alta tensão entre em contato direto com a haste metálica (que está aterrada). Quando o isolador está íntegro, a corrente passa pelo fio e retorna à central sem encontrar caminho para o solo. Quando ele está danificado, a corrente escapa.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Por que o isolador falha na chuva</h3>
+            <p>O isolador fica exposto ao sol e à chuva durante anos. O sol resseca o plástico, criando microfissuras. A chuva, então, penetra nessas fissuras e a água, que é condutora, cria um caminho elétrico entre o fio e a haste. O resultado é a fuga de corrente e o disparo da central.</p>
+            <p>A Belgo Arames recomenda isoladores fabricados com plástico virgem e equipados com filtro ultravioleta (UV), que "evitam o ressecamento devido à exposição solar e o acúmulo excessivo de água".</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Como diagnosticar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Faça uma inspeção visual dos isoladores, com a cerca desligada na central.</strong> Procure rachaduras, fissuras, pontos esbranquiçados ou deformações. Passe a mão para sentir se a superfície está áspera ou trincada.</li>
+              <li><strong className="text-white">Observe o comportamento com a cerca ligada, sem encostar nela.</strong> Em dia seco e depois em dia de chuva, observe à distância segura, sem tocar nos fios nem nas hastes, e nunca durante tempestade com raios, se há estalos ou faíscas saindo dos isoladores. Em fóruns técnicos, usuários relatam exatamente isso: as cercas dos vizinhos estalam, mas a sua, que tem isoladores danificados, dispara silenciosamente.</li>
+              <li><strong className="text-white">Substitua os isoladores suspeitos por modelos reforçados anti-UV.</strong> A recomendação técnica é usar isoladores de qualidade, com proteção UV, que resistem melhor à exposição solar e não seguram umidade.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <p>Se encontrar isoladores rachados ou ressecados, a substituição é a solução. Não tente "consertar" o isolador com fita isolante ou produtos improvisados — a fita também se deteriora com a chuva e o problema volta. A substituição é simples e barata, e pode ser feita pelo próprio morador (com a cerca desligada na central) ou por um técnico.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 2: Fuga de corrente no perímetro (fios com "barriga" ou em contato com estruturas)',
+        content: (
+          <div className="space-y-4">
+            <p>Além dos isoladores, a própria instalação da cerca pode ter pontos de fuga que só se manifestam na chuva. A Intelbras aponta como causa "fuga no perímetro onde deve checar os fios de inox estão com 'barriga'". "Barriga" é o termo usado para fios que estão frouxos, com folga ou desalinhados, o que aumenta a chance de encostarem em estruturas metálicas ou em outros fios.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Tipos de fuga no perímetro</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Fio encostando em calha, grade ou estrutura metálica.</strong> A estrutura está aterrada (ou em contato com o solo) e cria um caminho de fuga.</li>
+              <li><strong className="text-white">Fio encostando em outro fio.</strong> Dois fios de alta tensão se tocando podem causar curto-circuito, especialmente se um deles estiver com isolamento danificado.</li>
+              <li><strong className="text-white">Fio com isolamento rompido ou oxidado.</strong> O isolamento pode ter se desgastado com o tempo, expondo o condutor.</li>
+              <li><strong className="text-white">Cabo de alta isolação passando junto ao fio de retorno.</strong> Em alguns casos, os dois cabos percorrem o mesmo conduíte ou tubulação, o que pode causar interferência e fuga.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Como diagnosticar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Percorra o perímetro visualmente, com a cerca desligada na central.</strong> Procure fios frouxos, em contato com estruturas metálicas, ou com isolamento danificado. Verifique especialmente os pontos de fixação e as curvas.</li>
+              <li><strong className="text-white">Verifique se o fio tem "barriga".</strong> São trechos em que o fio está visivelmente mais baixo ou com folga, aumentando a chance de contato com vegetação ou estruturas.</li>
+              <li><strong className="text-white">Peça ao técnico a medição da resistência de isolamento.</strong> Ela é feita com a cerca desconectada da central, preferencialmente com um megômetro (instrumento específico), medindo a resistência entre o fio e o solo. Valores muito baixos indicam fuga.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <p>Qualquer ajuste nos fios deve ser feito com a cerca desligada na central.</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Reestique os fios que estiverem frouxos, usando conectores adequados.</li>
+              <li>Substitua trechos de fio com isolamento rompido ou oxidado.</li>
+              <li>Afaste os fios de estruturas metálicas ou instale isoladores adicionais nos pontos de contato.</li>
+              <li>Separe fisicamente o cabo de alta tensão do cabo de retorno — eles não devem percorrer o mesmo conduíte.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 3: Aterramento inadequado ou mal localizado',
+        content: (
+          <div className="space-y-4">
+            <p>O aterramento é um componente essencial da cerca elétrica. Ele serve para fechar o circuito (a corrente sai pela cerca, passa pelo corpo de quem toca e retorna ao solo, encontrando o aterramento da central) e para proteger o equipamento contra descargas atmosféricas. Um aterramento mal feito ou localizado de forma inadequada pode causar disparos falsos, especialmente na chuva.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Problemas comuns de aterramento</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Haste muito curta ou poucas hastes.</strong> A recomendação técnica é haste de aço galvanizado de 2 metros de profundidade por joule de energia liberada pelo eletrificador, com espaçamento de 3 metros entre cada haste. Para eletrificadores de 1 a 3 joules, o ideal é formar um triângulo com no mínimo três hastes.</li>
+              <li><strong className="text-white">Aterramento compartilhado com outros sistemas.</strong> A Intelbras alerta que "problema no aterramento (não eficaz)" é uma causa de disparos falsos e de danos por descarga elétrica. O aterramento da cerca deve ser exclusivo, distante no mínimo 30 metros de qualquer outro aterramento (antenas, central de alarme, rede elétrica).</li>
+              <li><strong className="text-white">Local seco ou inadequado.</strong> O aterramento precisa estar em local úmido para funcionar bem. Se as hastes estiverem em solo muito seco e arenoso, a resistência de terra fica alta e o sistema pode disparar falsamente. A recomendação é procurar sempre um local mais úmido para fixação da haste.</li>
+              <li><strong className="text-white">Corrosão das hastes ou conexões.</strong> Com o tempo, as hastes de cobre ou aço cobreado podem oxidar, aumentando a resistência. A oxidação das conexões também é um problema comum.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Como diagnosticar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Verifique a localização e o número de hastes.</strong> O aterramento da cerca deve estar separado de qualquer outro aterramento, em local úmido, com pelo menos três hastes espaçadas 3 metros entre si (para eletrificadores de 1 a 3 J).</li>
+              <li><strong className="text-white">Verifique o estado das hastes e conexões.</strong> Procure por oxidação, corrosão ou conexões soltas.</li>
+              <li><strong className="text-white">Meça a resistência de terra com um terrômetro</strong> (instrumento específico). Valores acima de 10 ohms indicam aterramento ineficaz.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <p>Se o aterramento estiver inadequado, a correção exige cravar novas hastes em local úmido, refazer as conexões com cabo de cobre e garantir que o sistema esteja isolado de outros aterramentos. Esse é um serviço que exige ferramentas específicas e conhecimento técnico — não é recomendado fazer por conta própria.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 4: Vegetação encostando nos fios',
+        content: (
+          <div className="space-y-4">
+            <p>Vegetação encostando nos fios da cerca é uma causa clássica de disparo na chuva. No tempo seco, a vegetação tem alta resistência elétrica e não causa fuga. Quando molhada, a resistência cai drasticamente, e a corrente escapa para o solo através das folhas e galhos.</p>
+            <p>A Belgo Arames alerta que "vegetação em contato com o arame aumenta a resistência elétrica e reduz a voltagem" do sistema. Em fóruns técnicos, a recomendação é "impedir que a vegetação encoste na fiação da cerca eletrificada, uma vez que isto poderá causar fugas elétricas e, portanto, disparos aleatórios".</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como diagnosticar</h3>
+            <p>Percorra o perímetro da cerca e verifique se há galhos, folhas, trepadeiras ou mato alto encostando nos fios. Preste atenção especial aos pontos em que a vegetação cresceu durante a primavera e o verão — o crescimento pode ter aproximado galhos dos fios sem que você perceba.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Faça a poda da vegetação que estiver encostando nos fios. Desligue a cerca antes de podar — a recomendação é "desligar a cerca para eventuais podas de vegetação e/ou manutenção dos fios".</li>
+              <li>Mantenha uma faixa de segurança de pelo menos 30 a 50 cm entre a vegetação e os fios.</li>
+              <li>Faça a manutenção da vegetação regularmente — pelo menos uma vez por semana em períodos de crescimento intenso, ou após chuvas intensas e ventos fortes.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 5: Umidade no eletrificador ou na fiação de conexão',
+        content: (
+          <div className="space-y-4">
+            <p>A central de choque (eletrificador) precisa estar abrigada do sol e da chuva. Se o equipamento estiver exposto ou em local úmido, a umidade pode penetrar nos componentes internos e causar disparos falsos.</p>
+            <p>A Intelbras orienta que o produto "deve ser fixado em local protegido do sol, chuva e umidade". Manuais de fabricantes de eletrificadores rurais reforçam: "procure um lugar onde o aparelho fique abrigado do sol e da chuva. Se for fora do galpão, construir um abrigo". Além do eletrificador, a fiação de conexão entre a central e a cerca também pode ser afetada pela umidade. Se o cabo de alta isolação estiver danificado ou se os conectores estiverem oxidados, a chuva pode causar fuga nessa conexão.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como diagnosticar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Verifique se o eletrificador está em local abrigado — coberto, ventilado e protegido de respingos de chuva.</li>
+              <li>Inspecione a fiação de conexão entre a central e a cerca — procure por isolamento danificado, conectores oxidados ou emendas mal feitas.</li>
+              <li>Verifique se há água acumulada próxima ao eletrificador ou nos conduítes de passagem dos cabos.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Instale o eletrificador em local abrigado (dentro de casa, em uma caixa de proteção ou em um abrigo construído para esse fim).</li>
+              <li>Substitua a fiação de conexão danificada e os conectores oxidados.</li>
+              <li>Vede os conduítes para evitar entrada de água.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela de diagnóstico rápido',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[720px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Sintoma</th>
+                  <th className="text-left p-3 text-white font-bold">Verificação prioritária</th>
+                  <th className="text-left p-3 text-white font-bold">Causa provável</th>
+                  <th className="text-left p-3 text-white font-bold">Ação segura</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Dispara só na chuva, tempo seco OK</td><td className="p-3">Isoladores (visual: rachaduras, fissuras)</td><td className="p-3">Isolador rachado segurando umidade</td><td className="p-3">Substituir isoladores por modelos anti-UV</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Dispara com chuva forte e vento</td><td className="p-3">Vegetação encostando nos fios</td><td className="p-3">Vegetação molhada conduzindo corrente</td><td className="p-3">Poda técnica (desligar cerca antes)</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Dispara mesmo com cerca limpa e isoladores OK</td><td className="p-3">Aterramento (número de hastes, localização)</td><td className="p-3">Aterramento inadequado ou compartilhado</td><td className="p-3">Verificar/corrigir aterramento com técnico</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Dispara após chuva, com estalos audíveis</td><td className="p-3">Fios com "barriga" ou em contato com estruturas</td><td className="p-3">Fuga no perímetro</td><td className="p-3">Reestirar fios, afastar de estruturas metálicas</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Dispara com neblina ou alta umidade</td><td className="p-3">Isoladores + aterramento</td><td className="p-3">Isolamento comprometido</td><td className="p-3">Revisar isoladores e aterramento</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Central dispara sozinha, sem chuva</td><td className="p-3">Verificar sensibilidade e aprendizado</td><td className="p-3">Sensibilidade muito alta ou aprendizado incorreto</td><td className="p-3">Reajustar sensibilidade; refazer aprendizado</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que NÃO fazer (e por quê)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Não aumente a sensibilidade da central para "compensar" a chuva</h3>
+            <p>A tentação de aumentar a sensibilidade da cerca para que ela "sinta melhor" o toque é um erro. Sensibilidade mais alta significa que qualquer fuga mínima (umidade, vegetação, isolador com microfissura) será interpretada como violação, e a cerca vai disparar ainda mais. A Intelbras orienta "diminuir a tensão dos pulsos da cerca" quando o perímetro é pequeno e a tensão está muito alta, pois isso também pode causar disparos.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não desligue o alarme para "resolver" o barulho</h3>
+            <p>Desligar o alarme silencia o problema, mas mantém a cerca inoperante ou com fuga. Se a cerca dispara por fuga de corrente, desligar o alarme não corrige a fuga — e você fica sem a proteção. O disparo é um sintoma; a causa precisa ser corrigida.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não use fita isolante ou improvisos para "consertar" isoladores</h3>
+            <p>Fita isolante comum não é adequada para alta tensão e se deteriora rapidamente com a chuva e o sol. O problema volta em poucos dias. A substituição do isolador por um modelo reforçado anti-UV é a solução correta e barata.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não faça poda de vegetação com a cerca ligada</h3>
+            <p>A recomendação técnica é desligar a cerca antes de podar a vegetação próxima aos fios. Podar com a cerca ligada expõe você a choques e pode causar danos ao sistema.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não meça a tensão dos fios com multímetro comum</h3>
+            <p>Os pulsos de uma cerca elétrica são de alta tensão. Um multímetro comum não foi feito para esse tipo de medição: pode ser danificado e causar acidente. A medição de tensão exige instrumento específico para cerca elétrica e conhecimento técnico — se for necessária, deixe com um profissional.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não compartilhe o aterramento da cerca com outros sistemas</h3>
+            <p>O aterramento da cerca elétrica deve ser exclusivo. Compartilhar o aterramento com a central de alarme, antena de TV, rede elétrica ou outros sistemas é uma causa comum de disparos falsos e pode danificar equipamentos em caso de descarga elétrica.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico especializado',
+        content: (
+          <div className="space-y-4">
+            <p>A triagem visual — verificar isoladores, vegetação e abrigo do eletrificador — pode ser feita por você, com a cerca desligada na central. Mas alguns cenários exigem diagnóstico profissional:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Substituição de isoladores em hastes de difícil acesso ou em cercas com muitos pontos.</li>
+              <li>Correção de aterramento — exige cravar novas hastes, refazer conexões e medir a resistência de terra com equipamento específico.</li>
+              <li>Fuga de corrente persistente que não é resolvida com a limpeza de vegetação e substituição de isoladores.</li>
+              <li>Fios com isolamento danificado que precisam ser substituídos em trechos longos.</li>
+              <li>Eletrificador com danos internos (após descarga elétrica ou infiltração de água).</li>
+              <li>Sistema com mais de 5 anos sem manutenção preventiva — uma revisão completa identifica múltiplos pontos de desgaste antes que o sistema pare de proteger.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de cercas elétricas em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita identifica se o problema é de isolador, fuga de corrente, aterramento ou instalação — e apresenta a solução com clareza.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>Cerca elétrica disparando depois da chuva não é normal — é um sinal de que o sistema tem um ponto de fuga que a umidade está revelando. As causas mais comuns são: isolador rachado ou ressecado (a mais frequente, segundo técnicos em fóruns da Intelbras), fuga de corrente no perímetro (fios com "barriga" ou em contato com estruturas metálicas), aterramento inadequado (hastes insuficientes, local seco ou aterramento compartilhado) e vegetação encostando nos fios.</p>
+            <p>A triagem começa pela inspeção visual dos isoladores — procure por rachaduras e fissuras — e pela verificação da vegetação que possa estar encostando nos fios. Se esses dois pontos estiverem OK, o problema pode estar no aterramento, que exige verificação técnica.</p>
+            <p>E a regra que vale para todos os cenários: não aumente a sensibilidade da central para "compensar" a chuva, não desligue o alarme como solução e não compartilhe o aterramento da cerca com outros sistemas. Essas ações mascaram o problema e podem deixar o imóvel desprotegido.</p>
+            <p>Se o problema se repete a cada chuva e você está repensando a proteção do muro, vale conferir o comparativo <Link to="/blog/cerca-eletrica-x-concertina-diferenca" className="text-white underline hover:text-slate-300">cerca elétrica x concertina</Link>. E para que isolador, vegetação e aterramento não sejam lembrados só quando o alarme dispara, um <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">contrato de manutenção preventiva</Link> inclui essas revisões periodicamente.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Cerca elétrica disparando na chuva é normal?',
+        answer: 'Não. Uma cerca elétrica instalada corretamente e com manutenção em dia não deve disparar com a chuva. Se ela dispara toda vez que chove, há um problema de isolamento, fuga de corrente ou aterramento que precisa ser corrigido. A chuva é o agente que revela o problema — não a causa dele.',
+      },
+      {
+        question: 'Qual a causa mais frequente de cerca elétrica disparando na chuva?',
+        answer: 'Segundo técnicos em fóruns da Intelbras, os isoladores são a causa mais frequente de disparos que ocorrem na chuva. Isoladores com fissuras, rachaduras ou ressecamento pelo sol seguram umidade e criam um caminho de fuga para a corrente de alta tensão. A substituição por isoladores reforçados anti-UV resolve a maioria dos casos.',
+      },
+      {
+        question: 'Como saber se o problema é isolador ou aterramento?',
+        answer: 'Se a cerca dispara apenas na chuva e para no tempo seco, a causa mais provável é isolador (a umidade cria o caminho de fuga). Se a cerca dispara mesmo com isoladores em bom estado e vegetação limpa, o problema pode ser aterramento inadequado. A medição de resistência de isolamento (megômetro) e de aterramento (terrômetro), feita por um técnico, ajuda a distinguir entre fuga de isolamento e aterramento ineficaz.',
+      },
+      {
+        question: 'Posso testar a cerca elétrica sozinho?',
+        answer: 'Você pode fazer inspeção visual de isoladores, vegetação e abrigo do eletrificador, sempre com a cerca desligada na central. Não meça a tensão dos fios com multímetro comum: os pulsos da cerca são de alta tensão e podem danificar o aparelho e causar acidentes. A medição de tensão, de resistência de isolamento e de aterramento exige instrumentos específicos (voltímetro para cerca elétrica, megômetro, terrômetro) e conhecimento técnico. Se não se sentir seguro, chame um técnico.',
+      },
+      {
+        question: 'Cerca elétrica dispara na chuva e o alarme toca. Devo desligar a cerca?',
+        answer: 'Desligar a cerca silencia o alarme, mas não corrige o problema. Se a cerca dispara por fuga de corrente, ela continua inoperante (ou com fuga) mesmo com o alarme desligado. O ideal é identificar a causa — isolador, vegetação, aterramento — e corrigi-la. Se você precisa desligar temporariamente para fazer manutenção, lembre-se de religar depois e testar o funcionamento.',
+      },
+      {
+        question: 'Com que frequência devo fazer manutenção na cerca elétrica?',
+        answer: 'A recomendação técnica é fazer inspeções visuais e funcionais pelo menos uma vez por semana, além de verificações após chuvas intensas ou ventos fortes. Em sistemas mais intensivos, o ideal é o monitoramento contínuo da voltagem. A manutenção preventiva completa (substituição de isoladores, reaperto de conexões, limpeza de vegetação) deve ser feita a cada 3 a 6 meses.',
+      },
+    ],
+    internalLink: {
+      text: 'Sua cerca elétrica está disparando na chuva? Precisa de diagnóstico técnico?',
+      url: '/servicos/cerca-eletrica/',
+      linkText: 'Ver Cerca Elétrica',
+    },
+    whatsappMessage: 'Vim do blog e minha cerca elétrica está disparando na chuva',
+    ctaFinal: {
+      title: 'Sua cerca elétrica está disparando na chuva? Precisa de diagnóstico técnico?',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de cercas elétricas em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
+  {
+    id: 'cancela-ou-catraca-travou-diagnostico-rapido',
+    slug: 'cancela-ou-catraca-travou-diagnostico-rapido',
+    title: 'Cancela ou Catraca Travou: Diagnóstico Rápido para Não Parar a Entrada | Intelsecsul',
+    metaTitle: 'Cancela ou Catraca Travou: Diagnóstico Rápido para Não Parar a Entrada | Intelsecsul',
+    metaDescription: 'Cancela ou catraca travou e a entrada parou? Siga o diagnóstico por sintoma — haste no meio, tag sem comando, fotocélula, laço indutivo, display e solenoide — e saiba quando chamar manutenção de cancela e catraca em Curitiba.',
+    h1: 'Cancela ou catraca travou: diagnóstico rápido para não parar a entrada',
+    category: 'Cancelas e Catracas',
+    readTime: '9 min de leitura',
+    publishedDate: '2026-10-19',
+    summary: 'Cancela ou catraca travada para a portaria inteira. Este guia organiza o diagnóstico por sintoma: haste parada no meio do curso, tag sem comando, fotocélula, laço indutivo, solenoide e display de erro. Mostra o que dá para verificar com segurança e quando chamar manutenção de cancela e catraca em Curitiba.',
+    intro: 'Uma cancela ou catraca travada não é só um equipamento com defeito: é a portaria inteira parada. Em um condomínio, a fila se forma na guarita em minutos. Em um estacionamento comercial, cada veículo retido é receita perdida e reclamação acumulada. Em uma empresa, o acesso de colaboradores e visitantes trava junto com o equipamento. A diferença entre resolver o problema em minutos ou em horas está quase sempre na triagem correta: muitos travamentos têm causas simples e identificáveis, como um obstáculo na fotocélula, um laço indutivo que perdeu a sintonia, uma tag que não está sendo lida ou um solenoide que não libera o giro. Outros são sintomas de desgaste que exige manutenção especializada.',
+    sections: [
+      {
+        h2: 'Como fazer a triagem: por sintoma, do visível ao técnico',
+        content: (
+          <div className="space-y-4">
+            <p>Este guia organiza o diagnóstico por sintoma — o que você está vendo no equipamento — para que a triagem seja rápida e segura. A regra é começar pelo que é visível e não invasivo, e só avançar para verificações técnicas quando o problema não se resolve na superfície. Para manutenção de cancela e catraca em Curitiba, o diagnóstico local evita a troca desnecessária de peças e reduz o tempo de parada.</p>
+            <p>Se a entrada trava com frequência nos horários de pico, o problema pode não ser defeito, e sim um fluxo acima do que o equipamento suporta. Veja como <Link to="/blog/cancela-automatica-condominio-empresa-como-dimensionar-fluxo" className="text-white underline hover:text-slate-300">dimensionar o fluxo de veículos de uma cancela automática</Link>.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Antes de tudo: segurança e limites do que você pode fazer',
+        content: (
+          <div className="space-y-4">
+            <p>Cancela e catraca têm partes móveis motorizadas e componentes elétricos. Antes de qualquer verificação:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Não coloque as mãos no mecanismo</strong> com o equipamento energizado.</li>
+              <li><strong className="text-white">Não force a haste ou o braço da catraca</strong> manualmente quando o equipamento estiver travado — isso pode danificar engrenagens, solenoides e o motor.</li>
+              <li><strong className="text-white">Não abra o painel elétrico se não tiver experiência.</strong> A maioria dos fabricantes recomenda que a manutenção seja feita por pessoal tecnicamente competente.</li>
+              <li><strong className="text-white">Se houver cheiro de queimado, fumaça ou faísca,</strong> desligue a alimentação no disjuntor e chame assistência imediatamente.</li>
+            </ul>
+            <p>O que você pode fazer com segurança: inspeção visual, limpeza externa de sensores, verificação de obstáculos e leitura de indicadores no display.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Sintoma 1: A haste da cancela para no meio do curso (não abre ou não fecha completamente)',
+        content: (
+          <div className="space-y-4">
+            <p>Quando a haste para no meio do caminho, o problema está quase sempre em um dispositivo de segurança que está sendo acionado ou em uma referência de posição que se perdeu.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Causas prováveis</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Fotocélula obstruída ou desalinhada.</strong> A fotocélula é o sensor que impede a cancela de fechar sobre um veículo ou pessoa. Se houver qualquer obstáculo entre o transmissor e o receptor — inclusive sujeira, folhas ou um objeto esquecido — a cancela interpreta como presença e interrompe o movimento. Se as lentes estiverem desalinhadas, o feixe não chega ao receptor e o comportamento é o mesmo.</li>
+              <li><strong className="text-white">Fim de curso desregulado ou com mau contato.</strong> O fim de curso é o sensor que informa à central onde a haste deve parar (totalmente aberta e totalmente fechada). Se ele perder a referência — por desgaste, mau contato ou reprogramação — a haste para antes do ponto correto ou não completa o ciclo.</li>
+              <li><strong className="text-white">Obstáculo físico no trilho ou na cremalheira.</strong> Sujeira acumulada, uma pedra pequena ou o desalinhamento da própria haste podem fazer o motor "sentir" resistência e interromper o movimento como medida de proteção.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que verificar primeiro</h3>
+            <p>Limpe as lentes da fotocélula com um pano seco, confirme visualmente se elas estão alinhadas uma com a outra e remova qualquer objeto entre elas. Se a haste voltar a completar o curso, o problema era obstrução ou desalinhamento. Se continuar parando, o fim de curso ou o mecanismo precisam de avaliação técnica.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Sintoma 2: A tag ou o controle não dá comando (a cancela não reage ao acionamento)',
+        content: (
+          <div className="space-y-4">
+            <p>Se você aproxima a tag, aperta o controle ou digita o código, e a cancela não faz nada, o problema pode estar na identificação (o equipamento não está lendo a credencial) ou no receptor (a central não está recebendo o comando).</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Causas prováveis</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Tag ou cartão com problema.</strong> A tag pode estar danificada, sem leitura, com bateria fraca (no caso de tags ativas) ou fora do alcance do leitor. Teste com outra tag ou outro cartão cadastrado. Se outra credencial funcionar, o problema é a tag específica.</li>
+              <li><strong className="text-white">Leitor desalinhado ou sujo.</strong> O leitor de proximidade (RFID) ou o leitor de código pode estar sujo, desalinhado ou com mau contato. Limpe a superfície do leitor e verifique se há algum obstáculo físico na frente dele.</li>
+              <li><strong className="text-white">Receptor ou central sem receber o comando.</strong> Se a cancela funciona com o botão interno (na guarita ou no painel), mas não com a tag ou o controle, o problema está no receptor ou na central de comando — não no motor nem no mecanismo. Nesse caso, a verificação exige acesso ao painel e conhecimento da central.</li>
+              <li><strong className="text-white">Controle remoto sem bateria ou fora de sintonia.</strong> Se o controle remoto não funciona, mas a tag funciona, verifique a bateria do controle e, se necessário, refaça a memorização no receptor.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que verificar primeiro</h3>
+            <p>Teste com outra credencial (outra tag ou outro controle). Se outra funcionar, o problema é a credencial original. Se nenhuma funcionar, limpe o leitor e verifique se a cancela responde ao botão interno.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Sintoma 3: A fotocélula não está funcionando (a cancela não fecha ou fecha e reabre)',
+        content: (
+          <div className="space-y-4">
+            <p>Este é um dos sintomas mais específicos e um dos mais perigosos se ignorado, porque a fotocélula é o dispositivo de segurança anti-esmagamento. Se ela não está funcionando, a cancela pode fechar sobre um veículo ou uma pessoa.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como confirmar que o problema é a fotocélula</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Teste de bloqueio do feixe.</strong> Peça a alguém para comandar o fechamento enquanto você bloqueia o feixe entre transmissor e receptor com a mão ou um objeto, mantendo-se sempre fora do trajeto da haste. Se a cancela não parar nem reverter, a fotocélula não está sendo lida pela central. Nunca coloque o corpo ou a mão no caminho da haste para testar.</li>
+              <li><strong className="text-white">Lentes e LED.</strong> Verifique se as lentes estão limpas e se o LED do receptor está aceso (na maioria dos modelos, um LED indica alinhamento e detecção).</li>
+              <li><strong className="text-white">Cabo da fotocélula.</strong> Verifique, apenas visualmente, se o cabo está firme e sem trechos rompidos ou oxidados. Mexer nas conexões da central é serviço técnico.</li>
+            </ul>
+            <p>Se a fotocélula não responde ao teste, o problema pode ser desalinhamento, sujeira, fiação ou falha no próprio sensor. A substituição do sensor é necessária se ele estiver defeituoso. <strong className="text-white">Não desative a fotocélula para "resolver" o travamento</strong> — isso elimina a proteção anti-esmagamento e cria risco de acidente.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Sintoma 4: O laço indutivo não detecta o veículo (a cancela não abre na aproximação)',
+        content: (
+          <div className="space-y-4">
+            <p>O laço indutivo é o sensor instalado no piso que detecta a presença de veículos por variação do campo magnético. Quando ele não detecta o carro, a cancela não recebe o comando de abertura — e o motorista fica parado na frente da haste.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Causas prováveis</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Laço danificado ou com mau contato.</strong> O fio do laço indutivo fica embutido no piso e pode se romper com o desgaste, com obras ou com infiltração. Se o laço estiver aberto (fio rompido), o detector não funciona.</li>
+              <li><strong className="text-white">Interferência de metal próximo.</strong> Uma malha de aço ou estrutura metálica muito próxima ao laço reduz o campo magnético e prejudica a detecção.</li>
+              <li><strong className="text-white">Detector desregulado ou com falha.</strong> O módulo detector pode estar descalibrado ou com falha eletrônica. Em alguns casos, o veículo permanece sobre o laço por muito tempo e o detector deixa de detectá-lo, porque alguns modelos têm tempo máximo de presença.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que verificar primeiro</h3>
+            <p>Observe se o LED do detector de laço acende quando um veículo se aproxima. Se não acender, o laço pode estar rompido ou o detector com falha. Se acender mas a cancela não abrir, o problema está na comunicação entre o detector e a central. A verificação do laço exige equipamento de teste e, muitas vezes, a substituição do laço no piso — um serviço técnico.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Sintoma 5: A catraca não libera o giro (display aponta erro ou solenoide não aciona)',
+        content: (
+          <div className="space-y-4">
+            <p>Na catraca, o travamento tem um componente eletromecânico central: o solenoide de liberação. Quando a placa recebe a autorização de acesso, ela energiza o solenoide, que destrava o mecanismo e permite o giro do braço. Se o solenoide não aciona, o braço fica travado mesmo com a credencial válida.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Causas prováveis</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Solenoide com bobina queimada ou sem alimentação.</strong> A Intelbras orienta que, quando o solenoide não libera ou trava o braço, o técnico verifique a bobina, a tensão que sai da placa e chega ao solenoide, teste o funcionamento com alimentação externa de 24V e analise o alinhamento da peça. Se o solenoide não responde nem com alimentação externa, ele precisa ser substituído. Esses testes são elétricos e devem ser feitos por técnico.</li>
+              <li><strong className="text-white">Solenoide desalinhado ou com desgaste.</strong> O pino e a mola de retorno do solenoide se desgastam com o uso. Um solenoide desalinhado pode travar o braço mesmo estando eletricamente bom.</li>
+              <li><strong className="text-white">Mecanismo com atrito ou desalinhamento.</strong> Barulhos, travamentos ou giro pesado podem indicar torque incorreto nos parafusos de fixação, falta de lubrificação ou desalinhamento do mecanismo com os demais componentes da catraca.</li>
+              <li><strong className="text-white">Display com código de erro.</strong> Se o display da catraca mostra um código de erro, ele é a primeira pista. Os códigos variam conforme o modelo — consulte o manual do fabricante. Em alguns modelos, o display indica o estado do solenoide e da liberação do giro.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que verificar primeiro</h3>
+            <p>Leia o display e anote o código (se houver). Teste com outra credencial válida. Se o display indicar acesso liberado mas o braço não girar, o problema está no solenoide ou no mecanismo — não na leitura da credencial. A substituição ou o ajuste do solenoide exige um técnico.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela de diagnóstico rápido',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[720px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Sintoma</th>
+                  <th className="text-left p-3 text-white font-bold">Verificação prioritária</th>
+                  <th className="text-left p-3 text-white font-bold">Causa provável</th>
+                  <th className="text-left p-3 text-white font-bold">Ação segura</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Haste para no meio do curso</td><td className="p-3">Fotocélula limpa e alinhada?</td><td className="p-3">Obstrução ou desalinhamento da fotocélula</td><td className="p-3">Limpar lentes e remover obstáculos</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Haste não completa a abertura ou o fechamento</td><td className="p-3">Fim de curso com mau contato?</td><td className="p-3">Fim de curso desregulado</td><td className="p-3">Não forçar; chamar técnico para reprogramar</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Tag não dá comando</td><td className="p-3">Outra tag funciona?</td><td className="p-3">Tag danificada ou leitor com problema</td><td className="p-3">Testar outra credencial; limpar leitor</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Cancela não fecha ou fecha e reabre</td><td className="p-3">Teste de bloqueio do feixe (fora do trajeto da haste)</td><td className="p-3">Fotocélula com falha ou desalinhada</td><td className="p-3">Não desativar; corrigir alinhamento ou substituir</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Cancela não abre na aproximação</td><td className="p-3">LED do detector de laço acende?</td><td className="p-3">Laço rompido ou detector com falha</td><td className="p-3">Verificação técnica do laço e do detector</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Catraca não libera giro</td><td className="p-3">Display mostra erro?</td><td className="p-3">Solenoide sem acionamento ou desalinhado</td><td className="p-3">Anotar código; chamar técnico</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Catraca com giro pesado ou barulho</td><td className="p-3">Parafusos e lubrificação</td><td className="p-3">Mecanismo desalinhado ou sem lubrificação</td><td className="p-3">Manutenção preventiva</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que NÃO fazer (e por quê)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Não force a haste ou o braço manualmente</h3>
+            <p>Forçar a cancela ou a catraca travada pode quebrar engrenagens, empenar a haste ou danificar o solenoide. O equipamento tem um sistema de destravamento manual para situações de emergência (falta de energia, por exemplo) — use esse recurso, não a força.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não desative a fotocélula para "resolver" o travamento</h3>
+            <p>A fotocélula é o dispositivo anti-esmagamento. Desativá-la faz a cancela fechar sem detectar obstáculos, criando risco de acidente grave. Se a fotocélula está causando travamento, o problema é obstrução, desalinhamento ou falha — e deve ser corrigido, não contornado.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não aumente a força do motor para "vencer" o travamento</h3>
+            <p>Aumentar a força do motor (ou o torque do solenoide) para superar um obstáculo mascara o problema e acelera o desgaste de engrenagens, correia e motor. O travamento é um sintoma de que algo está errado no mecanismo, na segurança ou na instalação.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não abra o painel elétrico sem experiência</h3>
+            <p>A maioria dos fabricantes recomenda que a manutenção seja feita por pessoal tecnicamente competente. Abrir o painel expõe você a risco elétrico e pode danificar componentes sensíveis. Se você não tem multímetro ou não sabe medir tensões, não abra.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não ignore a manutenção preventiva</h3>
+            <p>A falta de manutenção preventiva é o erro mais frequente que leva a falhas em cancelas e catracas. A recomendação técnica é realizar vistorias a cada 100 mil ciclos ou a cada seis meses, o que ocorrer primeiro. Em catracas, a Intelbras recomenda inspeções e ajustes periódicos para evitar "falhas inesperadas, perdas de acesso e prejuízos causados pela paralisação do sistema".</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar manutenção de cancela e catraca em Curitiba',
+        content: (
+          <div className="space-y-4">
+            <p>A triagem visual resolve os casos de obstrução, sujeira e credencial com problema. Mas alguns cenários exigem atendimento técnico local:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>A haste para no meio do curso mesmo com a fotocélula limpa e alinhada — pode ser fim de curso, placa ou mecanismo.</li>
+              <li>A fotocélula não responde ao teste de bloqueio do feixe — pode ser sensor defeituoso ou fiação rompida.</li>
+              <li>O laço indutivo não detecta veículo — exige teste do laço e do detector, com possível substituição do laço no piso.</li>
+              <li>A catraca não libera o giro mesmo com credencial válida e display indicando acesso — solenoide, placa ou mecanismo.</li>
+              <li>O display mostra código de erro que não se resolve com reinício.</li>
+              <li>Há cheiro de queimado, ruído anormal ou superaquecimento — risco elétrico ou de dano maior.</li>
+              <li>O equipamento está na garantia — abrir ou forçar pode anular a garantia.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de manutenção de cancela e catraca em Curitiba e Região Metropolitana, com diagnóstico no local e orçamento claro antes de qualquer intervenção. O atendimento prioriza a liberação rápida da entrada — sem sacrificar a segurança nem a integridade dos equipamentos.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>Cancela ou catraca travada tem, na maioria dos casos, uma causa identificável por sintoma: haste no meio do curso aponta para fotocélula ou fim de curso; tag sem comando aponta para credencial ou leitor; fotocélula que não responde é falha de segurança que não pode ser ignorada; laço indutivo que não detecta é problema de sensor de piso; catraca que não libera o giro aponta para solenoide ou mecanismo.</p>
+            <p>A triagem correta começa pelo que é visível e não invasivo — limpar lentes, remover obstáculos, testar outra credencial, ler o display. E a regra que vale para todos os cenários: não force a haste, não desative a fotocélula, não aumente a força do motor e não abra o painel elétrico sem experiência.</p>
+            <p>Se a triagem não resolver, ou se o problema envolver solenoide, laço indutivo, placa ou fim de curso, a manutenção de cancela e catraca em Curitiba com diagnóstico local é o caminho mais seguro para liberar a entrada sem comprometer a segurança. Para que essas revisões aconteçam antes da parada, e não depois, veja também <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza atendimento técnico em Curitiba e Região Metropolitana, com prioridade para a liberação rápida da portaria.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Cancela não abre com a tag, mas abre com o botão interno. O que pode ser?',
+        answer: 'Se a cancela responde ao botão interno mas não à tag, o problema está na identificação, e não no motor nem no mecanismo. As causas mais prováveis são tag danificada ou com bateria fraca, leitor sujo ou desalinhado, ou receptor sem receber o comando. Teste com outra tag: se outra funcionar, o problema é a credencial original. Se nenhuma funcionar, limpe o leitor e verifique a conexão do receptor com a central.',
+      },
+      {
+        question: 'A cancela fecha e reabre sozinha. É a fotocélula?',
+        answer: 'Pode ser. Quando a fotocélula detecta um obstáculo durante o fechamento, a cancela reverte o movimento por segurança. Se isso acontece sem nenhum obstáculo visível, a fotocélula pode estar suja, desalinhada ou com falha. Limpe as lentes e verifique o alinhamento. Se o problema persistir, faça o teste de bloqueio do feixe: com alguém comandando o fechamento e você fora do trajeto da haste, bloqueie o feixe entre transmissor e receptor. Se a cancela não parar, a fotocélula não está sendo lida e precisa de verificação técnica.',
+      },
+      {
+        question: 'Catraca travada com display indicando erro: o que fazer?',
+        answer: 'Anote o código de erro exibido no display e consulte o manual do fabricante. Os códigos variam conforme o modelo e indicam desde falha de comunicação até problema no solenoide ou no motor. Não tente abrir o mecanismo nem forçar o braço. Se o código indicar falha no solenoide ou no motor, o equipamento precisa de assistência técnica.',
+      },
+      {
+        question: 'Posso destravar a cancela manualmente em caso de falta de energia?',
+        answer: 'Sim, a maioria das cancelas automáticas tem um sistema de destravamento manual para situações de emergência, como falta de energia. O procedimento varia conforme o modelo e geralmente envolve girar uma chave ou acionar uma alavanca no operador. Antes de destravar, desligue a alimentação do operador e confirme que ninguém está na área de giro da haste. Não force a haste sem usar o destravamento, porque isso pode danificar o mecanismo. Consulte o manual do seu equipamento para o procedimento correto.',
+      },
+      {
+        question: 'Com que frequência devo fazer manutenção preventiva em cancela e catraca?',
+        answer: 'A recomendação técnica é a cada 100 mil ciclos ou a cada seis meses, o que ocorrer primeiro. Em locais de alto fluxo, como estacionamentos comerciais, portarias de condomínios grandes e catracas de academias, a frequência deve ser maior. A manutenção preventiva inclui limpeza, lubrificação, verificação de solenoides, ajuste de fim de curso, teste de fotocélulas e reaperto de conexões.',
+      },
+    ],
+    internalLink: {
+      text: 'Sua cancela ou catraca travou? Precisa de manutenção local em Curitiba?',
+      url: '/servicos/cancelas-e-catracas/',
+      linkText: 'Ver Cancelas e Catracas',
+    },
+    whatsappMessage: 'Vim do blog e minha cancela ou catraca travou',
+    ctaFinal: {
+      title: 'Sua cancela ou catraca travou? Precisa de manutenção local em Curitiba?',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de cancelas e catracas em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
 ];
+
 
