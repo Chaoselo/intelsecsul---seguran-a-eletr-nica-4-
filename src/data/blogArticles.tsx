@@ -4330,6 +4330,464 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       buttonText: 'Falar no WhatsApp agora',
     },
   },
+  {
+    id: 'camera-de-seguranca-fica-preta-a-noite-infravermelho-fonte-configuracao',
+    slug: 'camera-de-seguranca-fica-preta-a-noite-infravermelho-fonte-configuracao',
+    title: 'Câmera de Segurança Fica Preta à Noite: Infravermelho, Fonte ou Configuração? | Intelsecsul',
+    metaTitle: 'Câmera de Segurança Fica Preta à Noite: Infravermelho, Fonte ou Configuração? | Intelsecsul',
+    metaDescription: 'Câmera de segurança fica preta à noite? Veja as causas mais comuns — LEDs infravermelhos, reflexo no domo, fonte insuficiente e configuração do modo noturno — e saiba como diagnosticar cada uma antes de chamar assistência técnica.',
+    h1: 'Câmera de segurança fica preta à noite: infravermelho, fonte ou configuração?',
+    category: 'Câmeras de Segurança',
+    readTime: '10 min de leitura',
+    publishedDate: '2026-10-20',
+    summary: 'Câmera que funciona de dia e fica preta à noite costuma ter problema em um de quatro pontos: LEDs infravermelhos que não acendem, reflexo do IR no domo ou em objetos próximos, fonte de alimentação insuficiente ou configuração do modo noturno. Veja como fazer a triagem na ordem certa e quando chamar assistência técnica.',
+    intro: 'Uma câmera que funciona perfeitamente durante o dia e fica completamente preta à noite tem, na maioria dos casos, um problema em um de quatro sistemas: a iluminação infravermelha (IR), que não está acendendo; o reflexo do infravermelho no domo ou em objetos próximos, que "estoura" a imagem e a deixa inutilizável; a fonte de alimentação, que não fornece energia suficiente para acender os LEDs IR; ou a configuração do modo noturno, que pode estar desativada ou com o limiar de luminosidade mal ajustado. O risco é silencioso: o cliente acredita estar protegido porque a imagem diurna é nítida, mas perde a visão justamente em um dos períodos mais críticos. É diferente de uma câmera "embaçada" ou "nebulosa": o sintoma de tela preta ou imagem totalmente escura aponta para causas mais específicas. Este guia ajuda você a fazer a triagem na ordem certa, do mais simples e visível ao mais técnico, e a entender quando o problema está na configuração, na instalação ou em um componente que exige substituição.',
+    sections: [
+      {
+        h2: 'Primeiro: confirme se a câmera está no modo noturno correto',
+        content: (
+          <div className="space-y-4">
+            <p>Antes de suspeitar de hardware, verifique se a câmera está realmente tentando entrar no modo noturno. Câmeras de segurança têm um sensor de luminosidade (lux) que decide quando desligar o filtro IR-cut e acender os LEDs infravermelhos. Se esse sensor estiver bloqueado ou se a configuração estiver errada, a câmera pode permanecer no modo diurno à noite — e o resultado é uma imagem escura, sem o auxílio do infravermelho.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">O que verificar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Modo noturno.</strong> No aplicativo ou no software de gestão, procure a opção "Modo Noturno" ou "Night Vision" e confirme se está em "Automático" ou "Ligado". Se estiver "Desligado", a câmera não vai acender os LEDs IR.</li>
+              <li><strong className="text-white">Limiar de luminosidade (lux).</strong> Quando o menu oferece essa opção, confira o ponto em que a câmera troca entre dia e noite. Se estiver ajustado para trocar só com muita escuridão, a câmera demora a entrar no modo noturno ao anoitecer e a imagem fica escura nesse intervalo. Se trocar cedo demais, ela passa para preto e branco enquanto ainda há luz no ambiente. O ajuste ideal depende do local, e o nome da opção varia conforme o fabricante.</li>
+              <li><strong className="text-white">Sensor de luminosidade físico.</strong> Algumas câmeras têm um pequeno sensor na parte frontal. Se ele estiver obstruído por sujeira, tinta ou pela própria instalação (por exemplo, a câmera montada muito próxima a uma parede), a câmera pode não perceber que escureceu.</li>
+            </ul>
+            <p>Sinais de que o problema pode ser configuração: a câmera exibe imagem colorida mesmo em ambiente totalmente escuro (não entra no modo preto e branco), ou os LEDs IR não acendem com o ambiente totalmente escuro. O mais provável, nesse caso, é ajuste ou sensor obstruído. Se a configuração estiver correta e o sintoma continuar, o filtro IR-cut pode estar travado (veja a Causa 4). Lembre que, perto de poste de iluminação ou refletor, imagem colorida à noite pode ser normal.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 1: LEDs infravermelhos não estão acendendo',
+        content: (
+          <div className="space-y-4">
+            <p>Se a câmera está no modo noturno, mas os LEDs IR não emitem luz, o problema pode estar nos próprios LEDs, na fonte de alimentação ou no circuito de acionamento.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como confirmar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Olhe a frente da câmera no escuro.</strong> Em muitos modelos, os LEDs IR emitem um brilho vermelho fraco quando estão ligados. Outros usam infravermelho de 940 nm, que não tem brilho visível. Por isso, a ausência de brilho não prova que os LEDs estão queimados: faça também o teste do celular.</li>
+              <li><strong className="text-white">Use a câmera do celular para "ver" os LEDs.</strong> A câmera frontal costuma mostrar melhor, porque a traseira de muitos aparelhos tem filtro de infravermelho. Se o celular mostrar os LEDs acesos e a câmera de segurança continuar sem imagem, o problema está na captação, e não na emissão.</li>
+              <li><strong className="text-white">Verifique se a câmera funciona durante o dia.</strong> Se a imagem diurna é normal, o sensor de imagem está bom. O problema está no subsistema de infravermelho (LEDs, driver ou alimentação) ou no filtro IR-cut.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <p>Se os LEDs não acendem, não tente abrir a câmera para "trocar o LED". Os LEDs IR são componentes soldados na placa e não são substituíveis pelo usuário. A solução é encaminhar a câmera para assistência técnica ou substituí-la. Antes disso, porém, verifique a fonte de alimentação (próxima causa), porque a falta de energia é uma das razões mais comuns para os LEDs não acenderem.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 2: Fonte de alimentação insuficiente',
+        content: (
+          <div className="space-y-4">
+            <p>Os LEDs infravermelhos consomem bastante energia — muito mais do que o sensor de imagem sozinho. Quando a fonte de alimentação não fornece tensão ou corrente suficientes, a câmera pode até funcionar durante o dia (quando os LEDs estão desligados), mas falha ou fica completamente preta à noite, quando os LEDs precisam acender.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como confirmar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Verifique a especificação da fonte.</strong> A câmera precisa de uma fonte com tensão e corrente compatíveis com o consumo dela. Por exemplo, câmeras que exigem 12V 1A ou 12V 2A podem não funcionar corretamente com fontes de menor capacidade.</li>
+              <li><strong className="text-white">Meça a tensão nos terminais da câmera.</strong> Em câmeras alimentadas por fonte 12 V DC, com a câmera ligada e os LEDs em operação, meça a tensão no lado de baixa tensão. Segundo a orientação da Intelbras, tensão abaixo de 9V indica problema na fonte ou no cabo. Meça sempre no lado de baixa tensão, nunca na entrada de energia da fonte (127/220 V). Se não tiver experiência com multímetro, deixe essa medição com um técnico. Não se aplica a câmeras PoE.</li>
+              <li><strong className="text-white">Teste a câmera com outra fonte de mesma especificação.</strong> Se a imagem noturna voltar a funcionar, o problema era a fonte original.</li>
+              <li><strong className="text-white">Verifique o comprimento e a qualidade do cabo de alimentação.</strong> Cabos muito longos ou com seção insuficiente causam queda de tensão: a câmera recebe menos energia do que o necessário, e os LEDs IR não acendem.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Substitua a fonte por uma de mesma tensão e corrente igual ou superior à especificada no manual da câmera.</li>
+              <li>Encurte o cabo de alimentação ou use um cabo com bitola maior para reduzir a queda de tensão.</li>
+              <li>Instale a fonte o mais próximo possível da câmera, conforme orientação da Intelbras.</li>
+              <li>Se a câmera for PoE, verifique se o switch PoE está fornecendo potência suficiente para todas as câmeras conectadas. Switches no limite de potência podem fazer algumas câmeras reiniciarem ou operarem com infravermelho reduzido.</li>
+            </ul>
+            <p>Se a câmera não apresenta o problema só à noite, mas some ou reinicia em outros horários, veja também <Link to="/blog/camera-fora-do-ar-causas-solucoes" className="text-white underline hover:text-slate-300">câmera fora do ar: as causas mais comuns e como resolver</Link>. E, se o cabo é longo por causa do ambiente, vale entender as diferenças entre <Link to="/blog/camera-com-fio-ou-wifi-qual-escolher" className="text-white underline hover:text-slate-300">câmera com fio ou Wi-Fi</Link>.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 3: Reflexo do infravermelho no domo ou em objetos próximos',
+        content: (
+          <div className="space-y-4">
+            <p>Este é um dos problemas mais comuns em câmeras dome (as câmeras com formato de cúpula). O infravermelho emitido pelos LEDs reflete na superfície do domo ou em objetos próximos e volta para a lente, criando um efeito de "neblina" ou "imagem leitosa" que, em casos extremos, deixa a imagem escura ou inutilizável.</p>
+            <p>A Axis, em material técnico sobre reflexos de IR em câmeras dome, explica que os problemas são normalmente causados por objetos próximos (paredes, postes), gotas de água, sujeira ou poeira no domo e fontes de luz externas voltadas para a câmera. Segundo a Trendnet, nos modelos com anel de espuma, o caso mais grave de reflexão ocorre quando o anel não está firmemente pressionado contra a cúpula, o que cria um efeito de "névoa circular" na imagem.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como confirmar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Limpe o domo com um pano de microfibra limpo.</strong> Poeira, gordura (de dedadas) e gotas de chuva são suficientes para causar reflexão.</li>
+              <li><strong className="text-white">Verifique se há objetos próximos à frente da câmera:</strong> paredes, beirais, plantas, placas. Mesmo que esses objetos não apareçam no campo de visão, eles podem refletir o IR de volta para a lente.</li>
+              <li><strong className="text-white">Teste a câmera em outro local,</strong> longe de superfícies refletivas. Se a imagem noturna melhorar, o problema é de instalação, não de hardware.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Limpe o domo regularmente com pano de microfibra e produto adequado para lentes. Evite tocar na cúpula com os dedos durante a instalação.</li>
+              <li>Afaste a câmera de paredes e superfícies refletivas. Use suportes de montagem para deslocar a câmera da parede e evitar que o feixe IR atinja superfícies próximas.</li>
+              <li>Ajuste o ângulo da câmera para que o feixe IR não incida diretamente sobre objetos próximos.</li>
+              <li>Nos modelos que têm anel de espuma, verifique se ele está no lugar e bem pressionado contra a cúpula. Se estiver solto ou ausente, ele precisa ser recolocado ou substituído.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 4: Configuração do filtro IR-cut ou do modo noturno',
+        content: (
+          <div className="space-y-4">
+            <p>O filtro IR-cut é um componente mecânico que fica na frente do sensor de imagem. Durante o dia, ele bloqueia a luz infravermelha para que as cores sejam reproduzidas corretamente. À noite, ele se retira para permitir que o sensor capte a luz infravermelha dos LEDs.</p>
+            <p>Se o filtro IR-cut travar na posição diurna, a câmera não capta o infravermelho à noite, e a imagem fica preta ou extremamente escura. Se travar na posição noturna, a imagem pode ficar com cores distorcidas durante o dia.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como confirmar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Ouça a câmera ao anoitecer.</strong> Em muitos modelos, é normal ouvir um "clique" suave quando o filtro IR-cut se move. Se não houver clique, o filtro pode estar travado. Alguns modelos têm acionamento silencioso, então a ausência de clique, sozinha, não prova defeito.</li>
+              <li><strong className="text-white">Verifique a configuração do modo noturno</strong> no aplicativo ou software. Alguns modelos permitem escolher entre "Automático", "Dia" e "Noite". Se estiver em "Dia" à noite, a câmera não vai acender os LEDs.</li>
+              <li><strong className="text-white">Compare a imagem de dia e de noite.</strong> Cores estranhas de dia e imagem preta à noite, juntas, são um sinal típico de filtro que não está trocando de posição.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Ajuste a configuração para "Automático" ou "Noite" e verifique se o ponto de troca entre dia e noite está adequado.</li>
+              <li>Se o filtro estiver travado mecanicamente, a câmera precisa de assistência técnica. O filtro IR-cut é um componente interno e não deve ser reparado pelo usuário.</li>
+              <li>Em câmeras de marcas que oferecem atualização de firmware, verifique se há uma versão mais recente que corrija problemas relacionados ao modo noturno.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela de diagnóstico rápido',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[720px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Sintoma</th>
+                  <th className="text-left p-3 text-white font-bold">Verificação prioritária</th>
+                  <th className="text-left p-3 text-white font-bold">Causa provável</th>
+                  <th className="text-left p-3 text-white font-bold">Ação segura</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Imagem totalmente preta à noite, LEDs IR não acendem</td><td className="p-3">Fonte de alimentação (tensão e corrente)</td><td className="p-3">Fonte insuficiente ou cabo com queda de tensão</td><td className="p-3">Substituir fonte; encurtar cabo</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">LEDs IR acendem, mas imagem fica "nebulosa" ou escura</td><td className="p-3">Domo limpo? Objetos próximos?</td><td className="p-3">Reflexo de IR no domo ou em superfícies</td><td className="p-3">Limpar domo; afastar de paredes</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Câmera não "clica" ao anoitecer e fica preta</td><td className="p-3">Filtro IR-cut travado</td><td className="p-3">Falha mecânica no filtro IR-cut</td><td className="p-3">Assistência técnica</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Configuração do app mostra "Modo Noturno" desligado</td><td className="p-3">Configuração do modo noturno</td><td className="p-3">Configuração incorreta</td><td className="p-3">Ativar o modo "Automático" ou "Noite"</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Câmera demora a entrar no modo noturno ao anoitecer</td><td className="p-3">Ponto de troca entre dia e noite (lux)</td><td className="p-3">Limiar de luminosidade mal ajustado</td><td className="p-3">Ajustar a sensibilidade de troca (a direção depende do menu do fabricante)</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Câmera funciona de dia, mas fica preta à noite, sem brilho nos LEDs</td><td className="p-3">Teste com a câmera do celular; fonte nova</td><td className="p-3">LEDs IR queimados ou driver com falha</td><td className="p-3">Assistência técnica ou substituição</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que NÃO fazer (e por quê)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Não abra a câmera para "trocar o LED" ou o filtro IR-cut</h3>
+            <p>Os LEDs infravermelhos e o filtro IR-cut são componentes internos soldados ou montados em mecanismos delicados. Abrir a câmera expõe você a risco de danificar o sensor de imagem, a vedação contra água e a garantia do equipamento. A substituição desses componentes exige assistência técnica.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não sacuda nem bata na câmera para "destravar" o filtro</h3>
+            <p>Alguns guias de câmeras domésticas sugerem sacudir o aparelho. Em câmeras fixadas na parede ou no teto, isso pode soltar o suporte, desalinhar a lente e comprometer a vedação. Mesmo que o filtro volte a mexer, o travamento tende a se repetir: o caminho correto é a assistência técnica.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não use produtos abrasivos para limpar o domo</h3>
+            <p>Alguns domos têm revestimento antirreflexivo. Produtos abrasivos (álcool em excesso, thinner, panos ásperos) podem danificar esse revestimento, riscar a cúpula e piorar o reflexo do infravermelho. Use um pano de microfibra limpo ou um produto específico para lentes.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não ignore a fonte de alimentação</h3>
+            <p>Muitas câmeras são substituídas desnecessariamente porque o problema era fonte insuficiente ou cabo com queda de tensão. Antes de comprar uma câmera nova, teste com outra fonte de mesma especificação e, se souber medir com segurança, confira a tensão no lado de baixa tensão. Essa verificação custa pouco e pode economizar o preço de um equipamento novo.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não instale a câmera em cantos apertados</h3>
+            <p>Cantos e superfícies muito próximas refletem o infravermelho de volta para a lente, criando o efeito de "neblina" que deixa a imagem escura. A Trendnet recomenda evitar a instalação em cantos apertados e usar suportes de montagem para afastar a câmera de paredes e superfícies próximas.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico especializado',
+        content: (
+          <div className="space-y-4">
+            <p>A triagem de configuração, a limpeza do domo e a verificação da fonte podem ser feitas por você. Mas alguns cenários exigem diagnóstico profissional:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>LEDs IR não acendem mesmo com fonte nova e configuração correta — pode ser falha no driver de IR ou nos próprios LEDs.</li>
+              <li>Filtro IR-cut travado (a câmera não faz a troca de imagem ao anoitecer) — falha mecânica que exige assistência.</li>
+              <li>Reflexo de IR persistente mesmo após limpeza e reposicionamento — pode exigir reposicionar a câmera, trocar o domo ou usar um modelo com tecnologia anti-reflexo (como a OptimizedIR, da Axis).</li>
+              <li>Câmera com mais de 5 anos de uso que nunca passou por manutenção preventiva — os LEDs IR têm vida útil limitada e podem estar no fim da vida.</li>
+              <li>Sistema com várias câmeras em que apenas uma apresenta o problema — a substituição ou o reparo pontual é mais simples com diagnóstico técnico.</li>
+              <li>Você não se sente seguro para mexer nas configurações ou na instalação — uma alteração errada pode comprometer a segurança do imóvel.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de câmeras de segurança em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita identifica se o problema é de infravermelho, fonte, configuração ou instalação — e apresenta a solução com clareza.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>Câmera de segurança que fica preta à noite tem, na grande maioria dos casos, uma causa identificável: configuração do modo noturno, fonte de alimentação insuficiente, LEDs infravermelhos queimados ou sem energia, reflexo do IR no domo ou em objetos próximos, ou filtro IR-cut travado.</p>
+            <p>A triagem começa pelo que é mais simples e não invasivo: verifique a configuração, limpe o domo, afaste a câmera de paredes e teste a fonte. Se os LEDs não acenderem com uma fonte nova, ou se o filtro IR-cut estiver travado, a assistência técnica é necessária.</p>
+            <p>E a regra que vale para todos os cenários: não abra a câmera, não a sacuda, não use produtos abrasivos no domo, não ignore a fonte e não instale a câmera em cantos apertados. Essas atitudes podem danificar o equipamento ou agravar o problema de reflexo.</p>
+            <p>Se você está revendo o posicionamento das câmeras, veja também <Link to="/blog/quantas-cameras-de-seguranca-preciso-para-minha-casa" className="text-white underline hover:text-slate-300">quantas câmeras de segurança preciso para minha casa</Link>. E, se a triagem não resolveu, a Intelsecsul realiza diagnóstico e manutenção de câmeras de segurança em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Câmera de segurança fica preta à noite, mas funciona de dia. O que pode ser?',
+        answer: 'As causas mais prováveis são: LEDs infravermelhos queimados ou sem energia, fonte de alimentação insuficiente (que não fornece corrente suficiente para acender os LEDs), filtro IR-cut travado na posição diurna, reflexo do infravermelho no domo ou configuração do modo noturno desativada. A ordem de verificação é: configuração, fonte, LEDs e, por último, filtro IR-cut.',
+      },
+      {
+        question: 'Os LEDs vermelhos da câmera acendem, mas a imagem fica escura. Por quê?',
+        answer: 'Se os LEDs acendem, mas a imagem não ilumina, o problema pode ser reflexo do infravermelho no domo ou em objetos próximos, potência insuficiente dos LEDs (mesmo acendendo, podem estar fracos), filtro IR-cut travado ou sensor de imagem com baixa sensibilidade ao IR. Limpe o domo, verifique se há objetos próximos refletindo o feixe e teste a câmera em outro local.',
+      },
+      {
+        question: 'Como saber se o problema é a fonte de alimentação?',
+        answer: 'O teste mais seguro é trocar a fonte por outra de mesma especificação e ver se a imagem noturna volta. Se você souber usar um multímetro, meça a tensão no lado de baixa tensão da câmera, com ela ligada e em modo noturno: para uma câmera de 12 V, tensão muito abaixo da especificada (por exemplo, abaixo de 9 V, segundo orientação da Intelbras) indica problema na fonte ou no cabo. Nunca meça na entrada de energia da fonte (127/220 V), e essa medição não se aplica a câmeras PoE. Em caso de dúvida, chame um técnico.',
+      },
+      {
+        question: 'Câmera dome com imagem "nebulosa" à noite. O que fazer?',
+        answer: 'A imagem "nebulosa" ou "leitosa" à noite é o sintoma clássico de reflexo de infravermelho. Limpe o domo com um pano de microfibra, verifique se o anel de espuma (nos modelos que têm) está no lugar e bem pressionado, e afaste a câmera de paredes e superfícies refletivas. Se o problema persistir, pode ser necessário trocar o domo ou usar um modelo com tecnologia anti-reflexo.',
+      },
+      {
+        question: 'Preciso trocar a câmera se ela fica preta à noite?',
+        answer: 'Nem sempre. Na maioria dos casos, o problema está na fonte, na configuração, no domo sujo ou no posicionamento, e não na câmera em si. A substituição só é necessária quando os LEDs IR ou o filtro IR-cut estão defeituosos, ou quando a câmera já tem muitos anos de uso e o subsistema de infravermelho chegou ao fim da vida útil.',
+      },
+      {
+        question: 'Câmera com visão noturna colorida funciona melhor à noite?',
+        answer: 'Câmeras com visão noturna colorida (que usam sensores de alta sensibilidade ou iluminação branca integrada) podem oferecer imagem colorida em condições de baixa luminosidade, mas geralmente têm alcance menor que as câmeras com IR tradicional. A escolha depende do ambiente: para grandes áreas externas, o IR tradicional costuma ter alcance maior; para áreas internas ou com alguma luz residual, a visão noturna colorida pode ser mais útil.',
+      },
+    ],
+    internalLink: {
+      text: 'Sua câmera fica preta à noite? Precisa de diagnóstico técnico?',
+      url: '/servicos/cameras-de-seguranca/',
+      linkText: 'Ver Câmeras de Segurança',
+    },
+    whatsappMessage: 'Vim do blog e minha câmera fica preta à noite',
+    ctaFinal: {
+      title: 'Sua câmera fica preta à noite? Precisa de diagnóstico técnico?',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de câmeras de segurança em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
+  {
+    id: 'portao-eletronico-trava-no-meio-do-caminho-causas',
+    slug: 'portao-eletronico-trava-no-meio-do-caminho-causas',
+    title: 'Portão Eletrônico Trava no Meio do Caminho: Causas Além do Barulho | Intelsecsul',
+    metaTitle: 'Portão Eletrônico Trava no Meio do Caminho: Causas Além do Barulho | Intelsecsul',
+    metaDescription: 'Portão eletrônico trava no meio do percurso? Veja as causas além do barulho — proteção térmica, capacitor de partida, desbalanceamento e esforço do motor — e saiba quando o ajuste resolve ou quando é defeito.',
+    h1: 'Portão eletrônico trava no meio do caminho: causas além do barulho',
+    category: 'Portão Eletrônico',
+    readTime: '10 min de leitura',
+    publishedDate: '2026-10-20',
+    summary: 'Portão que trava no meio do percurso costuma ter problema de força, torque ou proteção, e não de comando. As causas mais comuns são proteção térmica, capacitor de partida desgastado, portão desbalanceado, atrito mecânico e configuração de força ou fim de curso. Veja o que verificar com segurança e quando chamar assistência técnica.',
+    intro: 'Um portão que trava no meio do caminho — abre alguns centímetros, perde força e para, ou fecha pela metade e interrompe o movimento — tem um comportamento diferente de um portão que simplesmente "não abre" ou "não fecha completamente". Na maioria dos casos, o portão começa o movimento normalmente e para no meio do curso porque a central eletrônica detectou um esforço excessivo ou porque um componente perdeu a capacidade de sustentar o torque necessário. As causas mais comuns estão em cinco frentes: proteção térmica (o motor superaquece e a central corta a energia para não queimar), capacitor de partida desgastado (nos motores que usam capacitor, o motor perde o impulso inicial), desbalanceamento do portão (o motor precisa fazer muito mais força do que o normal), esforço mecânico por atrito ou desalinhamento (trilho sujo, roldanas travadas, cremalheira desalinhada) e configuração de força ou de fim de curso inadequada (a central interpreta o esforço normal como obstrução e interrompe o ciclo). Este guia separa cada uma dessas causas, mostra o que você pode verificar com segurança e indica o momento em que o problema deixa de ser ajuste e passa a ser defeito que exige assistência técnica.',
+    sections: [
+      {
+        h2: 'Primeiro: entenda a diferença entre "travar no meio" e "não abrir"',
+        content: (
+          <div className="space-y-4">
+            <p>Um portão que não abre normalmente tem um problema de comando (controle, receptor, fotocélula ou central). Um portão que trava no meio do percurso geralmente tem um problema de força, torque ou proteção. O motor recebe o comando, começa a movimentar o portão e para porque a central entende que continuar seria perigoso para o equipamento.</p>
+            <p>Essa distinção é importante porque muda completamente o tipo de verificação. Se o portão não abre, você investiga o comando: veja <Link to="/blog/portao-eletronico-nao-abre-ou-nao-fecha" className="text-white underline hover:text-slate-300">portão eletrônico não abre ou não fecha: causas e o que verificar</Link>. Se o portão trava no meio, você investiga esforço, alimentação, capacitor, balanceamento e configuração de força, que é o foco deste guia.</p>
+            <p>Antes de qualquer verificação, desligue a energia no disjuntor, mantenha mãos e pés fora de trilhos, roldanas e partes móveis e nunca mexa no portão enquanto ele estiver em movimento.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 1: Proteção térmica — o motor esquenta e a central corta a energia',
+        content: (
+          <div className="space-y-4">
+            <p>Esta é uma das causas mais frequentes e menos compreendidas. O motor do portão não foi projetado para operar em esforço contínuo. Quando ele trabalha acima do torque nominal — por atrito, desbalanceamento ou obstrução —, a temperatura sobe, e a central (ou o próprio motor) aciona um protetor térmico que interrompe a energia para evitar a queima da bobina ou da placa.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como identificar</h3>
+            <p>O sintoma clássico é um portão que abre alguns centímetros, para, e só volta a funcionar depois de alguns minutos (tempo necessário para o motor esfriar). Em alguns modelos Intelbras, a central sinaliza com o LED de força aceso (LED2 – Força), indicando "Alarme Temperatura ou Corrente Motor". A sinalização varia conforme a marca e o modelo: consulte o manual da sua central.</p>
+            <p>A causa subjacente quase sempre é esforço excessivo: trilho desalinhado, roldanas travadas, portão pesado ou desbalanceado, ou configuração de força muito alta na central.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Não insista em acionar o portão repetidamente enquanto ele está quente.</strong> Isso agrava o superaquecimento e pode queimar o motor.</li>
+              <li>Aguarde o motor esfriar e verifique se há obstrução visível no trilho, sujeira acumulada ou objetos presos.</li>
+              <li>Se o portão volta a funcionar após esfriar, mas o problema se repete, a causa raiz (esforço excessivo) precisa ser corrigida. A proteção térmica está fazendo o papel dela: o problema não é a proteção, é o esforço que a aciona.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 2: Capacitor de partida desgastado — o motor perde o impulso inicial',
+        content: (
+          <div className="space-y-4">
+            <p>O capacitor de partida é o componente que armazena e libera energia para dar o impulso inicial ao motor. Ele é usado em motores AC (corrente alternada); alguns automatizadores têm motor DC e não usam esse componente, e nesses casos o sintoma aponta para outras causas. Sem o capacitor em bom estado, o motor não vence a inércia da carga, e o portão começa a andar e perde força no meio do percurso.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como identificar</h3>
+            <p>Os sintomas típicos de capacitor fraco ou queimado são:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Zumbido no motor (som de esforço), mas o portão não se move ou se move muito devagar.</li>
+              <li>Portão que começa rápido e perde força no meio do caminho.</li>
+              <li>Motor que funciona em apenas um sentido (abre mas não fecha, ou vice-versa), o que também pode indicar capacitor.</li>
+              <li>Necessidade de empurrar o portão manualmente para ajudar o motor a arrancar.</li>
+              <li>Em alguns casos, estufamento visível na carcaça do capacitor.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <p>A substituição do capacitor é um reparo relativamente simples e barato, mas exige cuidado: o capacitor armazena carga elétrica mesmo após o desligamento. A recomendação técnica é que a troca seja feita por um profissional qualificado, que desliga a energia, descarrega o capacitor com segurança e instala um componente de mesma especificação (medida em microfarads – uF).</p>
+            <p>Não tente trocar o capacitor sem conhecer a especificação correta. Um capacitor com valor errado pode não resolver o problema ou danificar o motor.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 3: Portão desbalanceado — o motor faz muito mais força do que deveria',
+        content: (
+          <div className="space-y-4">
+            <p>O desbalanceamento é apontado como uma das principais causas de queima prematura de automatizadores. O motor foi projetado para movimentar o portão, não para sustentar o peso dele. Quem deve equilibrar o peso são as molas e os contrapesos (em portões basculantes) ou as roldanas (em deslizantes). Quando o portão está desbalanceado, o motor precisa fazer muito mais força do que o normal, o que leva a superaquecimento, desgaste da coroa interna e queima da placa ou da bobina.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">O teste que você pode fazer (com cuidado)</h3>
+            <p><strong className="text-white">Portão basculante (que sobe):</strong></p>
+            <ol className="space-y-2 list-decimal list-inside">
+              <li>Desligue a energia no disjuntor e feche o portão totalmente.</li>
+              <li>Destrave o motor (chave de desbloqueio) para colocá-lo no modo manual.</li>
+              <li>Com duas pessoas e com mãos e pés fora da trajetória do portão, levante-o até a metade do caminho e solte com cuidado.</li>
+              <li>Resultado esperado: o portão deve ficar parado onde você soltou. Se ele cair com tudo ou subir sozinho, está desbalanceado.</li>
+            </ol>
+            <p>Como um portão desbalanceado pode cair com força e machucar, se ele for muito pesado deixe esse teste com um técnico.</p>
+            <p><strong className="text-white">Portão deslizante:</strong></p>
+            <ol className="space-y-2 list-decimal list-inside">
+              <li>Desligue a energia no disjuntor e destrave o motor.</li>
+              <li>Empurre o portão com uma das mãos ao longo de todo o curso.</li>
+              <li>Resultado esperado: ele deve deslizar com esforço leve e constante, sem pontos duros nem ruído de atrito. Se emperrar em pontos específicos ou exigir muita força, há atrito ou desalinhamento (veja a Causa 4).</li>
+            </ol>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <p>Se o teste confirmar o desbalanceamento, não adianta trocar o motor nem o capacitor: o problema está no portão, e um motor novo também vai queimar em poucos meses. A correção exige:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Basculantes:</strong> ajuste ou troca de molas, ou adição de contrapeso nas caixas. As molas ficam sob tensão e são perigosas de ajustar: deixe com profissional.</li>
+              <li><strong className="text-white">Deslizantes:</strong> substituição de roldanas travadas ou desgastadas e alinhamento do trilho.</li>
+            </ul>
+            <p>Esse é um serviço de serralheria ou manutenção especializada, não de ajuste elétrico.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 4: Esforço mecânico — atrito, desalinhamento e obstrução',
+        content: (
+          <div className="space-y-4">
+            <p>Além do desbalanceamento, o esforço excessivo pode vir de atrito mecânico no caminho do portão. A central detecta o aumento no consumo de corrente e interrompe o movimento como proteção para evitar a queima do motor diante de uma obstrução mecânica ou falta de lubrificação. Se, além de travar, o portão faz ruídos de atrito ou rangidos, veja também <Link to="/blog/portao-eletronico-faz-barulho-ajuste-ou-defeito" className="text-white underline hover:text-slate-300">portão eletrônico faz barulho: ajuste ou defeito</Link>.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Causas comuns de atrito</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Trilho sujo ou desalinhado.</strong> Poeira, areia e detritos aumentam o atrito e podem desviar a trajetória.</li>
+              <li><strong className="text-white">Roldanas travadas ou desgastadas.</strong> Roldanas "quadradas" (com facetas) batem no trilho e aumentam a resistência.</li>
+              <li><strong className="text-white">Cremalheira desalinhada ou com emendas irregulares.</strong> Os dentes não engatam corretamente e o motor "sente" resistência.</li>
+              <li><strong className="text-white">Corrente ou correia frouxa ou tensionada demais.</strong> Nos modelos que usam corrente ou correia, a tensão incorreta prejudica a transmissão de força.</li>
+              <li><strong className="text-white">Falta de lubrificação</strong> nos pontos de contato indicados pelo fabricante.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Com o portão desenergizado, limpe o trilho com escova macia ou aspirador.</li>
+              <li>Verifique visualmente se há objetos presos no caminho do portão.</li>
+              <li>Com o motor no modo manual e a energia desligada, observe se as roldanas giram livremente.</li>
+              <li>Se o atrito persistir após a limpeza, o problema pode ser desalinhamento estrutural ou desgaste de peças, e exige avaliação técnica.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 5: Configuração de força ou fim de curso inadequada',
+        content: (
+          <div className="space-y-4">
+            <p>A central do portão tem um parâmetro de força (ou torque) que define quanta resistência o motor pode vencer antes de a central interpretar como obstrução e parar. Se esse parâmetro estiver muito baixo, o portão para no meio do percurso mesmo sem obstáculo real. Se estiver muito alto, a central pode deixar de detectar obstáculos e o motor sofre esforço excessivo, o que pode levar à proteção térmica ou à queima.</p>
+            <p>Além da força, o fim de curso (ou encoder) informa à central onde o portão deve desacelerar e parar. Se o fim de curso estiver desregulado ou com mau contato, o portão pode interromper o movimento antes do ponto correto.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como identificar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>O portão para sempre no mesmo ponto do percurso (indicando fim de curso ou encoder).</li>
+              <li>O portão para em pontos aleatórios (indicando força mal ajustada ou esforço variável).</li>
+              <li>A central exibe código de erro relacionado a percurso ou fim de curso.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <p><strong className="text-white">Não ajuste a força "no chute".</strong> A configuração de força deve ser calibrada para o peso real do portão, e um valor muito alto reduz ou elimina a proteção contra obstáculos. O ajuste deve ser feito por um técnico que conheça o modelo da central e possa reprogramar o percurso e a força com segurança. Em alguns modelos, o próprio manual orienta o reaprendizado do percurso após qualquer alteração mecânica.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela de diagnóstico rápido',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[720px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Sintoma</th>
+                  <th className="text-left p-3 text-white font-bold">Verificação prioritária</th>
+                  <th className="text-left p-3 text-white font-bold">Causa provável</th>
+                  <th className="text-left p-3 text-white font-bold">Ação segura</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Portão abre alguns centímetros e para; volta a funcionar após alguns minutos</td><td className="p-3">Motor quente? Indicação de força/temperatura na central?</td><td className="p-3">Proteção térmica por esforço excessivo</td><td className="p-3">Não insistir; verificar trilho e balanceamento</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Motor zumbe, mas o portão não sai do lugar</td><td className="p-3">Capacitor de partida (motores AC)</td><td className="p-3">Capacitor fraco ou queimado</td><td className="p-3">Substituir capacitor (técnico)</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Portão começa rápido e perde força no meio</td><td className="p-3">Teste de balanceamento manual</td><td className="p-3">Portão desbalanceado</td><td className="p-3">Corrigir contrapeso, molas ou roldanas</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Portão para em pontos aleatórios</td><td className="p-3">Trilho limpo? Roldanas livres?</td><td className="p-3">Atrito ou obstrução mecânica</td><td className="p-3">Limpar trilho; verificar roldanas</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Portão para sempre no mesmo ponto</td><td className="p-3">Fim de curso ou encoder</td><td className="p-3">Fim de curso desregulado</td><td className="p-3">Reprogramar percurso (técnico)</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Central exibe código de erro de força</td><td className="p-3">Manual da central</td><td className="p-3">Força mal ajustada ou obstrução</td><td className="p-3">Não aumentar a força sem diagnóstico</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que NÃO fazer (e por quê)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Não aumente a força da central para "resolver" o travamento</h3>
+            <p>Aumentar a força pode fazer o portão vencer o obstáculo, mas reduz ou elimina a proteção contra esmagamento e força o motor além do limite, acelerando o desgaste e a queima. Se o portão trava no meio, a causa é esforço ou falha de componente, e não falta de força configurada.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não insista em acionar o portão enquanto ele está quente</h3>
+            <p>O protetor térmico está fazendo o papel dele: evitar a queima. Insistir em acionar um motor superaquecido agrava o problema e pode transformar uma proteção temporária em queima definitiva.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não troque o motor sem antes verificar o balanceamento</h3>
+            <p>Se o portão está desbalanceado, um motor novo também vai queimar em poucos meses. O balanceamento é a causa raiz, e trocar o motor sem corrigi-lo é gasto desnecessário.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não tente trocar o capacitor sem conhecer a especificação</h3>
+            <p>O capacitor armazena carga e exige descarga segura. Além disso, a especificação (uF) precisa ser exata. Uma troca incorreta pode não resolver o problema ou danificar a placa.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não use óleo comum ou WD-40 como lubrificante</h3>
+            <p>Óleos comuns atraem poeira e pioram o atrito a médio prazo, e o WD-40 não foi feito para lubrificar de forma duradoura. Lubrifique apenas os pontos indicados pelo fabricante (por exemplo, rolamentos das roldanas, dobradiças e cremalheira) com graxa adequada, e mantenha o trilho limpo, sem excesso de graxa.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico especializado',
+        content: (
+          <div className="space-y-4">
+            <p>A verificação visual do trilho, o teste de balanceamento (com os cuidados descritos) e a observação do comportamento do portão podem ser feitos por você. Mas alguns cenários exigem diagnóstico profissional:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Capacitor de partida precisa ser substituído — exige descarga segura e especificação correta.</li>
+              <li>Desbalanceamento confirmado — exige ajuste de contrapeso, molas ou roldanas, que é serviço de serralheria ou manutenção especializada.</li>
+              <li>Proteção térmica recorrente — indica esforço excessivo que precisa ser diagnosticado na origem (trilho, alinhamento, configuração).</li>
+              <li>Fim de curso ou encoder desregulado — exige reprogramação com conhecimento do modelo da central.</li>
+              <li>Configuração de força precisa ser recalibrada — não deve ser feita "no chute".</li>
+              <li>Cheiro de queimado ou superaquecimento persistente — desligue a energia no disjuntor e chame assistência. Pode indicar fiação com mau contato ou bobina sob estresse.</li>
+              <li>O equipamento está na garantia — abrir ou mexer nos componentes sem autorização pode anular a garantia.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita identifica se o problema é proteção térmica, capacitor, desbalanceamento, esforço mecânico ou configuração — e apresenta a solução com clareza.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>Portão eletrônico que trava no meio do caminho tem, na grande maioria dos casos, uma causa identificável: proteção térmica (motor superaquece por esforço), capacitor de partida desgastado (perda do impulso inicial), desbalanceamento (motor faz muito mais força), atrito mecânico (trilho sujo, roldanas travadas) ou configuração de força ou fim de curso inadequada.</p>
+            <p>A triagem começa pelo que é seguro e não invasivo: teste de balanceamento manual, limpeza do trilho e observação do comportamento do motor (se esquenta, se zumbe, se para no mesmo ponto). E a regra que vale para todos os cenários: não aumente a força da central, não insista com o motor quente, não troque o motor sem verificar o balanceamento e não troque o capacitor sem conhecer a especificação.</p>
+            <p>Se a triagem não resolveu, ou se o problema envolve capacitor, fim de curso ou configuração de força, a avaliação de um técnico especializado é o caminho mais seguro. Para que trilho, roldanas e balanceamento sejam revisados antes de o portão parar, veja <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Portão eletrônico abre alguns centímetros e para. O que pode ser?',
+        answer: 'As causas mais prováveis são proteção térmica (o motor esquenta e a central corta a energia), capacitor de partida fraco (o motor não vence a inércia) ou desbalanceamento (o motor faz força excessiva). Se o portão volta a funcionar após alguns minutos, a proteção térmica está atuando, e a causa raiz é o esforço excessivo, que precisa ser corrigido.',
+      },
+      {
+        question: 'Motor do portão zumbe mas o portão não se move. É o capacitor?',
+        answer: 'Pode ser, em motores AC que usam capacitor de partida. O zumbido com ausência de movimento é um dos sintomas clássicos de capacitor fraco ou queimado. No entanto, o mesmo sintoma pode ocorrer se o motor estiver travado mecanicamente, e alguns automatizadores têm motor DC, sem capacitor. O teste com um técnico ajuda a distinguir entre falha elétrica (capacitor) e falha mecânica (travamento).',
+      },
+      {
+        question: 'Portão desbalanceado queima o motor?',
+        answer: 'Pode queimar. O desbalanceamento é apontado como uma das principais causas de queima prematura de automatizadores. Quando o portão está desbalanceado, o motor precisa fazer muito mais força, o que leva a superaquecimento e queima da placa ou da bobina. Se o portão está desbalanceado, trocar o motor sem corrigir o balanceamento não resolve.',
+      },
+      {
+        question: 'Como saber se o problema é o capacitor ou a placa?',
+        answer: 'O capacitor fraco causa perda de força de partida (o motor zumbe, o portão não sai do lugar ou começa e perde força). A placa com defeito pode causar comportamentos erráticos, erros de leitura de fim de curso ou falhas intermitentes. O diagnóstico preciso exige medição com instrumentos e conhecimento técnico, e não é possível distinguir apenas pelo sintoma.',
+      },
+      {
+        question: 'Posso ajustar a força do portão sozinho?',
+        answer: 'Não é recomendado. A configuração de força deve ser calibrada para o peso real do portão. Um valor muito alto reduz ou elimina a proteção contra obstáculos e força o motor além do limite; um valor muito baixo faz o portão parar sem motivo. O ajuste deve ser feito por um técnico que conheça o modelo da central.',
+      },
+      {
+        question: 'Portão que trava no meio do caminho pode ser problema de fim de curso?',
+        answer: 'Sim. Se o portão para sempre no mesmo ponto do percurso, o fim de curso (ou encoder) pode estar desregulado ou com mau contato. Nesse caso, a central "acha" que o portão chegou ao fim do curso e interrompe o movimento. A reprogramação do percurso resolve, e deve ser feita por um técnico.',
+      },
+    ],
+    internalLink: {
+      text: 'Seu portão está travando no meio do caminho? Precisa de diagnóstico técnico?',
+      url: '/servicos/portao-eletronico/',
+      linkText: 'Ver Portão Eletrônico',
+    },
+    whatsappMessage: 'Vim do blog e meu portão trava no meio do caminho',
+    ctaFinal: {
+      title: 'Seu portão está travando no meio do caminho? Precisa de diagnóstico técnico?',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
 ];
 
 
