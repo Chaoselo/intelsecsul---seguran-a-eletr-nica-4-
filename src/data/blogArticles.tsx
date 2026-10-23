@@ -4788,6 +4788,404 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       buttonText: 'Falar no WhatsApp agora',
     },
   },
+  {
+    id: 'cameras-queimaram-depois-de-um-raio-como-evitar-nova-perda',
+    slug: 'cameras-queimaram-depois-de-um-raio-como-evitar-nova-perda',
+    title: 'Câmeras Queimaram Depois de um Raio: Como Evitar Nova Perda | Intelsecsul',
+    metaTitle: 'Câmeras Queimaram Depois de um Raio: Como Evitar Nova Perda | Intelsecsul',
+    metaDescription: 'Câmeras queimaram depois de um raio? Entenda por que o CFTV queima em descargas elétricas, como funcionam DPS, aterramento e cabos blindados — e o que fazer para não perder tudo de novo.',
+    h1: 'Câmeras queimaram depois de um raio: como evitar nova perda',
+    category: 'Câmeras de Segurança',
+    readTime: '11 min de leitura',
+    publishedDate: '2026-10-22',
+    summary: 'Câmeras e DVR queimam depois de um raio principalmente por surtos indiretos, que entram pela rede elétrica, pelo cabo de rede e pelo aterramento. A proteção é uma arquitetura em camadas: DPS no quadro, protetores nas linhas de CFTV, aterramento equipotencializado, cabeamento adequado e proteção local. Veja o que fazer depois da perda e por que nenhuma proteção é absoluta.',
+    intro: 'Quando um raio atinge ou cai próximo de um imóvel, ele não precisa acertar a câmera diretamente para destruí-la. A maior parte dos danos em sistemas de CFTV vem de surtos indiretos: a descarga atmosférica provoca um pico de tensão, de milhares de volts, na rede elétrica e nos cabos, e esse pico percorre a fiação elétrica, o cabo de rede e até o cabo de vídeo até chegar aos equipamentos. Em frações de segundo, o surto pode destruir memórias, processadores e capacitores, e a câmera, o DVR ou o switch PoE param de funcionar. O problema raramente é um único componente. Um surto pode queimar a câmera, o DVR e a fonte ao mesmo tempo, porque todos estão conectados à mesma rede elétrica e à mesma infraestrutura de dados. E o erro mais comum que leva à repetição da perda é acreditar que "já queimou uma vez, não vai queimar de novo": sem proteção adequada, uma nova perda na próxima tempestade é provável. A boa notícia é que existem camadas de proteção que reduzem muito o risco. Nenhuma delas oferece proteção absoluta — nenhum sistema é 100% imune a uma descarga direta ou a um surto de energia extrema —, mas a combinação correta de DPS, aterramento equipotencializado, cabeamento adequado e proteção de rede é o que separa um sistema que resiste a tempestades de um sistema que queima a cada temporada de chuvas.',
+    sections: [
+      {
+        h2: 'O que acontece exatamente quando um raio atinge o sistema',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">Surto pela rede elétrica</h3>
+            <p>O caminho mais comum de entrada é a rede elétrica. O raio eleva a tensão na rede de distribuição, e esse pico entra pela tomada que alimenta a câmera, o DVR ou a fonte. Segundo a Schneider Electric, os DPS de classe II são projetados para proteger as instalações elétricas e os equipamentos eletroeletrônicos contra os efeitos indiretos das descargas atmosféricas, reduzindo o pico de tensão para um valor suportável pelos aparelhos conectados (tipicamente em torno de 1,3 kV a 1,5 kV).</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Surto pelo cabo de rede ou de vídeo</h3>
+            <p>O cabo de rede (Ethernet) e o cabo de vídeo (coaxial ou UTP) também captam o campo eletromagnético da descarga. A Axis alerta que cabos de rede não blindados podem ser afetados por surtos causados por campos eletromagnéticos fortes nas proximidades do cabo. Em sistemas IP, o surto pode entrar pela porta PoE do switch e queimar tanto o switch quanto a câmera.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Surto pelo aterramento</h3>
+            <p>Se o aterramento do sistema de CFTV não estiver corretamente dimensionado e interligado ao da edificação, o surto pode encontrar caminhos indesejados através dos equipamentos. Uma referência técnica comum é resistência de aterramento de até 10 ohms, comprovada por medição com terrômetro; o valor exato é definido em projeto. Um aterramento inadequado deixa o DPS sem caminho seguro para desviar o surto.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'As camadas de proteção que realmente funcionam',
+        content: (
+          <div className="space-y-4">
+            <p>A proteção contra raios em CFTV não é um único dispositivo: é uma arquitetura em camadas. Cada camada reduz a energia do surto antes que ele chegue ao próximo estágio.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Camada 1: DPS na entrada da rede elétrica (classe II)</h3>
+            <p>O DPS de classe II é instalado no quadro de distribuição, no ponto de entrada da energia elétrica. Ele é o primeiro obstáculo ao surto que vem da rua. A instalação no quadro é serviço de eletricista habilitado.</p>
+            <p>A Schneider Electric recomenda que o DPS seja instalado no ponto de entrada do quadro, conectado a todos os condutores ativos (fases + neutro) e ao terra. Em materiais técnicos da fabricante, a corrente máxima de descarga de 20 kA é citada como adequada para a maioria das aplicações, e a de 45 kA para regiões de alto risco e tempestades frequentes. O dimensionamento correto depende do projeto e deve ser definido por profissional habilitado.</p>
+            <p>A NBR 5410 prevê a instalação de DPS em diversas situações, entre elas edificações com para-raios (SPDA) e instalações alimentadas por linha aérea em regiões com alta incidência de trovoadas. Se o seu imóvel se encaixa nesse perfil e não tem DPS no quadro, essa é a primeira lacuna a verificar. A exigência para cada instalação deve ser confirmada por um profissional habilitado, de acordo com a versão vigente da norma.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Camada 2: DPS para as linhas de CFTV (vídeo, dados e alimentação)</h3>
+            <p>Além do DPS do quadro, as linhas de sinal e de alimentação das câmeras precisam de proteção específica. Segundo a A3A Engenharia, selecionar um protetor apenas pelo conector ("DPS RJ45", "DPS para câmera") não é suficiente: é necessário conhecer a interface elétrica, a tensão normal do circuito e o nível de exposição do ponto.</p>
+            <p>Para sistemas analógicos (coaxiais ou UTP), existem protetores específicos para cabo coaxial com conector BNC e para linhas de par trançado. Para sistemas IP/PoE, existem protetores compatíveis com PoE que desviam o surto para o terra antes que ele atinja a câmera, sem interromper a transmissão de dados e energia.</p>
+            <p><strong className="text-white">Onde instalar:</strong> a Axis recomenda que o protetor seja colocado no ponto em que o cabo de rede está prestes a entrar no edifício, desviando o surto para o terra antes que ele alcance a câmera. Para câmeras externas mais distantes, um protetor adicional pode ser instalado junto à própria câmera.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Camada 3: Aterramento adequado e equipotencializado</h3>
+            <p>O aterramento é a base de todo o sistema de proteção. Sem um caminho de terra de baixa resistência, o DPS não tem para onde desviar o surto, e a energia acaba passando pelos equipamentos. Uma referência técnica comum é resistência de até 10 ohms, medida com terrômetro por profissional habilitado; o valor exato depende do projeto e do nível de exposição do imóvel.</p>
+            <p>Além da resistência, a topologia importa: o aterramento do CFTV deve ser interligado ao sistema de aterramento da edificação por ligação equipotencial, de modo que quadro, DPS, DVR, switch PoE e câmeras referenciem o mesmo terra. Terras independentes e não interligados criam diferenças de potencial durante o surto, e é por essas diferenças que a energia passa pelos equipamentos.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Camada 4: Cabos blindados (STP), fibra óptica e aterramento do switch PoE</h3>
+            <p>Se as câmeras são IP e usam PoE, o cabo de rede é um caminho crítico de surto. A Axis recomenda o uso de cabos de rede blindados (STP) em toda a instalação. A blindagem reduz a indução do surto no cabo e desvia parte da energia para o terra antes que ela chegue à câmera.</p>
+            <p>Para que a blindagem funcione, porém, é indispensável que o switch PoE (ou midspan) esteja devidamente aterrado. A Axis alerta que um switch de mesa pode não ter conexão de terra pela tomada, e nesse caso ele precisa ser aterrado separadamente. De nada adianta o cabo blindado se o equipamento que o alimenta não tem caminho para o terra.</p>
+            <p>Em trechos externos longos ou entre edificações, a fibra óptica com conversores de mídia é uma alternativa que isola eletricamente os pontos e elimina o caminho do surto pelo cabo de dados. Os conversores continuam precisando de proteção na alimentação.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Camada 5: Proteção da rede elétrica local (filtro de linha com DPS ou nobreak)</h3>
+            <p>Para câmeras e DVRs que não estão no mesmo quadro principal, um filtro de linha com DPS oferece uma proteção mínima real para setups simples, como um roteador e uma câmera. Para equipamentos essenciais, um nobreak de qualidade mantém o funcionamento durante quedas de energia e ajuda a condicionar a energia, mas não substitui o DPS. A Intelbras reforça que câmeras, fechaduras eletrônicas e hubs de automação são especialmente vulneráveis a surtos e precisam desse tipo de proteção.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela de camadas de proteção',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[720px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Camada</th>
+                  <th className="text-left p-3 text-white font-bold">O que protege</th>
+                  <th className="text-left p-3 text-white font-bold">Onde instalar</th>
+                  <th className="text-left p-3 text-white font-bold">Referência técnica</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">DPS classe II no quadro</td><td className="p-3">Rede elétrica de toda a edificação</td><td className="p-3">Ponto de entrada do quadro, fases + neutro + terra</td><td className="p-3">NBR 5410; dimensionar conforme o risco da região</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">DPS para linhas de CFTV</td><td className="p-3">Cabo de vídeo, dados e alimentação</td><td className="p-3">Entrada do edifício e junto à câmera externa</td><td className="p-3">Protetores BNC, UTP ou PoE, conforme a interface</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Aterramento e equipotencialização</td><td className="p-3">Todo o sistema</td><td className="p-3">Hastes ou malha interligadas ao terra da edificação</td><td className="p-3">Referência comum: resistência até 10 Ω (terrômetro)</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Cabo blindado (STP) ou fibra óptica</td><td className="p-3">Cabo de rede IP</td><td className="p-3">Trechos externos e longos</td><td className="p-3">Blindagem contínua até o terra, ou isolamento por fibra</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Aterramento do switch PoE</td><td className="p-3">Porta PoE e câmera</td><td className="p-3">Ponto de alimentação (switch ou midspan)</td><td className="p-3">Aterrar separadamente se não houver terra pela tomada</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Filtro com DPS ou nobreak</td><td className="p-3">Câmera ou DVR individual</td><td className="p-3">Tomada do equipamento</td><td className="p-3">Proteção mínima para setup simples</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que fazer depois que as câmeras já queimaram',
+        content: (
+          <div className="space-y-4">
+            <p>Antes de qualquer verificação, desligue o disjuntor do circuito afetado e não toque em fiação, quadro ou equipamento com sinais de queima (cheiro, fuligem, derretimento). Se houver aquecimento, fumaça ou risco de incêndio, acione o Corpo de Bombeiros e chame um eletricista habilitado.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">1. Não reconecte equipamento novo na mesma infraestrutura sem corrigir a proteção</h3>
+            <p>Se as câmeras ou o DVR queimaram, não os substitua e ligue na mesma infraestrutura sem antes corrigir as camadas de proteção. Um equipamento novo ligado na mesma rede sem DPS e sem aterramento adequado tem alta probabilidade de queimar na próxima tempestade, e o prejuízo se repete.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">2. Peça a verificação do aterramento e do DPS antes de reinstalar</h3>
+            <p>Antes de instalar câmeras novas, peça a um profissional habilitado que meça a resistência do aterramento com terrômetro e confira se ele está interligado ao terra da edificação. Peça também que verifique se o DPS do quadro está funcional (alguns modelos têm indicador de status) e se há protetores nas linhas de CFTV. Se apenas parte das câmeras parou e você não sabe se foi queima ou outra falha, veja <Link to="/blog/camera-fora-do-ar-causas-solucoes" className="text-white underline hover:text-slate-300">câmera fora do ar: as causas mais comuns e como resolver</Link>.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">3. Substitua o que queimou, mas priorize a proteção</h3>
+            <p>A substituição das câmeras e do DVR é necessária, mas a prioridade deve ser a proteção. O custo de um DPS de classe II e de um conjunto de protetores para as linhas de CFTV costuma ser muito menor do que o de substituir câmeras, DVR e switch a cada temporada de chuvas. Se o DVR sobreviveu, mas deixou de gravar, veja <Link to="/blog/dvr-mostra-imagem-ao-vivo-mas-nao-grava" className="text-white underline hover:text-slate-300">DVR mostra imagem ao vivo, mas não grava: o que verificar antes de perder provas</Link>.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">4. Documente o que aconteceu</h3>
+            <p>Anote quais equipamentos queimaram, em que ponto da rede estavam conectados e se havia proteção, e tire fotos. Essas informações ajudam o técnico a identificar a lacuna de proteção que permitiu o dano, e a corrigi-la antes da próxima tempestade. Se o imóvel tem seguro, avise a seguradora: a cobertura para danos elétricos depende da apólice.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que NÃO fazer (e por quê)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Não acredite em "proteção absoluta"</h3>
+            <p>Nenhum DPS, aterramento ou cabo blindado oferece proteção total contra uma descarga direta ou um surto de energia extrema. O objetivo da proteção é reduzir o risco e aumentar a resiliência do sistema, e não torná-lo invulnerável. Desconfie de qualquer promessa de "proteção 100% contra raios".</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não use apenas um filtro de linha comum</h3>
+            <p>Um filtro de linha sem DPS não protege contra surtos de alta tensão. A Intelbras diferencia claramente: o filtro comum é básico; o filtro com DPS oferece proteção mínima real; o nobreak é a melhor escolha para equipamentos essenciais. Para CFTV, o ponto de partida é um DPS de classe II no quadro e protetores nas linhas.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não crie aterramentos independentes sem interligá-los</h3>
+            <p>Um terra "só do CFTV", sem ligação equipotencial com o aterramento da edificação, cria diferenças de potencial durante o surto e pode direcionar a energia para os equipamentos em vez de desviá-la para o solo. O aterramento deve ser adequado ao projeto e interligado.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não deixe cabos de rede externos sem proteção</h3>
+            <p>A Axis recomenda cabo blindado (STP) em toda a instalação, com a blindagem em caminho contínuo até o terra. Cabo comum sem proteção em áreas externas fica mais exposto ao surto induzido, e o uso de cabo próprio para ambiente externo também importa.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não ignore a norma nem improvise na parte elétrica</h3>
+            <p>Verifique com um profissional habilitado se a sua instalação exige DPS conforme a NBR 5410, e deixe quadro, DPS e aterramento com eletricista. Mexer no quadro ou no aterramento por conta própria expõe você a risco de choque e pode agravar o problema.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico especializado',
+        content: (
+          <div className="space-y-4">
+            <p>A inspeção visual dos equipamentos e o registro do que queimou são os passos iniciais. Mas a arquitetura de proteção de um CFTV exige avaliação profissional:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Dimensionamento do DPS</strong> — a escolha da corrente de descarga depende da frequência de descargas na região e do nível de exposição do imóvel.</li>
+              <li><strong className="text-white">Projeto de aterramento</strong> — número de hastes, seção do condutor, equipotencialização e medição com terrômetro, por profissional habilitado.</li>
+              <li><strong className="text-white">Seleção de protetores para linhas de CFTV</strong> — a escolha correta depende da interface elétrica (BNC, UTP, PoE), da tensão do circuito e do nível de proteção necessário.</li>
+              <li><strong className="text-white">Instalação de DPS em linhas PoE</strong> — exige compatibilidade com o switch e com a blindagem do cabo.</li>
+              <li><strong className="text-white">Substituição de equipamentos queimados</strong> — com verificação da infraestrutura antes de reconectar os novos.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de CFTV em Curitiba e Região Metropolitana. A avaliação identifica quais camadas de proteção estão ausentes e apresenta um plano para reduzir o risco de nova perda, sem prometer proteção absoluta. As partes de quadro elétrico e aterramento devem ser executadas por eletricista habilitado, em conjunto com a equipe de CFTV.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>Câmeras que queimam depois de um raio não são vítimas de azar: são vítimas de lacunas de proteção. O surto indireto encontra o caminho mais fácil: a rede elétrica sem DPS, o cabo de rede sem proteção, o aterramento inadequado ou não interligado, ou o switch PoE sem terra.</p>
+            <p>A proteção eficaz é uma arquitetura em camadas: DPS classe II no quadro (a NBR 5410 prevê DPS em diversas situações, como edificações com para-raios e alimentação por linha aérea em regiões de muita trovoada), protetores nas linhas de CFTV, aterramento equipotencializado de baixa resistência e cabos blindados (STP) com switch PoE aterrado, ou fibra óptica nos trechos críticos.</p>
+            <p>Nenhuma camada oferece proteção absoluta. Mas a combinação correta reduz drasticamente o risco de nova perda e transforma um sistema que queima a cada tempestade em um sistema que resiste e continua gravando.</p>
+            <p>Se o seu CFTV já queimou uma vez, a prioridade não é apenas substituir os equipamentos: é corrigir a arquitetura de proteção antes que a próxima tempestade chegue. Para manter essas revisões em dia, veja também <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza diagnóstico e manutenção de CFTV em Curitiba e Região Metropolitana, com avaliação das camadas de proteção e plano de correção, para que você não perca tudo de novo.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Um raio pode queimar a câmera mesmo sem atingir diretamente o imóvel?',
+        answer: 'Sim. A maior parte dos danos vem de surtos indiretos: a descarga provoca um pico de tensão, de milhares de volts, na rede elétrica e nos cabos, e esse pico percorre a fiação até os equipamentos. O raio não precisa acertar a câmera; basta cair próximo o suficiente para induzir o surto na rede elétrica ou no cabo de rede.',
+      },
+      {
+        question: 'DPS resolve completamente o problema de raio?',
+        answer: 'Não. O DPS reduz o risco e é uma camada essencial de proteção, mas nenhum dispositivo oferece proteção absoluta contra uma descarga direta ou um surto extremo. A proteção eficaz combina DPS no quadro, DPS nas linhas de CFTV, aterramento adequado e equipotencializado e cabos blindados ou fibra óptica, e cada camada reduz a energia do surto antes que ela chegue ao próximo estágio.',
+      },
+      {
+        question: 'Qual a diferença entre DPS de classe II e protetor para CFTV?',
+        answer: 'O DPS de classe II é instalado no quadro de distribuição e protege a instalação elétrica como um todo contra surtos indiretos. O protetor para CFTV é instalado nas linhas de sinal e alimentação (cabo de vídeo, cabo de rede, PoE) e protege especificamente as câmeras e o DVR contra surtos que entram por esses cabos. Os dois são complementares: um não substitui o outro.',
+      },
+      {
+        question: 'Meu aterramento precisa ter quantos ohms?',
+        answer: 'Uma referência técnica comum é de até 10 ohms, medida com terrômetro por profissional habilitado. O valor exato depende do projeto e do nível de exposição do imóvel, e o aterramento do CFTV deve estar interligado (equipotencializado) ao da edificação.',
+      },
+      {
+        question: 'Cabo de rede blindado (STP) realmente faz diferença?',
+        answer: 'Faz diferença quando bem instalado. A blindagem reduz a indução do surto no cabo e desvia parte da energia para o terra antes que ela chegue à câmera, mas só funciona se houver caminho contínuo até o terra, ou seja, se o switch PoE estiver devidamente aterrado. Cabo blindado com switch sem terra não protege. Em trechos externos longos, a fibra óptica com conversores é uma alternativa que isola eletricamente os pontos.',
+      },
+      {
+        question: 'Posso simplesmente trocar as câmeras queimadas e ligar de novo?',
+        answer: 'Não sem antes corrigir a proteção. Se você substituir as câmeras na mesma rede sem DPS e sem aterramento adequado, a chance de queimar novamente na próxima tempestade é alta. A ordem correta é: desligar o circuito afetado, verificar aterramento e quadro com profissional habilitado, instalar DPS e protetores, e só então reconectar os equipamentos novos.',
+      },
+    ],
+    internalLink: {
+      text: 'Suas câmeras queimaram depois de um raio? Precisa avaliar a proteção antes de reinstalar?',
+      url: '/servicos/manutencao/',
+      linkText: 'Ver Manutenção',
+    },
+    whatsappMessage: 'Vim do blog e minhas câmeras queimaram depois de um raio',
+    ctaFinal: {
+      title: 'Suas câmeras queimaram depois de um raio? Precisa avaliar a proteção antes de reinstalar?',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de CFTV em Curitiba e Região Metropolitana, com avaliação das camadas de proteção e orçamento claro antes de qualquer intervenção.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
+  {
+    id: 'controle-remoto-portao-nao-funciona-bateria-codificacao-receptor',
+    slug: 'controle-remoto-portao-nao-funciona-bateria-codificacao-receptor',
+    title: 'Controle Remoto do Portão Não Funciona: Bateria, Codificação ou Receptor? | Intelsecsul',
+    metaTitle: 'Controle Remoto do Portão Não Funciona: Bateria, Codificação ou Receptor? | Intelsecsul',
+    metaDescription: 'Controle do portão não funciona? Veja como distinguir bateria fraca, codificação dessincronizada, alcance e interferência, receptor e placa — e o que fazer para não ficar preso fora ou com o portão aberto.',
+    h1: 'Controle remoto do portão não funciona: bateria, codificação ou receptor?',
+    category: 'Portão Eletrônico',
+    readTime: '9 min de leitura',
+    publishedDate: '2026-10-22',
+    summary: 'Quando o controle do portão para de funcionar, o problema costuma estar em quatro pontos: bateria do transmissor, codificação entre controle e receptor, receptor ou antena (alcance e interferência) e placa de comando. Um teste de escopo simples (um controle ou todos?) mostra por onde começar, antes de comprar controle novo ou chamar técnico.',
+    intro: 'Quando o controle remoto do portão deixa de funcionar, o problema pode estar em quatro pontos distintos: a bateria do transmissor (descarregada ou mal contatada), a codificação entre controle e receptor (dessincronização ou perda de memória), o receptor ou a antena (alcance reduzido, interferência ou falha na recepção) ou a placa de comando (que processa o sinal e aciona o motor). A boa notícia é que a ordem de investigação pode ser padronizada, e na maioria dos casos o próprio usuário consegue identificar em qual desses pontos está a falha antes de chamar um técnico. O problema é duplo e imediato: você pode ficar preso do lado de fora da sua própria casa ou condomínio, ou deixar o portão aberto por não conseguir fechá-lo. É diferente de um problema no motor ou no trilho: nesse caso o portão se move, mas aqui o comando não chega. A triagem correta evita duas decisões ruins: forçar o portão manualmente (o que pode danificar o mecanismo) ou comprar um controle novo sem necessidade, quando o problema era apenas bateria ou reprogramação.',
+    sections: [
+      {
+        h2: 'Primeiro: descubra se o problema é o controle ou o sistema',
+        content: (
+          <div className="space-y-4">
+            <p>Antes de qualquer verificação no controle, confirme duas coisas simples: se o portão tem energia (disjuntor ligado e LED da placa aceso) e se o motor não ficou destravado manualmente (com o motor destravado, nenhum comando move o portão). Depois, faça o teste de escopo: o problema afeta apenas um controle ou todos os controles do portão?</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Se apenas um controle não funciona</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>O problema está no próprio controle (bateria, botão, codificação ou dano físico).</li>
+              <li>Os demais controles funcionam normalmente, o que descarta falha no receptor ou na placa.</li>
+              <li>A solução mais provável é troca de bateria ou reprogramação do controle específico.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Se todos os controles pararam de funcionar ao mesmo tempo</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>O problema está no receptor, na antena ou na placa de comando, e não nos controles individuais.</li>
+              <li>Trocar a bateria de um controle não vai resolver, porque o problema não está no transmissor.</li>
+              <li>A verificação exige acesso ao receptor (que fica junto ao motor) e, possivelmente, diagnóstico técnico.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Se o controle funciona às vezes (intermitente)</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>O problema pode ser bateria fraca (o controle ainda emite sinal, mas com potência reduzida), alcance no limite (funciona perto do portão, mas não de longe) ou interferência de outros dispositivos.</li>
+              <li>Também pode ser botão com mau contato (o contato elétrico falha de forma intermitente).</li>
+            </ul>
+            <p>Esse teste de escopo é o atalho mais valioso da triagem. Ele evita que você compre um controle novo quando o problema é o receptor, ou que chame um técnico quando a solução é apenas trocar a bateria.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 1: Bateria fraca ou mal contatada — a causa mais comum',
+        content: (
+          <div className="space-y-4">
+            <p>A bateria fraca é, de longe, a causa número um de controle que para de funcionar. Os sintomas clássicos são: alcance muito reduzido (o portão só abre quando você está bem perto), necessidade de apertar o botão várias vezes para o portão reagir, ou abertura que funciona "uma vez sim, uma vez não". Muitos controles de portão usam bateria de 12 V (modelo 23A ou A23).</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como diagnosticar e resolver</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Verifique o LED do controle.</strong> Ao apertar o botão, o LED deve acender com brilho firme. Se não acender, ou se estiver fraco e oscilante, a bateria está descarregada.</li>
+              <li><strong className="text-white">Substitua a bateria.</strong> Use uma bateria nova, de boa qualidade e com a especificação correta (geralmente 12 V, modelo 23A ou A23). Baterias de marcas desconhecidas podem ter vida útil curta e tensão instável.</li>
+              <li><strong className="text-white">Verifique a polaridade.</strong> Confira se a bateria está instalada com o polo positivo (+) e o negativo (−) na posição correta. Uma bateria invertida não faz o controle funcionar e pode danificar o circuito.</li>
+              <li><strong className="text-white">Verifique o contato do compartimento.</strong> Oxidação nos contatos (uma camada esverdeada ou escura) impede a passagem de corrente. Limpe com um pano seco ou um cotonete com álcool isopropílico, e evite lixar, porque isso pode remover o revestimento do contato.</li>
+            </ul>
+            <p>Se a bateria nova não resolver, o problema pode ser o botão do controle (contato interno desgastado) ou o cristal oscilador (componente que gera a frequência de transmissão). Nesse caso, o controle precisa ser substituído ou reparado por um técnico especializado.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 2: Codificação dessincronizada — o controle "esqueceu" o código',
+        content: (
+          <div className="space-y-4">
+            <p>Mesmo com bateria nova, o controle pode estar dessincronizado do receptor. Isso acontece quando o código gravado no controle não corresponde mais ao código memorizado no receptor, por queda de energia, choque, manipulação acidental ou simplesmente com o tempo. Em controles com rolling code (código rolante), a dessincronização é mais comum depois de muitos acionamentos fora do alcance do receptor, porque o contador do controle avança e o receptor perde a referência.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Código fixo x rolling code: por que isso importa</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Código fixo:</strong> o controle envia sempre o mesmo código a cada acionamento. É mais simples e mais barato, mas vulnerável à clonagem.</li>
+              <li><strong className="text-white">Rolling code (código rolante):</strong> o controle gera um novo código a cada acionamento, calculado a partir de uma chave secreta compartilhada com o receptor e de um contador que avança. É o padrão das marcas atuais e muito mais seguro contra clonagem.</li>
+            </ul>
+            <p>Se o seu controle é rolling code, a reprogramação exige que o receptor aprenda o novo código do controle, geralmente pressionando um botão de "aprender" ou "memorizar" no receptor e, em seguida, acionando o controle. Se o seu controle é código fixo, a reprogramação pode envolver a configuração de jumpers ou dip switches no controle e no receptor, ou a memorização do código fixo no receptor.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Como reprogramar (procedimento geral)</h3>
+            <p>O procedimento varia conforme a marca e o modelo, mas a lógica é comum:</p>
+            <ol className="space-y-2 list-decimal list-inside">
+              <li>Localize o receptor (geralmente junto ao motor do portão, dentro da caixa de comando). Em muitos modelos, o botão de memória fica acessível sem tocar em partes energizadas. Se for preciso abrir a caixa, desligue a energia antes e, em caso de dúvida sobre partes ligadas à rede elétrica (127/220 V), deixe com um técnico.</li>
+              <li>Localize o botão de programação ou memória (pode estar identificado como "MEMO", "LEARN", "S1" ou similar).</li>
+              <li>Pressione o botão até que o LED de memória acenda ou pisque (o tempo varia, de 1 a 3 segundos).</li>
+              <li>Acione o controle que você quer cadastrar, pressionando o botão desejado.</li>
+              <li>Aguarde a confirmação (o LED pisca ou emite um bipe).</li>
+              <li>Teste o controle a uma distância curta do portão.</li>
+            </ol>
+            <p><strong className="text-white">Atenção:</strong> se o receptor estiver com a memória cheia (alguns modelos suportam um número limitado de controles), pode ser necessário apagar todos os controles e reprogramá-los do zero. Isso apaga também os controles antigos, e em condomínios desativa os controles de todos os moradores. Por isso, faça isso apenas se tiver todos os controles em mãos para reprogramar, ou deixe com um técnico.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 3: Alcance reduzido, antena ou interferência',
+        content: (
+          <div className="space-y-4">
+            <p>Se o controle funciona apenas quando você está muito perto do portão, mas falha a distâncias maiores, o problema não é necessariamente a codificação nem a bateria: é o alcance do sinal de rádio. Vários fatores afetam esse alcance.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Antena do receptor</h3>
+            <p>O receptor precisa de uma antena para captar o sinal do controle. Em muitos motores, a antena é um fio rígido (às vezes com cerca de 17 cm, sintonizado para 433,92 MHz) ou um fio solto que pode estar mal posicionado, dobrado ou desconectado. Se a antena estiver enrolada, cortada ou ausente, o alcance cai drasticamente.</p>
+            <p><strong className="text-white">O que fazer:</strong> verifique se a antena está estendida, reta e conectada ao receptor. Se o receptor estiver dentro de uma caixa metálica (que funciona como "jaula de Faraday"), o sinal é bloqueado, e nesse caso uma antena externa conectada por cabo coaxial de 50 ohms pode resolver.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Interferência de outros dispositivos</h3>
+            <p>Certos dispositivos emitem radiofrequência na mesma faixa do controle (geralmente 433 MHz) e podem "abafar" o sinal. As fontes mais comuns são lâmpadas LED e fluorescentes compactas (principalmente as de baixa qualidade), sistemas de segurança e comunicação que usam a mesma frequência e estações de rádio ou TV de alta potência nas proximidades.</p>
+            <p><strong className="text-white">O que fazer:</strong> teste o controle com as lâmpadas próximas ao receptor desligadas. Se o alcance melhorar, o problema é interferência das lâmpadas. Para interferência de sistemas de segurança ou estações de rádio, pode ser necessário um receptor em frequência alternativa ou um retrofit no sistema de controle.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Posicionamento do receptor</h3>
+            <p>O receptor deve estar o mais exposto possível ao sinal do controle. Se ele estiver atrás de paredes grossas, dentro de armários metálicos ou muito próximo ao solo, o alcance é reduzido. Reposicionar o receptor ou instalar uma antena externa melhora a recepção.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 4: Receptor ou placa de comando com defeito',
+        content: (
+          <div className="space-y-4">
+            <p>Se todos os controles pararam de funcionar, a bateria dos controles está boa e a antena está OK, o problema pode estar no receptor ou na placa de comando.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como saber se é o receptor ou a placa</h3>
+            <p>O receptor é o módulo que capta o sinal de rádio e o traduz em um comando elétrico para a placa. A placa é o "cérebro" que processa esse comando e aciona o motor. Dois testes simples ajudam a separar os dois:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Teste com o botão interno (na placa ou na botoeira).</strong> Se o portão abre e fecha normalmente pelo botão interno, a placa e o motor estão funcionando, e o problema está no receptor ou na antena, ou seja, na recepção do sinal do controle. Se o portão também não responde ao botão interno, veja <Link to="/blog/portao-eletronico-nao-abre-ou-nao-fecha" className="text-white underline hover:text-slate-300">portão eletrônico não abre ou não fecha: causas e o que verificar</Link>.</li>
+              <li><strong className="text-white">Observe o LED do receptor.</strong> Muitos receptores têm um LED que pisca quando recebem um sinal válido do controle. Se o LED não piscar quando você aperta o controle, o receptor não está recebendo o sinal (problema de antena, bateria do controle ou frequência). Se o LED piscar mas o portão não abrir, o problema está na comunicação entre o receptor e a placa ou na própria placa.</li>
+            </ul>
+            <p>Medições elétricas no receptor e na placa (tensão de alimentação, por exemplo) variam de modelo para modelo e devem ser feitas por um técnico.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Substituição do receptor</h3>
+            <p>Em muitos modelos, o receptor é um módulo separado ou plugável, o que permite substituí-lo sem trocar a placa inteira. A compatibilidade e a necessidade de reprogramar os controles dependem do modelo. Quando possível, substituir o receptor pode ser uma solução mais barata do que trocar a placa de comando.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela de diagnóstico rápido',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[720px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Cenário</th>
+                  <th className="text-left p-3 text-white font-bold">Verificação prioritária</th>
+                  <th className="text-left p-3 text-white font-bold">Causa provável</th>
+                  <th className="text-left p-3 text-white font-bold">Ação segura</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Apenas um controle não funciona</td><td className="p-3">LED do controle acende? Bateria nova?</td><td className="p-3">Bateria fraca ou controle com defeito</td><td className="p-3">Trocar bateria; testar outro controle</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Todos os controles pararam</td><td className="p-3">Portão tem energia? Botão interno funciona?</td><td className="p-3">Receptor, antena ou placa</td><td className="p-3">Testar botão interno; verificar antena</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Controle funciona só perto</td><td className="p-3">Antena do receptor estendida?</td><td className="p-3">Alcance reduzido ou interferência</td><td className="p-3">Estender antena; testar sem lâmpadas LED</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Controle funciona às vezes</td><td className="p-3">Bateria e botão do controle</td><td className="p-3">Bateria fraca ou contato intermitente</td><td className="p-3">Trocar bateria; limpar contatos</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Controle novo não funciona</td><td className="p-3">Receptor aprendeu o código?</td><td className="p-3">Codificação não realizada</td><td className="p-3">Reprogramar conforme o manual</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">LED do receptor não pisca</td><td className="p-3">Antena e bateria do controle</td><td className="p-3">Receptor sem recepção</td><td className="p-3">Verificar antena; testar outro controle</td></tr>
+                <tr><td className="p-3 font-semibold text-white">LED do receptor pisca, mas o portão não abre</td><td className="p-3">Botão interno funciona?</td><td className="p-3">Comunicação receptor-placa</td><td className="p-3">Diagnóstico técnico da placa</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que NÃO fazer (e por quê)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Não force o portão manualmente sem destravar o motor</h3>
+            <p>Se o controle não funciona e você precisa sair ou entrar, use o sistema de destravamento manual do motor (uma chave ou alavanca que libera o mecanismo). Forçar o portão com o motor engatado pode danificar a cremalheira, a correia ou o próprio motor. O procedimento de destravamento varia conforme o modelo: consulte o manual.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não compre um controle novo sem testar a bateria e a reprogramação</h3>
+            <p>A maioria dos controles "defeituosos" só precisa de bateria nova ou reprogramação. Comprar um controle novo antes de esgotar essas duas verificações é gasto desnecessário. Além disso, um controle novo também precisa ser compatível (frequência e tipo de código) e programado no receptor.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não altere a codificação sem ter todos os controles em mãos</h3>
+            <p>Se você fizer o procedimento de apagar todos os controles do receptor para reprogramar do zero, os controles antigos que não forem reprogramados deixarão de funcionar. Em condomínios, isso significa deixar todos os moradores sem acesso. Só faça isso se tiver todos os controles que precisam de acesso ao portão.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não ignore a antena do receptor</h3>
+            <p>A antena não é um "detalhe": sem ela, o alcance do controle cai drasticamente. Verifique se o fio da antena está estendido, reto e conectado, e não enrolado dentro da caixa do motor. Uma antena mal posicionada é uma causa comum de "controle que só funciona de perto".</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não descarte a interferência de lâmpadas LED</h3>
+            <p>Lâmpadas LED e fluorescentes próximas ao receptor podem gerar interferência de radiofrequência e reduzir o alcance do controle. Se o controle funciona bem durante o dia e falha à noite (quando as luzes estão acesas), a interferência das lâmpadas é uma suspeita forte. Teste com as luzes desligadas.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico especializado',
+        content: (
+          <div className="space-y-4">
+            <p>A troca de bateria, a limpeza de contatos e a reprogramação do controle (com os cuidados descritos) são procedimentos que o usuário pode fazer. Mas alguns cenários exigem diagnóstico profissional:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Todos os controles pararam e o botão interno funciona — o problema está no receptor ou na antena, e a substituição do módulo exige conhecimento técnico.</li>
+              <li>O receptor não responde mesmo com bateria nova, antena conectada e reprogramação — pode ser falha no receptor ou na placa de comando.</li>
+              <li>O portão não responde a nenhum comando (controle, botão interno, botoeira) — pode ser problema na placa de comando, no motor ou na alimentação.</li>
+              <li>O controle funciona, mas o portão não se move ou para no meio do caminho — o problema pode estar no motor, no capacitor ou no fim de curso, e não no controle. Veja <Link to="/blog/portao-eletronico-trava-no-meio-do-caminho-causas" className="text-white underline hover:text-slate-300">portão eletrônico trava no meio do caminho: causas além do barulho</Link>.</li>
+              <li>Você não se sente seguro para acessar o receptor ou mexer na fiação — o receptor fica dentro da caixa do motor, que envolve risco elétrico.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita identifica se o problema é bateria, codificação, alcance, receptor ou placa — e apresenta a solução com clareza.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>Controle remoto do portão que não funciona tem, na grande maioria dos casos, uma causa identificável: bateria fraca (a mais comum), codificação dessincronizada (especialmente em rolling code), alcance reduzido por antena ou interferência, receptor com defeito ou placa de comando com falha.</p>
+            <p>A triagem começa pelo teste de escopo (um controle ou todos?) e segue para a bateria, a antena e a reprogramação. E a regra que vale para todos os cenários: não force o portão manualmente sem destravar o motor, não compre controle novo sem testar bateria e reprogramação, e não apague todos os controles do receptor sem ter todos em mãos.</p>
+            <p>Se a triagem não resolver, ou se o problema envolver receptor ou placa, a avaliação de um técnico especializado é o caminho mais seguro. Se o portão responde, mas faz esforço ou ruído, veja também <Link to="/blog/portao-eletronico-faz-barulho-ajuste-ou-defeito" className="text-white underline hover:text-slate-300">portão eletrônico faz barulho: quando é ajuste e quando é defeito</Link>. A Intelsecsul realiza diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Controle do portão não funciona, mas o botão interno funciona. O que pode ser?',
+        answer: 'Se o botão interno (na botoeira ou na placa) abre e fecha o portão normalmente, a placa e o motor estão funcionando. O problema está na recepção do sinal do controle: pode ser bateria fraca, antena do receptor desconectada ou mal posicionada, receptor com defeito ou codificação dessincronizada. Comece pela bateria e pela antena; se não resolver, teste a reprogramação.',
+      },
+      {
+        question: 'Troquei a bateria do controle e ele continua não funcionando. O que fazer?',
+        answer: 'Se a bateria nova não resolveu, verifique: (1) se a polaridade está correta; (2) se os contatos do compartimento estão limpos; (3) se o LED do controle acende ao apertar o botão; (4) se o controle precisa de reprogramação no receptor. Se o LED não acender nem com bateria nova, o controle pode estar com defeito interno (botão ou cristal) e precisar de substituição.',
+      },
+      {
+        question: 'Como saber se o problema é o controle ou o receptor?',
+        answer: 'Faça o teste de escopo: se apenas um controle não funciona e os outros funcionam, o problema é o controle. Se todos os controles pararam ao mesmo tempo, o problema é o receptor, a antena ou a placa (confirme antes que o portão tem energia e que o motor não está destravado). Outro teste útil: observe se o LED do receptor pisca quando você aperta o controle. Se não piscar, o receptor não está recebendo o sinal.',
+      },
+      {
+        question: 'Controle funciona só quando estou perto do portão. Como melhorar o alcance?',
+        answer: 'Verifique a antena do receptor: ela deve estar estendida, reta e conectada. Se o receptor estiver dentro de caixa metálica, uma antena externa com cabo coaxial de 50 ohms pode melhorar o alcance. Também teste se há interferência de lâmpadas LED próximas ao receptor: desligue-as e veja se o alcance melhora. Se o problema persistir, o receptor pode estar com sensibilidade reduzida e precisar de substituição.',
+      },
+      {
+        question: 'Qual a diferença entre controle de código fixo e rolling code?',
+        answer: 'O código fixo envia sempre o mesmo sinal a cada acionamento: é mais simples, mas pode ser clonado. O rolling code (código rolante) gera um novo código a cada acionamento, tornando a clonagem muito mais difícil. Controles rolling code, quando dessincronizados, geralmente precisam ser reprogramados no receptor para voltar a funcionar.',
+      },
+      {
+        question: 'Posso usar um controle universal no meu portão?',
+        answer: 'Depende da compatibilidade. O controle universal precisa operar na mesma frequência do receptor (geralmente 433,92 MHz) e ser compatível com o tipo de codificação (código fixo ou rolling code). Controles universais de código fixo podem funcionar em receptores de código fixo; para rolling code, é necessário um controle compatível com o protocolo específico do fabricante. Verifique a compatibilidade e prefira produtos de origem confiável antes de comprar.',
+      },
+    ],
+    internalLink: {
+      text: 'Seu controle não está funcionando? Precisa de ajuda para diagnosticar bateria, codificação ou receptor?',
+      url: '/servicos/portao-eletronico/',
+      linkText: 'Ver Portão Eletrônico',
+    },
+    whatsappMessage: 'Vim do blog e meu controle do portão não funciona',
+    ctaFinal: {
+      title: 'Seu controle não está funcionando? Precisa de ajuda para diagnosticar bateria, codificação ou receptor?',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
 ];
+
+
 
 
