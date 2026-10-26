@@ -5184,7 +5184,458 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       buttonText: 'Falar no WhatsApp agora',
     },
   },
+  {
+    id: 'fechadura-eletromagnetica-nao-trava-porta-aberta-eletroima-perde-forca',
+    slug: 'fechadura-eletromagnetica-nao-trava-porta-aberta-eletroima-perde-forca',
+    title: 'Fechadura Eletromagnética Não Trava: Porta Fica Aberta ou Eletroímã Perde Força | Intelsecsul',
+    metaTitle: 'Fechadura Eletromagnética Não Trava: Porta Fica Aberta ou Eletroímã Perde Força | Intelsecsul',
+    metaDescription: 'Fechadura eletromagnética não trava? Veja as causas mais comuns — alinhamento da armadura, tensão e fonte, anéis de borracha, sujeira e desgaste — e como diagnosticar antes de comprometer a segurança da área restrita.',
+    h1: 'Fechadura eletromagnética não trava: porta fica aberta ou eletroímã perde força',
+    category: 'Fechaduras Eletromagnéticas',
+    readTime: '9 min de leitura',
+    publishedDate: '2026-10-26',
+    summary: 'Fechadura eletromagnética que não trava, ou que abre com um empurrão, deixa a área restrita vulnerável. As causas mais comuns são alinhamento e assentamento da armadura (anéis de borracha, parafuso central), tensão e fonte insuficientes, sujeira nas faces de contato, desgaste mecânico e instalação elétrica incorreta. Veja como diagnosticar com segurança.',
+    intro: 'Uma fechadura eletromagnética que não trava, ou que trava mas cede com um simples empurrão, representa uma falha crítica de segurança: a área restrita fica vulnerável e o acesso que deveria ser controlado passa a ser livre. Com frequência, o problema não está no eletroímã em si, mas na instalação e na infraestrutura ao redor dele. As causas mais comuns se distribuem em cinco frentes: alinhamento e assentamento da armadura (contraplaca), com o erro pouco visível de apertar demais o parafuso central ou omitir os anéis de borracha; tensão e fonte de alimentação (queda de tensão por cabo fino ou fonte distante, fonte queimada ou sem backup); sujeira e oxidação nas faces de contato; desgaste mecânico da armadura ou do eletroímã; e instalação elétrica incorreta no acionamento e na proteção contra picos. Este guia separa cada causa, mostra o que você pode verificar com segurança e indica o momento em que a falha deixa de ser ajuste e passa a exigir assistência técnica.',
+    sections: [
+      {
+        h2: 'Primeiro: entenda o que "não travar" significa na prática',
+        content: (
+          <div className="space-y-4">
+            <p>Uma fechadura eletromagnética funciona por atração magnética: o eletroímã energizado atrai a armadura (contraplaca) fixada na porta, mantendo-a presa contra a face do eletroímã. Para que a força de retenção nominal (150 kgf, 300 kgf ou mais) seja entregue, três condições precisam ser atendidas ao mesmo tempo:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Contato pleno</strong> entre a face do eletroímã e a armadura, sem vão de ar, sem sujeira e sem desalinhamento.</li>
+              <li><strong className="text-white">Corrente suficiente</strong> para saturar o campo magnético, ou seja, tensão correta nos terminais da fechadura.</li>
+              <li><strong className="text-white">Mecânica livre:</strong> a armadura precisa de um leve jogo para se acomodar ao eletroímã quando a porta fecha.</li>
+            </ul>
+            <p>Quando qualquer uma dessas condições falha, o sintoma aparece: a porta não trava (a armadura nem chega a colar), trava mas abre com empurrão (a força de retenção está reduzida) ou trava de forma intermitente (contato instável). A triagem abaixo segue essa lógica.</p>
+            <p>Enquanto a falha não é corrigida, a área está desprotegida. Use outra forma de trancar a porta (como uma tranca ou fechadura mecânica) e avise os responsáveis, sem nunca bloquear uma rota de saída.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 1: Alinhamento e assentamento da armadura (o erro pouco visível)',
+        content: (
+          <div className="space-y-4">
+            <p>Este é um dos problemas mais comuns e um dos mais mal interpretados. A armadura (contraplaca) precisa de contato plano com a face do eletroímã para gerar a força de atração prometida. Muitos instaladores, na intenção de deixar a instalação "firme", apertam excessivamente o parafuso central da armadura. Isso é um erro sério: a armadura fica rígida e perde a capacidade de se acomodar ao eletroímã quando a porta fecha. Qualquer milímetro de desalinhamento da porta cria um vão de ar (gap), e onde há ar, o magnetismo não é eficiente.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">O papel dos anéis de borracha</h3>
+            <p>Os anéis de borracha que acompanham a fechadura são instalados entre o suporte e a armadura. Eles funcionam como amortecedores, permitindo que a armadura tenha um leve jogo mecânico para se alinhar ao eletroímã. A ausência desses anéis, ou o aperto excessivo do parafuso central, elimina essa flexibilidade e reduz drasticamente a força de retenção.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Como diagnosticar e resolver</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Verifique os anéis de borracha.</strong> Confira se estão instalados entre o suporte e a armadura. Se não estiverem, essa é a primeira correção.</li>
+              <li><strong className="text-white">Folgue ligeiramente o parafuso central da armadura,</strong> conforme o manual do fabricante. A armadura deve ter uma leve folga, o suficiente para se acomodar ao eletroímã quando a porta fecha, sem ficar solta ou balançando.</li>
+              <li><strong className="text-white">Verifique o alinhamento visual</strong> entre a armadura e o eletroímã. As duas faces devem coincidir; se houver desvio lateral ou vertical, a armadura precisa ser reposicionada.</li>
+              <li><strong className="text-white">Teste o contato com uma folha de papel.</strong> Com a fechadura energizada, coloque uma folha entre a armadura e o eletroímã e feche a porta, mantendo os dedos longe da área de contato. Se a folha sair com facilidade, há vão de ar; se estiver presa, o contato é bom.</li>
+              <li><strong className="text-white">Se a armadura estiver deformada ou empenada,</strong> ela não consegue assentar corretamente. Nesse caso, a substituição é necessária.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 2: Tensão e fonte de alimentação insuficientes',
+        content: (
+          <div className="space-y-4">
+            <p>Eletroímãs são dispositivos indutivos que exigem corrente constante para manter o campo magnético saturado. Se a tensão que chega à fechadura estiver abaixo do nominal (12 VDC ou 24 VDC), a força de atração cai drasticamente. O sintoma clássico é uma fechadura que "parece ligada" (o LED acende), mas não tem força para segurar a porta. Um zumbido audível, por outro lado, pode indicar fonte AC ou não filtrada.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Causas comuns de tensão baixa</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Cabo de alimentação fino ou muito longo.</strong> Cabos de bitola insuficiente (como cabos de rede UTP simples) em distâncias longas causam queda de tensão. Se chegam apenas 10 V ou 11 V em vez dos 12 V nominais, a força de atração cai.</li>
+              <li><strong className="text-white">Fonte distante da fechadura.</strong> Quanto maior a distância entre a fonte e a fechadura, maior a queda de tensão no cabo. A recomendação é instalar a fonte o mais próximo possível da fechadura.</li>
+              <li><strong className="text-white">Fonte subdimensionada ou queimada.</strong> A fonte precisa fornecer a corrente nominal da fechadura (em muitos modelos, algo entre 350 e 500 mA em 12 V). Se a fonte estiver no limite ou com defeito, a tensão cai sob carga.</li>
+              <li><strong className="text-white">Fonte AC ou não filtrada em vez de DC.</strong> Fechaduras eletromagnéticas operam com corrente contínua (DC) filtrada, normalmente regulada. Usar fonte AC ou não filtrada pode causar mau funcionamento, zumbido e redução da força.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Como diagnosticar e resolver</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Meça a tensão nos terminais da fechadura</strong> com um multímetro em corrente contínua (DC), com a fechadura energizada e a porta fechada, sempre no lado de baixa tensão. A tensão deve estar dentro da faixa nominal (12 VDC ou 24 VDC, conforme o modelo). Se estiver abaixo de 90% do valor nominal, há queda de tensão. Se não tiver experiência com multímetro, deixe essa medição com um técnico.</li>
+              <li><strong className="text-white">Substitua o cabo de alimentação por um de bitola maior</strong> (por exemplo, 1,5 mm² ou 2,5 mm² para distâncias maiores) para reduzir a queda de tensão. A bitola ideal depende da distância e da corrente da fechadura.</li>
+              <li><strong className="text-white">Instale a fonte mais próxima da fechadura,</strong> ou utilize uma fonte dedicada para ela, separada de outros dispositivos.</li>
+              <li><strong className="text-white">Verifique a fonte.</strong> Se estiver queimada, subdimensionada ou não for DC adequada, substitua por uma fonte própria para fechaduras eletromagnéticas.</li>
+            </ul>
+            <p><strong className="text-white">Atenção:</strong> em sistemas com backup de bateria (nobreak ou fonte com bateria), verifique se a bateria está em bom estado. Uma bateria descarregada ou ausente faz a porta soltar durante uma queda de energia, uma das causas mais comuns de porta liberada de repente.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 3: Sujeira, oxidação ou pintura nas faces de contato',
+        content: (
+          <div className="space-y-4">
+            <p>As faces do eletroímã e da armadura precisam estar limpas e livres de qualquer material que impeça o contato metal com metal. Poeira, oxidação (ferrugem), tinta, graxa ou até uma fina camada de sujeira acumulada reduzem a área de contato efetiva e, consequentemente, a força de retenção.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como diagnosticar e resolver</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Inspecione visualmente as duas faces.</strong> Procure por ferrugem, manchas escuras, tinta ou resíduos.</li>
+              <li><strong className="text-white">Limpe as superfícies</strong> com um pano macio e um produto não abrasivo e não corrosivo. Não use lixas grossas nem solventes fortes que possam danificar o revestimento.</li>
+              <li><strong className="text-white">Não aplique graxa nem óleo nas faces de contato.</strong> Eles criam uma película que reduz o contato e acumulam sujeira. Se houver ferrugem que a limpeza não remove, a peça pode precisar de substituição.</li>
+              <li><strong className="text-white">Evite pintar as faces de contato durante reformas.</strong> Se a armadura ou o eletroímã foram pintados, a tinta precisa ser removida das faces.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 4: Desgaste mecânico ou armadura deformada',
+        content: (
+          <div className="space-y-4">
+            <p>Com o uso prolongado, a armadura pode empenar, deformar ou desgastar a ponto de não assentar corretamente contra o eletroímã. O mesmo vale para o eletroímã: a face pode ficar irregular, reduzindo a área de contato.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Sinais de desgaste</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>A armadura não fica plana contra o eletroímã; há um vão visível em uma das extremidades.</li>
+              <li>A porta desceu (desregulagem das dobradiças) e a armadura passou a encontrar o eletroímã em um ângulo diferente.</li>
+              <li>O eletroímã ou a armadura apresentam sulcos, riscos profundos ou corrosão que impedem o contato pleno.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Ajuste as dobradiças da porta para realinhar a armadura ao eletroímã.</li>
+              <li>Se a armadura estiver deformada, substitua-a por uma nova, de mesmo modelo e força de retenção.</li>
+              <li>Se a face do eletroímã estiver desgastada além do aceitável, a substituição do conjunto pode ser necessária.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 5: Instalação elétrica incorreta (proteção contra picos e contato do acionador)',
+        content: (
+          <div className="space-y-4">
+            <p>Além da tensão, a forma de ligação pode impedir o funcionamento correto. Dois pontos merecem atenção.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Proteção contra picos (diodo ou MOV) instalada de forma incorreta</h3>
+            <p>Muitas fechaduras já vêm com proteção interna contra picos indutivos (como um MOV). Instalar um componente adicional em paralelo com a bobina sem seguir o manual pode causar problemas: um diodo ligado com a polaridade invertida provoca curto-circuito na fonte, e a fechadura deixa de receber energia e não trava. Mesmo corretamente ligado, um diodo adicional pode retardar a liberação da porta. O manual do fabricante indica se a proteção já é interna e qual componente, se for o caso, deve ser usado.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Acionador ou contato subdimensionado</h3>
+            <p>O acionador (botoeira normalmente fechada, relé do leitor) interrompe a alimentação da fechadura para liberar a porta, e por isso o contato dele precisa suportar a corrente e a carga indutiva da fechadura. Se a corrente da fechadura passa por um contato ou uma saída subdimensionada (como a saída de sinal de um leitor ou um relé fraco), a tensão cai ou o contato queima ou solda, e a fechadura não segura ou não solta. O correto é usar um relé auxiliar adequado ou um contato com capacidade compatível, definido por um técnico. Se a fechadura é comandada por biometria, cartão ou reconhecimento facial, veja também <Link to="/blog/biometria-cartao-rfid-ou-reconhecimento-facial-qual-escolher" className="text-white underline hover:text-slate-300">biometria, cartão RFID ou reconhecimento facial: qual escolher</Link>.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Como diagnosticar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Verifique se há componente de proteção instalado em paralelo com a bobina</strong> e se ele está de acordo com o manual (inclusive a polaridade).</li>
+              <li><strong className="text-white">Verifique o contato do acionador.</strong> Confira se o relé ou a botoeira por onde passa a corrente da fechadura suporta essa corrente e a carga indutiva.</li>
+              <li><strong className="text-white">Meça a tensão nos terminais da fechadura</strong> com a porta fechada e o acionador em repouso. Se a tensão cai quando a fechadura é ligada, há perda no contato ou na fiação.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela de diagnóstico rápido',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[720px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Sintoma</th>
+                  <th className="text-left p-3 text-white font-bold">Verificação prioritária</th>
+                  <th className="text-left p-3 text-white font-bold">Causa provável</th>
+                  <th className="text-left p-3 text-white font-bold">Ação segura</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Porta não trava (armadura não cola)</td><td className="p-3">Tensão nos terminais da fechadura</td><td className="p-3">Falta de alimentação, fonte queimada ou tensão baixa</td><td className="p-3">Medir tensão; verificar fonte e cabo</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Trava, mas abre com empurrão</td><td className="p-3">Anéis de borracha e parafuso central</td><td className="p-3">Armadura rígida ou sem jogo mecânico</td><td className="p-3">Folgar o parafuso conforme o manual; instalar anéis</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Trava apenas de um lado (vão visível)</td><td className="p-3">Alinhamento armadura e eletroímã</td><td className="p-3">Desalinhamento ou armadura deformada</td><td className="p-3">Ajustar dobradiças e alinhamento; substituir armadura se deformada</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Força de retenção reduzida com o tempo</td><td className="p-3">Limpeza das faces</td><td className="p-3">Sujeira, oxidação ou pintura</td><td className="p-3">Limpar com pano macio, sem lubrificar</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Porta solta durante queda de energia</td><td className="p-3">Bateria ou nobreak</td><td className="p-3">Bateria descarregada ou ausente</td><td className="p-3">Verificar ou substituir a bateria</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Funciona com botoeira, mas não com o leitor</td><td className="p-3">Ligação e contato do acionador</td><td className="p-3">Saída do leitor subdimensionada ou relé com defeito</td><td className="p-3">Verificar relé e fiação (técnico)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que NÃO fazer (e por quê)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Não aperte o parafuso central da armadura "até o fim"</h3>
+            <p>Apertar demais a armadura elimina o jogo mecânico necessário para que ela se acomode ao eletroímã. O resultado é um vão de ar que reduz a força de retenção e faz a porta abrir com um empurrão. A armadura deve ter leve folga, conforme o manual, e os anéis de borracha devem estar presentes.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não instale diodo ou supressor adicional sem consultar o manual</h3>
+            <p>A fechadura eletromagnética moderna costuma já vir com proteção contra picos. Adicionar um diodo externo sem seguir o manual pode causar curto-circuito (se a polaridade estiver invertida) ou retardar a liberação da porta. Siga a orientação do fabricante.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não use fonte AC ou não filtrada</h3>
+            <p>Fechaduras eletromagnéticas exigem corrente contínua (DC) filtrada. Fonte AC ou não filtrada pode causar mau funcionamento, zumbido e redução da força de atração.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não ignore a queda de tensão no cabo</h3>
+            <p>Se a fonte está longe e o cabo é fino, a tensão que chega à fechadura pode ser insuficiente. Meça a tensão nos terminais antes de concluir que a fechadura está defeituosa. Muitas fechaduras são substituídas desnecessariamente por causa de cabo inadequado.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não force a porta, não improvise ligação e não prenda uma rota de saída</h3>
+            <p>Forçar a porta ou fazer ligação improvisada pode danificar a placa, o relé ou a fonte, e fiação malfeita pode superaquecer. Além disso, em portas que fazem parte de uma rota de fuga, a fechadura precisa liberar em emergência. Verifique as exigências aplicáveis ao imóvel com um profissional habilitado, e nunca "resolva" o problema impedindo a saída.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico especializado',
+        content: (
+          <div className="space-y-4">
+            <p>A verificação visual do alinhamento, a limpeza das faces e a medição de tensão (para quem sabe usar o multímetro) são passos que você pode fazer. Mas alguns cenários exigem diagnóstico profissional:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>A tensão nos terminais está correta, mas a fechadura continua sem força — pode ser falha interna na bobina ou no circuito de proteção.</li>
+              <li>A armadura está deformada e precisa ser substituída.</li>
+              <li>A instalação elétrica está incorreta (proteção contra picos, contato do acionador, fonte inadequada) e precisa ser refeita.</li>
+              <li>O acionador não libera ou não solta a porta corretamente — botoeira, leitor ou relé com defeito.</li>
+              <li>A porta solta durante quedas de energia — o nobreak ou a bateria de backup precisam ser verificados ou substituídos.</li>
+              <li>A área é de alto risco (sala cofre, farmácia, laboratório) e a falha de travamento expõe patrimônio ou pessoas — a correção deve ser imediata e segura.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de fechaduras eletromagnéticas em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita identifica se o problema é de alinhamento, tensão, fonte, sujeira ou desgaste — e apresenta a solução com clareza.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>Fechadura eletromagnética que não trava, ou que abre com empurrão, tem, na grande maioria dos casos, uma causa identificável: alinhamento e assentamento da armadura (aperto excessivo do parafuso, ausência dos anéis de borracha), tensão e fonte insuficientes (queda de tensão no cabo, fonte distante ou queimada), sujeira e oxidação nas faces de contato, desgaste mecânico da armadura ou do eletroímã, e instalação elétrica incorreta (proteção contra picos, contato do acionador).</p>
+            <p>A triagem começa pelo que é visual e não invasivo: verifique os anéis de borracha, folgue ligeiramente o parafuso central da armadura conforme o manual, limpe as faces e meça a tensão nos terminais. E a regra que vale para todos os cenários: não aperte a armadura até o fim, não instale diodo sem verificar o manual, não use fonte AC e não ignore a queda de tensão no cabo.</p>
+            <p>Se a triagem não resolver, ou se a falha envolver substituição de armadura, correção de instalação elétrica ou suspeita de defeito interno na bobina, a avaliação de um técnico especializado é o caminho mais seguro. Para que alinhamento, fonte e bateria sejam revisados antes da falha, veja <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza diagnóstico e manutenção de fechaduras eletromagnéticas em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Fechadura eletromagnética não trava, mas o LED acende. O que pode ser?',
+        answer: 'Se o LED acende (indicando que a fechadura está recebendo energia), mas a porta não trava ou abre com empurrão, as causas mais prováveis são: armadura rígida ou sem os anéis de borracha (falta de jogo mecânico), desalinhamento entre armadura e eletroímã, sujeira nas faces de contato ou tensão insuficiente (o LED acende, mas a corrente é baixa para saturar o campo magnético). Comece pela verificação dos anéis de borracha e do parafuso central da armadura.',
+      },
+      {
+        question: 'Por que a porta abre com um simples empurrão?',
+        answer: 'A porta que abre com empurrão indica que a força de retenção está reduzida. As causas mais comuns são: vão de ar entre armadura e eletroímã (por aperto excessivo do parafuso ou ausência dos anéis de borracha), tensão baixa na fechadura (queda de tensão no cabo ou fonte insuficiente), sujeira ou oxidação nas faces, ou armadura deformada.',
+      },
+      {
+        question: 'Qual a tensão correta para uma fechadura eletromagnética?',
+        answer: 'A maioria das fechaduras opera em 12 VDC ou 24 VDC, com corrente que, em muitos modelos, fica entre 350 e 500 mA em 12 V. A tensão deve ser contínua (DC) e filtrada. Meça nos terminais da fechadura, com ela energizada e usando o multímetro em DC: a leitura deve ficar dentro da faixa nominal (com tolerância de cerca de 10%). Se estiver abaixo, há queda de tensão no cabo ou problema na fonte. Confira sempre o manual do seu modelo.',
+      },
+      {
+        question: 'Preciso instalar diodo na fechadura eletromagnética?',
+        answer: 'Depende do modelo. Muitas fechaduras já vêm com proteção interna contra picos (como um MOV) e não precisam de componente adicional. Siga a orientação do manual do fabricante: um diodo ligado com a polaridade invertida provoca curto-circuito na fonte, e um diodo adicional, mesmo bem ligado, pode retardar a liberação da porta. Em caso de dúvida, peça a um técnico.',
+      },
+      {
+        question: 'Fechadura magnética solta quando falta energia. Como resolver?',
+        answer: 'A fechadura eletromagnética depende de energia para travar: quando a corrente é interrompida, o eletroímã perde a força e a porta solta. Para evitar que a área fique vulnerável durante quedas de energia, é necessário instalar um nobreak ou uma fonte com bateria de backup dedicada à fechadura. Verifique também se a bateria existente está em bom estado, porque bateria descarregada é uma das causas mais comuns de porta liberada de repente. Em portas que fazem parte de rota de fuga, a liberação em emergência deve ser garantida: confirme as exigências com um profissional habilitado.',
+      },
+      {
+        question: 'Posso substituir a fechadura por uma de maior força de retenção?',
+        answer: 'Aumentar a força de retenção (de 150 kgf para 300 kgf, por exemplo) não resolve se o problema for de instalação (alinhamento, tensão, sujeira). A fechadura de maior força só entrega o nominal se as condições de contato e alimentação forem atendidas. Antes de trocar a fechadura, corrija a causa raiz: alinhamento, anéis de borracha, tensão e limpeza.',
+      },
+    ],
+    internalLink: {
+      text: 'Sua fechadura eletromagnética não está travando? Precisa de diagnóstico técnico?',
+      url: '/servicos/fechaduras-eletromagneticas/',
+      linkText: 'Ver Fechaduras Eletromagnéticas',
+    },
+    whatsappMessage: 'Vim do blog e minha fechadura eletromagnética não trava',
+    ctaFinal: {
+      title: 'Sua fechadura eletromagnética não está travando? Precisa de diagnóstico técnico?',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de fechaduras eletromagnéticas em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
+  {
+    id: 'controle-de-acesso-nao-libera-porta-mesmo-com-biometria-aprovada',
+    slug: 'controle-de-acesso-nao-libera-porta-mesmo-com-biometria-aprovada',
+    title: 'Controle de Acesso Não Libera a Porta Mesmo com Biometria Aprovada | Intelsecsul',
+    metaTitle: 'Controle de Acesso Não Libera a Porta Mesmo com Biometria Aprovada | Intelsecsul',
+    metaDescription: 'Biometria aprovada mas a porta não abre? Veja como diagnosticar a falha de integração entre leitor, relé, fonte e fechadura — e o que verificar antes de trocar equipamentos.',
+    h1: 'Controle de acesso não libera a porta mesmo com biometria aprovada',
+    category: 'Controle de Acesso',
+    readTime: '10 min de leitura',
+    publishedDate: '2026-10-26',
+    summary: 'Quando a biometria aprova e a porta não abre, a falha quase sempre está na cadeia de acionamento, e não no leitor: relé de saída, fonte de alimentação, fechadura (fail-secure ou fail-safe) ou configuração do software. Veja como diagnosticar cada elo, na ordem certa, antes de trocar equipamentos.',
+    intro: 'Quando o leitor biométrico reconhece a digital, exibe a mensagem de "Acesso Permitido" ou acende o LED verde, mas a porta permanece travada, o problema não está na identificação da pessoa. A biometria já fez o seu papel. A falha está na cadeia de acionamento que conecta o controlador à fechadura. Essa cadeia tem quatro elos principais: o relé de saída do controlador (que precisa comutar para liberar a fechadura), a fonte de alimentação (que precisa fornecer tensão e corrente suficientes), a fechadura (que precisa estar funcional e ser do tipo certo para a ligação feita) e a configuração do software (que precisa estar parametrizada para acionar a saída correta após o acesso permitido). Na prática, a causa mais comum é uma falha de integração, e não um defeito isolado: o controlador "sabe" que o acesso foi permitido, mas não envia o comando elétrico para a fechadura, ou envia um comando que a fechadura não consegue executar. Este guia organiza o diagnóstico por elo da cadeia, começando pelo que é mais simples e seguro verificar e avançando para o que exige instrumentos de medição. Se você ainda está escolhendo o tipo de leitor, veja também o artigo sobre biometria, cartão RFID ou reconhecimento facial.',
+    sections: [
+      {
+        h2: 'Primeiro: separe o problema de "acesso" do problema de "acionamento"',
+        content: (
+          <div className="space-y-4">
+            <p><strong className="text-white">Se houver alguém preso do lado de dentro,</strong> use o botão de saída ou de emergência (botoeira, quebra-vidro) ou a chave mecânica de emergência, e não force a porta nem a fechadura. Depois, faça o diagnóstico abaixo.</p>
+            <p>Antes de qualquer verificação elétrica, confirme uma distinção fundamental: o acesso foi autorizado (software) e o comando de acionamento saiu do controlador (hardware)?</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Se o relé do controlador aciona</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>O leitor exibe "Acesso Permitido", LED verde ou som de confirmação, e o relé "clica" (ou o LED do relé muda) quando a biometria é aprovada.</li>
+              <li>O comando saiu do controlador. O problema está depois dele: fonte, fiação ou fechadura.</li>
+              <li>Alguns controladores usam relé de estado sólido, sem clique audível. Nesse caso, observe o LED indicador do relé.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Se o relé não aciona</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>O leitor autoriza, mas nenhum clique ou LED de relé é percebido e a porta não reage.</li>
+              <li>O software de gestão não registra o evento de abertura, ou registra apenas "acesso autorizado" sem "porta aberta".</li>
+              <li>O problema está na configuração da saída ou no próprio relé e na placa do controlador.</li>
+            </ul>
+            <p>Um teste útil é abrir a porta pela botoeira interna. Se a botoeira aciona o mesmo relé do controlador (como entrada de botão), e a porta abre, a fechadura, a fonte e a fiação estão funcionais, e o problema está no acesso, no relé ou na configuração. Se a botoeira corta a alimentação da fechadura diretamente, esse teste não prova que o relé funciona. E se a porta não abre por nenhum comando, o problema pode estar na fonte, na fechadura ou na porta (alinhamento, pressão contra o trinco).</p>
+            <p>Se você ainda está escolhendo o tipo de leitor, veja <Link to="/blog/biometria-cartao-rfid-ou-reconhecimento-facial-qual-escolher" className="text-white underline hover:text-slate-300">biometria, cartão RFID ou reconhecimento facial: qual escolher</Link>.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Elo 1: Relé de saída do controlador — o comando está sendo enviado?',
+        content: (
+          <div className="space-y-4">
+            <p>O relé é o componente que traduz o "acesso permitido" do software em um contato elétrico que libera a fechadura. Se ele não comuta, a fechadura nunca recebe o comando de abertura.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como verificar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Ouça o clique ou observe o LED do relé.</strong> Aproxime o ouvido do controlador (ou do módulo de relé) e acione a biometria. A maioria dos relés emite um clique seco quando muda de estado. Se não houver clique nem LED, o relé não está sendo acionado pelo software.</li>
+              <li><strong className="text-white">Verifique a configuração da saída.</strong> No software de gestão, confirme se o acionamento de saída de acesso está devidamente configurado para o dispositivo. Em alguns sistemas, é necessário ativar um parâmetro de execução de acionamento para que o relé dispare após o acesso permitido. O nome do parâmetro varia conforme o sistema.</li>
+              <li><strong className="text-white">Verifique a fiação NO, NC e COM.</strong> A fechadura precisa estar conectada ao contato correto. Em geral, fechaduras fail-secure (que travam sem energia e precisam de energia para destravar) usam o contato NO, e fechaduras fail-safe (que destravam sem energia, como as eletromagnéticas) usam o contato NC. Se a fiação estiver invertida, o relé comuta, mas a fechadura não recebe a liberação.</li>
+              <li><strong className="text-white">Teste de continuidade do relé (técnico).</strong> A continuidade entre os terminais COM e NO (ou COM e NC) é medida pelo técnico com o circuito desligado e o relé acionado por teste, e não com tudo energizado.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Elo 2: Fonte de alimentação — a tensão chega corretamente à fechadura?',
+        content: (
+          <div className="space-y-4">
+            <p>Mesmo que o relé comute, a fechadura precisa de tensão e corrente suficientes para operar. Este é um dos pontos mais negligenciados, e uma das causas mais comuns de "biometria aprovada, porta travada".</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como verificar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Meça a tensão nos terminais da fechadura</strong> com um multímetro em corrente contínua (DC), no momento em que a biometria é aprovada, sempre no lado de baixa tensão e nunca na entrada de rede da fonte (127/220 V). A tensão deve estar dentro da faixa nominal do equipamento (geralmente 12 VDC ou 24 VDC). Se não tiver experiência com multímetro, deixe essa medição com um técnico.</li>
+              <li><strong className="text-white">Atenção à queda de tensão.</strong> Se a fonte estiver distante da fechadura e o cabo for fino, a tensão que chega pode ser insuficiente. Meça nos terminais da fechadura, e não apenas na saída da fonte.</li>
+              <li><strong className="text-white">Verifique a capacidade da fonte.</strong> A fonte precisa fornecer a corrente de pico da fechadura (em muitos modelos de eletroímã, algo entre 350 e 500 mA em 12 V, ou mais). Se a fonte estiver alimentando vários dispositivos e no limite, a tensão cai sob carga.</li>
+              <li><strong className="text-white">Verifique o fusível da fonte.</strong> Muitas fontes de controle de acesso têm fusíveis de proteção. Um fusível queimado pode cortar a alimentação da fechadura sem afetar o controlador, o que explica por que o leitor funciona, mas a porta não abre.</li>
+            </ul>
+            <p>Lembre que a tensão baixa afeta os dois tipos de fechadura de formas diferentes: em fechadura que precisa de energia para destravar (solenoide), ela impede a abertura; em eletroímã, ela enfraquece a retenção, e a porta pode abrir com um empurrão.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Elo 3: Fechadura — o diagnóstico depende do tipo (fail-secure ou fail-safe)',
+        content: (
+          <div className="space-y-4">
+            <p>Se o relé comuta e a tensão chega corretamente, o problema pode estar na própria fechadura. O diagnóstico muda conforme o tipo: uma fechadura fail-secure precisa de energia para destravar, e uma fail-safe precisa que a energia seja cortada.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Fechadura fail-secure (solenoide, trinco elétrico): precisa de energia para destravar</h3>
+            <p>Em fechaduras de solenoide (como as usadas em portas de vidro ou portas com trinco), o solenoide precisa ser energizado para recolher o trinco. Se a bobina estiver queimada, desalinhada ou sem alimentação, a fechadura "gira em falso": o usuário ouve o som de aceitação da biometria, mas a porta não destrava.</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Tensão no solenoide.</strong> Meça a tensão nos terminais quando o acesso é autorizado. Se não houver tensão, o problema está no relé ou na fiação. Se houver tensão mas o solenoide não se move, a bobina pode estar queimada.</li>
+              <li><strong className="text-white">Porta pressionada contra o trinco.</strong> Se a porta está sob pressão (alguém empurrando ou puxando, mola fechadora forte, porta desalinhada), o trinco não recolhe mesmo com o solenoide energizado. Tente aliviar a pressão na porta no momento do acionamento.</li>
+              <li><strong className="text-white">Alinhamento do solenoide.</strong> O pino precisa estar alinhado com o mecanismo de travamento. Um desalinhamento pode impedir o destravamento mesmo com o solenoide energizado.</li>
+              <li><strong className="text-white">Tempo de acionamento curto.</strong> Se o pulso do relé for curto demais, o solenoide não completa o movimento.</li>
+              <li><strong className="text-white">Teste com alimentação externa.</strong> Em alguns casos, o técnico testa o solenoide com uma fonte externa de 12 V ou 24 V para confirmar se ele responde.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Fechadura fail-safe (eletroímã): precisa que a energia seja cortada para soltar</h3>
+            <p>Em fechadura eletromagnética, a porta só solta quando a alimentação do eletroímã é interrompida. Se a porta continua presa depois do acesso autorizado, a pergunta principal é: a energia realmente foi cortada?</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">O relé não está cortando a energia.</strong> A fechadura pode estar ligada ao contato errado (NO em vez de NC), alimentada direto pela fonte sem passar pelo relé, ou o contato do relé pode estar travado ou soldado.</li>
+              <li><strong className="text-white">Armadura "colada".</strong> Em alguns modelos, a armadura permanece presa mesmo sem energia (magnetismo residual), principalmente em caso de desalinhamento ou assentamento incorreto. Siga o manual do fabricante.</li>
+              <li><strong className="text-white">Componente de proteção instalado de forma incorreta.</strong> Um diodo adicional em paralelo com a bobina pode retardar a liberação da porta.</li>
+            </ul>
+            <p>Para alinhamento da armadura, anéis de borracha, tensão e instalação do eletroímã, veja também <Link to="/blog/fechadura-eletromagnetica-nao-trava-porta-aberta-eletroima-perde-forca" className="text-white underline hover:text-slate-300">fechadura eletromagnética não trava: porta fica aberta ou eletroímã perde força</Link>.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Elo 4: Configuração do software — o acionamento está parametrizado?',
+        content: (
+          <div className="space-y-4">
+            <p>Em sistemas de controle de acesso, o leitor pode autorizar o acesso e, ainda assim, não enviar o comando para a saída de relé se a configuração não estiver correta. Este é um problema de software, não de hardware, e é mais comum do que parece.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">O que verificar no software de gestão</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Acionamento de saída de acesso.</strong> A saída de relé correspondente à porta precisa estar habilitada e associada ao evento de "acesso permitido", e ao relé do leitor certo (em sistemas com várias portas).</li>
+              <li><strong className="text-white">Modo de operação do relé.</strong> O relé pode estar configurado como pulso (fecha por alguns segundos e reabre) ou ligado e desligado. Para fechaduras, o modo pulso é o mais comum, mas a duração do pulso precisa ser suficiente para o solenoide ou o eletroímã responder.</li>
+              <li><strong className="text-white">Tipo de fechadura (fail-safe ou fail-secure).</strong> O software precisa saber o tipo de fechadura para acionar o relé corretamente, e a fiação NO ou NC depende disso.</li>
+              <li><strong className="text-white">Modo de disparo.</strong> Em alguns controladores, é necessário habilitar um modo de disparo para que o relé mude de estado a cada acesso bem-sucedido.</li>
+            </ul>
+            <p>Se o relé "clica" mas a porta não abre, a configuração de software pode estar correta, e o problema está na fiação, na fonte ou na fechadura. Se o relé não "clica", a configuração precisa ser revisada antes de qualquer troca de hardware.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela de diagnóstico rápido',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[720px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Sintoma</th>
+                  <th className="text-left p-3 text-white font-bold">Verificação prioritária</th>
+                  <th className="text-left p-3 text-white font-bold">Elo provável</th>
+                  <th className="text-left p-3 text-white font-bold">Ação segura</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Biometria aprova, mas o relé não aciona (sem clique nem LED)</td><td className="p-3">Configuração de saída no software</td><td className="p-3">Software ou relé</td><td className="p-3">Verificar parâmetro de acionamento; relé e placa pelo técnico</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Relé aciona, mas a porta não abre</td><td className="p-3">Tensão nos terminais da fechadura</td><td className="p-3">Fonte ou fiação</td><td className="p-3">Medir tensão; verificar fusível e cabo</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Relé aciona e a tensão chega (solenoide), mas a fechadura não responde</td><td className="p-3">Porta pressionada? Solenoide e alinhamento</td><td className="p-3">Fechadura fail-secure</td><td className="p-3">Aliviar a pressão na porta; técnico verifica o solenoide</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Eletroímã continua preso depois do acesso</td><td className="p-3">O relé está cortando a energia?</td><td className="p-3">Relé, fiação NC ou magnetismo residual</td><td className="p-3">Verificar ligação NC e armadura (técnico)</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Porta abre pela botoeira, mas não pela biometria</td><td className="p-3">A botoeira usa o mesmo relé do controlador?</td><td className="p-3">Relé ou software</td><td className="p-3">Revisar parâmetro de acionamento; testar relé</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Fechadura de solenoide "gira em falso"</td><td className="p-3">Tensão no solenoide e alinhamento</td><td className="p-3">Fechadura ou fonte</td><td className="p-3">Medir tensão; verificar bobina e pino</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Funciona de forma intermitente</td><td className="p-3">Queda de tensão sob carga</td><td className="p-3">Fonte ou cabo</td><td className="p-3">Medir tensão com a fechadura acionada</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que NÃO fazer (e por quê)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Não troque o leitor biométrico antes de testar o relé e a fonte</h3>
+            <p>O leitor está funcionando: ele reconhece a digital e autoriza o acesso. Trocar o leitor não resolve um problema de relé, fonte ou fechadura. A triagem deve começar pelo clique do relé e pela tensão na fechadura.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não force a porta nem a fechadura</h3>
+            <p>Forçar a porta ou a fechadura pode danificar o solenoide, o trinco ou o mecanismo de travamento. Com a porta pressionada contra o trinco, ele pode simplesmente não recolher. Se a porta não abre, o problema é de acionamento (relé, fonte, configuração) ou de alinhamento, e não de força mecânica.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não ignore a queda de tensão no cabo</h3>
+            <p>Um cabo fino ou muito longo pode entregar 10 V ou 11 V em vez dos 12 V nominais: o suficiente para o leitor funcionar, mas insuficiente para a fechadura. Meça a tensão nos terminais da fechadura, e não apenas na saída da fonte.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não inverta a fiação NO e NC sem conhecer o tipo de fechadura</h3>
+            <p>Fechaduras fail-safe e fail-secure usam contatos diferentes. Inverter a fiação pode fazer a fechadura travar quando deveria destravar, ou vice-versa. Consulte o manual da fechadura e do controlador antes de alterar a ligação.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não reinstale o software nem faça reset de fábrica sem antes verificar a parametrização</h3>
+            <p>Muitos casos de "não aciona" são resolvidos com um ajuste simples no parâmetro de saída. O reset apaga configurações e pode criar novos problemas.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico especializado',
+        content: (
+          <div className="space-y-4">
+            <p>A verificação do clique do relé, a observação da porta abrindo pela botoeira e a leitura de configuração no software podem ser feitas por você. Mas alguns cenários exigem diagnóstico profissional:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>O relé não aciona e a configuração de software já foi revisada — pode ser falha na placa do controlador.</li>
+              <li>A tensão não chega à fechadura mesmo com a fonte ligada — pode ser fusível queimado, cabo rompido ou saída com defeito.</li>
+              <li>A fechadura de solenoide não responde mesmo com tensão correta e sem pressão na porta — pode ser bobina queimada ou mecanismo travado.</li>
+              <li>O eletroímã continua preso depois do acesso — pode ser relé, fiação NC ou armadura.</li>
+              <li>O sistema tem múltiplas portas e apenas uma apresenta o problema — o diagnóstico pontual evita mexer no que está funcionando.</li>
+              <li>A porta é de rota de fuga e não libera — trate como urgente.</li>
+              <li>Você não se sente seguro para medir tensões ou acessar a fiação — há risco de choque na parte da fonte e de danificar o controlador.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de controle de acesso em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita identifica em qual elo da cadeia está a falha (relé, fonte, fechadura ou configuração) e apresenta a solução com clareza.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>Controle de acesso que não libera a porta mesmo com biometria aprovada é, quase sempre, uma falha de integração, e não um defeito no leitor. A biometria já fez o seu papel; o problema está em um dos quatro elos da cadeia: relé de saída, fonte de alimentação, fechadura ou configuração do software.</p>
+            <p>A triagem começa pelo que é mais simples e não invasivo: ouça o clique do relé (ou observe o LED), teste a porta pela botoeira e, se souber medir com segurança, meça a tensão nos terminais da fechadura. Se o relé aciona e a tensão chega, o problema está na fechadura (alinhamento, solenoide, porta pressionada, ou relé que não corta a energia do eletroímã). Se o relé não aciona, o problema está na configuração ou na placa do controlador.</p>
+            <p>E a regra que vale para todos os cenários: não troque o leitor antes de testar o relé, não ignore a queda de tensão no cabo, não inverta NO e NC sem conhecer o tipo de fechadura e não faça reset de software sem antes revisar a parametrização.</p>
+            <p>Se a triagem não resolver, ou se o problema envolver a placa do controlador, a substituição de fechadura ou a correção de fiação, a avaliação de um técnico especializado é o caminho mais seguro. Para que relé, fonte e fechadura sejam revisados antes da falha, veja <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza diagnóstico e manutenção de controle de acesso em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'Biometria aprova, o relé clica, mas a porta não abre. O que pode ser?',
+        answer: 'Se o relé clica, o comando está sendo enviado. O problema está entre o relé e a fechadura: tensão insuficiente na fechadura (fonte fraca ou queda de tensão no cabo), fiação invertida (NO e NC trocados), fusível queimado na fonte, porta pressionada contra o trinco ou fechadura com defeito (solenoide queimado ou desalinhado). Em eletroímã, verifique também se o relé está realmente cortando a energia. Meça a tensão nos terminais da fechadura no momento em que o acesso é autorizado.',
+      },
+      {
+        question: 'A porta abre pela botoeira, mas não pela biometria. O que isso indica?',
+        answer: 'Se a botoeira aciona o mesmo relé do controlador, isso indica que a fechadura, a fonte e o alinhamento estão funcionais, e o problema está no relé de saída ou na configuração do software. Verifique se o relé aciona quando a biometria é aprovada e se a saída de acesso está parametrizada para acionar o relé após o acesso permitido. Se a botoeira corta a alimentação da fechadura diretamente, esse teste não prova que o relé funciona.',
+      },
+      {
+        question: 'Fechadura de solenoide "gira em falso" com a biometria aprovada. O que fazer?',
+        answer: 'O sintoma "gira em falso" (a fechadura aceita a biometria mas não destrava) indica que o solenoide não está acionando o mecanismo de travamento. As causas mais prováveis são: bobina do solenoide queimada, solenoide desalinhado, falta de tensão no solenoide ou porta pressionada contra o trinco. Meça a tensão nos terminais quando o acesso é autorizado e tente aliviar a pressão na porta. Se houver tensão e ele não se mover, a substituição do solenoide ou da fechadura é necessária.',
+      },
+      {
+        question: 'Qual a tensão correta para a fechadura de controle de acesso?',
+        answer: 'Depende do modelo. A maioria opera em 12 VDC ou 24 VDC. O importante é que a tensão nos terminais da fechadura esteja dentro da faixa nominal no momento em que ela é acionada. Consulte o manual do equipamento para o valor exato e meça em corrente contínua, no lado de baixa tensão.',
+      },
+      {
+        question: 'Posso simplesmente trocar a fechadura para resolver?',
+        answer: 'Só se o diagnóstico confirmar que a fechadura é o elo com falha. Se o problema for relé, fonte, configuração ou fiação, trocar a fechadura não resolve, e o novo equipamento vai apresentar o mesmo sintoma. A ordem correta é: verificar o relé, verificar a fonte, verificar a fechadura e verificar a configuração.',
+      },
+      {
+        question: 'O que é "fail-safe" e "fail-secure" e por que isso importa?',
+        answer: 'Fail-safe significa que a fechadura destrava quando falta energia (como as fechaduras eletromagnéticas), e fail-secure significa que ela trava quando falta energia (como muitas fechaduras de solenoide ou trinco elétrico). O tipo define a ligação: em geral, fail-secure usa o contato NO do relé e fail-safe usa o NC. O controlador precisa estar configurado para o tipo correto, e a escolha em portas de rota de fuga deve considerar a liberação em emergência, conforme as exigências aplicáveis ao imóvel e a orientação de um profissional habilitado.',
+      },
+    ],
+    internalLink: {
+      text: 'Sua biometria aprova, mas a porta não abre? Precisa de diagnóstico de integração?',
+      url: '/servicos/controle-de-acesso/',
+      linkText: 'Ver Controle de Acesso',
+    },
+    whatsappMessage: 'Vim do blog e minha biometria aprova mas a porta não abre',
+    ctaFinal: {
+      title: 'Sua biometria aprova, mas a porta não abre? Precisa de diagnóstico de integração?',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de controle de acesso em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
 ];
+
+
 
 
 
