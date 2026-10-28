@@ -5633,7 +5633,443 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       buttonText: 'Falar no WhatsApp agora',
     },
   },
+  {
+    id: 'interfone-funciona-para-falar-mas-nao-abre-o-portao',
+    slug: 'interfone-funciona-para-falar-mas-nao-abre-o-portao',
+    title: 'Interfone Funciona para Falar, mas Não Abre o Portão: Causas e Diagnóstico | Intelsecsul',
+    metaTitle: 'Interfone Funciona para Falar, mas Não Abre o Portão: Causas e Diagnóstico | Intelsecsul',
+    metaDescription: 'O interfone chama e você conversa, mas o portão não abre? Veja como diagnosticar a falha no relé, botoeira, fechadura, fonte e fiação de comando — e quando chamar assistência técnica.',
+    h1: 'Interfone funciona para falar, mas não abre o portão',
+    category: 'Interfonia',
+    readTime: '9 min de leitura',
+    publishedDate: '2026-10-27',
+    summary: 'Quando o interfone fala, mas não abre o portão, o problema não está no áudio: a comunicação e o acionamento são circuitos separados. A falha está no caminho de comando: botão de abertura, relé, fonte e fusível, fiação ou a própria fechadura. Veja o diagnóstico por ponto da cadeia e os testes que evitam trocar o interfone sem necessidade.',
+    intro: 'Quando o interfone funciona perfeitamente para falar — você atende, ouve a pessoa do lado de fora e é ouvido — mas o botão de abertura não libera o portão, o problema não está no sistema de áudio. A comunicação e o acionamento são circuitos separados dentro do interfone. O áudio usa a linha de voz (fiação de áudio, alto-falante e microfone); a abertura usa um circuito de comando que passa pelo botão, pelo relé e pela fiação que vai até a fechadura. Essa separação é o ponto de partida do diagnóstico: se o áudio funciona, a alimentação do interfone e a fiação de comunicação estão em ordem. A falha está especificamente no caminho de acionamento, e esse caminho tem cinco pontos principais: o botão de abertura (no fone ou na botoeira), o relé de saída do interfone, a fonte de alimentação da fechadura (com o fusível), a fiação de comando entre o interfone e a fechadura e a própria fechadura. Na prática, a causa mais comum é uma falha de integração entre esses componentes, e não um defeito no interfone como um todo. E o erro mais frequente dos usuários é concluir que "o interfone queimou" e trocar o equipamento inteiro, quando o problema pode estar em um fusível, em um cabo com mau contato ou na configuração do tempo de acionamento. Este guia organiza o diagnóstico por ponto da cadeia, começando pelo que é mais simples e seguro verificar.',
+    sections: [
+      {
+        h2: 'Primeiro: descubra onde o comando se perde',
+        content: (
+          <div className="space-y-4">
+            <p>Antes de qualquer verificação elétrica, faça três testes simples que separam cenários muito diferentes:</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">1. Os outros apartamentos conseguem abrir?</h3>
+            <p>Em prédios e condomínios com central de interfonia, esse é o teste mais valioso. Se os outros apartamentos abrem o portão normalmente, a central, o relé, a fonte e a fechadura estão funcionando, e o problema está no fone ou na fiação daquele apartamento. Se nenhum apartamento abre, o problema está na central, na fonte, na fiação até a fechadura ou na própria fechadura.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">2. A botoeira abre o portão?</h3>
+            <p>Se o seu sistema tem uma botoeira (botão de abertura instalado na parede, separado do fone), pressione-a. Se o portão abre pela botoeira, mas não pelo botão do fone, a fechadura, a fonte e a fiação até a fechadura estão funcionando. O problema está entre o fone e o relé: botão do fone, fiação do fone ou relé do interfone. Se a botoeira passa pelo mesmo relé do interfone, o relé também está bom, e o problema se restringe ao botão e à fiação do fone. Se a botoeira corta ou liga a fechadura diretamente, ela não prova que o relé funciona.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">3. O que acontece quando você pressiona o botão do fone?</h3>
+            <p>Pressione o botão de abertura no fone e observe:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Você ouve algum clique (do relé ou da fechadura)?</li>
+              <li>O LED do interfone muda de estado?</li>
+              <li>A fechadura faz algum som (zumbido, clique)?</li>
+            </ul>
+            <p>Se nada acontece (nenhum som, nenhum clique, nenhuma mudança no LED), o problema está no botão, na fiação do fone ou no relé. Alguns interfones usam relé de estado sólido, sem clique audível: nesse caso, observe o LED. Se você ouve um clique, mas a fechadura não abre, o comando saiu do interfone, e o problema está na fiação de comando, na fonte ou na fechadura.</p>
+            <p>Esses testes de escopo evitam a troca desnecessária do interfone inteiro e direcionam a investigação para o ponto certo. Se o problema, na verdade, é a chamada ou o áudio, veja <Link to="/blog/interfone-nao-toca-no-apartamento-causas-testes" className="text-white underline hover:text-slate-300">interfone não toca no apartamento: causas e sequência de testes</Link>.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 1: Botão de abertura com defeito ou mau contato',
+        content: (
+          <div className="space-y-4">
+            <p>O botão de abertura no fone (ou na botoeira) é um contato momentâneo que fecha o circuito de comando quando pressionado. Com o uso, esse contato pode se desgastar, oxidar ou simplesmente não fechar de forma confiável.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como diagnosticar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Pressione o botão várias vezes com firmeza.</strong> Se a abertura funcionar de forma intermitente (às vezes abre, às vezes não), o contato do botão está desgastado.</li>
+              <li><strong className="text-white">Verifique se o botão "afunda" normalmente.</strong> Um botão que está travado para baixo ou que não retorna pode estar com o mecanismo quebrado.</li>
+              <li><strong className="text-white">Em interfones com botoeira separada, teste a botoeira.</strong> Se a botoeira abre o portão e o botão do fone não, o problema está no botão do fone ou na fiação entre o fone e o interfone.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">O que fazer</h3>
+            <p>Se o botão estiver com mau contato, a substituição do fone (ou da botoeira) é a solução. Em alguns modelos, é possível reparar o contato com limpeza, mas a substituição é mais confiável a longo prazo.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 2: Relé de saída do interfone não comuta',
+        content: (
+          <div className="space-y-4">
+            <p>O relé é o componente que traduz o pressionamento do botão em um contato elétrico que libera a fechadura. Se o botão funciona, mas o relé não comuta, a fechadura nunca recebe o comando.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como diagnosticar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Ouça o clique do relé.</strong> Aproxime o ouvido do interfone (ou do módulo interno) e pressione o botão de abertura. A maioria dos relés emite um "clique" audível quando muda de estado. Se não houver clique nem mudança no LED, o relé pode estar com defeito ou a placa do interfone pode não estar enviando o sinal.</li>
+              <li><strong className="text-white">Verifique a configuração do tempo de acionamento.</strong> Em alguns interfones (especialmente videoporteiros inteligentes), o tempo de comando de abertura pode estar configurado como zero ou muito curto, fazendo com que o relé não permaneça acionado o suficiente para a fechadura responder. O valor costuma ser de poucos segundos (como 3 segundos), conforme o manual. Verifique no menu de configurações se o tempo de comando de abertura está adequado.</li>
+              <li><strong className="text-white">Verifique a saída de acionamento utilizada.</strong> Muitos interfones têm mais de uma saída: uma que fornece alimentação direta (para fechaduras de baixa tensão) e outra de contato seco (sem tensão, usada para comandar um relé auxiliar ou uma fonte externa). Se a fechadura estiver conectada na saída errada, o comando não chega corretamente. As siglas variam por marca (como FA, FB ou AUX): confirme no manual do seu modelo.</li>
+              <li><strong className="text-white">Teste do contato do relé (técnico).</strong> A continuidade entre os terminais COM e NO (ou COM e NC) é medida pelo técnico, com o circuito desligado e o relé acionado por teste.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 3: Fonte de alimentação insuficiente ou fusível queimado',
+        content: (
+          <div className="space-y-4">
+            <p>Este é um dos pontos mais negligenciados, e uma das causas mais comuns de "fala, mas não abre". A fechadura exige tensão e corrente específicas (geralmente 12 V, de acordo com o modelo, e com consumo que em muitas fechaduras fica entre 350 e 500 mA ou mais). Se a fonte não fornece energia suficiente, a fechadura não libera, mesmo que o interfone esteja funcionando perfeitamente para o áudio.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Como diagnosticar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Meça a tensão nos terminais da fechadura</strong> com um multímetro, no momento em que o botão de abertura é pressionado, sempre no lado de baixa tensão e nunca na entrada de rede da fonte (127/220 V). A tensão deve estar próxima do nominal. Se ela chegar muito abaixo (por exemplo, poucos volts), há queda de tensão na fiação ou problema na fonte. Se não tiver experiência com multímetro, deixe essa medição com um técnico.</li>
+              <li><strong className="text-white">Atenção à queda de tensão.</strong> Em interfones que alimentam a fechadura a longas distâncias, a bitola do cabo pode ser insuficiente. A solução pode ser aumentar a bitola do cabo ou instalar uma fonte dedicada próxima à fechadura.</li>
+              <li><strong className="text-white">Verifique o fusível da fonte.</strong> Muitas fontes de interfone têm fusíveis de proteção. Um fusível queimado corta a alimentação da fechadura sem afetar o áudio, o que explica por que o interfone fala, mas não abre. Antes de qualquer troca, desligue a energia e nunca abra a fonte energizada. Se o fusível não estiver em um porta-fusível acessível, deixe com o técnico. Substitua sempre por um fusível de mesma especificação, nunca por um de valor maior e nunca por uma ligação direta.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 4: Fechadura ou solenoide com defeito',
+        content: (
+          <div className="space-y-4">
+            <p>Se o relé comuta e a tensão chega corretamente à fechadura, o problema pode estar na própria fechadura. O diagnóstico muda conforme o tipo: a fechadura elétrica (de solenoide) precisa de energia para abrir, e a fechadura eletromagnética (eletroímã) precisa que a energia seja cortada para soltar.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Fechadura elétrica ou de solenoide (a mais comum em portões)</h3>
+            <p>O solenoide precisa ser energizado para recolher o trinco. A tensão de trabalho (12 V, em corrente alternada ou contínua) depende do modelo: confira no manual. Se a bobina estiver queimada, desalinhada ou sem alimentação, a fechadura "gira em falso": você ouve o clique do relé, mas o portão não destrava.</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Tensão no solenoide.</strong> Meça a tensão nos terminais quando o botão é pressionado. Se houver tensão e ele não se mover, a bobina pode estar queimada.</li>
+              <li><strong className="text-white">Portão pressionado contra o trinco.</strong> Se o portão está sob pressão (empurrado, mola forte, folha desalinhada), o trinco não recolhe mesmo com o solenoide energizado. Peça para alguém aliviar a pressão no portão enquanto você aciona.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Fechadura eletromagnética (eletroímã)</h3>
+            <p>No eletroímã, a energia mantém a porta presa, e o relé precisa interromper a alimentação para liberá-la. Se a porta continua presa depois do comando, verifique se o relé realmente corta a energia (a fechadura pode estar ligada ao contato errado, NO em vez de NC) e se a armadura não está "colada" por desalinhamento ou assentamento incorreto. Para alinhamento, anéis de borracha, parafuso central e tensão, veja <Link to="/blog/fechadura-eletromagnetica-nao-trava-porta-aberta-eletroima-perde-forca" className="text-white underline hover:text-slate-300">fechadura eletromagnética não trava: porta fica aberta ou eletroímã perde força</Link>.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Teste direto da fechadura</h3>
+            <p>Para isolar a fechadura do restante do sistema, um técnico pode conectá-la diretamente a uma fonte adequada e verificar se ela libera. Se a fechadura funcionar com alimentação direta, o problema está no interfone, no relé ou na fiação. Se não funcionar, a fechadura está defeituosa.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Causa 5: Fiação de comando com problema (rompida, em curto ou com mau contato)',
+        content: (
+          <div className="space-y-4">
+            <p>A fiação que conecta o interfone à fechadura é um dos pontos mais vulneráveis, especialmente em instalações antigas ou em prédios onde o cabo passa por tubulações longas.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Problemas comuns de fiação</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Cabo rompido.</strong> Especialmente em trechos curtos ou em curvas apertadas. O cabo pode estar partido internamente, sem que o isolamento esteja visivelmente danificado.</li>
+              <li><strong className="text-white">Conector mal crimpado.</strong> O fio pode estar preso no isolamento em vez de no cobre, resultando em mau contato.</li>
+              <li><strong className="text-white">Curto-circuito.</strong> Dois condutores se tocando podem fazer o fusível queimar ou impedir o acionamento.</li>
+              <li><strong className="text-white">Fiação invertida.</strong> Em instalações novas, é comum ligar os pares na ordem errada, o que impede o comando de abertura.</li>
+            </ul>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Como diagnosticar</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Teste a continuidade da fiação.</strong> Com o interfone, a fonte e a fechadura desconectados e desligados, meça a continuidade entre os terminais do interfone e os terminais da fechadura. Se não houver continuidade, o cabo está rompido.</li>
+              <li><strong className="text-white">Verifique os conectores.</strong> Reconecte os fios nos bornes (com a energia desligada) e certifique-se de que estão presos no cobre, não no isolamento.</li>
+              <li><strong className="text-white">Teste com um cabo temporário.</strong> Se possível, conecte a fechadura ao interfone com um cabo curto e novo. Se a abertura funcionar com o cabo temporário, o problema está na fiação original.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Tabela de diagnóstico rápido',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[720px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Sintoma</th>
+                  <th className="text-left p-3 text-white font-bold">Verificação prioritária</th>
+                  <th className="text-left p-3 text-white font-bold">Causa provável</th>
+                  <th className="text-left p-3 text-white font-bold">Ação segura</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Botão do fone não faz clique nem muda o LED</td><td className="p-3">A botoeira abre? Os outros apartamentos abrem?</td><td className="p-3">Botão do fone, fiação do fone ou relé</td><td className="p-3">Testar a botoeira; relé pelo técnico</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Relé clica, mas a fechadura não abre</td><td className="p-3">Tensão nos terminais da fechadura</td><td className="p-3">Fonte insuficiente, fusível ou queda de tensão</td><td className="p-3">Medir tensão; verificar fusível e cabo</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Fechadura zumbe ou clica, mas não libera</td><td className="p-3">Portão pressionado? Alinhamento</td><td className="p-3">Pressão no trinco, solenoide ou desalinhamento</td><td className="p-3">Aliviar a pressão; técnico verifica o solenoide</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Abre pela botoeira, mas não pelo fone</td><td className="p-3">Botão do fone e fiação até o interfone</td><td className="p-3">Botão do fone com defeito ou fiação rompida</td><td className="p-3">Testar ou substituir o botão; verificar fiação</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Só um apartamento não abre; os outros abrem</td><td className="p-3">Fone e ramal daquele apartamento</td><td className="p-3">Botão ou fiação do apartamento</td><td className="p-3">Verificar o botão e a fiação do ramal</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Funciona de forma intermitente</td><td className="p-3">Conexões e tensão sob carga</td><td className="p-3">Mau contato ou queda de tensão</td><td className="p-3">Reapertar conexões (energia desligada); medir tensão com carga</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Fusível queima ao acionar</td><td className="p-3">Fiação de comando e fechadura</td><td className="p-3">Curto-circuito na fiação ou na fechadura</td><td className="p-3">Isolar o curto; testar a fechadura separadamente (técnico)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que NÃO fazer (e por quê)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Não troque o interfone antes de testar a botoeira e a tensão</h3>
+            <p>O interfone está funcionando para o áudio, e a probabilidade de ele estar "totalmente queimado" é baixa. O problema está no circuito de comando. Teste a botoeira, os outros apartamentos, a tensão na fechadura e o relé antes de considerar a troca do equipamento.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não aumente a tensão da fonte "no chute"</h3>
+            <p>A fechadura tem tensão nominal específica. Aumentar a tensão para "forçar" a abertura pode queimar a bobina ou danificar o interfone. Meça a tensão e corrija a causa da queda (cabo fino, fonte distante, fusível) em vez de aumentar a tensão.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não ignore o fusível, e nunca o substitua por um maior ou por uma ponte</h3>
+            <p>Um fusível queimado é uma das causas mais simples e baratas de "fala, mas não abre". Verifique o fusível da fonte do interfone antes de qualquer diagnóstico mais complexo, com a energia desligada. Trocar por fusível maior ou fazer uma ponte tira a proteção do sistema e pode causar superaquecimento.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não force a fechadura nem improvise ligação direta</h3>
+            <p>Forçar a fechadura ou fazer ligação direta na fiação pode danificar o solenoide, o relé ou a fonte, e fiação malfeita pode superaquecer. A correção deve ser feita com segurança.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não descarte a configuração do tempo de abertura</h3>
+            <p>Em interfones com menu de configuração, o tempo de comando de abertura pode estar ajustado para um valor muito curto. Ajustar o tempo conforme o manual resolve casos em que o relé "pisca", mas a fechadura não tem tempo de responder.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar um técnico especializado',
+        content: (
+          <div className="space-y-4">
+            <p>A verificação do botão, o teste da botoeira e a conferência dos outros apartamentos são passos que você pode fazer com segurança. Mas alguns cenários exigem diagnóstico profissional:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>O relé não aciona e o botão já foi testado — pode ser falha na placa do interfone.</li>
+              <li>A tensão não chega à fechadura mesmo com fonte ligada e fusível OK — pode ser cabo rompido ou saída do interfone com defeito.</li>
+              <li>A fechadura não responde mesmo com tensão correta e sem pressão no portão — pode ser bobina queimada, solenoide desalinhado ou armadura rígida.</li>
+              <li>O sistema tem vários apartamentos e apenas um apresenta o problema — o diagnóstico pontual evita mexer no que está funcionando.</li>
+              <li>O fusível queima repetidamente — indica curto-circuito na fiação ou na fechadura.</li>
+              <li>Você não se sente seguro para medir tensões ou acessar a fonte e a fiação — há risco de choque na parte de rede elétrica da fonte e de danificar o interfone.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de interfonia em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita identifica em qual ponto da cadeia está a falha (botão, relé, fonte, fiação ou fechadura) e apresenta a solução com clareza.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>Interfone que funciona para falar, mas não abre o portão, tem uma falha específica no circuito de comando, e não no sistema de áudio. As causas mais comuns são: botão de abertura com defeito ou mau contato, relé que não comuta (ou tempo de abertura mal configurado), fonte insuficiente ou fusível queimado, fechadura com problema (solenoide queimado, portão pressionado contra o trinco, eletroímã com a energia não cortada) e fiação de comando rompida, em curto ou com mau contato.</p>
+            <p>A triagem começa pelos testes de escopo: os outros apartamentos abrem? A botoeira abre? O botão faz clique? Em seguida, meça a tensão nos terminais da fechadura (se souber fazer com segurança) e verifique o fusível antes de considerar a troca de qualquer equipamento.</p>
+            <p>E a regra que vale para todos os cenários: não troque o interfone antes de testar a botoeira e a tensão, não aumente a tensão "no chute", não ignore o fusível e não force a fechadura. Essas atitudes podem transformar um problema simples em um prejuízo maior.</p>
+            <p>Se a triagem não resolver, ou se a falha envolver o relé, a placa do interfone ou a substituição da fechadura, a avaliação de um técnico especializado é o caminho mais seguro. Para que fonte, fusível, fiação e fechadura sejam revisados antes da falha, veja <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza diagnóstico e manutenção de interfonia em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'O interfone fala, mas não abre o portão. O interfone está queimado?',
+        answer: 'Provavelmente não. O fato de o áudio funcionar indica que a alimentação do interfone e a fiação de comunicação estão em ordem. O problema está no circuito de comando: botão, relé, fiação de abertura, fonte da fechadura ou a própria fechadura. A substituição do interfone inteiro raramente é necessária antes de testar esses pontos.',
+      },
+      {
+        question: 'A botoeira interna abre o portão, mas o botão do fone não. O que pode ser?',
+        answer: 'Se a botoeira (botão na parede) abre o portão e o botão do fone não, a fechadura, a fonte e a fiação até a fechadura estão funcionando. O problema está entre o fone e o relé: botão do fone, fiação entre o fone e o interfone ou o relé (se a botoeira não passa por ele). Verifique o botão do fone e a conexão dele com o interfone.',
+      },
+      {
+        question: 'Ouço o clique do relé, mas a fechadura não abre. O que verificar?',
+        answer: 'Se o relé clica, o comando está sendo enviado. O problema está entre o relé e a fechadura: tensão insuficiente (fonte fraca, fusível queimado ou queda de tensão no cabo), fiação rompida ou em curto, portão pressionado contra o trinco ou fechadura com defeito. Meça a tensão nos terminais da fechadura no momento em que o botão é pressionado.',
+      },
+      {
+        question: 'Qual a tensão correta para a fechadura do interfone?',
+        answer: 'A maioria das fechaduras de interfone opera em 12 V, que pode ser em corrente alternada ou contínua, conforme o modelo: confira no manual da fechadura. A tensão deve ser medida nos terminais da fechadura, com o botão de abertura pressionado. Se a leitura estiver muito abaixo do nominal, há queda de tensão na fiação ou problema na fonte. O tempo de abertura também pode influenciar: um tempo muito curto faz a fechadura receber apenas um pulso insuficiente.',
+      },
+      {
+        question: 'O que são as saídas de acionamento (como FA e FB) no interfone?',
+        answer: 'Muitos interfones têm mais de uma saída de acionamento: uma que fornece alimentação direta para fechaduras de baixa tensão e outra de contato seco (sem tensão), usada para comandar um relé auxiliar ou uma fonte externa. Se a fechadura estiver conectada na saída errada, o comando pode não funcionar corretamente. As siglas variam por marca (FA, FB, AUX): confirme no manual do seu modelo e respeite os limites de corrente de cada saída.',
+      },
+      {
+        question: 'Posso simplesmente trocar a fechadura para resolver?',
+        answer: 'Só se o diagnóstico confirmar que a fechadura é o ponto com falha. Se o problema for relé, fonte, fiação ou botão, trocar a fechadura não resolve, e a nova fechadura vai apresentar o mesmo sintoma. A ordem correta é: testar os outros apartamentos e a botoeira, verificar o relé, medir a tensão e, por último, testar a fechadura.',
+      },
+    ],
+    internalLink: {
+      text: 'Seu interfone fala, mas não abre o portão? Precisa de diagnóstico técnico?',
+      url: '/servicos/interfonia/',
+      linkText: 'Ver Interfonia',
+    },
+    whatsappMessage: 'Vim do blog e meu interfone fala mas não abre o portão',
+    ctaFinal: {
+      title: 'Seu interfone fala, mas não abre o portão? Precisa de diagnóstico técnico?',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de interfonia em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
+  {
+    id: 'portao-eletronico-ficou-aberto-apos-queda-de-energia-como-operar-com-seguranca',
+    slug: 'portao-eletronico-ficou-aberto-apos-queda-de-energia-como-operar-com-seguranca',
+    title: 'Portão Eletrônico Ficou Aberto Após Queda de Energia: Como Operar com Segurança | Intelsecsul',
+    metaTitle: 'Portão Eletrônico Ficou Aberto Após Queda de Energia: Como Operar com Segurança | Intelsecsul',
+    metaDescription: 'Portão eletrônico ficou aberto na falta de energia? Veja como usar o destravamento manual com segurança, o que não fazer para não forçar o motor e quando chamar assistência técnica.',
+    h1: 'Portão eletrônico ficou aberto após queda de energia: como operar com segurança',
+    category: 'Portão Eletrônico',
+    readTime: '9 min de leitura',
+    publishedDate: '2026-10-28',
+    summary: 'Quando a energia cai, o portão eletrônico para onde está: aberto, o imóvel fica exposto; fechado, você pode ficar preso. A solução imediata é o destravamento manual, que exige cuidado com molas, desbalanceamento, declives e reacoplamento. Veja como avaliar o risco, o passo a passo seguro, o que não fazer e como evitar o problema com nobreak e manutenção.',
+    intro: 'Quando a energia elétrica cai, o motor do portão perde a alimentação e para onde está: se estava aberto, permanece aberto; se estava fechado, permanece fechado. O portão eletrônico não foi projetado para continuar operando automaticamente durante um blecaute, a menos que haja nobreak ou bateria de backup. Isso cria uma situação de urgência dupla: se o portão ficou aberto, o imóvel está exposto; se ficou fechado, você pode ficar preso do lado de fora ou de dentro. Em ambos os casos, a solução imediata é o destravamento manual, um sistema mecânico que desacopla o motor da cremalheira ou do braço e permite mover o portão com a mão. O problema é que esse procedimento, se feito de forma incorreta, pode danificar o motor, a cremalheira ou a transmissão, e pode causar acidentes se o portão estiver desbalanceado ou com as molas comprometidas. Este guia explica como identificar o sistema de destravamento do seu motor, como avaliar se é seguro destravar, o passo a passo para liberar o portão, os riscos que você precisa conhecer e as medidas preventivas para que a próxima queda de energia não pegue você desprevenido.',
+    sections: [
+      {
+        h2: 'Primeiro: identifique o tipo de destravamento do seu motor',
+        content: (
+          <div className="space-y-4">
+            <p>Nem todo portão eletrônico tem o mesmo sistema de destravamento. O procedimento varia conforme a marca, o modelo e o tipo de portão (deslizante, basculante ou pivotante). Antes de qualquer ação, localize o kit de destravamento no motor.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Onde encontrar o destravamento</h3>
+            <p>O sistema de liberação manual geralmente fica protegido por uma tampa plástica, uma cobertura metálica ou uma pequena fechadura com chave na lateral ou na parte inferior do corpo do motor. Nos modelos mais modernos, uma etiqueta na carcaça indica o ponto exato de acionamento. Se você não encontrar, consulte o manual do fabricante ou pesquise pelo modelo do automatizador, e não force nada até ter certeza do ponto correto.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Tipos mais comuns</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Chave e alavanca:</strong> uma chave abre uma tampa ou fechadura, e uma alavanca é girada ou puxada até desacoplar a engrenagem.</li>
+              <li><strong className="text-white">Chave especial no pino de destravamento:</strong> a chave é encaixada em um pino e girada no sentido indicado pelo manual.</li>
+              <li><strong className="text-white">Alavanca, manivela ou puxador:</strong> o dispositivo é puxado ou girado até o fim do curso, até sentir que a engrenagem interna desacoplou.</li>
+            </ul>
+            <p>O sentido de giro, o curso da alavanca e o jeito de reacoplar variam conforme o modelo, e fazer diferente do manual pode danificar o motor. Em caso de dúvida, consulte o manual ou um técnico.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Antes de destravar: avalie se é seguro',
+        content: (
+          <div className="space-y-4">
+            <p>Ao desacoplar o motor, o portão passa a ser sustentado só pelo seu próprio equilíbrio. Antes de puxar a alavanca, faça esta avaliação:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Inspecione visualmente, sem tocar em partes móveis.</strong> Olhe molas, contrapesos, cabos e roldanas. Molas rompidas, frouxas ou enferrujadas, folha caída ou um portão que já apresentou esforço, ruído ou queda são sinais de risco: nesses casos, não destrave e chame um técnico.</li>
+              <li><strong className="text-white">Portão basculante:</strong> a folha pode cair quando o motor é desacoplado, principalmente se estiver levantada. Só destrave com uma segunda pessoa e com as duas mãos na folha.</li>
+              <li><strong className="text-white">Portão deslizante em terreno inclinado:</strong> a folha pode correr sozinha quando destravada. Segure-a e peça ajuda.</li>
+              <li><strong className="text-white">Afaste crianças, animais e veículos</strong> da trajetória do portão, e nunca coloque as mãos entre a folha, o trilho, os batentes ou a cremalheira.</li>
+              <li><strong className="text-white">Sinta o peso ao destravar.</strong> Se a folha tender a descer ou a subir sozinha quando você alivia a força, ela está desbalanceada: mantenha-a sustentada, não a solte e peça ajuda para apoiá-la. Depois, chame um técnico para ajustar molas ou contrapesos.</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        h2: 'Passo a passo seguro para abrir o portão manualmente',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">1. Desligue a energia antes de mexer no mecanismo</h3>
+            <p>Desligue o disjuntor do portão ou, se o motor for ligado em tomada, retire-o da tomada. Isso evita que a energia volte de repente enquanto você está com a mão no mecanismo, o que poderia causar movimento inesperado do portão.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">2. Localize e acesse o kit de destravamento</h3>
+            <p>Remova a tampa protetora (plástico, metal ou fechadura) e localize o ponto de acionamento. Tenha a chave original em mãos e não improvise com outras ferramentas, que podem danificar o mecanismo.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">3. Acione o destravamento até o fim do curso</h3>
+            <p>Gire a chave ou mova a alavanca até o fim do curso, conforme o manual, sem parar na metade. O objetivo é desacoplar completamente a engrenagem interna. Se houver resistência anormal ou barulho estranho, pare imediatamente: pode haver sujeira, ferrugem ou obstrução no mecanismo. Veja também <Link to="/blog/portao-eletronico-faz-barulho-ajuste-ou-defeito" className="text-white underline hover:text-slate-300">portão eletrônico faz barulho: quando é ajuste e quando é defeito</Link>.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">4. Movimente o portão com cuidado</h3>
+            <p>Após o destravamento, mova a folha do portão suavemente, respeitando o tipo de portão:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li><strong className="text-white">Deslizante:</strong> deslize a folha para o lado, sem forçar, e segure-a se o terreno for inclinado.</li>
+              <li><strong className="text-white">Basculante:</strong> levante ou abaixe a folha com as duas mãos, pelo centro da estrutura, com a ajuda de uma segunda pessoa.</li>
+              <li><strong className="text-white">Pivotante:</strong> empurre cada lado para fora ou para dentro com firmeza, mas sem aplicar força excessiva nos braços articulados.</li>
+            </ul>
+            <p>Nunca force se sentir resistência fora do normal. Se o portão não se mover com facilidade, o problema pode ser mecânico (roldanas travadas, trilho desalinhado) e não apenas a falta de energia. Veja <Link to="/blog/portao-eletronico-trava-no-meio-do-caminho-causas" className="text-white underline hover:text-slate-300">portão eletrônico trava no meio do caminho: causas além do barulho</Link>.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">5. Reacople o motor e restabeleça o funcionamento elétrico</h3>
+            <p>Quando a energia retornar, não ligue o motor com o portão ainda na posição manual. Mova o portão manualmente até sentir o engate mecânico com o mecanismo de transmissão e só então gire a chave no sentido inverso (ou feche a alavanca) para reacoplar o motor, conforme o manual. Em alguns modelos, o sistema exige que o portão esteja na posição correta para que o engate aconteça. Só depois de reacoplar, ligue o disjuntor e teste o portão com o caminho livre.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Riscos do destravamento manual: o que você precisa saber antes de puxar a alavanca',
+        content: (
+          <div className="space-y-4">
+            <p>O destravamento manual é seguro se o portão estiver em bom estado mecânico e o procedimento for seguido corretamente. Mas há riscos reais que os fabricantes costumam destacar:</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Risco 1: Movimento descontrolado do portão</h3>
+            <p>O desbloqueio manual pode causar movimentos incontroláveis da folha na presença de falhas mecânicas, desequilíbrio ou declive. Se o portão estiver com molas fracas ou rompidas, ele pode cair ou correr rapidamente quando o motor é desacoplado.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Risco 2: Queda do portão por falha nas molas</h3>
+            <p>Em portões basculantes, as molas (ou contrapesos) são responsáveis por equilibrar o peso da folha. Se elas estiverem frouxas ou partidas, o portão pode despencar no momento em que o motor for desacoplado, o que pode causar acidentes graves. Na dúvida, não destrave.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Risco 3: Acionamento inesperado quando a energia volta</h3>
+            <p>Se você destravou o portão e a energia retornar antes de você reacoplar o motor, pode haver acionamento inesperado ou esforço sobre a transmissão. Por isso, desligue o disjuntor antes de destravar e só religue depois de reacoplar.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Risco 4: Danos ao motor por reacoplamento incorreto</h3>
+            <p>Reacoplar o motor com o portão fora da posição de engate pode forçar a engrenagem e danificar o sistema. Siga o manual do modelo: mova o portão manualmente até sentir o engate mecânico e só então feche a alavanca ou gire a chave.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Resumo rápido: situação e primeira ação',
+        content: (
+          <div className="overflow-x-auto -mx-4 sm:mx-0">
+            <table className="w-full text-sm border-collapse min-w-[640px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left p-3 text-white font-bold">Situação</th>
+                  <th className="text-left p-3 text-white font-bold">Primeira ação</th>
+                  <th className="text-left p-3 text-white font-bold">Quando chamar o técnico</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-300">
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Portão aberto, em bom estado mecânico, destravamento acessível</td><td className="p-3">Desligar o disjuntor, destravar conforme o manual e fechar com cuidado</td><td className="p-3">Se o portão não se mover com facilidade</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Portão basculante com molas ou contrapesos suspeitos</td><td className="p-3">Não destravar; afastar pessoas da trajetória</td><td className="p-3">Imediatamente</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Portão deslizante em terreno inclinado</td><td className="p-3">Destravar com duas pessoas, segurando a folha</td><td className="p-3">Se a folha correr sozinha ou não for possível segurá-la</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Destravamento não gira ou a alavanca não solta</td><td className="p-3">Não forçar nem improvisar ferramentas</td><td className="p-3">Sempre</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Energia voltou, mas o motor não responde</td><td className="p-3">Conferir o disjuntor e se o motor foi reacoplado</td><td className="p-3">Se o problema persistir</td></tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+      {
+        h2: 'O que NÃO fazer (e por quê)',
+        content: (
+          <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white">❌ Não force o portão com o motor engatado</h3>
+            <p>Se o portão não se move manualmente após o destravamento, não force. O motor pode não ter desacoplado completamente, ou pode haver obstrução mecânica. Forçar danifica a cremalheira, a correia e o motor.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não improvise ferramentas</h3>
+            <p>Usar chaves de fenda, alicates ou outras ferramentas no lugar da chave original pode danificar o tambor da fechadura ou a alavanca e anular a garantia.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não destrave sem avaliar molas e balanceamento</h3>
+            <p>Se houver sinais de molas rompidas, folha caída ou tendência de o portão cair ou subir sozinho, não destrave. O risco de queda é real. Chame um técnico para ajustar as molas ou os contrapesos antes de usar o modo manual.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não mexa no mecanismo sem desligar o disjuntor</h3>
+            <p>A energia pode voltar a qualquer momento, e o motor pode se movimentar enquanto você está com a mão no portão. Desligar o disjuntor antes de mexer no mecanismo não é opcional: é uma medida de segurança essencial.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">❌ Não deixe o portão aberto sem necessidade</h3>
+            <p>Se o portão ficou aberto após a queda de energia e você não consegue fechá-lo manualmente com segurança, não force. Se for inevitável deixá-lo aberto, reforce a segurança com outros meios (iluminação, alarme, vigilância, aviso à portaria ou aos vizinhos) até que o problema seja resolvido.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Como evitar que isso aconteça de novo: nobreak e manutenção',
+        content: (
+          <div className="space-y-4">
+            <p>A forma mais eficaz de evitar o transtorno do portão aberto (ou travado) na falta de energia é instalar um nobreak dedicado para o portão eletrônico. Esses equipamentos permitem acionar o portão durante a falta de energia por meio de uma bateria externa, com autonomia que depende da capacidade da bateria e do número de ciclos que você precisa. Em geral, nobreaks de computador não são adequados, porque podem não suportar a corrente de partida do motor.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white">O que verificar antes de instalar um nobreak</h3>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>A potência do motor, para que o nobreak seja compatível.</li>
+              <li>A tensão da rede (127 V ou 220 V) e o tipo de automatizador.</li>
+              <li>A necessidade de bateria externa e a autonomia desejada, em número de ciclos.</li>
+              <li>Se o equipamento reinicia automaticamente quando a energia volta, conforme o modelo.</li>
+            </ul>
+            <p>Além do nobreak, vale testar o destravamento uma vez, com o portão em bom estado e com ajuda de um técnico, e guardar a chave em um local conhecido por todos os moradores. A manutenção preventiva do portão (lubrificação dos pontos indicados pelo fabricante, alinhamento do trilho, verificação de molas e roldanas) reduz o risco de o portão ficar desbalanceado ou travar, o que torna o destravamento manual mais seguro quando necessário. Para manter essas revisões em dia, veja <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Quando chamar uma assistência técnica',
+        content: (
+          <div className="space-y-4">
+            <p>O destravamento manual é uma operação de emergência que você pode fazer se o portão estiver em bom estado mecânico e você seguir o procedimento correto. Mas alguns cenários exigem um profissional:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>O portão não se move mesmo após o destravamento — pode ser roldana travada, trilho desalinhado ou cremalheira com problema.</li>
+              <li>O portão está desbalanceado ou há sinais de molas comprometidas — as molas ou os contrapesos precisam de ajuste antes de qualquer operação manual segura.</li>
+              <li>O destravamento não engata ou não desengata — a fechadura ou a alavanca podem estar danificadas.</li>
+              <li>O motor não volta a funcionar após a energia retornar — confira o disjuntor; se persistir, pode ser problema na placa (oscilações na volta da energia podem danificá-la), no capacitor ou no fim de curso.</li>
+              <li>O motor volta, mas o controle não responde — veja <Link to="/blog/controle-remoto-portao-nao-funciona-bateria-codificacao-receptor" className="text-white underline hover:text-slate-300">controle remoto do portão não funciona: bateria, codificação ou receptor</Link>.</li>
+              <li>Você não se sente seguro para realizar o procedimento — o risco de queda do portão ou de dano ao motor é real.</li>
+            </ul>
+            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita verifica o estado do destravamento, o balanceamento do portão e a necessidade de nobreak ou bateria de backup.</p>
+          </div>
+        ),
+      },
+      {
+        h2: 'Conclusão',
+        content: (
+          <div className="space-y-4">
+            <p>Portão eletrônico que fica aberto (ou travado) após uma queda de energia é uma situação que exige ação rápida, mas segura. O caminho é o destravamento manual, um sistema mecânico que desacopla o motor e permite mover o portão com a mão. O procedimento varia conforme o modelo, mas a lógica é comum: avaliar o risco, desligar o disjuntor, localizar o kit de destravamento, acionar a chave ou alavanca até o fim do curso, mover o portão com cuidado e reacoplar o motor antes de religar a energia.</p>
+            <p>O que você não deve fazer é igualmente importante: não force o portão com o motor engatado, não improvise ferramentas, não destrave sem avaliar molas e balanceamento e não mexa no mecanismo sem desligar o disjuntor. Essas ações podem danificar o motor ou causar acidentes graves.</p>
+            <p>Para evitar que o problema se repita, o nobreak dedicado e a manutenção preventiva são as melhores medidas. E se o portão não se mover, estiver desbalanceado ou o destravamento não funcionar, a avaliação de um técnico especializado é o caminho mais seguro. A Intelsecsul realiza diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+          </div>
+        ),
+      },
+    ],
+    relatedQuestions: [
+      {
+        question: 'O portão eletrônico abre manualmente na falta de energia?',
+        answer: 'Sim, desde que você acione o destravamento manual (chave ou alavanca) no motor. Sem o destravamento, o portão fica engatado e não se move com a mão, e forçar danifica o mecanismo. O procedimento varia conforme o modelo: consulte o manual ou a etiqueta na carcaça do motor, e desligue o disjuntor antes de mexer.',
+      },
+      {
+        question: 'Como destravar o meu portão eletrônico na falta de energia?',
+        answer: 'O procedimento varia conforme a marca, o modelo e o tipo de portão. De forma geral: desligue o disjuntor, localize o kit de destravamento (tampa, fechadura ou etiqueta na carcaça), use a chave original, acione a chave ou alavanca até o fim do curso, conforme o manual, e mova a folha com cuidado. Se não encontrar o ponto de destravamento ou não tiver o manual, não force: chame um técnico.',
+      },
+      {
+        question: 'Posso abrir o portão manualmente se ele estiver desbalanceado?',
+        answer: 'Não é recomendado. Se houver sinais de desbalanceamento ou de molas comprometidas, o destravamento pode causar movimento descontrolado e queda, especialmente em portões basculantes. Corrija o balanceamento com um técnico antes de usar o modo manual. Se você já destravou e a folha tende a cair ou subir sozinha, mantenha-a sustentada, não a solte e peça ajuda.',
+      },
+      {
+        question: 'O que fazer se o portão ficar aberto e não conseguir fechar?',
+        answer: 'Se você não conseguir fechar o portão manualmente com segurança, não force. Reforce a segurança do imóvel com outros meios (iluminação, alarme, vigilância, aviso à portaria ou aos vizinhos) e chame um técnico. Se o problema for apenas a falta de energia, um nobreak dedicado permite fechar o portão mesmo sem rede elétrica.',
+      },
+      {
+        question: 'Nobreak resolve o problema do portão na falta de energia?',
+        answer: 'Sim, se for dimensionado corretamente. Um nobreak próprio para portão, com bateria externa, permite abrir e fechar o portão em caso de queda de energia, com autonomia que depende da bateria e do número de ciclos. Verifique a potência do motor, a tensão da rede e o tipo de automatizador antes de instalar, e evite nobreaks de computador, que em geral não suportam a corrente de partida do motor.',
+      },
+      {
+        question: 'Como reacoplar o motor depois de usar o destravamento manual?',
+        answer: 'Quando a energia voltar, mova o portão manualmente até a posição de engate com o mecanismo de transmissão e só então gire a chave no sentido inverso (ou feche a alavanca) para reacoplar, conforme o manual. Só depois de reacoplar, ligue o disjuntor. Não ligue o motor com o portão fora da posição de engate, pois isso pode danificar a cremalheira ou a transmissão.',
+      },
+    ],
+    internalLink: {
+      text: 'Seu portão ficou aberto ou travado após uma queda de energia? Precisa de ajuda para liberar com segurança?',
+      url: '/servicos/portao-eletronico/',
+      linkText: 'Ver Portão Eletrônico',
+    },
+    whatsappMessage: 'Vim do blog e meu portão ficou aberto após queda de energia',
+    ctaFinal: {
+      title: 'Seu portão ficou aberto ou travado após uma queda de energia? Precisa de ajuda para liberar com segurança?',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.',
+      buttonText: 'Falar no WhatsApp agora',
+    },
+  },
 ];
+
+
 
 
 
