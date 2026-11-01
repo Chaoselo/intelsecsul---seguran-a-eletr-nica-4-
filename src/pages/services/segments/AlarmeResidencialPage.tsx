@@ -4,7 +4,7 @@ import { SegmentPageTemplate } from '../../../components/SegmentPageTemplate';
 export const AlarmeResidencialPage: React.FC = () => {
   return (
     <SegmentPageTemplate
-      title="Instalação e Manutenção de Alarme Residencial em Curitiba | IntelSec Sul"
+      title="Instalação e Manutenção de Alarme Residencial em Curitiba | Intelsecsul"
       metaDescription="Instalação e manutenção de alarme para casas e apartamentos em Curitiba e região. Sensores de presença e alertas no celular. Peça um orçamento."
       h1="Instalação de alarme residencial em Curitiba e região"
       introText="Instalamos e realizamos manutenção em sistemas de alarme residenciais com sensores de presença e abertura para casas e apartamentos, com alertas instantâneos no celular. Proteja sua família e seu patrimônio com equipamentos de alta tecnologia."

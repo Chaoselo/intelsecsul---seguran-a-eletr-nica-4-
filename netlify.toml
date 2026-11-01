@@ -9,10 +9,49 @@
   status = 301
   force = true
 
-# Redirecionamento permanente 301 do antigo serviço de locação
+# Redirecionamentos permanentes 301 para aluguel de câmeras de segurança
+[[redirects]]
+  from = "/servicos/locacao-de-cameras-de-seguranca"
+  to = "/servicos/aluguel-de-cameras-de-seguranca"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/servicos/locacao-de-equipamentos-de-seguranca"
-  to = "/servicos/locacao-de-cameras-de-seguranca"
+  to = "/servicos/aluguel-de-cameras-de-seguranca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/servicos/locacao-de-equipamentos"
+  to = "/servicos/aluguel-de-cameras-de-seguranca"
+  status = 301
+  force = true
+
+# Redirecionamento permanente 301 para portão automático
+[[redirects]]
+  from = "/servicos/portao-eletronico"
+  to = "/servicos/portao-automatico"
+  status = 301
+  force = true
+
+# Redirecionamento permanente 301 para fechaduras eletrônicas
+[[redirects]]
+  from = "/servicos/fechaduras-eletromagneticas"
+  to = "/servicos/fechaduras-eletronicas"
+  status = 301
+  force = true
+
+# Redirecionamento permanente 301 para compra x aluguel de câmeras
+[[redirects]]
+  from = "/comparativos/compra-x-locacao-de-equipamentos"
+  to = "/comparativos/compra-x-aluguel-de-cameras"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/depoimentos"
+  to = "/"
   status = 301
   force = true
 

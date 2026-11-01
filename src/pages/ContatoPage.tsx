@@ -257,9 +257,6 @@ ${formData.mensagem ? `- Detalhes: ${formData.mensagem}` : ''}`;
                             {srv.title}
                           </option>
                         ))}
-                        <option value="Locação de Equipamentos" className="bg-[#0A0D14]">
-                          Locação de Equipamentos
-                        </option>
                         <option value="Outro / Manutenção" className="bg-[#0A0D14]">
                           Outro / Manutenção
                         </option>

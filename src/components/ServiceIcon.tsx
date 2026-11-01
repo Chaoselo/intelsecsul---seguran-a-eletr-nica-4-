@@ -17,7 +17,7 @@ export const ServiceIcon: React.FC<Props> = ({ name, className = "w-6 h-6", ...p
       );
 
     case 'KeyRound':
-      // Locação de Equipamentos (Tag/Chave/Contrato)
+      // Aluguel de Câmeras de Segurança (Tag/Chave/Contrato)
       return (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} {...props}>
           <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4" />
@@ -56,7 +56,7 @@ export const ServiceIcon: React.FC<Props> = ({ name, className = "w-6 h-6", ...p
       );
 
     case 'DoorClosed':
-      // Portão Eletrônico (Automação / Engrenagem de Portão)
+      // Portão Automático (Automação / Engrenagem de Portão)
       return (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} {...props}>
           <rect x="3" y="3" width="18" height="18" rx="2" />
@@ -102,7 +102,7 @@ export const ServiceIcon: React.FC<Props> = ({ name, className = "w-6 h-6", ...p
       );
 
     case 'Lock':
-      // Fechadura Eletromagnética
+      // Fechaduras Eletrônicas
       return (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} {...props}>
           <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />

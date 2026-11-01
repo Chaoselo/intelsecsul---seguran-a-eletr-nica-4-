@@ -25,9 +25,9 @@ export const CampoLargoPage: React.FC = () => {
           description: 'Proteção perimetral e interna com sensores e alertas instantâneos no celular.',
         },
         {
-          name: 'Locação de Equipamentos de Segurança',
-          slug: 'locacao-de-equipamentos-de-seguranca',
-          description: 'Aluguel de câmeras e alarme sem investimento inicial e com manutenção preventiva inclusa.',
+          name: 'Aluguel de Câmeras de Segurança',
+          slug: 'aluguel-de-cameras-de-seguranca',
+          description: 'Aluguel de câmeras de segurança por mensalidade fixa, sem investimento inicial.',
         },
       ]}
       faq={[

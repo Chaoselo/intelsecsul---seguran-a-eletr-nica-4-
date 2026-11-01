@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   BookOpen, 
@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { COMPANY_INFO } from '../constants';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
+import { useDocumentMeta, buildBreadcrumbSchema } from '../hooks/useDocumentMeta';
 
 interface TermItem {
   term: string;
@@ -17,29 +18,26 @@ interface TermItem {
   category?: string;
 }
 
+const GLOSSARIO_BREADCRUMB = buildBreadcrumbSchema([
+  { name: 'Início', url: '/' },
+  { name: 'Glossário', url: '/glossario/' },
+]);
+
 export const GlossarioPage: React.FC = () => {
-  useEffect(() => {
-    document.title = 'Glossário de Segurança Eletrônica | Intelsecsul';
-
-    let metaTag = document.querySelector('meta[name="description"]');
-    if (!metaTag) {
-      metaTag = document.createElement('meta');
-      metaTag.setAttribute('name', 'description');
-      document.head.appendChild(metaTag);
-    }
-    metaTag.setAttribute(
-      'content',
-      'Entenda os principais termos técnicos de segurança eletrônica — CFTV, DVR, NVR, biometria, comodato e outros — explicados de forma simples pela Intelsecsul.'
-    );
-
-    return () => {
-      document.title = 'Intelsecsul - Segurança Eletrônica e Tecnologia';
-    };
-  }, []);
+  useDocumentMeta({
+    title: 'Glossário de Segurança Eletrônica | Intelsecsul',
+    description: 'Entenda os termos técnicos de segurança eletrônica, como CFTV, DVR, NVR, biometria e comodato, explicados de forma simples pela Intelsecsul.',
+    canonicalUrl: '/glossario/',
+    jsonLdSchema: GLOSSARIO_BREADCRUMB,
+  });
 
   const [searchQuery, setSearchQuery] = useState('');
 
   const terms: TermItem[] = [
+    {
+      term: 'Aluguel de câmeras',
+      definition: 'Modelo de contratação mensal sem investimento inicial onde a empresa fornece câmeras IP, gravador, instalação e manutenção preventiva e corretiva inclusas.',
+    },
     {
       term: 'Biometria',
       definition: 'Identificação por características físicas, como impressão digital, usada em sistemas de controle de acesso.',
@@ -69,8 +67,8 @@ export const GlossarioPage: React.FC = () => {
       definition: 'Gravador digital de vídeo, usado com câmeras analógicas ou HD tradicionais.',
     },
     {
-      term: 'Fechadura eletromagnética',
-      definition: 'Trava eletrônica de portas, liberada por sistemas de controle de acesso.',
+      term: 'Fechadura eletrônica',
+      definition: 'Dispositivo de travamento controlado eletronicamente para portas e portões, podendo utilizar eletroímã (fechadura magnética por atração), solenoide de embutir no batente ou acionamento digital por biometria, cartão de aproximação (RFID) e senha.',
     },
     {
       term: 'Monitoramento 24 horas',
@@ -79,6 +77,10 @@ export const GlossarioPage: React.FC = () => {
     {
       term: 'NVR',
       definition: 'Gravador de vídeo em rede, usado com câmeras IP conectadas à internet.',
+    },
+    {
+      term: 'Portão automático',
+      definition: 'Portão com sistema motorizado de abertura e fechamento acionado por controle remoto, aplicativo de celular ou botoeira, disponível em modelos deslizante, basculante ou pivotante.',
     },
     {
       term: 'Reconhecimento facial',

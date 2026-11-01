@@ -25,9 +25,9 @@ export const ColomboPage: React.FC = () => {
           description: 'Comunicação e controle de portaria para residências, condomínios e comércios.',
         },
         {
-          name: 'Locação de Câmeras e Equipamentos de Segurança',
-          slug: 'locacao-de-cameras-de-seguranca',
-          description: 'Equipamentos completos por mensalidade previsível, sem taxa de instalação.',
+          name: 'Aluguel de Câmeras de Segurança',
+          slug: 'aluguel-de-cameras-de-seguranca',
+          description: 'Aluguel de câmeras de segurança IP por mensalidade previsível, sem taxa de instalação e com manutenção inclusa.',
         },
       ]}
       faq={[

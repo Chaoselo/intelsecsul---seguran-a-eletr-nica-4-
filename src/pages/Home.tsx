@@ -6,15 +6,8 @@ import {
   CheckCircle2,
   ChevronDown,
   ChevronRight,
-  Star,
   MapPin,
   ArrowRight,
-  ShieldCheck,
-  Award,
-  Users,
-  Wrench,
-  Clock,
-  ExternalLink,
 } from 'lucide-react';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
 import {
@@ -24,8 +17,6 @@ import {
   HOW_WE_WORK_STEPS,
   CITIES_LIST,
   FAQ_LIST,
-  TESTIMONIALS_LIST,
-  GOOGLE_REVIEWS_URL,
 } from '../constants';
 import { ServiceIcon } from '../components/ServiceIcon';
 import { useDocumentMeta, LOCAL_BUSINESS_SCHEMA } from '../hooks/useDocumentMeta';
@@ -76,7 +67,7 @@ export const Home: React.FC = () => {
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal mb-8 max-w-2xl">
-              Câmeras, alarme monitorado, cerca elétrica, controle de acesso e portão eletrônico — projeto, instalação e manutenção com equipe própria. Atendimento em Curitiba, Pinhais, São José dos Pinhais, Araucária, Almirante Tamandaré e toda a região.
+              Câmeras, alarme monitorado, cerca elétrica, controle de acesso e portão automático — projeto, instalação e manutenção com equipe própria. Atendimento em Curitiba, Pinhais, São José dos Pinhais, Araucária, Almirante Tamandaré e toda a região.
             </p>
 
             {/* Buttons */}
@@ -239,11 +230,11 @@ export const Home: React.FC = () => {
             </div>
 
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-3">
-              Atendemos Toda a Região Metropolitana
+              Atendemos Curitiba e Toda a Região Metropolitana
             </h2>
 
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Com sede em Curitiba, nossa equipe atende rapidamente residências, empresas e condomínios nas seguintes cidades da região:
+              Com sede em Curitiba, nossa equipe atende residências, comércios, condomínios e indústrias nas cidades abaixo, com visita técnica sem custo:
             </p>
           </div>
 
@@ -346,37 +337,6 @@ export const Home: React.FC = () => {
       </section>
 
 
-      {/* ================= CIDADES ATENDIDAS (Badges Clicáveis) ================= */}
-      <section className="bg-[#05070A] py-14 px-4 sm:px-6 lg:px-8 border-t border-slate-800">
-        <div className="max-w-7xl mx-auto text-center">
-          <span className="text-[#00C5FF] text-xs font-bold uppercase tracking-wider block mb-2">
-            Cobertura Regional
-          </span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-3">
-            Atendimento em Curitiba e Região Metropolitana
-          </h2>
-          <p className="text-slate-300 text-xs sm:text-sm max-w-2xl mx-auto mb-8">
-            Atendemos residências, comércios, condomínios e indústrias nas principais cidades da Região Metropolitana com agilidade e visita técnica sem custo.
-          </p>
-
-          <div className="flex flex-wrap items-center justify-center gap-2.5 max-w-4xl mx-auto mb-6">
-            {CITIES_LIST.map((city) => (
-              <Link
-                key={city.slug}
-                to={`/cidades/${city.slug}/`}
-                className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#121824] border border-slate-800 hover:border-[#0091FF] hover:bg-[#0091FF]/10 text-slate-200 hover:text-white text-xs font-semibold transition-all duration-200 transform hover:-translate-y-0.5 shadow-sm"
-              >
-                <MapPin className="w-3.5 h-3.5 text-[#00C5FF]" />
-                <span>{city.name}</span>
-              </Link>
-            ))}
-          </div>
-
-          <p className="text-xs text-slate-400">
-            Clique na sua cidade para ver serviços específicos e solicitar orçamento para a sua região.
-          </p>
-        </div>
-      </section>
 
       {/* ================= DEPOIMENTOS (GOOGLE MEU NEGÓCIO) ================= */}
       <GoogleReviewsSection />

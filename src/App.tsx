@@ -9,13 +9,14 @@ import { PlaceholderPage } from './components/PlaceholderPage';
 import { CamerasSegurancaPage } from './pages/services/CamerasSegurancaPage';
 import { AlarmeMonitoradoPage } from './pages/services/AlarmeMonitoradoPage';
 import { CercaEletricaPage } from './pages/services/CercaEletricaPage';
-import { LocacaoEquipamentosPage } from './pages/services/LocacaoEquipamentosPage';
+import { AluguelCamerasPage } from './pages/services/AluguelCamerasPage';
 import { ControleAcessoPage } from './pages/services/ControleAcessoPage';
-import { PortaoEletronicoPage } from './pages/services/PortaoEletronicoPage';
+import { PortaoAutomaticoPage } from './pages/services/PortaoAutomaticoPage';
+import { ControleRemotoPortaoPage } from './pages/services/ControleRemotoPortaoPage';
 import { PortasAutomaticasPage } from './pages/services/PortasAutomaticasPage';
 import { InterfoniaPage } from './pages/services/InterfoniaPage';
 import { CancelasCatracasPage } from './pages/services/CancelasCatracasPage';
-import { FechadurasEletromagneticasPage } from './pages/services/FechadurasEletromagneticasPage';
+import { FechadurasEletronicasPage } from './pages/services/FechadurasEletronicasPage';
 import { ManutencaoPage } from './pages/services/ManutencaoPage';
 import { CamerasResidencialPage } from './pages/services/segments/CamerasResidencialPage';
 import { CamerasComercialPage } from './pages/services/segments/CamerasComercialPage';
@@ -29,12 +30,11 @@ import { CercaCondominioPage } from './pages/services/segments/CercaCondominioPa
 import { InterfoniaCondominioPage } from './pages/services/segments/InterfoniaCondominioPage';
 import { SobrePage } from './pages/SobrePage';
 import { PorQueEscolherPage } from './pages/PorQueEscolherPage';
-import { DepoimentosPage } from './pages/DepoimentosPage';
 import { FaqPage } from './pages/FaqPage';
 import { GlossarioPage } from './pages/GlossarioPage';
 import { ContatoPage } from './pages/ContatoPage';
 import { ComparativosHubPage } from './pages/ComparativosHubPage';
-import { ComparativoCompraLocacaoPage } from './pages/ComparativoCompraLocacaoPage';
+import { ComparativoCompraAluguelPage } from './pages/ComparativoCompraAluguelPage';
 import { ComparativoVerisurePage } from './pages/ComparativoVerisurePage';
 import { BlogHubPage } from './pages/BlogHubPage';
 import { BlogPostPage } from './pages/blog/BlogPostPage';
@@ -122,7 +122,9 @@ export default function App() {
             <Route path="/servicos/controle-de-acesso/biometria" element={<ControleBiometriaPage />} />
             <Route path="/servicos/controle-de-acesso/reconhecimento-facial" element={<ControleFacialPage />} />
 
-            <Route path="/servicos/portao-eletronico" element={<PortaoEletronicoPage />} />
+            <Route path="/servicos/portao-automatico" element={<PortaoAutomaticoPage />} />
+            <Route path="/servicos/portao-eletronico" element={<Navigate to="/servicos/portao-automatico/" replace />} />
+            <Route path="/servicos/controle-remoto-para-portao" element={<ControleRemotoPortaoPage />} />
             <Route path="/servicos/portas-automaticas" element={<PortasAutomaticasPage />} />
 
             <Route path="/servicos/interfonia" element={<InterfoniaPage />} />
@@ -130,25 +132,28 @@ export default function App() {
             <Route path="/servicos/interfonia/condominio" element={<InterfoniaCondominioPage />} />
 
             <Route path="/servicos/cancelas-e-catracas" element={<CancelasCatracasPage />} />
-            <Route path="/servicos/fechaduras-eletromagneticas" element={<FechadurasEletromagneticasPage />} />
+            <Route path="/servicos/fechaduras-eletronicas" element={<FechadurasEletronicasPage />} />
+            <Route path="/servicos/fechaduras-eletromagneticas" element={<Navigate to="/servicos/fechaduras-eletronicas/" replace />} />
             <Route path="/servicos/manutencao" element={<ManutencaoPage />} />
             <Route path="/servicos/manutencao-de-sistemas-de-seguranca" element={<ManutencaoPage />} />
-            <Route path="/servicos/locacao-de-cameras-de-seguranca" element={<LocacaoEquipamentosPage />} />
-            <Route path="/servicos/locacao-de-equipamentos-de-seguranca" element={<Navigate to="/servicos/locacao-de-cameras-de-seguranca/" replace />} />
-            <Route path="/servicos/locacao-de-equipamentos" element={<Navigate to="/servicos/locacao-de-cameras-de-seguranca/" replace />} />
+            <Route path="/servicos/aluguel-de-cameras-de-seguranca" element={<AluguelCamerasPage />} />
+            <Route path="/servicos/locacao-de-cameras-de-seguranca" element={<Navigate to="/servicos/aluguel-de-cameras-de-seguranca/" replace />} />
+            <Route path="/servicos/locacao-de-equipamentos-de-seguranca" element={<Navigate to="/servicos/aluguel-de-cameras-de-seguranca/" replace />} />
+            <Route path="/servicos/locacao-de-equipamentos" element={<Navigate to="/servicos/aluguel-de-cameras-de-seguranca/" replace />} />
             <Route path="/servicos/:slug" element={<PlaceholderPage type="service" />} />
 
             {/* Institutional & Content Routes */}
             <Route path="/sobre" element={<SobrePage />} />
             <Route path="/por-que-escolher-a-intelsecsul" element={<PorQueEscolherPage />} />
-            <Route path="/depoimentos" element={<DepoimentosPage />} />
+            <Route path="/depoimentos" element={<Navigate to="/" replace />} />
             <Route path="/perguntas-frequentes" element={<FaqPage />} />
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/glossario" element={<GlossarioPage />} />
             
             {/* Comparativos Routes */}
             <Route path="/comparativos" element={<ComparativosHubPage />} />
-            <Route path="/comparativos/compra-x-locacao-de-equipamentos" element={<ComparativoCompraLocacaoPage />} />
+            <Route path="/comparativos/compra-x-aluguel-de-cameras" element={<ComparativoCompraAluguelPage />} />
+            <Route path="/comparativos/compra-x-locacao-de-equipamentos" element={<Navigate to="/comparativos/compra-x-aluguel-de-cameras/" replace />} />
             <Route path="/comparativos/intelsecsul-x-verisure" element={<ComparativoVerisurePage />} />
 
             {/* Blog Routes */}

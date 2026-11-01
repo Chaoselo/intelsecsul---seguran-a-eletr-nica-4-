@@ -25,9 +25,9 @@ export const AlmiranteTamandarePage: React.FC = () => {
           description: 'Proteção perimetral certificada em muros residenciais, comerciais e de condomínios.',
         },
         {
-          name: 'Locação de Câmeras e Equipamentos de Segurança',
-          slug: 'locacao-de-cameras-de-seguranca',
-          description: 'Câmeras e alarme por mensalidade fixa sem investimento inicial e com manutenção inclusa.',
+          name: 'Aluguel de Câmeras de Segurança',
+          slug: 'aluguel-de-cameras-de-seguranca',
+          description: 'Aluguel de câmeras de segurança IP por mensalidade fixa, sem investimento inicial e com manutenção inclusa.',
         },
       ]}
       faq={[

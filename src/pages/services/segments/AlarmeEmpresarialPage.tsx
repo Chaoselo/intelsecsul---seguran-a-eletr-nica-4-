@@ -4,7 +4,7 @@ import { SegmentPageTemplate } from '../../../components/SegmentPageTemplate';
 export const AlarmeEmpresarialPage: React.FC = () => {
   return (
     <SegmentPageTemplate
-      title="Instalação e Manutenção de Alarme Empresarial em Curitiba | IntelSec Sul"
+      title="Instalação e Manutenção de Alarme Empresarial em Curitiba | Intelsecsul"
       metaDescription="Sistemas de alarme para empresas, lojas e galpões em Curitiba e região. Instalação e assistência técnica especializada. Peça um orçamento."
       h1="Instalação de alarme empresarial em Curitiba e região"
       introText="Projetamos, instalamos e mantemos sistemas de alarme para empresas, comércios e galpões. Sensores perimétricos e de presença dimensionados para grandes áreas, com alertas instantâneos no celular e integração com câmeras."

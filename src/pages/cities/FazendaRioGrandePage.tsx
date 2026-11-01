@@ -25,9 +25,9 @@ export const FazendaRioGrandePage: React.FC = () => {
           description: 'Sistemas modernos de interfonia e automação para residências e condomínios fechados.',
         },
         {
-          name: 'Locação de Câmeras e Equipamentos de Segurança',
-          slug: 'locacao-de-cameras-de-seguranca',
-          description: 'Segurança completa por mensalidade sem investimento inicial e sem taxa de instalação.',
+          name: 'Aluguel de Câmeras de Segurança',
+          slug: 'aluguel-de-cameras-de-seguranca',
+          description: 'Aluguel de câmeras de segurança IP por mensalidade sem investimento inicial e sem taxa de instalação.',
         },
       ]}
       faq={[

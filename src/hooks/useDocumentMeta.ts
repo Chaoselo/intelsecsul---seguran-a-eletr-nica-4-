@@ -32,8 +32,12 @@ export function normalizeCanonicalUrl(urlOrPath?: string): string {
     '/servicos/alarme-monitorado': '/servicos/instalacao-de-alarmes',
     '/servicos/alarme-monitorado/residencial': '/servicos/instalacao-de-alarmes/residencial',
     '/servicos/alarme-monitorado/empresarial': '/servicos/instalacao-de-alarmes/empresarial',
-    '/servicos/locacao-de-equipamentos-de-seguranca': '/servicos/locacao-de-cameras-de-seguranca',
-    '/servicos/locacao-de-equipamentos': '/servicos/locacao-de-cameras-de-seguranca',
+    '/servicos/locacao-de-cameras-de-seguranca': '/servicos/aluguel-de-cameras-de-seguranca',
+    '/servicos/locacao-de-equipamentos-de-seguranca': '/servicos/aluguel-de-cameras-de-seguranca',
+    '/servicos/locacao-de-equipamentos': '/servicos/aluguel-de-cameras-de-seguranca',
+    '/servicos/portao-eletronico': '/servicos/portao-automatico',
+    '/servicos/fechaduras-eletromagneticas': '/servicos/fechaduras-eletronicas',
+    '/comparativos/compra-x-locacao-de-equipamentos': '/comparativos/compra-x-aluguel-de-cameras',
   };
 
   let resolvedPath = aliasCanonicalMap[trimmed] || trimmed;
@@ -59,14 +63,14 @@ export const LOCAL_BUSINESS_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
   "@id": "https://intelsecsul.com.br/#organization",
-  "name": "IntelSec Sul - Segurança Eletrônica",
-  "legalName": "IntelSec Sul Segurança Eletrônica e Tecnologia",
+  "name": "Intelsecsul - Segurança Eletrônica",
+  "legalName": "Intelsecsul Segurança Eletrônica e Tecnologia",
   "url": "https://intelsecsul.com.br",
   "telephone": siteConfig.phoneSchema,
   "email": siteConfig.email,
   "image": "https://intelsecsul.com.br/favicon.jpg",
   "priceRange": "$$",
-  "description": "Empresa especializada em instalação e manutenção de câmeras de segurança, alarme, cerca elétrica, controle de acesso e locação de equipamentos em Curitiba e Região Metropolitana.",
+  "description": "Empresa especializada em instalação e manutenção de câmeras de segurança, alarme, cerca elétrica, controle de acesso e locação de câmeras de segurança em Curitiba e Região Metropolitana.",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Curitiba",
@@ -156,7 +160,7 @@ export const LOCAL_BUSINESS_SCHEMA = {
     "name": "Serviços de Segurança Eletrônica",
     "itemListElement": [
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalação de Câmeras de Segurança e CFTV" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Locação de Câmeras e Equipamentos de Segurança" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Locação de Câmeras de Segurança" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalação e Manutenção de Alarmes" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalação de Cerca Elétrica e Concertina" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção e Automação de Portão Eletrônico" } },

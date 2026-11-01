@@ -4,12 +4,12 @@ import { ServicePageTemplate } from '../../components/ServicePageTemplate';
 export const AlarmeMonitoradoPage: React.FC = () => {
   return (
     <ServicePageTemplate
-      title="Instalação e Manutenção de Alarmes em Curitiba | IntelSec Sul"
+      title="Instalação e Manutenção de Alarmes em Curitiba | Intelsecsul"
       metaDescription="Instalação, manutenção e projetos de alarmes residenciais e empresariais em Curitiba e região. Sensores de presença, sirenes e notificação no celular. Peça seu orçamento."
       h1="Instalação e Manutenção de Alarmes em Curitiba e Região Metropolitana"
       introText="Projetamos, instalamos e realizamos a manutenção preventiva e corretiva de sistemas de alarme para residências, comércios e empresas. Proteja seu imóvel com sensores de presença, alertas de abertura e notificação em tempo real diretamente no seu celular."
       whenToHireTitle="Quando instalar ou realizar manutenção no seu alarme"
-      whenToHireText="Um sistema de alarme bem projetado é essencial para prevenir invasões em residências, condomínios e estabelecimentos comerciais. Se você passa longos períodos fora do imóvel, deseja ser notificado instantaneamente pelo smartphone ao sinal de qualquer disparo, ou possui um sistema antigo que necessita de manutenção técnica e troca de baterias, a IntelSec Sul oferece a solução ideal. Atuamos com venda, instalação profissional sem fiação exposta e assistência técnica especializada com equipe própria em toda a Região Metropolitana de Curitiba."
+      whenToHireText="Um sistema de alarme bem projetado é essencial para prevenir invasões em residências, condomínios e estabelecimentos comerciais. Se você passa longos períodos fora do imóvel, deseja ser notificado instantaneamente pelo smartphone ao sinal de qualquer disparo, ou possui um sistema antigo que necessita de manutenção técnica e troca de baterias, a Intelsecsul oferece a solução ideal. Atuamos com venda, instalação profissional sem fiação exposta e assistência técnica especializada com equipe própria em toda a Região Metropolitana de Curitiba."
       sintomasFrequentes={[
         {
           titulo: "Sensor de presença (PIR) disparando sozinho sem ninguém",

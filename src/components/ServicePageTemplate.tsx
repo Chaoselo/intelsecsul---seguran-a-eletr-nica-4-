@@ -49,6 +49,10 @@ export interface ServicePageTemplateProps {
     linkText: string;
     url: string;
   };
+  relatedLinks?: Array<{
+    label: string;
+    url: string;
+  }>;
   faq: Array<{
     question: string;
     answer: string;
@@ -75,6 +79,7 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
   segmentLinks,
   diferenciais,
   crossLink,
+  relatedLinks,
   faq,
   ctaFinal,
   serviceSlug,
@@ -482,6 +487,29 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
               <span>{crossLink.linkText}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
+        </section>
+      )}
+
+      {/* ================= VEJA TAMBÉM (LINKS RELACIONADOS) ================= */}
+      {relatedLinks && relatedLinks.length > 0 && (
+        <section className="py-6 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+          <div className="bg-[#121824] rounded-2xl p-6 border border-slate-800 shadow-md">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-[#00C5FF] mb-3">
+              Veja também
+            </h3>
+            <div className="flex flex-wrap gap-4">
+              {relatedLinks.map((item, idx) => (
+                <Link
+                  key={idx}
+                  to={item.url}
+                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-200 hover:text-[#00C5FF] underline decoration-slate-600 hover:decoration-[#00C5FF] transition-colors"
+                >
+                  <span>{item.label}</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
       )}

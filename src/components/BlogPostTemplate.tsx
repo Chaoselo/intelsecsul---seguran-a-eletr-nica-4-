@@ -86,12 +86,12 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
     "author": {
       "@type": "Organization",
       "@id": "https://intelsecsul.com.br/#organization",
-      "name": "IntelSec Sul - Segurança Eletrônica"
+      "name": "Intelsecsul - Segurança Eletrônica"
     },
     "publisher": {
       "@type": "Organization",
       "@id": "https://intelsecsul.com.br/#organization",
-      "name": "IntelSec Sul - Segurança Eletrônica",
+      "name": "Intelsecsul - Segurança Eletrônica",
       "logo": {
         "@type": "ImageObject",
         "url": "https://intelsecsul.com.br/logo.png"

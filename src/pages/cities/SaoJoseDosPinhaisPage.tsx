@@ -25,9 +25,9 @@ export const SaoJoseDosPinhaisPage: React.FC = () => {
           description: 'Instalação e manutenção de cercas eletrificadas perimetrais conforme normas de segurança.',
         },
         {
-          name: 'Locação de Câmeras e Equipamentos de Segurança',
-          slug: 'locacao-de-cameras-de-seguranca',
-          description: 'Solução completa para empresas e casas sem investimento inicial e com suporte contínuo.',
+          name: 'Aluguel de Câmeras de Segurança',
+          slug: 'aluguel-de-cameras-de-seguranca',
+          description: 'Aluguel de câmeras de segurança IP para empresas e residências sem investimento inicial e com manutenção inclusa.',
         },
       ]}
       faq={[

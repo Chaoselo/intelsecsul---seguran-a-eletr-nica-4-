@@ -3,10 +3,22 @@ import { Link } from 'react-router-dom';
 import { MapPin, ArrowRight, Phone, CheckCircle2, Shield, Sparkles } from 'lucide-react';
 import { CITIES_LIST, COMPANY_INFO } from '../constants';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
+import { useDocumentMeta, buildBreadcrumbSchema } from '../hooks/useDocumentMeta';
+
+const CITIES_HUB_BREADCRUMB = buildBreadcrumbSchema([
+  { name: 'Início', url: '/' },
+  { name: 'Cidades Atendidas', url: '/cidades/' },
+]);
 
 export const CitiesHub: React.FC = () => {
+  useDocumentMeta({
+    title: 'Atendemos toda a Região Metropolitana de Curitiba | Intelsecsul',
+    description: 'Instalação e manutenção de câmeras, alarmes, cerca elétrica e portão automático em Curitiba e mais 10 cidades da região. Veja a sua cidade e peça orçamento.',
+    canonicalUrl: '/cidades/',
+    jsonLdSchema: CITIES_HUB_BREADCRUMB,
+  });
+
   useEffect(() => {
-    document.title = 'Atendemos toda a Região Metropolitana de Curitiba | Intelsecsul';
     window.scrollTo(0, 0);
   }, []);
 

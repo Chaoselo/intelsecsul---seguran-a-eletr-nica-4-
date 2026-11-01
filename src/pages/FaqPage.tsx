@@ -93,15 +93,19 @@ export const FaqPage: React.FC = () => {
       ],
     },
     {
-      categoryTitle: 'Locação de equipamentos',
+      categoryTitle: 'Aluguel de câmeras de segurança',
       items: [
         {
-          question: 'Como funciona a locação de equipamentos?',
-          answer: 'Você paga uma mensalidade fixa, sem taxa de instalação, com manutenção e substituição de equipamentos com defeito inclusas.',
+          question: 'Como funciona o aluguel de câmeras de segurança?',
+          answer: 'O aluguel é de câmeras de segurança IP com gravador, instalação inicial, manutenção preventiva e corretiva e troca de HD inclusas na mensalidade, sem investimento inicial nem taxa de instalação. O valor é a partir de R$ 249 por mês por ponto de câmera IP e o valor final depende do prazo do contrato e da infraestrutura do local.',
         },
         {
-          question: 'Existe fidelidade no contrato de locação?',
-          answer: 'Os contratos de locação da Intelsecsul possuem um prazo de fidelidade de 24 meses. Após esse prazo o contrato pode ser cancelado sem a incidência de encargos.',
+          question: 'Qual é o prazo do contrato de aluguel?',
+          answer: 'A Intelsecsul trabalha com contratos de 6, 12, 24 ou 36 meses conforme o projeto. Obras e canteiros costumam ficar entre 6 e 12 meses, e empresas entre 24 e 36 meses, analisado caso a caso. Em caso de rescisão antecipada, é cobrada multa proporcional. Ao término, os equipamentos são retirados sem taxa.',
+        },
+        {
+          question: 'Vocês alugam alarmes, cerca elétrica ou controle de acesso?',
+          answer: 'Não. O aluguel da Intelsecsul é exclusivo para câmeras de segurança IP (CFTV). Sistemas de alarme, cerca elétrica, portão automático e controle de acesso são atendidos exclusivamente como serviços de instalação e manutenção.',
         },
       ],
     },
@@ -131,7 +135,7 @@ export const FaqPage: React.FC = () => {
         },
         {
           question: 'Vocês atendem em finais de semana ou emergências?',
-          answer: 'Os clientes que possuem contrato de locação ativo com a intelsecsul possuem prioridade nos atendimentos emergenciais, para os demais atendimentos emergenciais faz-se necessário a verificação da disponibilidade dos nossos técnicos.',
+          answer: 'Para clientes com contrato de aluguel de câmeras ou contrato de manutenção, o atendimento emergencial é realizado mediante disponibilidade da equipe e cobrança de taxa. Para os demais casos, também é necessária a verificação de disponibilidade dos nossos técnicos.',
         },
       ],
     },
@@ -157,7 +161,7 @@ export const FaqPage: React.FC = () => {
 
   useDocumentMeta({
     title: 'Perguntas Frequentes | Intelsecsul',
-    description: 'Tire suas dúvidas sobre câmeras, alarme monitorado, cerca elétrica, controle de acesso e locação de equipamentos de segurança em Curitiba e região.',
+    description: 'Tire suas dúvidas sobre câmeras, alarme monitorado, cerca elétrica, controle de acesso e aluguel de câmeras de segurança em Curitiba e região.',
     canonicalUrl: 'https://intelsecsul.com.br/perguntas-frequentes/',
     jsonLdSchema: [breadcrumbSchema, faqSchema],
   });
@@ -202,7 +206,7 @@ export const FaqPage: React.FC = () => {
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg lg:text-xl leading-relaxed mb-8 max-w-3xl">
-              Tire suas dúvidas sobre instalação de câmeras, alarme monitorado, cerca elétrica, controle de acesso, formas de pagamento e locação de equipamentos em Curitiba e Região Metropolitana.
+              Tire suas dúvidas sobre instalação de câmeras, alarme monitorado, cerca elétrica, controle de acesso, formas de pagamento e aluguel de câmeras de segurança em Curitiba e Região Metropolitana.
             </p>
 
             {/* Search Input */}
@@ -210,7 +214,7 @@ export const FaqPage: React.FC = () => {
               <Search className="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
-                placeholder="Buscar dúvida ou palavra-chave (ex: aplicativo, locação, PIX)..."
+                placeholder="Buscar dúvida ou palavra-chave (ex: aplicativo, aluguel, PIX)..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full bg-[#121824] border border-slate-800 rounded-xl pl-12 pr-4 py-3.5 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-[#0091FF] text-sm transition-colors"

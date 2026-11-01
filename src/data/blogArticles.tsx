@@ -274,8 +274,8 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     ],
     internalLink: {
       text: 'Precisa de assistência técnica ou automação de portão?',
-      url: '/servicos/portao-eletronico/',
-      linkText: 'Ver Portão Eletrônico',
+      url: '/servicos/portao-automatico/',
+      linkText: 'Ver Portão Automático',
     },
     whatsappMessage: 'Vim do blog e meu portão não está abrindo/fechando direito',
     ctaFinal: {
@@ -706,7 +706,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
             <p>Os valores variam conforme o tamanho do sistema, a quantidade de equipamentos e a frequência das visitas. Para dar uma referência realista:</p>
             <p><strong className="text-white">Contrato de manutenção preventiva (CFTV):</strong> em condomínios e empresas, a manutenção preventiva mensal costuma ficar na faixa de R$ 500 a R$ 1.500 para sistemas de pequeno a médio porte (até 16 canais). Para sistemas maiores (32 canais ou mais, múltiplos pontos), os valores podem chegar a R$ 3.000 ou mais por mês, dependendo do escopo.</p>
             <p><strong className="text-white">Manutenção corretiva avulsa:</strong> uma única visita emergencial para troca de câmera, por exemplo, pode custar entre R$ 400 e R$ 1.200 — dependendo do modelo da câmera, da complexidade da instalação e do horário do chamado. Se o problema for mais grave (placa queimada, HD corrompido, cabeamento rompido), o custo sobe consideravelmente.</p>
-            <p><strong className="text-white">A conta que importa:</strong> o plano de locação da Intelsecsul para 8 câmeras custa R$ 489/mês — ou seja, R$ 5.868 por ano, já incluindo manutenção. Se, sem esse tipo de contrato, você tiver duas falhas no ano — uma câmera queimada e um HD substituído —, o custo total pode facilmente ultrapassar esse valor, sem contar o tempo que o sistema ficou fora do ar entre a falha e o reparo.</p>
+            <p><strong className="text-white">A conta que importa:</strong> na locação de câmeras da Intelsecsul, que começa em R$ 249 por mês por ponto de câmera IP (o valor final depende do prazo do contrato), a manutenção preventiva e corretiva e a troca de HD já estão na mensalidade. Você não paga conserto avulso nem fica sem imagem esperando orçamento.</p>
           </div>
         ),
       },
@@ -729,7 +729,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
           <ul className="space-y-2 list-disc list-inside">
             <li><strong className="text-white">Custo fixo mesmo em meses sem uso.</strong> Em sistemas pequenos ou raramente usados, o valor mensal pode parecer um peso desnecessário.</li>
             <li><strong className="text-white">Necessidade de escolher bem a empresa.</strong> Um contrato com escopo vago pode gerar frustração — é essencial que detalhe visitas, equipamentos e peças cobertas.</li>
-            <li><strong className="text-white">Compromisso de fidelidade mais longo.</strong> O contrato padrão da Intelsecsul é de 36 meses — acima da média de mercado. É esse prazo mais longo, porém, que viabiliza o modelo sem investimento inicial: os equipamentos são fornecidos e instalados sem custo de entrada, e a mensalidade amortiza esse investimento ao longo do contrato.</li>
+            <li><strong className="text-white">Prazos contratuais definidos.</strong> Na locação de câmeras, a Intelsecsul trabalha com contratos de 6, 12, 24 ou 36 meses, conforme o projeto. Obras e canteiros costumam ficar entre 6 e 12 meses, e empresas entre 24 e 36 meses, sempre analisado caso a caso. Esse prazo permite oferecer a locação sem investimento inicial: o equipamento é instalado sem custo de entrada e a mensalidade cobre o investimento ao longo do contrato. Em caso de rescisão antecipada, é cobrada multa proporcional. Leia as condições antes de assinar.</li>
           </ul>
         ),
       },
@@ -802,7 +802,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       },
       {
         question: 'Posso cancelar o contrato a qualquer momento?',
-        answer: 'O contrato padrão da Intelsecsul é de 36 meses. Esse prazo mais longo é justamente o que permite oferecer o modelo de locação sem investimento inicial — os equipamentos são fornecidos e instalados sem custo de entrada, e a mensalidade cobre esse investimento ao longo do contrato. Negocie as condições de cancelamento antecipado antes de assinar.',
+        answer: 'Na locação de câmeras, a Intelsecsul trabalha com contratos de 6, 12, 24 ou 36 meses, conforme o projeto. Obras e canteiros costumam ficar entre 6 e 12 meses, e empresas entre 24 e 36 meses, sempre analisado caso a caso. Esse prazo permite oferecer a locação sem investimento inicial: o equipamento é instalado sem custo de entrada e a mensalidade cobre o investimento ao longo do contrato. Em caso de rescisão antecipada, é cobrada multa proporcional. Leia as condições antes de assinar.',
       },
       {
         question: 'Vale a pena contratar manutenção só para o alarme, sem incluir as câmeras?',
@@ -1597,8 +1597,8 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
                 </tbody>
               </table>
             </div>
-            <p>Em Curitiba, a instalação de câmeras CFTV varia entre R$ 180 e R$ 450 por ponto (mão de obra), e kits residenciais com 4 câmeras e DVR ficam entre R$ 1.200 e R$ 2.500. Já a <Link to="/servicos/locacao-de-cameras-de-seguranca" className="text-white underline hover:text-slate-300">locação residencial</Link> pode começar a partir de R$ 149/mês para pacotes básicos, com instalação e manutenção inclusas — sem o compromisso de <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">avaliar separadamente um contrato de manutenção</Link>, já que ele vem embutido.</p>
-            <p>A Intelsecsul trabalha com <Link to="/servicos/cameras-de-seguranca" className="text-white underline hover:text-slate-300">venda</Link> e locação de câmeras de segurança. Na visita técnica, avaliamos o seu imóvel, calculamos a quantidade ideal de pontos e apresentamos as duas opções para você decidir qual faz mais sentido para o seu perfil.</p>
+            <p>Em Curitiba, a instalação de câmeras CFTV varia entre R$ 180 e R$ 450 por ponto (mão de obra), e kits residenciais com 4 câmeras e DVR ficam entre R$ 1.200 e R$ 2.500. Já o <Link to="/servicos/aluguel-de-cameras-de-seguranca" className="text-white underline hover:text-slate-300">aluguel</Link> começa em R$ 249 por mês por ponto de câmera IP, com instalação e manutenção preventiva e corretiva incluídas, sem desembolso inicial. O valor final depende do prazo do contrato.</p>
+            <p>A Intelsecsul trabalha com <Link to="/servicos/cameras-de-seguranca" className="text-white underline hover:text-slate-300">venda</Link> e aluguel de câmeras de segurança. Na visita técnica, avaliamos o seu imóvel, calculamos a quantidade ideal de pontos e apresentamos as duas opções para você decidir qual faz mais sentido para o seu perfil.</p>
           </div>
         ),
       },
@@ -1662,8 +1662,8 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     ],
     internalLink: {
       text: 'Quer saber exatamente quantas câmeras sua casa precisa?',
-      url: '/servicos/locacao-de-cameras-de-seguranca/',
-      linkText: 'Ver Locação de Câmeras',
+      url: '/servicos/aluguel-de-cameras-de-seguranca/',
+      linkText: 'Ver Aluguel de Câmeras',
     },
     whatsappMessage: 'Vim do blog e quero saber quantas câmeras preciso',
     ctaFinal: {
@@ -1913,8 +1913,8 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     ],
     internalLink: {
       text: 'Seu portão eletrônico está fazendo barulho? Precisa de diagnóstico técnico?',
-      url: '/servicos/portao-eletronico/',
-      linkText: 'Ver Portão Eletrônico',
+      url: '/servicos/portao-automatico/',
+      linkText: 'Ver Portão Automático',
     },
     whatsappMessage: 'Vim do blog e meu portão está fazendo barulho',
     ctaFinal: {
@@ -2184,13 +2184,13 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     slug: 'comprar-ou-alugar-cameras-de-seguranca-comparacao-completa',
     title: 'Comprar ou Alugar Câmeras de Segurança? Comparação Completa | Intelsecsul',
     metaTitle: 'Comprar ou Alugar Câmeras de Segurança? Comparação Completa | Intelsecsul',
-    metaDescription: 'Comprar ou alugar câmeras de segurança? Compare investimento inicial, manutenção, atualização, contrato e previsibilidade — e descubra qual modelo faz mais sentido para o seu imóvel ou empresa.',
+    metaDescription: 'Comprar ou alugar câmeras de segurança? Compare investimento inicial, manutenção, prazos contratuais e previsibilidade — e veja qual modelo atende seu projeto.',
     h1: 'Comprar ou alugar câmeras e equipamentos de segurança? Comparação completa',
     category: 'Locação',
     readTime: '11 min de leitura',
     publishedDate: '2026-09-26',
-    summary: 'A decisão entre comprar e alugar câmeras de segurança não é apenas financeira — é estratégica. A compra exige investimento inicial alto; a locação distribui o custo em mensalidades fixas, com manutenção e suporte inclusos.',
-    intro: 'A decisão entre comprar e alugar um sistema de câmeras de segurança não é apenas financeira — é estratégica. Enquanto a compra exige um investimento inicial alto e transfere para você a responsabilidade sobre manutenção, atualização e substituição de equipamentos, a locação distribui esse custo em mensalidades fixas e previsíveis, com manutenção e suporte inclusos. Um estudo da Prefeitura de Londrina comparou os dois modelos para um projeto de videomonitoramento e concluiu que a locação apresentou valor inferior em relação à aquisição de novos equipamentos: R$ 505.425,60 contra R$ 546.522,48 — uma diferença de mais de R$ 40 mil a favor da locação.',
+    summary: 'A decisão entre comprar e alugar câmeras de segurança depende do tempo de uso, do capital disponível e da gestão da manutenção. Compare custos, prazos de contrato e veja qual opção faz mais sentido para o seu projeto.',
+    intro: 'A decisão entre comprar e alugar um sistema de câmeras de segurança depende principalmente do tempo de uso pretendido, da disponibilidade de capital e de quem vai cuidar da manutenção. Enquanto a compra exige investimento inicial para aquisição dos aparelhos e deixa a manutenção sob responsabilidade do proprietário, a locação de câmeras IP começa a partir de R$ 249 por mês por ponto, sem investimento inicial, com instalação, manutenção preventiva, corretiva e troca de HD incluídas na mensalidade. A escolha ideal varia conforme as necessidades de cada imóvel ou empresa.',
     sections: [
       {
         h2: 'Investimento inicial: o critério que mais pesa na decisão',
@@ -2200,27 +2200,9 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
             <p>A compra exige desembolso imediato de todo o valor do sistema. Para uma residência com 4 câmeras, um kit CFTV completo (DVR + câmeras + HD + cabos + fonte) custa entre R$ 1.200 e R$ 2.500. A isso soma-se a mão de obra de instalação, que em Curitiba varia entre R$ 180 e R$ 450 por ponto — ou seja, mais R$ 720 a R$ 1.800 para 4 câmeras.</p>
             <p>O investimento total para um sistema residencial de 4 câmeras fica, portanto, entre R$ 1.920 e R$ 4.300. Para sistemas comerciais maiores (8 a 16 câmeras), o valor pode ultrapassar R$ 10.000 antes da primeira imagem gravada. Se você ainda não sabe quantas câmeras precisa, vale conferir nosso <Link to="/blog/quantas-cameras-de-seguranca-preciso-para-minha-casa" className="text-white underline hover:text-slate-300">guia de cálculo de câmeras por imóvel</Link> antes de fechar qualquer orçamento.</p>
             <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
-            <p>A locação elimina o CAPEX (investimento inicial). O modelo de aluguel funciona como OPEX (despesa operacional): você paga uma mensalidade que já inclui equipamentos, instalação, manutenção e suporte técnico. Valores de referência do mercado brasileiro para locação de CFTV:</p>
-            <div className="overflow-x-auto -mx-4 sm:mx-0">
-              <table className="w-full text-sm border-collapse min-w-[480px]">
-                <thead>
-                  <tr className="border-b border-slate-700">
-                    <th className="text-left p-3 text-white font-bold">Sistema</th>
-                    <th className="text-left p-3 text-white font-bold">Quantidade de câmeras</th>
-                    <th className="text-left p-3 text-white font-bold">Valor médio mensal</th>
-                  </tr>
-                </thead>
-                <tbody className="text-slate-300">
-                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Básico</td><td className="p-3">2 a 4 câmeras</td><td className="p-3">R$ 340</td></tr>
-                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Intermediário</td><td className="p-3">5 a 7 câmeras</td><td className="p-3">R$ 410</td></tr>
-                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Intermediário</td><td className="p-3">8 câmeras</td><td className="p-3">R$ 520</td></tr>
-                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Avançado</td><td className="p-3">9 câmeras</td><td className="p-3">R$ 620</td></tr>
-                  <tr><td className="p-3 font-semibold text-white">Avançado</td><td className="p-3">10 a 16 câmeras</td><td className="p-3">R$ 880</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p>Esses valores incluem instalação, manutenção, suporte técnico e substituição de equipamentos defeituosos.</p>
-            <p><strong className="text-white">Vantagem na locação:</strong> zero investimento inicial. O sistema começa a funcionar com o primeiro pagamento mensal, sem descapitalizar o orçamento.</p>
+            <p>A locação elimina o investimento inicial (CAPEX). Na Intelsecsul, o aluguel de câmeras de segurança IP começa em R$ 249 por mês por ponto de câmera IP, sem taxa de instalação. O valor final depende do prazo do contrato (6, 12, 24 ou 36 meses) e da infraestrutura necessária para o imóvel. O valor exato é definido na visita técnica gratuita.</p>
+            <p>Essa mensalidade inclui todos os equipamentos do sistema (câmeras, NVR, HD e switch PoE), instalação profissional, manutenção preventiva, manutenção corretiva, troca de HD e acesso pelo celular e pelo computador.</p>
+            <p><strong className="text-white">Vantagem na locação:</strong> zero investimento inicial. O sistema entra em funcionamento sem descapitalizar o seu caixa, com mensalidade previsível.</p>
           </div>
         ),
       },
@@ -2229,16 +2211,15 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
         content: (
           <div className="space-y-4">
             <h3 className="text-lg sm:text-xl font-bold text-white">Compra</h3>
-            <p>Além do investimento inicial, a compra carrega custos ocultos que só aparecem com o tempo:</p>
+            <p>Além do investimento inicial, a compra carrega custos operacionais que aparecem ao longo dos anos:</p>
             <ul className="space-y-2 list-disc list-inside">
               <li><strong className="text-white">Manutenção corretiva:</strong> cada chamado técnico é pago à parte. Uma troca de câmera avulsa pode custar entre R$ 400 e R$ 1.200.</li>
-              <li><strong className="text-white">Substituição de HD:</strong> o disco rígido do DVR tem vida útil limitada e precisa ser trocado a cada 3-5 anos.</li>
-              <li><strong className="text-white">Atualização tecnológica:</strong> câmeras e gravadores se tornam obsoletos em 7 a 9 anos em média.</li>
-              <li><strong className="text-white">Peças de desgaste:</strong> fontes, conectores e cabos têm vida útil mais curta que as câmeras.</li>
+              <li><strong className="text-white">Substituição de HD:</strong> o disco rígido de gravação tem vida útil limitada e costuma necessitar de troca ao longo dos anos.</li>
+              <li><strong className="text-white">Peças de desgaste:</strong> fontes, conectores e cabeamento exigem substituições pontuais com custo de mão de obra e peças.</li>
             </ul>
             <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
-            <p>Na locação, todos esses custos estão diluídos na mensalidade. A empresa locadora é responsável por manter o sistema funcionando, substituir equipamentos defeituosos sem custo adicional e arcar com a obsolescência tecnológica. O estudo de Londrina aponta que a locação dispensa provisionamentos para compra de novos equipamentos e elimina as variações de custo acarretadas por perda, furto, desastres naturais ou necessidade de manutenção e compra de peças.</p>
-            <p><strong className="text-white">Vantagem na locação:</strong> custo total mais previsível e, em muitos cenários, menor no longo prazo — especialmente quando se contabilizam manutenções emergenciais, substituições e atualizações.</p>
+            <p>Na locação, a manutenção preventiva, a manutenção corretiva e a troca de HD já estão inclusas na mensalidade. Não há cobrança surpresa por queima de câmera ou defeito em disco rígido. Se houver necessidade de atendimento emergencial, ele é realizado mediante disponibilidade da equipe e cobrança de taxa.</p>
+            <p><strong className="text-white">Vantagem na locação:</strong> previsibilidade orçamentária contínua, sem orçamentos imprevistos para conserto ou substituição de HD.</p>
           </div>
         ),
       },
@@ -2247,34 +2228,22 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
         content: (
           <div className="space-y-4">
             <h3 className="text-lg sm:text-xl font-bold text-white">Compra</h3>
-            <p>Na compra, a manutenção é responsabilidade do proprietário. Se você não contrata um plano de manutenção preventiva, o sistema só recebe atenção quando quebra — e reparos corretivos custam significativamente mais do que ajustes preventivos. Se está em dúvida sobre qual modelo de manutenção faz mais sentido, vale ler nosso comparativo de <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">contrato de manutenção x chamado avulso</Link>.</p>
+            <p>Na compra, a manutenção é responsabilidade do proprietário. Sem um contrato específico, o sistema só recebe reparo após a falha, gerando períodos sem gravação e custos variáveis de chamados avulsos. Veja também nosso comparativo de <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">contrato de manutenção x chamado avulso</Link>.</p>
             <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
-            <p>Na locação, a manutenção está inclusa no contrato. A empresa locadora faz a manutenção preventiva programada, a manutenção corretiva sem custo adicional e a substituição de câmeras defeituosas sem taxa. Para o cliente, isso significa zero surpresas com custos de reparo.</p>
-            <p><strong className="text-white">Vantagem na locação:</strong> manutenção preventiva e corretiva inclusas, sem necessidade de gerenciar fornecedores ou arcar com reparos inesperados.</p>
+            <p>Na locação, a manutenção preventiva e corretiva e a troca de HD estão incluídas no contrato. A equipe técnica própria da Intelsecsul realiza o acompanhamento e os reparos necessários para manter o sistema operando continuamente.</p>
+            <p><strong className="text-white">Vantagem na locação:</strong> manutenção preventiva, corretiva e troca de HD inclusas sem custo adicional de mão de obra.</p>
           </div>
         ),
       },
       {
-        h2: 'Atualização tecnológica: quem fica com o equipamento obsoleto?',
+        h2: 'Prazos de contrato e condições contratuais',
         content: (
           <div className="space-y-4">
             <h3 className="text-lg sm:text-xl font-bold text-white">Compra</h3>
-            <p>A tecnologia de segurança eletrônica evolui rapidamente. Câmeras que eram top de linha há cinco anos podem estar defasadas em resolução, visão noturna ou capacidade de análise inteligente. Na compra, você fica com o equipamento obsoleto e precisa arcar com a substituição quando decidir atualizar.</p>
+            <p>A compra não tem vínculo contratual de longo prazo. O cliente adquire os equipamentos, que passam a integrar seu patrimônio, sem mensalidade obrigatória.</p>
             <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
-            <p>Na locação, a atualização tecnológica é responsabilidade da locadora. Ao renovar o contrato ou durante a vigência, o cliente pode ter acesso a equipamentos mais modernos sem precisar comprar tudo de novo.</p>
-            <p><strong className="text-white">Vantagem na locação:</strong> o sistema se mantém atualizado ao longo do contrato, sem custo adicional de aquisição.</p>
-          </div>
-        ),
-      },
-      {
-        h2: 'Contrato e fidelidade: qual a flexibilidade de cada modelo?',
-        content: (
-          <div className="space-y-4">
-            <h3 className="text-lg sm:text-xl font-bold text-white">Compra</h3>
-            <p>A compra não tem fidelidade. Você é dono do equipamento e pode fazer o que quiser com ele — vender, transferir, desmontar. Não há mensalidade, não há multa de cancelamento, não há obrigação contratual de longo prazo (exceto se você contratar manutenção separadamente).</p>
-            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
-            <p>A locação é um contrato de prestação de serviço continuado, e os prazos variam entre fornecedores. É importante ler o contrato com atenção: o que está incluso, qual o prazo de fidelidade, qual a multa por cancelamento antecipado e o que acontece com os equipamentos ao final.</p>
-            <p><strong className="text-white">Vantagem na compra:</strong> liberdade total, sem fidelidade e sem mensalidade obrigatória. <strong className="text-white">Vantagem na locação:</strong> flexibilidade para ajustar o escopo conforme a necessidade, em alguns modelos de contrato.</p>
+            <p>Na locação de câmeras de segurança IP, a Intelsecsul trabalha com contratos de 6, 12, 24 ou 36 meses, conforme o tipo de cliente e o projeto. Obras e canteiros costumam contratar entre 6 e 12 meses; empresas costumam contratar entre 24 e 36 meses. Cada caso é analisado individualmente na visita técnica. Em caso de rescisão antecipada, é cobrada multa proporcional. Ao final do contrato, o equipamento é retirado sem taxa.</p>
+            <p><strong className="text-white">Vantagem na compra:</strong> posse definitiva do equipamento sem mensalidade. <strong className="text-white">Vantagem na locação:</strong> prazo ajustado ao tempo do seu projeto, com início em até 5 dias após a assinatura.</p>
           </div>
         ),
       },
@@ -2283,10 +2252,10 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
         content: (
           <div className="space-y-4">
             <h3 className="text-lg sm:text-xl font-bold text-white">Compra</h3>
-            <p>O custo da compra é imprevisível no longo prazo. Você sabe quanto pagou pelo kit inicial, mas não sabe quanto vai gastar com manutenção nos próximos 5 anos, quantas câmeras vão queimar, se o HD vai falhar ou quando será necessário atualizar o sistema.</p>
+            <p>O custo da compra pode ser imprevisível no longo prazo se ocorrerem falhas fora da garantia, exigindo compras avulsas de peças e chamados técnicos de emergência.</p>
             <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
-            <p>A locação entrega previsibilidade absoluta. A mensalidade é fixa, e todos os custos operacionais (manutenção, substituição, suporte) já estão embutidos.</p>
-            <p><strong className="text-white">Vantagem na locação:</strong> orçamento controlado. Você sabe exatamente quanto o sistema custa por mês, sem variáveis.</p>
+            <p>A locação entrega previsibilidade. A mensalidade cobre todos os equipamentos do sistema (câmeras, NVR, HD e switch PoE), instalação inicial, suporte técnico, manutenção preventiva, manutenção corretiva e troca de HD.</p>
+            <p><strong className="text-white">Vantagem na locação:</strong> orçamento controlado. Você sabe exatamente quanto o sistema custa por mês, sem custos surpresa de conserto.</p>
           </div>
         ),
       },
@@ -2303,15 +2272,14 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
                 </tr>
               </thead>
               <tbody className="text-slate-300">
-                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Investimento inicial</td><td className="p-3">Alto (R$ 1.920 a R$ 4.300+ para 4 câmeras)</td><td className="p-3">Zero (primeiro pagamento após instalação)</td></tr>
-                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Custo mensal</td><td className="p-3">Nenhum (exceto manutenção contratada)</td><td className="p-3">Fixo (R$ 340 a R$ 880 para 2 a 16 câmeras)</td></tr>
-                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Manutenção</td><td className="p-3">Responsabilidade do proprietário</td><td className="p-3">Inclusa no contrato</td></tr>
-                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Substituição de equipamentos</td><td className="p-3">Custo do proprietário</td><td className="p-3">Inclusa, sem taxa adicional</td></tr>
-                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Atualização tecnológica</td><td className="p-3">Custo do proprietário</td><td className="p-3">Responsabilidade da locadora</td></tr>
-                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Previsibilidade de custo</td><td className="p-3">Baixa (custos ocultos ao longo do tempo)</td><td className="p-3">Alta (mensalidade fixa)</td></tr>
-                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Fidelidade</td><td className="p-3">Nenhuma</td><td className="p-3">Conforme contrato</td></tr>
-                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Propriedade do equipamento</td><td className="p-3">Sim (patrimônio)</td><td className="p-3">Não (comodato)</td></tr>
-                <tr><td className="p-3 font-semibold text-white">Melhor para</td><td className="p-3">Quem fica no imóvel a longo prazo e tem capital disponível</td><td className="p-3">Quem quer previsibilidade, sem investimento inicial</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Investimento inicial</td><td className="p-3">Alto (equipamento + instalação)</td><td className="p-3">Zero (sem taxa de instalação)</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Custo mensal</td><td className="p-3">Nenhum (exceto manutenção contratada)</td><td className="p-3">Fixo, a partir de R$ 249 por mês por ponto de câmera IP; valor final depende do prazo do contrato</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Manutenção</td><td className="p-3">Responsabilidade do proprietário</td><td className="p-3">Inclusa no contrato (preventiva e corretiva)</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Substituição de equipamentos</td><td className="p-3">Custo do proprietário</td><td className="p-3">Inclusa na manutenção corretiva; emergencial sujeita a disponibilidade e taxa</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Troca de HD</td><td className="p-3">Custo do proprietário</td><td className="p-3">Inclusa na mensalidade</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Fidelidade</td><td className="p-3">Nenhuma</td><td className="p-3">Contrato de 6, 12, 24 ou 36 meses conforme o projeto; rescisão antecipada mediante multa proporcional</td></tr>
+                <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Propriedade do equipamento</td><td className="p-3">Sim (patrimônio)</td><td className="p-3">Não (comodato), retirado sem taxa no fim do contrato</td></tr>
+                <tr><td className="p-3 font-semibold text-white">Melhor para</td><td className="p-3">Quem vai ficar muitos anos no mesmo imóvel e tem capital disponível</td><td className="p-3">Obras (6 a 12 meses), empresas (24 a 36 meses) ou quem busca previsibilidade sem desembolso inicial</td></tr>
               </tbody>
             </table>
           </div>
@@ -2321,11 +2289,10 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
         h2: 'Quando alugar faz mais sentido?',
         content: (
           <ul className="space-y-2 list-disc list-inside">
-            <li><strong className="text-white">Quem não quer (ou não pode) descapitalizar.</strong> Empresas que precisam preservar capital de giro e residências com orçamento apertado encontram na locação uma forma de ter segurança sem comprometer o caixa.</li>
-            <li><strong className="text-white">Quem valoriza previsibilidade.</strong> Saber exatamente quanto gasta por mês com segurança facilita o planejamento financeiro.</li>
-            <li><strong className="text-white">Quem está em imóvel alugado ou temporário.</strong> Se você vai sair em 1 ou 2 anos, não compensa investir em sistema fixo.</li>
-            <li><strong className="text-white">Quem quer acesso à tecnologia atualizada.</strong> A locadora se encarrega de manter o sistema moderno, sem custo de upgrade.</li>
-            <li><strong className="text-white">Quem não quer gerenciar manutenção.</strong> A locação terceiriza toda a operação do sistema — você só usa.</li>
+            <li><strong className="text-white">Obras e canteiros de construção (6 a 12 meses).</strong> Para projetos com prazo delimitado, a locação oferece a flexibilidade de contratos mais curtos com retirada do equipamento sem taxa ao final.</li>
+            <li><strong className="text-white">Empresas que querem previsibilidade orçamentária (24 a 36 meses).</strong> Facilita a gestão contábil com classificação em despesa operacional (OPEX) e suporte contínuo.</li>
+            <li><strong className="text-white">Quem não quer desembolso inicial.</strong> Permite iniciar o monitoramento de imediato sem imobilizar capital de giro.</li>
+            <li><strong className="text-white">Quem quer troca de HD e manutenção incluídas.</strong> Toda a rotina técnica de revisão preventiva, conserto corretivo e troca de HD fica por conta da Intelsecsul.</li>
           </ul>
         ),
       },
@@ -2333,10 +2300,9 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
         h2: 'Quando comprar faz mais sentido?',
         content: (
           <ul className="space-y-2 list-disc list-inside">
-            <li><strong className="text-white">Quem pretende ficar no imóvel por muitos anos.</strong> A partir do segundo ou terceiro ano, o custo total da compra tende a se equalizar com o da locação, e a partir daí a compra sai mais barata.</li>
-            <li><strong className="text-white">Quem quer patrimônio.</strong> O equipamento é seu, e você pode vendê-lo, transferi-lo ou reutilizá-lo quando quiser.</li>
-            <li><strong className="text-white">Quem tem capital disponível e prefere não ter mensalidade.</strong> Se o orçamento permite o desembolso inicial, a compra elimina a obrigação mensal.</li>
-            <li><strong className="text-white">Quem quer personalizar o sistema.</strong> A compra permite escolher cada componente, marca e modelo sem as restrições de pacotes de locação.</li>
+            <li><strong className="text-white">Quem pretende ficar no imóvel por muitos anos.</strong> Para residências definitivas e sedes próprias com longo tempo de uso planejado.</li>
+            <li><strong className="text-white">Quem tem capital disponível para desembolso inicial.</strong> Se há recursos para compra e instalação à vista, elimina-se a obrigação de mensalidade contínua.</li>
+            <li><strong className="text-white">Quem quer o equipamento como patrimônio.</strong> Os aparelhos passam a pertencer ao cliente desde a entrega.</li>
           </ul>
         ),
       },
@@ -2344,42 +2310,42 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
         h2: 'Como a Intelsecsul pode ajudar',
         content: (
           <div className="space-y-4">
-            <p>A Intelsecsul trabalha com <Link to="/servicos/cameras-de-seguranca" className="text-white underline hover:text-slate-300">venda</Link> e locação de câmeras de segurança em Curitiba e Região Metropolitana. Nosso plano de locação para 8 câmeras, por exemplo, sai por R$ 489/mês — abaixo da média de mercado citada acima para essa mesma faixa. Na visita técnica gratuita, avaliamos o seu imóvel, calculamos a quantidade ideal de câmeras e apresentamos as duas opções com simulação de custo total para o seu cenário específico.</p>
-            <p>Se você está avaliando uma oferta de locação, nossa equipe explica o que está incluso no plano, qual o prazo de fidelidade e como funciona a manutenção e a substituição de equipamentos. Sem letras miúdas.</p>
+            <p>A Intelsecsul trabalha com venda e locação de câmeras de segurança em Curitiba e Região Metropolitana. A locação começa em R$ 249 por mês por ponto de câmera IP, com instalação e manutenção incluídas, e o valor final depende do prazo do contrato (6, 12, 24 ou 36 meses). Na visita técnica gratuita, avaliamos o seu imóvel, calculamos a quantidade ideal de câmeras e apresentamos as duas opções com simulação de custo total para o seu cenário.</p>
+            <p>Se você está avaliando locação ou compra, nossa equipe explica as condições comerciais de forma transparente, prazos de contrato e o que está coberto na mensalidade. Sem letras miúdas.</p>
           </div>
         ),
       },
       {
         h2: 'Conclusão',
-        content: 'Comprar ou alugar câmeras de segurança? A resposta depende do seu prazo de permanência no imóvel, do capital disponível e de quanto você valoriza previsibilidade. A locação elimina o investimento inicial, inclui manutenção e atualização, e entrega custo mensal fixo — ideal para quem quer segurança sem descapitalizar ou gerenciar equipamentos. A compra é um investimento de longo prazo que faz sentido para quem vai ficar no imóvel por muitos anos e quer patrimônio. O que não faz sentido é decidir sem comparar.',
+        content: 'Comprar ou alugar câmeras de segurança? A resposta depende do tempo de permanência no imóvel, do capital disponível e da preferência em relação à manutenção. A locação começa a partir de R$ 249 por mês por ponto de câmera IP, elimina o investimento inicial e inclui todos os equipamentos do sistema (câmeras, NVR, HD e switch PoE), manutenção preventiva, corretiva e troca de HD, em contratos de 6, 12, 24 ou 36 meses. A compra faz sentido para quem planeja utilizar o sistema por muitos anos no mesmo imóvel e quer o equipamento como patrimônio. Na visita técnica gratuita, a Intelsecsul simula ambos os modelos para o seu caso específico.',
       },
     ],
     relatedQuestions: [
       {
-        question: 'Posso cancelar a locação a qualquer momento?',
-        answer: 'Depende do contrato. Verifique o prazo mínimo e as condições de cancelamento antecipado antes de assinar — alguns modelos oferecem contratos mais flexíveis que outros.',
+        question: 'Qual é o prazo do contrato de locação de câmeras?',
+        answer: 'A Intelsecsul trabalha com contratos de 6, 12, 24 ou 36 meses, conforme o projeto. Obras e canteiros costumam contratar entre 6 e 12 meses, e empresas entre 24 e 36 meses, sempre analisado caso a caso. Em caso de rescisão antecipada, é cobrada multa proporcional.',
       },
       {
         question: 'O que acontece com os equipamentos ao final do contrato de locação?',
-        answer: 'Em modelos de comodato, os equipamentos são devolvidos à locadora. Em alguns contratos, pode haver opção de compra ao final do prazo. O destino dos equipamentos deve estar claro no contrato.',
+        answer: 'Em modelos de comodato, os equipamentos pertencem à locadora e, ao final do contrato, são retirados sem cobrança de taxa pela Intelsecsul.',
       },
       {
-        question: 'A locação inclui a manutenção preventiva?',
-        answer: 'Sim, na maioria dos planos de locação profissional. A manutenção preventiva (limpeza, ajustes, verificação de firmware) e a corretiva (substituição de peças defeituosas) estão inclusas na mensalidade.',
+        question: 'A locação inclui manutenção e troca de peças?',
+        answer: 'Sim. A mensalidade inclui todos os equipamentos do sistema (câmeras, NVR, HD e switch PoE), instalação, manutenção preventiva, manutenção corretiva e troca de HD. Manutenções emergenciais são atendidas mediante disponibilidade da equipe e cobrança de taxa.',
       },
       {
-        question: 'Locação é mais barata que comprar?',
-        answer: 'Depende do prazo de uso. No curto e médio prazo (até 2 anos), a locação costuma ser mais barata por não exigir investimento inicial. No longo prazo (5 anos ou mais), a compra tende a ser mais econômica, desde que você contabilize os custos de manutenção e atualização.',
+        question: 'Alugar câmeras é mais vantajoso que comprar?',
+        answer: 'A escolha entre comprar e alugar depende do tempo de uso, do capital disponível e do custo com manutenção. A locação não exige investimento inicial e inclui manutenção e troca de HD na mensalidade; a compra requer desembolso inicial e gera patrimônio. A Intelsecsul faz a simulação completa para o seu imóvel na visita técnica gratuita.',
       },
       {
-        question: 'Posso alugar câmeras e depois comprar?',
-        answer: 'Em alguns contratos de locação há opção de compra ao final do prazo, podendo o valor pago na locação ser parcialmente abatido do preço de compra. Verifique as condições com a locadora.',
+        question: 'Quanto custa a locação de câmeras de segurança na Intelsecsul?',
+        answer: 'A locação começa a partir de R$ 249 por mês por ponto de câmera IP. O valor final depende do prazo do contrato e da infraestrutura necessária, definido na visita técnica gratuita.',
       },
     ],
     internalLink: {
-      text: 'Quer comparar compra e locação para o seu imóvel?',
-      url: '/servicos/locacao-de-cameras-de-seguranca/',
-      linkText: 'Ver Locação de Câmeras',
+      text: 'Quer comparar compra e aluguel para o seu imóvel?',
+      url: '/servicos/aluguel-de-cameras-de-seguranca/',
+      linkText: 'Ver Aluguel de Câmeras',
     },
     whatsappMessage: 'Vim do blog e quero comparar compra e locação de câmeras',
     ctaFinal: {
@@ -4778,8 +4744,8 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     ],
     internalLink: {
       text: 'Seu portão está travando no meio do caminho? Precisa de diagnóstico técnico?',
-      url: '/servicos/portao-eletronico/',
-      linkText: 'Ver Portão Eletrônico',
+      url: '/servicos/portao-automatico/',
+      linkText: 'Ver Portão Automático',
     },
     whatsappMessage: 'Vim do blog e meu portão trava no meio do caminho',
     ctaFinal: {
@@ -5174,8 +5140,8 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     ],
     internalLink: {
       text: 'Seu controle não está funcionando? Precisa de ajuda para diagnosticar bateria, codificação ou receptor?',
-      url: '/servicos/portao-eletronico/',
-      linkText: 'Ver Portão Eletrônico',
+      url: '/servicos/portao-automatico/',
+      linkText: 'Ver Portão Automático',
     },
     whatsappMessage: 'Vim do blog e meu controle do portão não funciona',
     ctaFinal: {
@@ -5404,8 +5370,8 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     ],
     internalLink: {
       text: 'Sua fechadura eletromagnética não está travando? Precisa de diagnóstico técnico?',
-      url: '/servicos/fechaduras-eletromagneticas/',
-      linkText: 'Ver Fechaduras Eletromagnéticas',
+      url: '/servicos/fechaduras-eletronicas/',
+      linkText: 'Ver Fechaduras Eletrônicas',
     },
     whatsappMessage: 'Vim do blog e minha fechadura eletromagnética não trava',
     ctaFinal: {
@@ -6057,8 +6023,8 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     ],
     internalLink: {
       text: 'Seu portão ficou aberto ou travado após uma queda de energia? Precisa de ajuda para liberar com segurança?',
-      url: '/servicos/portao-eletronico/',
-      linkText: 'Ver Portão Eletrônico',
+      url: '/servicos/portao-automatico/',
+      linkText: 'Ver Portão Automático',
     },
     whatsappMessage: 'Vim do blog e meu portão ficou aberto após queda de energia',
     ctaFinal: {

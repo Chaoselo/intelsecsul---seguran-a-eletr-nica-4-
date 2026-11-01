@@ -25,9 +25,9 @@ export const CampoMagroPage: React.FC = () => {
           description: 'Proteção com sensores de presença, sirenes e alerta no celular.',
         },
         {
-          name: 'Locação de Equipamentos de Segurança',
-          slug: 'locacao-de-equipamentos-de-seguranca',
-          description: 'Aluguel de câmeras e alarmes por mensalidade fixa sem taxa de instalação e com manutenção inclusa.',
+          name: 'Aluguel de Câmeras de Segurança',
+          slug: 'aluguel-de-cameras-de-seguranca',
+          description: 'Aluguel de câmeras de segurança por mensalidade fixa, sem investimento inicial.',
         },
       ]}
       faq={[

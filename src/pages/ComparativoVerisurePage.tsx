@@ -38,17 +38,17 @@ export const ComparativoVerisurePage: React.FC = () => {
   const tableData = [
     {
       aspecto: 'Abrangência dos serviços',
-      intelsecsul: 'Câmeras, alarme, cerca elétrica, controle de acesso, portão eletrônico, interfonia e locação de equipamentos',
+      intelsecsul: 'Instalação e manutenção de câmeras, alarme, cerca elétrica, controle de acesso, portão e interfonia; aluguel exclusivo de câmeras de segurança IP',
       verisure: 'Foco principal em alarme monitorado, com câmeras como parte do pacote',
     },
     {
-      aspecto: 'Fidelidade contratual na locação',
-      intelsecsul: 'Contrato com fidelidade de 24 meses com cláusulas transparentes e habituais do mercado',
+      aspecto: 'Fidelidade e prazos no aluguel',
+      intelsecsul: 'Contratos de 6, 12, 24 ou 36 meses conforme o projeto (a partir de R$ 249/mês por ponto de câmera IP), com multa proporcional em caso de rescisão antecipada',
       verisure: 'Contrato costuma exigir fidelidade, geralmente entre 12 e 36 meses, conforme informações públicas da própria empresa',
     },
     {
-      aspecto: 'Propriedade do equipamento na locação',
-      intelsecsul: 'Da Intelsecsul durante o contrato, sem taxa de instalação',
+      aspecto: 'Propriedade do equipamento no aluguel',
+      intelsecsul: 'Da Intelsecsul durante o contrato, sem taxa de instalação e retirada sem taxa ao término',
       verisure: 'Em regime de comodato, também de propriedade da empresa durante o contrato',
     },
     {
@@ -76,8 +76,8 @@ export const ComparativoVerisurePage: React.FC = () => {
     },
     {
       icon: Wrench,
-      title: 'Locação sem taxa de instalação e sem custo de manutenção',
-      description: 'Mensalidade previsível que já cobre a instalação, suporte contínuo e substituição de peças defeituosas.',
+      title: 'Aluguel de câmeras sem taxa de instalação e com manutenção',
+      description: 'Câmeras IP a partir de R$ 249/mês por ponto com instalação, manutenção preventiva e corretiva e troca de HD inclusas.',
     },
   ];
 

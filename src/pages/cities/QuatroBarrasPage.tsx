@@ -25,9 +25,9 @@ export const QuatroBarrasPage: React.FC = () => {
           description: 'Sistemas de alarme com sensores de presença e barreira infravermelha para grandes áreas.',
         },
         {
-          name: 'Locação de Equipamentos de Segurança',
-          slug: 'locacao-de-equipamentos-de-seguranca',
-          description: 'Câmeras e alarmes por mensalidade sem investimento inicial e com suporte contínuo.',
+          name: 'Aluguel de Câmeras de Segurança',
+          slug: 'aluguel-de-cameras-de-seguranca',
+          description: 'Aluguel de câmeras de segurança IP por mensalidade sem investimento inicial e com suporte contínuo.',
         },
       ]}
       faq={[

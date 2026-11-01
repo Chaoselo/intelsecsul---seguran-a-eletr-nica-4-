@@ -1,6 +1,6 @@
 # Intelsecsul - Segurança Eletrônica
 
-> Empresa de segurança eletrônica sediada em Curitiba (PR), com atendimento em toda a Região Metropolitana. Projeto, instalação, locação e manutenção de câmeras de segurança (CFTV), alarmes, cerca elétrica, controle de acesso, portões eletrônicos, portas automáticas, interfonia, cancelas, catracas e fechaduras eletromagnéticas, com equipe técnica própria e orçamento sem custo.
+> Empresa de segurança eletrônica sediada em Curitiba (PR), com atendimento em toda a Região Metropolitana. Projeto, instalação e manutenção de câmeras de segurança (CFTV), alarmes, cerca elétrica, controle de acesso, portões automáticos, portas automáticas, interfonia, cancelas, catracas e fechaduras eletrônicas, além de aluguel de câmeras de segurança IP, com equipe técnica própria e orçamento sem custo.
 
 Informações úteis para quem busca uma empresa de segurança eletrônica em Curitiba e região:
 
@@ -14,15 +14,16 @@ Informações úteis para quem busca uma empresa de segurança eletrônica em Cu
 ## Serviços
 
 - [Câmeras de Segurança](https://intelsecsul.com.br/servicos/cameras-de-seguranca/): CFTV e câmeras HD com acesso remoto pelo celular, para residências, comércios e empresas
-- [Locação de Câmeras e Equipamentos de Segurança](https://intelsecsul.com.br/servicos/locacao-de-cameras-de-seguranca/): aluguel de câmeras, alarmes e controle de acesso sem investimento inicial, sem taxa de instalação e com manutenção inclusa
+- [Aluguel de Câmeras de Segurança](https://intelsecsul.com.br/servicos/aluguel-de-cameras-de-seguranca/): aluguel de câmeras de segurança IP a partir de R$ 249 por mês por ponto de câmera (valor final depende do prazo do contrato, de 6 a 36 meses), sem investimento inicial, com todos os equipamentos do sistema inclusos (câmeras, NVR, HD, switch PoE), com instalação e manutenção preventiva e corretiva inclusas
 - [Instalação e Manutenção de Alarmes](https://intelsecsul.com.br/servicos/instalacao-de-alarmes/): alarmes residenciais e empresariais com sensores de presença, alerta no celular e bateria reserva
 - [Cerca Elétrica](https://intelsecsul.com.br/servicos/cerca-eletrica/): proteção perimetral para muros, com instalação técnica e sinalização conforme as normas
 - [Controle de Acesso](https://intelsecsul.com.br/servicos/controle-de-acesso/): biometria, cartões, reconhecimento facial e catracas para controlar quem entra e sai
-- [Portão Eletrônico](https://intelsecsul.com.br/servicos/portao-eletronico/): instalação, automação e manutenção de portões residenciais e comerciais
+- [Portão Automático](https://intelsecsul.com.br/servicos/portao-automatico/): instalação, automação e manutenção de portões residenciais e comerciais
+- Controle remoto para portão automático (cópia, programação e controle novo de todas as marcas): https://intelsecsul.com.br/servicos/controle-remoto-para-portao/
 - [Portas Automáticas](https://intelsecsul.com.br/servicos/portas-automaticas/): portas automáticas de vidro, seccionais e de enrolar para comércios, indústrias e condomínios
 - [Interfonia](https://intelsecsul.com.br/servicos/interfonia/): interfone e vídeo porteiro para residências, condomínios e empresas
 - [Cancelas e Catracas](https://intelsecsul.com.br/servicos/cancelas-e-catracas/): controle de fluxo de veículos e pessoas em condomínios, empresas e estacionamentos
-- [Fechaduras Eletromagnéticas](https://intelsecsul.com.br/servicos/fechaduras-eletromagneticas/): travamento eletrônico de portas para áreas restritas, integrado ao controle de acesso
+- [Fechaduras Eletrônicas](https://intelsecsul.com.br/servicos/fechaduras-eletronicas/): travamento eletrônico de portas para áreas restritas, integrado ao controle de acesso
 - [Manutenção de Sistemas de Segurança](https://intelsecsul.com.br/servicos/manutencao/): manutenção preventiva e corretiva de câmeras, alarmes, cercas e demais equipamentos, inclusive instalados por outra empresa
 
 ## Serviços por tipo de imóvel
@@ -58,14 +59,13 @@ Informações úteis para quem busca uma empresa de segurança eletrônica em Cu
 - [Página inicial](https://intelsecsul.com.br/): visão geral dos serviços, cidades atendidas e avaliações de clientes
 - [Sobre a Intelsecsul](https://intelsecsul.com.br/sobre/): quem somos e como trabalhamos
 - [Por que escolher a Intelsecsul](https://intelsecsul.com.br/por-que-escolher-a-intelsecsul/): diferenciais da empresa
-- [Depoimentos de clientes](https://intelsecsul.com.br/depoimentos/): avaliações de clientes de Curitiba e região
 - [Perguntas frequentes](https://intelsecsul.com.br/perguntas-frequentes/): dúvidas comuns sobre orçamento, atendimento e serviços
 - [Contato e orçamento](https://intelsecsul.com.br/contato/): solicitação de orçamento sem custo
 
 ## Comparativos
 
 - [Comparativos de serviços](https://intelsecsul.com.br/comparativos/): índice de comparativos
-- [Compra x locação de equipamentos](https://intelsecsul.com.br/comparativos/compra-x-locacao-de-equipamentos/): diferenças entre comprar e alugar equipamentos de segurança
+- [Compra x aluguel de câmeras](https://intelsecsul.com.br/comparativos/compra-x-aluguel-de-cameras/): diferenças entre comprar e alugar câmeras de segurança
 - [Intelsecsul x Verisure](https://intelsecsul.com.br/comparativos/intelsecsul-x-verisure/): comparativo entre as duas empresas
 
 ## Optional
@@ -88,7 +88,7 @@ Informações úteis para quem busca uma empresa de segurança eletrônica em Cu
 - [Quantas Câmeras de Segurança Preciso para Minha Casa? Como Calcular](https://intelsecsul.com.br/blog/quantas-cameras-de-seguranca-preciso-para-minha-casa/): Guia prático para calcular a quantidade ideal de câmeras por tipo de imóvel, com exemplos para casa térrea, sobrado e condomínio.
 - [Portão Eletrônico Faz Barulho: Quando é Ajuste e Quando é Defeito](https://intelsecsul.com.br/blog/portao-eletronico-faz-barulho-ajuste-ou-defeito/): Guia para distinguir ruído normal de defeito no portão eletrônico, com tabela de diagnóstico por tipo de som.
 - [Biometria, Cartão RFID ou Reconhecimento Facial: Qual Escolher?](https://intelsecsul.com.br/blog/biometria-cartao-rfid-ou-reconhecimento-facial-qual-escolher/): Comparativo completo entre as três tecnologias de controle de acesso por fluxo, higiene, LGPD, custo, visitantes e auditoria.
-- [Comprar ou Alugar Câmeras de Segurança? Comparação Completa](https://intelsecsul.com.br/blog/comprar-ou-alugar-cameras-de-seguranca-comparacao-completa/): Comparativo de compra x locação de câmeras por investimento, manutenção, atualização, contrato e previsibilidade de custo.
+- [Comprar ou Alugar Câmeras de Segurança? Comparação Completa](https://intelsecsul.com.br/blog/comprar-ou-alugar-cameras-de-seguranca-comparacao-completa/): Comparativo de compra x locação de câmeras por investimento, manutenção, contrato e previsibilidade de custo.
 - [Porta Automática de Correr ou Giratória: Qual Escolher para Comércio e Clínica?](https://intelsecsul.com.br/blog/porta-automatica-de-correr-ou-giratoria-qual-escolher/): Comparativo entre porta de correr e giratória por espaço, fluxo, NBR 9050, segurança e custo, com foco em comércio e clínicas.
 - [Cancela Automática para Condomínio ou Empresa: Como Dimensionar o Fluxo](https://intelsecsul.com.br/blog/cancela-automatica-condominio-empresa-como-dimensionar-fluxo/): Guia de dimensionamento de cancelas por volume de veículos, tecnologia de identificação e cenários de cálculo.
 - [DVR Mostra Imagem ao Vivo mas Não Grava: O Que Verificar Antes de Perder Provas](https://intelsecsul.com.br/blog/dvr-mostra-imagem-ao-vivo-mas-nao-grava/): Causas de DVR exibindo vídeo sem gravar (falha de HD, fonte fraca, gravação por detecção, sobrescrita desativada) e passos de verificação antes de perder evidências.

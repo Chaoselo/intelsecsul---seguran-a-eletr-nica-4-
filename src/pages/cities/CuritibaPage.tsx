@@ -7,7 +7,7 @@ export const CuritibaPage: React.FC = () => {
       title="Segurança Eletrônica em Curitiba | Câmeras, Alarme e Controle de Acesso | Intelsecsul"
       metaDescription="Instalação de câmeras, alarme monitorado, cerca elétrica e controle de acesso em Curitiba. Equipe própria, atendimento na capital e região. Peça um orçamento."
       h1="Segurança eletrônica em Curitiba"
-      introText="A Intelsecsul é sediada em Curitiba e atende toda a cidade, de bairros centrais como Batel, Bigorrilho e Água Verde a regiões como Santa Felicidade, Boqueirão, Portão, Cabral, Cajuru e Sítio Cercado. Atendemos residências, comércios, empresas e condomínios com projetos de câmeras, alarme monitorado, cerca elétrica, controle de acesso e locação de equipamentos."
+      introText="A Intelsecsul é sediada em Curitiba e atende toda a cidade, de bairros centrais como Batel, Bigorrilho e Água Verde a regiões como Santa Felicidade, Boqueirão, Portão, Cabral, Cajuru e Sítio Cercado. Atendemos residências, comércios, empresas e condomínios com projetos de câmeras, alarme monitorado, cerca elétrica, controle de acesso e aluguel de câmeras de segurança."
       servicosDestaque={[
         {
           name: 'Câmeras de Segurança',
@@ -25,9 +25,9 @@ export const CuritibaPage: React.FC = () => {
           description: 'Gerenciamento inteligente de entradas e saídas por biometria, cartão RFID e reconhecimento facial.',
         },
         {
-          name: 'Locação de Câmeras e Equipamentos de Segurança',
-          slug: 'locacao-de-cameras-de-seguranca',
-          description: 'Câmeras e alarme por mensalidade fixa sem investimento inicial e com manutenção inclusa.',
+          name: 'Aluguel de Câmeras de Segurança',
+          slug: 'aluguel-de-cameras-de-seguranca',
+          description: 'Aluguel de câmeras de segurança IP por mensalidade fixa, sem investimento inicial e com manutenção inclusa.',
         },
       ]}
       faq={[

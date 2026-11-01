@@ -159,16 +159,6 @@ export const Header: React.FC = () => {
               Sobre
             </Link>
 
-            {/* Depoimentos Link */}
-            <Link
-              to="/depoimentos/"
-              className={`transition-colors py-2 ${
-                isActive('/depoimentos/') ? 'text-[#00A3FF] font-semibold' : 'text-slate-200 hover:text-[#00A3FF]'
-              }`}
-            >
-              Depoimentos
-            </Link>
-
             {/* Contato Link */}
             <Link
               to="/contato/"
@@ -309,16 +299,6 @@ export const Header: React.FC = () => {
               }`}
             >
               Sobre a Intelsecsul
-            </Link>
-
-            <Link
-              to="/depoimentos/"
-              onClick={closeMobileMenu}
-              className={`block px-3 py-2.5 rounded-lg font-medium text-base ${
-                isActive('/depoimentos/') ? 'bg-sky-600/20 text-sky-400 font-semibold' : 'text-slate-200 hover:bg-slate-800'
-              }`}
-            >
-              Depoimentos
             </Link>
 
             <Link

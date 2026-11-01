@@ -25,9 +25,9 @@ export const CampinaGrandeDoSulPage: React.FC = () => {
           description: 'Gerenciamento de fluxo de colaboradores, visitantes e veículos no Distrito Industrial.',
         },
         {
-          name: 'Locação de Câmeras e Equipamentos de Segurança',
-          slug: 'locacao-de-cameras-de-seguranca',
-          description: 'Aluguel de câmeras e sistemas de segurança com suporte e manutenção inclusos.',
+          name: 'Aluguel de Câmeras de Segurança',
+          slug: 'aluguel-de-cameras-de-seguranca',
+          description: 'Aluguel de câmeras de segurança IP com suporte e manutenção inclusos.',
         },
       ]}
       faq={[

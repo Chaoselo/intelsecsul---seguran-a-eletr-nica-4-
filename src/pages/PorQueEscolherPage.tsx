@@ -28,7 +28,7 @@ export const PorQueEscolherPage: React.FC = () => {
 
   useDocumentMeta({
     title: 'Por Que Escolher a Intelsecsul | Diferenciais',
-    description: 'Equipe técnica própria, atendimento em toda a Região Metropolitana de Curitiba e locação de equipamentos sem investimento inicial. Conheça os diferenciais da Intelsecsul.',
+    description: 'Equipe técnica própria, atendimento em toda a Região Metropolitana de Curitiba e aluguel de câmeras de segurança sem investimento inicial. Conheça os diferenciais da Intelsecsul.',
     canonicalUrl: `https://intelsecsul.com.br${currentPath}`,
     jsonLdSchema: breadcrumbSchema,
   });
@@ -53,7 +53,7 @@ export const PorQueEscolherPage: React.FC = () => {
     },
     {
       icon: Key,
-      title: 'Locação de equipamentos sem investimento inicial',
+      title: 'Aluguel de câmeras sem investimento inicial',
       description: 'Você paga apenas uma mensalidade, sem taxa de instalação nem custo de manutenção.',
     },
     {
@@ -166,7 +166,7 @@ export const PorQueEscolherPage: React.FC = () => {
                 Veja nossos comparativos detalhados
               </h3>
               <p className="text-xs text-slate-400">
-                Compare Compra x Locação e entenda as diferenças entre a Intelsecsul e outras opções do mercado.
+                Compare Compra x Aluguel e entenda as diferenças entre a Intelsecsul e outras opções do mercado.
               </p>
             </div>
 

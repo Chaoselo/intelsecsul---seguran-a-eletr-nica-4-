@@ -71,7 +71,7 @@ export const ComparativosHubPage: React.FC = () => {
             
             {/* Comparativo 1 */}
             <Link
-              to="/comparativos/compra-x-locacao-de-equipamentos/"
+              to="/comparativos/compra-x-aluguel-de-cameras/"
               className="p-8 rounded-3xl bg-[#141A29] border border-slate-800 hover:border-[#0091FF] transition-all flex flex-col justify-between group shadow-xl relative overflow-hidden"
             >
               <div>
@@ -84,11 +84,11 @@ export const ComparativosHubPage: React.FC = () => {
                 </span>
 
                 <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 group-hover:text-[#00C5FF] transition-colors leading-snug">
-                  Compra ou locação de equipamentos de segurança: qual escolher?
+                  Compra ou aluguel de câmeras de segurança: qual escolher?
                 </h2>
 
                 <p className="text-slate-300 text-sm leading-relaxed mb-6">
-                  Entenda as diferenças entre comprar os equipamentos à vista ou optar pela locação com mensalidade fixa, taxa zero de instalação e manutenção inclusa.
+                  Entenda as diferenças entre comprar os equipamentos à vista ou optar pelo aluguel de câmeras de segurança com mensalidade a partir de R$ 249/mês por ponto, sem investimento inicial e com manutenção inclusa.
                 </p>
               </div>
 
@@ -117,7 +117,7 @@ export const ComparativosHubPage: React.FC = () => {
                 </h2>
 
                 <p className="text-slate-300 text-sm leading-relaxed mb-6">
-                  Compare a abrangência de serviços, fidelidade contratual, suporte técnico local e soluções sob medida da Intelsecsul em relação ao modelo multinacional.
+                  Compare a abrangência de serviços, prazos contratuais de locação, suporte técnico local e soluções sob medida da Intelsecsul em relação ao modelo multinacional.
                 </p>
               </div>
 

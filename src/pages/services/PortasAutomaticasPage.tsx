@@ -120,9 +120,9 @@ export const PortasAutomaticasPage: React.FC = () => {
         },
       ]}
       crossLink={{
-        text: 'Procurando automação de portão de casa com motor deslizante ou basculante? Veja nossa página de Portão Eletrônico.',
-        linkText: 'Ver Portão Eletrônico',
-        url: '/servicos/portao-eletronico/',
+        text: 'Procurando automação de portão de casa com motor deslizante ou basculante? Veja nossa página de Portão Automático.',
+        linkText: 'Ver Portão Automático',
+        url: '/servicos/portao-automatico/',
       }}
       ctaFinal={{
         title: 'Peça um orçamento gratuito para portas automáticas',

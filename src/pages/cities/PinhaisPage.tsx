@@ -25,9 +25,9 @@ export const PinhaisPage: React.FC = () => {
           description: 'Proteção perimetral certificada em muros residenciais e de condomínios.',
         },
         {
-          name: 'Locação de Câmeras e Equipamentos de Segurança',
-          slug: 'locacao-de-cameras-de-seguranca',
-          description: 'Sistemas completos por mensalidade sem taxa de instalação e com manutenção inclusa.',
+          name: 'Aluguel de Câmeras de Segurança',
+          slug: 'aluguel-de-cameras-de-seguranca',
+          description: 'Aluguel de câmeras de segurança IP por mensalidade sem taxa de instalação e com manutenção inclusa.',
         },
       ]}
       faq={[
