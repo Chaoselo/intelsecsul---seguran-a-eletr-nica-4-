@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { siteConfig } from '../config/siteConfig';
-import { TESTIMONIALS_LIST } from '../constants';
 export { buildBreadcrumbSchema } from '../utils/schema';
 
 export interface SEOOptions {
@@ -70,7 +69,7 @@ export const LOCAL_BUSINESS_SCHEMA = {
   "email": siteConfig.email,
   "image": "https://intelsecsul.com.br/favicon.jpg",
   "priceRange": "$$",
-  "description": "Empresa especializada em instalação e manutenção de câmeras de segurança, alarme, cerca elétrica, controle de acesso e locação de câmeras de segurança em Curitiba e Região Metropolitana.",
+  "description": "Empresa especializada em instalação e manutenção de câmeras de segurança, alarme, cerca elétrica, controle de acesso e aluguel de câmeras de segurança em Curitiba e Região Metropolitana.",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Curitiba",
@@ -94,19 +93,6 @@ export const LOCAL_BUSINESS_SCHEMA = {
     "reviewCount": siteConfig.googleReviewCount,
     "bestRating": "5"
   },
-  "review": TESTIMONIALS_LIST.map((item) => ({
-    "@type": "Review",
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": item.rating,
-      "bestRating": "5"
-    },
-    "author": {
-      "@type": "Person",
-      "name": item.author
-    },
-    "reviewBody": item.content
-  })),
   "areaServed": [
     { "@type": "City", "name": "Curitiba" },
     { "@type": "City", "name": "Pinhais" },
@@ -160,10 +146,10 @@ export const LOCAL_BUSINESS_SCHEMA = {
     "name": "Serviços de Segurança Eletrônica",
     "itemListElement": [
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalação de Câmeras de Segurança e CFTV" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Locação de Câmeras de Segurança" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aluguel de Câmeras de Segurança" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalação e Manutenção de Alarmes" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalação de Cerca Elétrica e Concertina" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção e Automação de Portão Eletrônico" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção e Automação de Portão Automático" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistemas de Controle de Acesso Biométrico e Facial" } }
     ]
   }

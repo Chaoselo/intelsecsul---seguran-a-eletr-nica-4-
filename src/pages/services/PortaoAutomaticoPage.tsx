@@ -7,7 +7,7 @@ export const PortaoAutomaticoPage: React.FC = () => {
       title="Portão Automático em Curitiba e Região | Intelsecsul"
       metaDescription="Instalação, automação e manutenção de portões automáticos residenciais e comerciais em Curitiba e região. Motores de alta durabilidade. Peça um orçamento."
       h1="Portão automático em Curitiba e Região Metropolitana"
-      introText="Instalamos, automatizamos e damos manutenção em portões automáticos residenciais e comerciais, com motores adequados ao peso e ao uso de cada portão, seja deslizante, basculante ou de duas folhas."
+      introText="Instalamos, automatizamos e fazemos manutenção em portões automáticos (também chamados de portões eletrônicos) residenciais e comerciais, com motores adequados ao peso e ao uso de cada portão, seja deslizante, basculante ou de duas folhas."
       whenToHireTitle="Quando instalar ou trocar o motor do portão automático"
       whenToHireText="A automação do portão automático costuma ser uma das primeiras melhorias de segurança e praticidade que as famílias e empresas buscam, principalmente para evitar abrir o portão manualmente à noite ou em dias de chuva. Também é comum a troca do motor quando o portão começa a apresentar lentidão, ruído excessivo ou parar de funcionar, sinais de que o motor está no fim da vida útil ou é inadequado para o peso do portão. Empresas com fluxo intenso de veículos também se beneficiam de motores de uso mais robusto, dimensionados para ciclos frequentes de abertura e fechamento."
       sintomasFrequentes={[
@@ -121,6 +121,10 @@ export const PortaoAutomaticoPage: React.FC = () => {
         url: '/servicos/portas-automaticas/',
       }}
       relatedLinks={[
+        {
+          label: 'Manutenção e conserto de portão automático',
+          url: '/servicos/portao-automatico/manutencao/',
+        },
         {
           label: 'Controle remoto para portão automático: cópia e programação',
           url: '/servicos/controle-remoto-para-portao/',

@@ -124,6 +124,12 @@ Seu projeto começa em até 5 dias após a assinatura do contrato. O prazo exato
         text: 'A partir de R$ 249/mês por ponto de câmera IP, sem investimento inicial, com instalação e manutenção preventiva e corretiva inclusas.',
         buttonText: 'Falar no WhatsApp agora',
       }}
+      relatedLinks={[
+        {
+          label: 'Manutenção e conserto de câmeras e CFTV',
+          url: '/servicos/cameras-de-seguranca/manutencao/',
+        },
+      ]}
       serviceSlug="aluguel-de-cameras-de-seguranca"
     />
   );

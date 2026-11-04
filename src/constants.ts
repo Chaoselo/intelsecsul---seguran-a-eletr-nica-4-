@@ -197,36 +197,10 @@ export const FAQ_LIST: FAQItem[] = [
 export const GOOGLE_REVIEWS_URL = 'https://share.google/dNAmcesFz6QV1vroW';
 
 export const TESTIMONIALS_LIST: TestimonialItem[] = [
-  {
-    id: 't-1',
-    author: 'Ricardo Silveira',
-    content: 'Excelentes profissionais! Fizemos o aluguel das câmeras de segurança e a instalação do alarme para nossa empresa. Instalação rápida, suporte técnico atencioso e equipamento de altíssima qualidade da Intelbras.',
-    rating: 5,
-    date: 'Há 2 semanas',
-    service: 'Câmeras de Segurança e Alarme',
-  },
-  {
-    id: 't-2',
-    author: 'Fernanda M. Oliveira',
-    content: 'Contratei o plano de aluguel de câmeras de segurança para o condomínio. Sem taxa de instalação e manutenção inclusa! Ótimo custo-benefício e atendimento nota 10 em Curitiba.',
-    rating: 5,
-    date: 'Há 1 mês',
-    service: 'Aluguel de Câmeras de Segurança',
-  },
-  {
-    id: 't-3',
-    author: 'Carlos Eduardo Santos',
-    content: 'Instalaram portão automático e vídeo porteiro na minha residência em São José dos Pinhais. Equipe pontual, serviço limpo e explicaram todo o funcionamento pelo aplicativo. Recomendo muito!',
-    rating: 5,
-    date: 'Há 2 meses',
-    service: 'Automação e Interfonia',
-  },
-  {
-    id: 't-4',
-    author: 'Juliana Castro',
-    content: 'Controle de acesso biométrico e alarme monitorado instalado na nossa clínica. A paz de espírito que a Intelsecsul nos trouxe não tem preço. Empresa séria e de total confiança.',
-    rating: 5,
-    date: 'Há 3 meses',
-    service: 'Controle de Acesso e Alarme',
-  },
+  { id: 'g-1', author: 'Suelen Barbosa', rating: 5, content: 'Empresa excelente, profissional especializado e sério! Trabalha com produtos de extrema qualidade. Podem contratar sem medo. Boa Indole e super honesto.' },
+  { id: 'g-2', author: 'Alessandra Napomucena', rating: 5, service: 'Preço razoável', content: 'Excelente, tem comprometimento trabalho perfeito honesto !' },
+  { id: 'g-3', author: 'Julio Carlos Domingues', rating: 5, content: 'Indico, tem preço justo, trabalha muito bem é ágil e confiável. Super indico.' },
+  { id: 'g-4', author: 'Felipe Cardoso', rating: 5, service: 'Ótimo preço', content: 'Ótima empresa, instalação de qualidade, preço acessível, pontual e pronto atendimento.' },
+  { id: 'g-5', author: 'Ariane Fontes', rating: 5, content: 'Empresa ótima, profissional excelente.' },
+  { id: 'g-6', author: 'connectcell cell', rating: 5, service: 'Ótimo preço', content: 'Serviço com excelência ! Muito bom mesmo !!!' },
 ];

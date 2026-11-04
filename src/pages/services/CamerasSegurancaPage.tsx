@@ -142,6 +142,12 @@ export const CamerasSegurancaPage: React.FC = () => {
         text: 'Nossa equipe avalia o imóvel e apresenta o melhor projeto de câmeras para o seu caso.',
         buttonText: 'Falar no WhatsApp agora',
       }}
+      relatedLinks={[
+        {
+          label: 'Manutenção e conserto de câmeras e CFTV',
+          url: '/servicos/cameras-de-seguranca/manutencao/',
+        },
+      ]}
       serviceSlug="cameras-de-seguranca"
     />
   );

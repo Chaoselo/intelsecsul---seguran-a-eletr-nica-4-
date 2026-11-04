@@ -70,14 +70,14 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
         content: (
           <div className="space-y-4">
             <p>
-              Comprar significa um investimento maior no início, mas sem mensalidade pelo equipamento. Já a locação permite começar sem custo inicial, com manutenção inclusa.
+              Comprar significa um investimento maior no início, mas sem mensalidade pelo equipamento. Já o aluguel permite começar sem custo inicial, com manutenção inclusa.
             </p>
             <div className="p-4 rounded-xl bg-[#141A29] border border-[#0091FF]/30 inline-block">
               <Link
-                to="/comparativos/compra-x-locacao-de-equipamentos/"
+                to="/comparativos/compra-x-aluguel-de-cameras/"
                 className="inline-flex items-center gap-2 text-sm font-bold text-[#00C5FF] hover:text-white transition-colors"
               >
-                <span>Veja o comparativo completo entre compra e locação de equipamentos</span>
+                <span>Veja o comparativo completo entre compra e aluguel de câmeras</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -227,7 +227,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     readTime: '4 min de leitura',
     publishedDate: '2026-08-29',
     summary: 'Na maioria dos casos, um portão eletrônico que não abre ou não fecha totalmente tem um destes três problemas: a fotocélula (sensor de segurança) está desalinhada ou suja, o fim de curso perdeu a referência de onde o portão deve parar, ou há um obstáculo físico no trilho ou na cremalheira.',
-    intro: 'Na maioria dos casos, um portão eletrônico que não abre ou não fecha totalmente tem um destes três problemas: a fotocélula (sensor de segurança) está desalinhada ou suja, o fim de curso perdeu a referência de onde o portão deve parar, ou há um obstáculo físico no trilho ou na cremalheira. Também é comum ser um problema na placa da central ou no próprio motor, especialmente em portões com mais de 5 anos de uso sem manutenção preventiva. Abaixo, detalhamos cada causa, do problema mais simples (e mais barato de resolver) ao mais sério.',
+    intro: 'Na maioria dos casos, um portão eletrônico (ou portão automático) que não abre ou não fecha totalmente tem um destes três problemas: a fotocélula (sensor de segurança) está desalinhada ou suja, o fim de curso perdeu a referência de onde o portão deve parar, ou há um obstáculo físico no trilho ou na cremalheira. Também é comum ser um problema na placa da central ou no próprio motor, especialmente em portões com mais de 5 anos de uso sem manutenção preventiva. Abaixo, detalhamos cada causa, do problema mais simples (e mais barato de resolver) ao mais sério.',
     sections: [
       {
         h2: '1. Fotocélula desalinhada, suja ou com objeto na frente',
@@ -256,8 +256,16 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       },
       {
         h2: 'Quando chamar assistência técnica',
-        content:
-          'Se você já limpou a fotocélula e confirmou que não há obstáculo visível e o problema persistir, é hora de chamar um técnico — mexer na placa ou na regulagem de fim de curso sem experiência pode piorar o problema ou até queimar o motor. A Intelsecsul atende esse tipo de chamado em Curitiba e Região Metropolitana, com diagnóstico técnico no local antes de qualquer orçamento.',
+        content: (
+          <div className="space-y-4">
+            <p>
+              Se você já limpou a fotocélula e confirmou que não há obstáculo visível e o problema persistir, é hora de chamar um técnico — mexer na placa ou na regulagem de fim de curso sem experiência pode piorar o problema ou até queimar o motor. A Intelsecsul atende esse tipo de chamado em Curitiba e Região Metropolitana, com diagnóstico técnico no local antes de qualquer orçamento.
+            </p>
+            <p>
+              Se o problema continuar, veja nossa página de <Link to="/servicos/portao-automatico/manutencao/" className="text-[#00C5FF] hover:underline">manutenção e conserto de portão automático</Link> e faça um diagnóstico gratuito pelo WhatsApp.
+            </p>
+          </div>
+        ),
       },
     ],
     relatedQuestions: [
@@ -608,7 +616,16 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       },
       {
         h2: 'Conclusão',
-        content: 'Câmera fora do ar não significa, necessariamente, equipamento perdido. Na maioria das vezes, a causa está em algo simples — uma fonte queimada, um cabo solto, uma senha de Wi-Fi alterada ou um firmware desatualizado. O diagnóstico metódico, começando pela energia e avançando para rede, configuração e hardware, resolve a maior parte dos casos sem custo elevado. Se após essas verificações o problema persistir, a avaliação de um técnico especializado evita tentativas que podem piorar o quadro.',
+        content: (
+          <div className="space-y-4">
+            <p>
+              Câmera fora do ar não significa, necessariamente, equipamento perdido. Na maioria das vezes, a causa está em algo simples — uma fonte queimada, um cabo solto, uma senha de Wi-Fi alterada ou um firmware desatualizado. O diagnóstico metódico, começando pela energia e avançando para rede, configuração e hardware, resolve a maior parte dos casos sem custo elevado. Se após essas verificações o problema persistir, a avaliação de um técnico especializado evita tentativas que podem piorar o quadro.
+            </p>
+            <p>
+              Se o problema continuar, veja nossa página de <Link to="/servicos/cameras-de-seguranca/manutencao/" className="text-[#00C5FF] hover:underline">manutenção e conserto de câmeras e CFTV</Link> e faça um diagnóstico gratuito pelo WhatsApp.
+            </p>
+          </div>
+        ),
       },
     ],
     relatedQuestions: [
@@ -706,7 +723,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
             <p>Os valores variam conforme o tamanho do sistema, a quantidade de equipamentos e a frequência das visitas. Para dar uma referência realista:</p>
             <p><strong className="text-white">Contrato de manutenção preventiva (CFTV):</strong> em condomínios e empresas, a manutenção preventiva mensal costuma ficar na faixa de R$ 500 a R$ 1.500 para sistemas de pequeno a médio porte (até 16 canais). Para sistemas maiores (32 canais ou mais, múltiplos pontos), os valores podem chegar a R$ 3.000 ou mais por mês, dependendo do escopo.</p>
             <p><strong className="text-white">Manutenção corretiva avulsa:</strong> uma única visita emergencial para troca de câmera, por exemplo, pode custar entre R$ 400 e R$ 1.200 — dependendo do modelo da câmera, da complexidade da instalação e do horário do chamado. Se o problema for mais grave (placa queimada, HD corrompido, cabeamento rompido), o custo sobe consideravelmente.</p>
-            <p><strong className="text-white">A conta que importa:</strong> na locação de câmeras da Intelsecsul, que começa em R$ 249 por mês por ponto de câmera IP (o valor final depende do prazo do contrato), a manutenção preventiva e corretiva e a troca de HD já estão na mensalidade. Você não paga conserto avulso nem fica sem imagem esperando orçamento.</p>
+            <p><strong className="text-white">A conta que importa:</strong> no aluguel de câmeras da Intelsecsul, que começa em R$ 249 por mês por ponto de câmera IP (o valor final depende do prazo do contrato), a manutenção preventiva e corretiva e a troca de HD já estão na mensalidade. Você não paga conserto avulso nem fica sem imagem esperando orçamento.</p>
           </div>
         ),
       },
@@ -729,7 +746,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
           <ul className="space-y-2 list-disc list-inside">
             <li><strong className="text-white">Custo fixo mesmo em meses sem uso.</strong> Em sistemas pequenos ou raramente usados, o valor mensal pode parecer um peso desnecessário.</li>
             <li><strong className="text-white">Necessidade de escolher bem a empresa.</strong> Um contrato com escopo vago pode gerar frustração — é essencial que detalhe visitas, equipamentos e peças cobertas.</li>
-            <li><strong className="text-white">Prazos contratuais definidos.</strong> Na locação de câmeras, a Intelsecsul trabalha com contratos de 6, 12, 24 ou 36 meses, conforme o projeto. Obras e canteiros costumam ficar entre 6 e 12 meses, e empresas entre 24 e 36 meses, sempre analisado caso a caso. Esse prazo permite oferecer a locação sem investimento inicial: o equipamento é instalado sem custo de entrada e a mensalidade cobre o investimento ao longo do contrato. Em caso de rescisão antecipada, é cobrada multa proporcional. Leia as condições antes de assinar.</li>
+            <li><strong className="text-white">Prazos contratuais definidos.</strong> No aluguel de câmeras, a Intelsecsul trabalha com contratos de 6, 12, 24 ou 36 meses, conforme o projeto. Obras e canteiros costumam ficar entre 6 e 12 meses, e empresas entre 24 e 36 meses, sempre analisado caso a caso. Esse prazo permite oferecer o aluguel sem investimento inicial: o equipamento é instalado sem custo de entrada e a mensalidade cobre o investimento ao longo do contrato. Em caso de rescisão antecipada, é cobrada multa proporcional. Leia as condições antes de assinar.</li>
           </ul>
         ),
       },
@@ -802,7 +819,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       },
       {
         question: 'Posso cancelar o contrato a qualquer momento?',
-        answer: 'Na locação de câmeras, a Intelsecsul trabalha com contratos de 6, 12, 24 ou 36 meses, conforme o projeto. Obras e canteiros costumam ficar entre 6 e 12 meses, e empresas entre 24 e 36 meses, sempre analisado caso a caso. Esse prazo permite oferecer a locação sem investimento inicial: o equipamento é instalado sem custo de entrada e a mensalidade cobre o investimento ao longo do contrato. Em caso de rescisão antecipada, é cobrada multa proporcional. Leia as condições antes de assinar.',
+        answer: 'No aluguel de câmeras, a Intelsecsul trabalha com contratos de 6, 12, 24 ou 36 meses, conforme o projeto. Obras e canteiros costumam ficar entre 6 e 12 meses, e empresas entre 24 e 36 meses, sempre analisado caso a caso. Esse prazo permite oferecer o aluguel sem investimento inicial: o equipamento é instalado sem custo de entrada e a mensalidade cobre o investimento ao longo do contrato. Em caso de rescisão antecipada, é cobrada multa proporcional. Leia as condições antes de assinar.',
       },
       {
         question: 'Vale a pena contratar manutenção só para o alarme, sem incluir as câmeras?',
@@ -811,7 +828,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     ],
     internalLink: {
       text: 'Precisa de um contrato de manutenção para o seu sistema de segurança?',
-      url: '/servicos/manutencao-de-sistemas-de-seguranca/',
+      url: '/servicos/manutencao/',
       linkText: 'Ver Manutenção de Sistemas',
     },
     whatsappMessage: 'Vim do blog e quero saber sobre contrato de manutenção',
@@ -1487,7 +1504,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
           <div className="space-y-4">
             <p>Duas casas do mesmo tamanho podem precisar de números completamente diferentes, dependendo de quantos acessos e ângulos cegos cada uma tem.</p>
             <p>Pense como um instalador: o objetivo é não deixar nenhum acesso sem cobertura e nenhum canto cego onde alguém possa se aproximar sem aparecer. O número de câmeras é simplesmente a soma desses pontos, depois de eliminar sobreposições desnecessárias.</p>
-            <p>Este guia ajuda você a calcular o número certo para o seu caso — seja para compra de um sistema CFTV ou para locação de câmeras — sem gastar demais nem ficar desprotegido. Se você mora em Curitiba ou Região Metropolitana, a Intelsecsul faz essa avaliação gratuitamente na visita técnica.</p>
+            <p>Este guia ajuda você a calcular o número certo para o seu caso — seja para compra de um sistema CFTV ou para aluguel de câmeras — sem gastar demais nem ficar desprotegido. Se você mora em Curitiba ou Região Metropolitana, a Intelsecsul faz essa avaliação gratuitamente na visita técnica.</p>
           </div>
         ),
       },
@@ -1575,24 +1592,24 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
         ),
       },
       {
-        h2: 'Compra ou locação: como o cálculo muda',
+        h2: 'Compra ou aluguel: como o cálculo muda',
         content: (
           <div className="space-y-4">
-            <p>O número de câmeras necessárias é o mesmo, independentemente de você comprar ou locar o sistema. O que muda é o modelo de investimento:</p>
+            <p>O número de câmeras necessárias é o mesmo, independentemente de você comprar ou alugar o sistema. O que muda é o modelo de investimento:</p>
             <div className="overflow-x-auto -mx-4 sm:mx-0">
               <table className="w-full text-sm border-collapse min-w-[640px]">
                 <thead>
                   <tr className="border-b border-slate-700">
                     <th className="text-left p-3 text-white font-bold">Aspecto</th>
                     <th className="text-left p-3 text-white font-bold">Compra (CFTV próprio)</th>
-                    <th className="text-left p-3 text-white font-bold">Locação de câmeras</th>
+                    <th className="text-left p-3 text-white font-bold">Aluguel de câmeras</th>
                   </tr>
                 </thead>
                 <tbody className="text-slate-300">
                   <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Investimento inicial</td><td className="p-3">Alto (equipamentos + instalação)</td><td className="p-3">Baixo ou zero (mensalidade)</td></tr>
                   <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Custo mensal</td><td className="p-3">Manutenção (se contratada)</td><td className="p-3">Fixo, incluso equipamento e manutenção</td></tr>
                   <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Ideal para</td><td className="p-3">Quem quer patrimônio e não se importa com custo inicial</td><td className="p-3">Quem quer previsibilidade e não quer imobilizar capital</td></tr>
-                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Manutenção</td><td className="p-3">Responsabilidade do proprietário</td><td className="p-3">Inclusa no contrato de locação</td></tr>
+                  <tr className="border-b border-slate-800"><td className="p-3 font-semibold text-white">Manutenção</td><td className="p-3">Responsabilidade do proprietário</td><td className="p-3">Inclusa no contrato de aluguel</td></tr>
                   <tr><td className="p-3 font-semibold text-white">Upgrade futuro</td><td className="p-3">Custo adicional para trocar equipamentos</td><td className="p-3">Possível trocar conforme necessidade</td></tr>
                 </tbody>
               </table>
@@ -1635,7 +1652,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       },
       {
         h2: 'Conclusão',
-        content: 'Quantas câmeras de segurança você precisa? A resposta não está nos metros quadrados da casa, mas na contagem de pontos de acesso e ângulos cegos. Portão, garagem, laterais, área de serviço e fundos são os pontos prioritários. Casas térreas simples ficam bem com 3 a 4 câmeras; sobrados, com 5 a 6; condomínios, com 8 a 16 ou mais. O cálculo certo evita os dois extremos: comprar menos do que o necessário e ficar com pontos cegos críticos, ou comprar mais do que o necessário e gastar à toa. E tanto para compra quanto para locação, o número de câmeras é o mesmo — o que muda é o modelo de investimento.',
+        content: 'Quantas câmeras de segurança você precisa? A resposta não está nos metros quadrados da casa, mas na contagem de pontos de acesso e ângulos cegos. Portão, garagem, laterais, área de serviço e fundos são os pontos prioritários. Casas térreas simples ficam bem com 3 a 4 câmeras; sobrados, com 5 a 6; condomínios, com 8 a 16 ou mais. O cálculo certo evita os dois extremos: comprar menos do que o necessário e ficar com pontos cegos críticos, ou comprar mais do que o necessário e gastar à toa. E tanto para compra quanto para aluguel, o número de câmeras é o mesmo — o que muda é o modelo de investimento.',
       },
     ],
     relatedQuestions: [
@@ -1645,7 +1662,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       },
       {
         question: 'Posso começar com 2 câmeras e ampliar depois?',
-        answer: 'Sim, desde que o DVR/NVR escolhido tenha canais livres para expansão. Um gravador de 8 canais permite começar com 2 ou 3 câmeras e adicionar mais conforme necessidade. Na locação, a expansão também é possível, geralmente com ajuste no valor mensal.',
+        answer: 'Sim, desde que o DVR/NVR escolhido tenha canais livres para expansão. Um gravador de 8 canais permite começar com 2 ou 3 câmeras e adicionar mais conforme necessidade. No aluguel, a expansão também é possível, geralmente com ajuste no valor mensal.',
       },
       {
         question: 'Quantas câmeras preciso para cobrir o perímetro da casa?',
@@ -1668,7 +1685,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     whatsappMessage: 'Vim do blog e quero saber quantas câmeras preciso',
     ctaFinal: {
       title: 'Quer saber exatamente quantas câmeras sua casa precisa?',
-      text: 'A Intelsecsul faz a avaliação gratuitamente em Curitiba e Região Metropolitana. Na visita, mapeamos os pontos de vulnerabilidade, definimos a quantidade ideal de câmeras e apresentamos as opções de compra e locação.',
+      text: 'A Intelsecsul faz a avaliação gratuitamente em Curitiba e Região Metropolitana. Na visita, mapeamos os pontos de vulnerabilidade, definimos a quantidade ideal de câmeras e apresentamos as opções de compra e aluguel.',
       buttonText: 'Falar no WhatsApp agora',
     },
   },
@@ -1683,7 +1700,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     readTime: '10 min de leitura',
     publishedDate: '2026-09-28',
     summary: 'Ruído normal é constante e moderado. Quando o som muda, aumenta ou aparece um ruído novo, o portão está comunicando algo. Rangido geralmente é falta de lubrificação; estalo seco é peça desgastada; ronco forte é esforço excessivo; zumbido agudo é problema interno no motor.',
-    intro: 'Todo portão eletrônico faz algum ruído ao operar — o som do motor, o deslizamento da cremalheira, o encaixe do fim de curso. Ruído normal é constante, moderado e sem variações bruscas. Quando o som muda, aumenta de intensidade ou aparece um ruído novo, o portão está comunicando alguma coisa. Na maioria dos casos, um barulho anormal tem origem em um desajuste mecânico ou de infraestrutura — não em um defeito no motor. O trilho desnivelado, por exemplo, é apontado por instaladores com mais de 20 anos de experiência como a principal causa de sobrecarga e queima de motores: segundo um serralheiro entrevistado pelo Olhar Digital, 7 em cada 10 motores queimam pelo mesmo erro de nivelamento do trilho.',
+    intro: 'Todo portão eletrônico (ou portão automático) faz algum ruído ao operar — o som do motor, o deslizamento da cremalheira, o encaixe do fim de curso. Ruído normal é constante, moderado e sem variações bruscas. Quando o som muda, aumenta de intensidade ou aparece um ruído novo, o portão está comunicando alguma coisa. Na maioria dos casos, um barulho anormal tem origem em um desajuste mecânico ou de infraestrutura — não em um defeito no motor. O trilho desnivelado, por exemplo, é apontado por instaladores com mais de 20 anos de experiência como a principal causa de sobrecarga e queima de motores: segundo um serralheiro entrevistado pelo Olhar Digital, 7 em cada 10 motores queimam pelo mesmo erro de nivelamento do trilho.',
     sections: [
       {
         h2: 'Antes de tudo: como é o som normal do seu portão?',
@@ -1885,6 +1902,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
           <div className="space-y-4">
             <p>Portão eletrônico fazendo barulho é um aviso — e a maioria dos ruídos tem solução simples se identificada cedo. Rangido metálico geralmente é falta de lubrificação; estalo seco é peça desgastada; ronco forte é esforço excessivo; zumbido agudo é problema interno no motor.</p>
             <p>O que não se deve fazer é ignorar o ruído esperando que ele passe. Um rangido não tratado evolui para desgaste de roldanas, depois para esforço excessivo do motor, e por fim para a queima do equipamento — cada etapa mais cara que a anterior. Um <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">contrato de manutenção preventiva</Link> é o que quebra esse ciclo antes que ele comece.</p>
+            <p>Se o problema continuar, veja nossa página de <Link to="/servicos/portao-automatico/manutencao/" className="text-[#00C5FF] hover:underline">manutenção e conserto de portão automático</Link> e faça um diagnóstico gratuito pelo WhatsApp.</p>
           </div>
         ),
       },
@@ -2190,7 +2208,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     readTime: '11 min de leitura',
     publishedDate: '2026-09-26',
     summary: 'A decisão entre comprar e alugar câmeras de segurança depende do tempo de uso, do capital disponível e da gestão da manutenção. Compare custos, prazos de contrato e veja qual opção faz mais sentido para o seu projeto.',
-    intro: 'A decisão entre comprar e alugar um sistema de câmeras de segurança depende principalmente do tempo de uso pretendido, da disponibilidade de capital e de quem vai cuidar da manutenção. Enquanto a compra exige investimento inicial para aquisição dos aparelhos e deixa a manutenção sob responsabilidade do proprietário, a locação de câmeras IP começa a partir de R$ 249 por mês por ponto, sem investimento inicial, com instalação, manutenção preventiva, corretiva e troca de HD incluídas na mensalidade. A escolha ideal varia conforme as necessidades de cada imóvel ou empresa.',
+    intro: 'A decisão entre comprar e alugar um sistema de câmeras de segurança depende principalmente do tempo de uso pretendido, da disponibilidade de capital e de quem vai cuidar da manutenção. Enquanto a compra exige investimento inicial para aquisição dos aparelhos e deixa a manutenção sob responsabilidade do proprietário, o aluguel de câmeras IP começa a partir de R$ 249 por mês por ponto, sem investimento inicial, com instalação, manutenção preventiva, corretiva e troca de HD incluídas na mensalidade. A escolha ideal varia conforme as necessidades de cada imóvel ou empresa.',
     sections: [
       {
         h2: 'Investimento inicial: o critério que mais pesa na decisão',
@@ -2199,10 +2217,10 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
             <h3 className="text-lg sm:text-xl font-bold text-white">Compra</h3>
             <p>A compra exige desembolso imediato de todo o valor do sistema. Para uma residência com 4 câmeras, um kit CFTV completo (DVR + câmeras + HD + cabos + fonte) custa entre R$ 1.200 e R$ 2.500. A isso soma-se a mão de obra de instalação, que em Curitiba varia entre R$ 180 e R$ 450 por ponto — ou seja, mais R$ 720 a R$ 1.800 para 4 câmeras.</p>
             <p>O investimento total para um sistema residencial de 4 câmeras fica, portanto, entre R$ 1.920 e R$ 4.300. Para sistemas comerciais maiores (8 a 16 câmeras), o valor pode ultrapassar R$ 10.000 antes da primeira imagem gravada. Se você ainda não sabe quantas câmeras precisa, vale conferir nosso <Link to="/blog/quantas-cameras-de-seguranca-preciso-para-minha-casa" className="text-white underline hover:text-slate-300">guia de cálculo de câmeras por imóvel</Link> antes de fechar qualquer orçamento.</p>
-            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
-            <p>A locação elimina o investimento inicial (CAPEX). Na Intelsecsul, o aluguel de câmeras de segurança IP começa em R$ 249 por mês por ponto de câmera IP, sem taxa de instalação. O valor final depende do prazo do contrato (6, 12, 24 ou 36 meses) e da infraestrutura necessária para o imóvel. O valor exato é definido na visita técnica gratuita.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Aluguel</h3>
+            <p>O aluguel elimina o investimento inicial (CAPEX). Na Intelsecsul, a mensalidade para câmeras de segurança IP começa em R$ 249 por mês por ponto de câmera IP, sem taxa de instalação. O valor final depende do prazo do contrato (6, 12, 24 ou 36 meses) e da infraestrutura necessária para o imóvel. O valor exato é definido na visita técnica gratuita.</p>
             <p>Essa mensalidade inclui todos os equipamentos do sistema (câmeras, NVR, HD e switch PoE), instalação profissional, manutenção preventiva, manutenção corretiva, troca de HD e acesso pelo celular e pelo computador.</p>
-            <p><strong className="text-white">Vantagem na locação:</strong> zero investimento inicial. O sistema entra em funcionamento sem descapitalizar o seu caixa, com mensalidade previsível.</p>
+            <p><strong className="text-white">Vantagem no aluguel:</strong> zero investimento inicial. O sistema entra em funcionamento sem descapitalizar o seu caixa, com mensalidade previsível.</p>
           </div>
         ),
       },
@@ -2217,9 +2235,9 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
               <li><strong className="text-white">Substituição de HD:</strong> o disco rígido de gravação tem vida útil limitada e costuma necessitar de troca ao longo dos anos.</li>
               <li><strong className="text-white">Peças de desgaste:</strong> fontes, conectores e cabeamento exigem substituições pontuais com custo de mão de obra e peças.</li>
             </ul>
-            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
-            <p>Na locação, a manutenção preventiva, a manutenção corretiva e a troca de HD já estão inclusas na mensalidade. Não há cobrança surpresa por queima de câmera ou defeito em disco rígido. Se houver necessidade de atendimento emergencial, ele é realizado mediante disponibilidade da equipe e cobrança de taxa.</p>
-            <p><strong className="text-white">Vantagem na locação:</strong> previsibilidade orçamentária contínua, sem orçamentos imprevistos para conserto ou substituição de HD.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Aluguel</h3>
+            <p>No aluguel, a manutenção preventiva, a manutenção corretiva e a troca de HD já estão inclusas na mensalidade. Não há cobrança surpresa por queima de câmera ou defeito em disco rígido. Se houver necessidade de atendimento emergencial, ele é realizado mediante disponibilidade da equipe e cobrança de taxa.</p>
+            <p><strong className="text-white">Vantagem no aluguel:</strong> previsibilidade orçamentária contínua, sem orçamentos imprevistos para conserto ou substituição de HD.</p>
           </div>
         ),
       },
@@ -2229,9 +2247,9 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
           <div className="space-y-4">
             <h3 className="text-lg sm:text-xl font-bold text-white">Compra</h3>
             <p>Na compra, a manutenção é responsabilidade do proprietário. Sem um contrato específico, o sistema só recebe reparo após a falha, gerando períodos sem gravação e custos variáveis de chamados avulsos. Veja também nosso comparativo de <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">contrato de manutenção x chamado avulso</Link>.</p>
-            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
-            <p>Na locação, a manutenção preventiva e corretiva e a troca de HD estão incluídas no contrato. A equipe técnica própria da Intelsecsul realiza o acompanhamento e os reparos necessários para manter o sistema operando continuamente.</p>
-            <p><strong className="text-white">Vantagem na locação:</strong> manutenção preventiva, corretiva e troca de HD inclusas sem custo adicional de mão de obra.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Aluguel</h3>
+            <p>No aluguel, a manutenção preventiva e corretiva e a troca de HD estão incluídas no contrato. A equipe técnica própria da Intelsecsul realiza o acompanhamento e os reparos necessários para manter o sistema operando continuamente.</p>
+            <p><strong className="text-white">Vantagem no aluguel:</strong> manutenção preventiva, corretiva e troca de HD inclusas sem custo adicional de mão de obra.</p>
           </div>
         ),
       },
@@ -2241,9 +2259,9 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
           <div className="space-y-4">
             <h3 className="text-lg sm:text-xl font-bold text-white">Compra</h3>
             <p>A compra não tem vínculo contratual de longo prazo. O cliente adquire os equipamentos, que passam a integrar seu patrimônio, sem mensalidade obrigatória.</p>
-            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
-            <p>Na locação de câmeras de segurança IP, a Intelsecsul trabalha com contratos de 6, 12, 24 ou 36 meses, conforme o tipo de cliente e o projeto. Obras e canteiros costumam contratar entre 6 e 12 meses; empresas costumam contratar entre 24 e 36 meses. Cada caso é analisado individualmente na visita técnica. Em caso de rescisão antecipada, é cobrada multa proporcional. Ao final do contrato, o equipamento é retirado sem taxa.</p>
-            <p><strong className="text-white">Vantagem na compra:</strong> posse definitiva do equipamento sem mensalidade. <strong className="text-white">Vantagem na locação:</strong> prazo ajustado ao tempo do seu projeto, com início em até 5 dias após a assinatura.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Aluguel</h3>
+            <p>No aluguel de câmeras de segurança IP, a Intelsecsul trabalha com contratos de 6, 12, 24 ou 36 meses, conforme o tipo de cliente e o projeto. Obras e canteiros costumam contratar entre 6 e 12 meses; empresas costumam contratar entre 24 e 36 meses. Cada caso é analisado individualmente na visita técnica. Em caso de rescisão antecipada, é cobrada multa proporcional. Ao final do contrato, o equipamento é retirado sem taxa.</p>
+            <p><strong className="text-white">Vantagem na compra:</strong> posse definitiva do equipamento sem mensalidade. <strong className="text-white">Vantagem no aluguel:</strong> prazo ajustado ao tempo do seu projeto, com início em até 5 dias após a assinatura.</p>
           </div>
         ),
       },
@@ -2253,9 +2271,9 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
           <div className="space-y-4">
             <h3 className="text-lg sm:text-xl font-bold text-white">Compra</h3>
             <p>O custo da compra pode ser imprevisível no longo prazo se ocorrerem falhas fora da garantia, exigindo compras avulsas de peças e chamados técnicos de emergência.</p>
-            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Locação</h3>
-            <p>A locação entrega previsibilidade. A mensalidade cobre todos os equipamentos do sistema (câmeras, NVR, HD e switch PoE), instalação inicial, suporte técnico, manutenção preventiva, manutenção corretiva e troca de HD.</p>
-            <p><strong className="text-white">Vantagem na locação:</strong> orçamento controlado. Você sabe exatamente quanto o sistema custa por mês, sem custos surpresa de conserto.</p>
+            <h3 className="text-lg sm:text-xl font-bold text-white pt-2">Aluguel</h3>
+            <p>O aluguel entrega previsibilidade. A mensalidade cobre todos os equipamentos do sistema (câmeras, NVR, HD e switch PoE), instalação inicial, suporte técnico, manutenção preventiva, manutenção corretiva e troca de HD.</p>
+            <p><strong className="text-white">Vantagem no aluguel:</strong> orçamento controlado. Você sabe exatamente quanto o sistema custa por mês, sem custos surpresa de conserto.</p>
           </div>
         ),
       },
@@ -2268,7 +2286,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
                 <tr className="border-b border-slate-700">
                   <th className="text-left p-3 text-white font-bold">Critério</th>
                   <th className="text-left p-3 text-white font-bold">Compra</th>
-                  <th className="text-left p-3 text-white font-bold">Locação</th>
+                  <th className="text-left p-3 text-white font-bold">Aluguel</th>
                 </tr>
               </thead>
               <tbody className="text-slate-300">
@@ -2289,7 +2307,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
         h2: 'Quando alugar faz mais sentido?',
         content: (
           <ul className="space-y-2 list-disc list-inside">
-            <li><strong className="text-white">Obras e canteiros de construção (6 a 12 meses).</strong> Para projetos com prazo delimitado, a locação oferece a flexibilidade de contratos mais curtos com retirada do equipamento sem taxa ao final.</li>
+            <li><strong className="text-white">Obras e canteiros de construção (6 a 12 meses).</strong> Para projetos com prazo delimitado, o aluguel oferece a flexibilidade de contratos mais curtos com retirada do equipamento sem taxa ao final.</li>
             <li><strong className="text-white">Empresas que querem previsibilidade orçamentária (24 a 36 meses).</strong> Facilita a gestão contábil com classificação em despesa operacional (OPEX) e suporte contínuo.</li>
             <li><strong className="text-white">Quem não quer desembolso inicial.</strong> Permite iniciar o monitoramento de imediato sem imobilizar capital de giro.</li>
             <li><strong className="text-white">Quem quer troca de HD e manutenção incluídas.</strong> Toda a rotina técnica de revisão preventiva, conserto corretivo e troca de HD fica por conta da Intelsecsul.</li>
@@ -2310,36 +2328,36 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
         h2: 'Como a Intelsecsul pode ajudar',
         content: (
           <div className="space-y-4">
-            <p>A Intelsecsul trabalha com venda e locação de câmeras de segurança em Curitiba e Região Metropolitana. A locação começa em R$ 249 por mês por ponto de câmera IP, com instalação e manutenção incluídas, e o valor final depende do prazo do contrato (6, 12, 24 ou 36 meses). Na visita técnica gratuita, avaliamos o seu imóvel, calculamos a quantidade ideal de câmeras e apresentamos as duas opções com simulação de custo total para o seu cenário.</p>
-            <p>Se você está avaliando locação ou compra, nossa equipe explica as condições comerciais de forma transparente, prazos de contrato e o que está coberto na mensalidade. Sem letras miúdas.</p>
+            <p>A Intelsecsul trabalha com venda e aluguel de câmeras de segurança em Curitiba e Região Metropolitana. O aluguel começa em R$ 249 por mês por ponto de câmera IP, com instalação e manutenção incluídas, e o valor final depende do prazo do contrato (6, 12, 24 ou 36 meses). Na visita técnica gratuita, avaliamos o seu imóvel, calculamos a quantidade ideal de câmeras e apresentamos as duas opções com simulação de custo total para o seu cenário.</p>
+            <p>Se você está avaliando compra ou aluguel, nossa equipe explica as condições comerciais de forma transparente, prazos de contrato e o que está coberto na mensalidade. Sem letras miúdas.</p>
           </div>
         ),
       },
       {
         h2: 'Conclusão',
-        content: 'Comprar ou alugar câmeras de segurança? A resposta depende do tempo de permanência no imóvel, do capital disponível e da preferência em relação à manutenção. A locação começa a partir de R$ 249 por mês por ponto de câmera IP, elimina o investimento inicial e inclui todos os equipamentos do sistema (câmeras, NVR, HD e switch PoE), manutenção preventiva, corretiva e troca de HD, em contratos de 6, 12, 24 ou 36 meses. A compra faz sentido para quem planeja utilizar o sistema por muitos anos no mesmo imóvel e quer o equipamento como patrimônio. Na visita técnica gratuita, a Intelsecsul simula ambos os modelos para o seu caso específico.',
+        content: 'Comprar ou alugar câmeras de segurança? A resposta depende do tempo de permanência no imóvel, do capital disponível e da preferência em relação à manutenção. O aluguel começa a partir de R$ 249 por mês por ponto de câmera IP, elimina o investimento inicial e inclui todos os equipamentos do sistema (câmeras, NVR, HD e switch PoE), manutenção preventiva, corretiva e troca de HD, em contratos de 6, 12, 24 ou 36 meses. A compra faz sentido para quem planeja utilizar o sistema por muitos anos no mesmo imóvel e quer o equipamento como patrimônio. Na visita técnica gratuita, a Intelsecsul simula ambos os modelos para o seu caso específico.',
       },
     ],
     relatedQuestions: [
       {
-        question: 'Qual é o prazo do contrato de locação de câmeras?',
+        question: 'Qual é o prazo do contrato de aluguel de câmeras?',
         answer: 'A Intelsecsul trabalha com contratos de 6, 12, 24 ou 36 meses, conforme o projeto. Obras e canteiros costumam contratar entre 6 e 12 meses, e empresas entre 24 e 36 meses, sempre analisado caso a caso. Em caso de rescisão antecipada, é cobrada multa proporcional.',
       },
       {
-        question: 'O que acontece com os equipamentos ao final do contrato de locação?',
-        answer: 'Em modelos de comodato, os equipamentos pertencem à locadora e, ao final do contrato, são retirados sem cobrança de taxa pela Intelsecsul.',
+        question: 'O que acontece com os equipamentos ao final do contrato de aluguel?',
+        answer: 'Em modelos de comodato, os equipamentos pertencem à Intelsecsul e, ao final do contrato, são retirados sem cobrança de taxa.',
       },
       {
-        question: 'A locação inclui manutenção e troca de peças?',
+        question: 'O aluguel inclui manutenção e troca de peças?',
         answer: 'Sim. A mensalidade inclui todos os equipamentos do sistema (câmeras, NVR, HD e switch PoE), instalação, manutenção preventiva, manutenção corretiva e troca de HD. Manutenções emergenciais são atendidas mediante disponibilidade da equipe e cobrança de taxa.',
       },
       {
         question: 'Alugar câmeras é mais vantajoso que comprar?',
-        answer: 'A escolha entre comprar e alugar depende do tempo de uso, do capital disponível e do custo com manutenção. A locação não exige investimento inicial e inclui manutenção e troca de HD na mensalidade; a compra requer desembolso inicial e gera patrimônio. A Intelsecsul faz a simulação completa para o seu imóvel na visita técnica gratuita.',
+        answer: 'A escolha entre comprar e alugar depende do tempo de uso, do capital disponível e do custo com manutenção. O aluguel não exige investimento inicial e inclui manutenção e troca de HD na mensalidade; a compra requer desembolso inicial e gera patrimônio. A Intelsecsul faz a simulação completa para o seu imóvel na visita técnica gratuita.',
       },
       {
-        question: 'Quanto custa a locação de câmeras de segurança na Intelsecsul?',
-        answer: 'A locação começa a partir de R$ 249 por mês por ponto de câmera IP. O valor final depende do prazo do contrato e da infraestrutura necessária, definido na visita técnica gratuita.',
+        question: 'Quanto custa o aluguel de câmeras de segurança na Intelsecsul?',
+        answer: 'O aluguel começa a partir de R$ 249 por mês por ponto de câmera IP. O valor final depende do prazo do contrato e da infraestrutura necessária, definido na visita técnica gratuita.',
       },
     ],
     internalLink: {
@@ -2347,9 +2365,9 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       url: '/servicos/aluguel-de-cameras-de-seguranca/',
       linkText: 'Ver Aluguel de Câmeras',
     },
-    whatsappMessage: 'Vim do blog e quero comparar compra e locação de câmeras',
+    whatsappMessage: 'Vim do blog e quero comparar compra e aluguel de câmeras',
     ctaFinal: {
-      title: 'Quer comparar compra e locação para o seu imóvel?',
+      title: 'Quer comparar compra e aluguel para o seu imóvel?',
       text: 'A Intelsecsul faz essa comparação gratuitamente na visita técnica, com simulação de custo total para o seu cenário em Curitiba e Região Metropolitana.',
       buttonText: 'Falar no WhatsApp agora',
     },
@@ -3014,6 +3032,9 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
             <p>
               Substituir um HD danificado por outro HD de desktop comum é garantia de ter a mesma dor de cabeça daqui a 6 ou 12 meses. Para CFTV, utilize sempre discos certificados para segurança eletrônica. Se você prefere não se preocupar com reposição de peças e queimas de disco, confira as vantagens em nosso comparativo sobre <Link to="/blog/comprar-ou-alugar-cameras-de-seguranca-comparacao-completa" className="text-white underline hover:text-slate-300">comprar ou alugar câmeras e equipamentos de segurança</Link>.
             </p>
+            <p>
+              Se o problema continuar, veja nossa página de <Link to="/servicos/cameras-de-seguranca/manutencao/" className="text-[#00C5FF] hover:underline">manutenção e conserto de câmeras e CFTV</Link> e faça um diagnóstico gratuito pelo WhatsApp.
+            </p>
           </div>
         ),
       },
@@ -3181,7 +3202,16 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
       },
       {
         h2: 'Conclusão',
-        content: 'HD do DVR não reconhecido pode ser defeito no disco, no cabo SATA, na alimentação ou no gravador — e a ordem de verificação faz toda a diferença. Comece pelo teste cruzado, depois verifique alimentação (12V e 5V), conexão do cabo SATA, compatibilidade do modelo e, por fim, firmware do DVR. A regra mais importante vale para todos os cenários: não formate, não inicialize e não substitua o HD antes de esgotar as verificações e confirmar que não há gravações a preservar. Esse tipo de triagem — junto com a de câmeras que ficam fora do ar — é o que evita trocas de equipamento desnecessárias e perda de gravações importantes.',
+        content: (
+          <div className="space-y-4">
+            <p>
+              HD do DVR não reconhecido pode ser defeito no disco, no cabo SATA, na alimentação ou no gravador — e a ordem de verificação faz toda a diferença. Comece pelo teste cruzado, depois verifique alimentação (12V e 5V), conexão do cabo SATA, compatibilidade do modelo e, por fim, firmware do DVR. A regra mais importante vale para todos os cenários: não formate, não inicialize e não substitua o HD antes de esgotar as verificações e confirmar que não há gravações a preservar. Esse tipo de triagem — junto com a de câmeras que ficam fora do ar — é o que evita trocas de equipamento desnecessárias e perda de gravações importantes.
+            </p>
+            <p>
+              Se o problema continuar, veja nossa página de <Link to="/servicos/cameras-de-seguranca/manutencao/" className="text-[#00C5FF] hover:underline">manutenção e conserto de câmeras e CFTV</Link> e faça um diagnóstico gratuito pelo WhatsApp.
+            </p>
+          </div>
+        ),
       },
     ],
     relatedQuestions: [
@@ -3372,6 +3402,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
           <div className="space-y-4">
             <p>DVR apitando sem parar é um alarme de anormalidade — e o som está comunicando um problema real. As cinco causas mais comuns são: sem HD, erro no HD, HD sem espaço, rede ausente e conflito de IP — e três delas envolvem o disco rígido. A triagem correta começa pelo menu de Anormalidade, onde você identifica qual evento está com o buzzer ativo, e segue pelos logs do sistema, para confirmar o que aconteceu e quando.</p>
             <p>A regra mais importante: não desligue o buzzer sem investigar, não formate o HD sem preservar as gravações e não restaure o DVR sem necessidade. Se a triagem não resolveu, ou se existem gravações importantes que precisam ser preservadas, a avaliação de um técnico especializado é o caminho mais seguro.</p>
+            <p>Se o problema continuar, veja nossa página de <Link to="/servicos/cameras-de-seguranca/manutencao/" className="text-[#00C5FF] hover:underline">manutenção e conserto de câmeras e CFTV</Link> e faça um diagnóstico gratuito pelo WhatsApp.</p>
           </div>
         ),
       },
@@ -3555,6 +3586,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
             <p>NVR que não reconhece câmeras IP depois de trocar o roteador é um problema de rede, não de equipamento. A causa mais comum é a mudança de faixa de IP: o roteador novo usa uma sub-rede diferente da que o NVR e as câmeras estavam configurados, e nenhum dispositivo consegue alcançar o outro.</p>
             <p>A solução segue uma ordem clara: confirme a faixa do roteador, verifique o IP do NVR, alinhe as câmeras à mesma faixa, verifique a alimentação PoE e, por fim, confirme as credenciais. Em muitos casos, basta reiniciar as câmeras para que renovem o DHCP e voltem a aparecer. A regra que vale para todos os cenários: não resete o NVR, não resete as câmeras e não restaure configurações de fábrica antes de esgotar as verificações de rede.</p>
             <p>Quando as câmeras voltarem, confirme que o NVR está realmente gravando — imagem ao vivo não garante gravação, como explicamos em <Link to="/blog/dvr-mostra-imagem-ao-vivo-mas-nao-grava" className="text-white underline hover:text-slate-300">DVR que mostra imagem ao vivo mas não grava</Link>. E se a troca de roteador veio junto com a ampliação do sistema, vale conferir <Link to="/blog/quantas-cameras-de-seguranca-preciso-para-minha-casa" className="text-white underline hover:text-slate-300">quantas câmeras o seu imóvel realmente precisa</Link> antes de adicionar novos pontos.</p>
+            <p>Se o problema continuar, veja nossa página de <Link to="/servicos/cameras-de-seguranca/manutencao/" className="text-[#00C5FF] hover:underline">manutenção e conserto de câmeras e CFTV</Link> e faça um diagnóstico gratuito pelo WhatsApp.</p>
           </div>
         ),
       },
@@ -4473,6 +4505,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
             <p>A triagem começa pelo que é mais simples e não invasivo: verifique a configuração, limpe o domo, afaste a câmera de paredes e teste a fonte. Se os LEDs não acenderem com uma fonte nova, ou se o filtro IR-cut estiver travado, a assistência técnica é necessária.</p>
             <p>E a regra que vale para todos os cenários: não abra a câmera, não a sacuda, não use produtos abrasivos no domo, não ignore a fonte e não instale a câmera em cantos apertados. Essas atitudes podem danificar o equipamento ou agravar o problema de reflexo.</p>
             <p>Se você está revendo o posicionamento das câmeras, veja também <Link to="/blog/quantas-cameras-de-seguranca-preciso-para-minha-casa" className="text-white underline hover:text-slate-300">quantas câmeras de segurança preciso para minha casa</Link>. E, se a triagem não resolveu, a Intelsecsul realiza diagnóstico e manutenção de câmeras de segurança em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+            <p>Se o problema continuar, veja nossa página de <Link to="/servicos/cameras-de-seguranca/manutencao/" className="text-[#00C5FF] hover:underline">manutenção e conserto de câmeras e CFTV</Link> e faça um diagnóstico gratuito pelo WhatsApp.</p>
           </div>
         ),
       },
@@ -4701,7 +4734,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
               <li>Cheiro de queimado ou superaquecimento persistente — desligue a energia no disjuntor e chame assistência. Pode indicar fiação com mau contato ou bobina sob estresse.</li>
               <li>O equipamento está na garantia — abrir ou mexer nos componentes sem autorização pode anular a garantia.</li>
             </ul>
-            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita identifica se o problema é proteção térmica, capacitor, desbalanceamento, esforço mecânico ou configuração — e apresenta a solução com clareza.</p>
+            <p>A Intelsecsul atende chamados de diagnóstico e <Link to="/servicos/portao-automatico/" className="text-white underline hover:text-slate-300">manutenção de portões automáticos</Link> em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita identifica se o problema é proteção térmica, capacitor, desbalanceamento, esforço mecânico ou configuração — e apresenta a solução com clareza.</p>
           </div>
         ),
       },
@@ -4711,7 +4744,8 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
           <div className="space-y-4">
             <p>Portão eletrônico que trava no meio do caminho tem, na grande maioria dos casos, uma causa identificável: proteção térmica (motor superaquece por esforço), capacitor de partida desgastado (perda do impulso inicial), desbalanceamento (motor faz muito mais força), atrito mecânico (trilho sujo, roldanas travadas) ou configuração de força ou fim de curso inadequada.</p>
             <p>A triagem começa pelo que é seguro e não invasivo: teste de balanceamento manual, limpeza do trilho e observação do comportamento do motor (se esquenta, se zumbe, se para no mesmo ponto). E a regra que vale para todos os cenários: não aumente a força da central, não insista com o motor quente, não troque o motor sem verificar o balanceamento e não troque o capacitor sem conhecer a especificação.</p>
-            <p>Se a triagem não resolveu, ou se o problema envolve capacitor, fim de curso ou configuração de força, a avaliação de um técnico especializado é o caminho mais seguro. Para que trilho, roldanas e balanceamento sejam revisados antes de o portão parar, veja <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+            <p>Se a triagem não resolveu, ou se o problema envolve capacitor, fim de curso ou configuração de força, a avaliação de um técnico especializado é o caminho mais seguro. Para que trilho, roldanas e balanceamento sejam revisados antes de o portão parar, veja <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza diagnóstico e <Link to="/servicos/portao-automatico/" className="text-white underline hover:text-slate-300">manutenção de portões automáticos</Link> em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+            <p>Se o problema continuar, veja nossa página de <Link to="/servicos/portao-automatico/manutencao/" className="text-[#00C5FF] hover:underline">manutenção e conserto de portão automático</Link> e faça um diagnóstico gratuito pelo WhatsApp.</p>
           </div>
         ),
       },
@@ -4750,7 +4784,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     whatsappMessage: 'Vim do blog e meu portão trava no meio do caminho',
     ctaFinal: {
       title: 'Seu portão está travando no meio do caminho? Precisa de diagnóstico técnico?',
-      text: 'A Intelsecsul realiza diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de portões automáticos em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.',
       buttonText: 'Falar no WhatsApp agora',
     },
   },
@@ -4886,7 +4920,8 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
             <p>Câmeras que queimam depois de um raio não são vítimas de azar: são vítimas de lacunas de proteção. O surto indireto encontra o caminho mais fácil: a rede elétrica sem DPS, o cabo de rede sem proteção, o aterramento inadequado ou não interligado, ou o switch PoE sem terra.</p>
             <p>A proteção eficaz é uma arquitetura em camadas: DPS classe II no quadro (a NBR 5410 prevê DPS em diversas situações, como edificações com para-raios e alimentação por linha aérea em regiões de muita trovoada), protetores nas linhas de CFTV, aterramento equipotencializado de baixa resistência e cabos blindados (STP) com switch PoE aterrado, ou fibra óptica nos trechos críticos.</p>
             <p>Nenhuma camada oferece proteção absoluta. Mas a combinação correta reduz drasticamente o risco de nova perda e transforma um sistema que queima a cada tempestade em um sistema que resiste e continua gravando.</p>
-            <p>Se o seu CFTV já queimou uma vez, a prioridade não é apenas substituir os equipamentos: é corrigir a arquitetura de proteção antes que a próxima tempestade chegue. Para manter essas revisões em dia, veja também <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza diagnóstico e manutenção de CFTV em Curitiba e Região Metropolitana, com avaliação das camadas de proteção e plano de correção, para que você não perca tudo de novo.</p>
+            <p>Se o seu CFTV já queimou uma vez, a prioridade não é apenas substituir os equipamentos: é corrigir a arquitetura de proteção antes que a próxima tempestade chegue. Para manter essas revisões em dia, veja também <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza diagnóstico e <Link to="/servicos/manutencao/" className="text-white underline hover:text-slate-300">manutenção de CFTV</Link> em Curitiba e Região Metropolitana, com avaliação das camadas de proteção e plano de correção, para que você não perca tudo de novo.</p>
+            <p>Se o problema continuar, veja nossa página de <Link to="/servicos/cameras-de-seguranca/manutencao/" className="text-[#00C5FF] hover:underline">manutenção e conserto de câmeras e CFTV</Link> e faça um diagnóstico gratuito pelo WhatsApp.</p>
           </div>
         ),
       },
@@ -5097,7 +5132,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
               <li>O controle funciona, mas o portão não se move ou para no meio do caminho — o problema pode estar no motor, no capacitor ou no fim de curso, e não no controle. Veja <Link to="/blog/portao-eletronico-trava-no-meio-do-caminho-causas" className="text-white underline hover:text-slate-300">portão eletrônico trava no meio do caminho: causas além do barulho</Link>.</li>
               <li>Você não se sente seguro para acessar o receptor ou mexer na fiação — o receptor fica dentro da caixa do motor, que envolve risco elétrico.</li>
             </ul>
-            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita identifica se o problema é bateria, codificação, alcance, receptor ou placa — e apresenta a solução com clareza.</p>
+            <p>A Intelsecsul atende chamados de diagnóstico e <Link to="/servicos/portao-automatico/" className="text-white underline hover:text-slate-300">manutenção de portões automáticos</Link> em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita identifica se o problema é bateria, codificação, alcance, receptor ou placa — e apresenta a solução com clareza.</p>
           </div>
         ),
       },
@@ -5107,7 +5142,8 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
           <div className="space-y-4">
             <p>Controle remoto do portão que não funciona tem, na grande maioria dos casos, uma causa identificável: bateria fraca (a mais comum), codificação dessincronizada (especialmente em rolling code), alcance reduzido por antena ou interferência, receptor com defeito ou placa de comando com falha.</p>
             <p>A triagem começa pelo teste de escopo (um controle ou todos?) e segue para a bateria, a antena e a reprogramação. E a regra que vale para todos os cenários: não force o portão manualmente sem destravar o motor, não compre controle novo sem testar bateria e reprogramação, e não apague todos os controles do receptor sem ter todos em mãos.</p>
-            <p>Se a triagem não resolver, ou se o problema envolver receptor ou placa, a avaliação de um técnico especializado é o caminho mais seguro. Se o portão responde, mas faz esforço ou ruído, veja também <Link to="/blog/portao-eletronico-faz-barulho-ajuste-ou-defeito" className="text-white underline hover:text-slate-300">portão eletrônico faz barulho: quando é ajuste e quando é defeito</Link>. A Intelsecsul realiza diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+            <p>Se a triagem não resolver, ou se o problema envolver receptor ou placa, a avaliação de um técnico especializado é o caminho mais seguro. Se o portão responde, mas faz esforço ou ruído, veja também <Link to="/blog/portao-eletronico-faz-barulho-ajuste-ou-defeito" className="text-white underline hover:text-slate-300">portão eletrônico faz barulho: quando é ajuste e quando é defeito</Link>. Para substituição ou cópias com codificação compatível, consulte nosso serviço de <Link to="/servicos/controle-remoto-para-portao/" className="text-white underline hover:text-slate-300">controle remoto para portão</Link>. A Intelsecsul realiza diagnóstico e <Link to="/servicos/portao-automatico/" className="text-white underline hover:text-slate-300">manutenção de portões automáticos</Link> em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+            <p>Se o problema continuar, veja nossa página de <Link to="/servicos/portao-automatico/manutencao/" className="text-[#00C5FF] hover:underline">manutenção e conserto de portão automático</Link> e faça um diagnóstico gratuito pelo WhatsApp.</p>
           </div>
         ),
       },
@@ -5140,13 +5176,13 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     ],
     internalLink: {
       text: 'Seu controle não está funcionando? Precisa de ajuda para diagnosticar bateria, codificação ou receptor?',
-      url: '/servicos/portao-automatico/',
-      linkText: 'Ver Portão Automático',
+      url: '/servicos/controle-remoto-para-portao/',
+      linkText: 'Ver Controle Remoto para Portão',
     },
     whatsappMessage: 'Vim do blog e meu controle do portão não funciona',
     ctaFinal: {
       title: 'Seu controle não está funcionando? Precisa de ajuda para diagnosticar bateria, codificação ou receptor?',
-      text: 'A Intelsecsul realiza diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de portões automáticos em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.',
       buttonText: 'Falar no WhatsApp agora',
     },
   },
@@ -5161,7 +5197,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     readTime: '9 min de leitura',
     publishedDate: '2026-10-26',
     summary: 'Fechadura eletromagnética que não trava, ou que abre com um empurrão, deixa a área restrita vulnerável. As causas mais comuns são alinhamento e assentamento da armadura (anéis de borracha, parafuso central), tensão e fonte insuficientes, sujeira nas faces de contato, desgaste mecânico e instalação elétrica incorreta. Veja como diagnosticar com segurança.',
-    intro: 'Uma fechadura eletromagnética que não trava, ou que trava mas cede com um simples empurrão, representa uma falha crítica de segurança: a área restrita fica vulnerável e o acesso que deveria ser controlado passa a ser livre. Com frequência, o problema não está no eletroímã em si, mas na instalação e na infraestrutura ao redor dele. As causas mais comuns se distribuem em cinco frentes: alinhamento e assentamento da armadura (contraplaca), com o erro pouco visível de apertar demais o parafuso central ou omitir os anéis de borracha; tensão e fonte de alimentação (queda de tensão por cabo fino ou fonte distante, fonte queimada ou sem backup); sujeira e oxidação nas faces de contato; desgaste mecânico da armadura ou do eletroímã; e instalação elétrica incorreta no acionamento e na proteção contra picos. Este guia separa cada causa, mostra o que você pode verificar com segurança e indica o momento em que a falha deixa de ser ajuste e passa a exigir assistência técnica.',
+    intro: 'Uma fechadura eletromagnética (um tipo de fechadura eletrônica) que não trava, ou que trava mas cede com um simples empurrão, representa uma falha crítica de segurança: a área restrita fica vulnerável e o acesso que deveria ser controlado passa a ser livre. Com frequência, o problema não está no eletroímã em si, mas na instalação e na infraestrutura ao redor dele. As causas mais comuns se distribuem em cinco frentes: alinhamento e assentamento da armadura (contraplaca), com o erro pouco visível de apertar demais o parafuso central ou omitir os anéis de borracha; tensão e fonte de alimentação (queda de tensão por cabo fino ou fonte distante, fonte queimada ou sem backup); sujeira e oxidação nas faces de contato; desgaste mecânico da armadura ou do eletroímã; e instalação elétrica incorreta no acionamento e na proteção contra picos. Este guia separa cada causa, mostra o que você pode verificar com segurança e indica o momento em que a falha deixa de ser ajuste e passa a exigir assistência técnica.',
     sections: [
       {
         h2: 'Primeiro: entenda o que "não travar" significa na prática',
@@ -5337,7 +5373,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
           <div className="space-y-4">
             <p>Fechadura eletromagnética que não trava, ou que abre com empurrão, tem, na grande maioria dos casos, uma causa identificável: alinhamento e assentamento da armadura (aperto excessivo do parafuso, ausência dos anéis de borracha), tensão e fonte insuficientes (queda de tensão no cabo, fonte distante ou queimada), sujeira e oxidação nas faces de contato, desgaste mecânico da armadura ou do eletroímã, e instalação elétrica incorreta (proteção contra picos, contato do acionador).</p>
             <p>A triagem começa pelo que é visual e não invasivo: verifique os anéis de borracha, folgue ligeiramente o parafuso central da armadura conforme o manual, limpe as faces e meça a tensão nos terminais. E a regra que vale para todos os cenários: não aperte a armadura até o fim, não instale diodo sem verificar o manual, não use fonte AC e não ignore a queda de tensão no cabo.</p>
-            <p>Se a triagem não resolver, ou se a falha envolver substituição de armadura, correção de instalação elétrica ou suspeita de defeito interno na bobina, a avaliação de um técnico especializado é o caminho mais seguro. Para que alinhamento, fonte e bateria sejam revisados antes da falha, veja <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza diagnóstico e manutenção de fechaduras eletromagnéticas em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+            <p>Se a triagem não resolver, ou se a falha envolver substituição de armadura, correção de instalação elétrica ou suspeita de defeito interno na bobina, a avaliação de um técnico especializado é o caminho mais seguro. Para que alinhamento, fonte e bateria sejam revisados antes da falha, veja <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza diagnóstico e manutenção de <Link to="/servicos/fechaduras-eletronicas/" className="text-white underline hover:text-slate-300">fechaduras eletrônicas</Link> (inclusive eletromagnéticas) em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
           </div>
         ),
       },
@@ -5545,7 +5581,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
               <li>A porta é de rota de fuga e não libera — trate como urgente.</li>
               <li>Você não se sente seguro para medir tensões ou acessar a fiação — há risco de choque na parte da fonte e de danificar o controlador.</li>
             </ul>
-            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de controle de acesso em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita identifica em qual elo da cadeia está a falha (relé, fonte, fechadura ou configuração) e apresenta a solução com clareza.</p>
+            <p>A Intelsecsul atende chamados de diagnóstico e <Link to="/servicos/controle-de-acesso/" className="text-white underline hover:text-slate-300">manutenção de controle de acesso</Link> em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita identifica em qual elo da cadeia está a falha (relé, fonte, fechadura ou configuração) e apresenta a solução com clareza.</p>
           </div>
         ),
       },
@@ -5556,7 +5592,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
             <p>Controle de acesso que não libera a porta mesmo com biometria aprovada é, quase sempre, uma falha de integração, e não um defeito no leitor. A biometria já fez o seu papel; o problema está em um dos quatro elos da cadeia: relé de saída, fonte de alimentação, fechadura ou configuração do software.</p>
             <p>A triagem começa pelo que é mais simples e não invasivo: ouça o clique do relé (ou observe o LED), teste a porta pela botoeira e, se souber medir com segurança, meça a tensão nos terminais da fechadura. Se o relé aciona e a tensão chega, o problema está na fechadura (alinhamento, solenoide, porta pressionada, ou relé que não corta a energia do eletroímã). Se o relé não aciona, o problema está na configuração ou na placa do controlador.</p>
             <p>E a regra que vale para todos os cenários: não troque o leitor antes de testar o relé, não ignore a queda de tensão no cabo, não inverta NO e NC sem conhecer o tipo de fechadura e não faça reset de software sem antes revisar a parametrização.</p>
-            <p>Se a triagem não resolver, ou se o problema envolver a placa do controlador, a substituição de fechadura ou a correção de fiação, a avaliação de um técnico especializado é o caminho mais seguro. Para que relé, fonte e fechadura sejam revisados antes da falha, veja <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza diagnóstico e manutenção de controle de acesso em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+            <p>Se a triagem não resolver, ou se o problema envolver a placa do controlador, a substituição de fechadura ou a correção de fiação, a avaliação de um técnico especializado é o caminho mais seguro. Para que relé, fonte e fechadura sejam revisados antes da falha, veja <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza diagnóstico e <Link to="/servicos/controle-de-acesso/" className="text-white underline hover:text-slate-300">manutenção de controle de acesso</Link> em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
           </div>
         ),
       },
@@ -5773,7 +5809,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
               <li>O fusível queima repetidamente — indica curto-circuito na fiação ou na fechadura.</li>
               <li>Você não se sente seguro para medir tensões ou acessar a fonte e a fiação — há risco de choque na parte de rede elétrica da fonte e de danificar o interfone.</li>
             </ul>
-            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de interfonia em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita identifica em qual ponto da cadeia está a falha (botão, relé, fonte, fiação ou fechadura) e apresenta a solução com clareza.</p>
+            <p>A Intelsecsul atende chamados de diagnóstico e <Link to="/servicos/interfonia/" className="text-white underline hover:text-slate-300">manutenção de interfonia</Link> em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita identifica em qual ponto da cadeia está a falha (botão, relé, fonte, fiação ou fechadura) e apresenta a solução com clareza.</p>
           </div>
         ),
       },
@@ -5784,7 +5820,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
             <p>Interfone que funciona para falar, mas não abre o portão, tem uma falha específica no circuito de comando, e não no sistema de áudio. As causas mais comuns são: botão de abertura com defeito ou mau contato, relé que não comuta (ou tempo de abertura mal configurado), fonte insuficiente ou fusível queimado, fechadura com problema (solenoide queimado, portão pressionado contra o trinco, eletroímã com a energia não cortada) e fiação de comando rompida, em curto ou com mau contato.</p>
             <p>A triagem começa pelos testes de escopo: os outros apartamentos abrem? A botoeira abre? O botão faz clique? Em seguida, meça a tensão nos terminais da fechadura (se souber fazer com segurança) e verifique o fusível antes de considerar a troca de qualquer equipamento.</p>
             <p>E a regra que vale para todos os cenários: não troque o interfone antes de testar a botoeira e a tensão, não aumente a tensão "no chute", não ignore o fusível e não force a fechadura. Essas atitudes podem transformar um problema simples em um prejuízo maior.</p>
-            <p>Se a triagem não resolver, ou se a falha envolver o relé, a placa do interfone ou a substituição da fechadura, a avaliação de um técnico especializado é o caminho mais seguro. Para que fonte, fusível, fiação e fechadura sejam revisados antes da falha, veja <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza diagnóstico e manutenção de interfonia em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+            <p>Se a triagem não resolver, ou se a falha envolver o relé, a placa do interfone ou a substituição da fechadura, a avaliação de um técnico especializado é o caminho mais seguro. Para que fonte, fusível, fiação e fechadura sejam revisados antes da falha, veja <Link to="/blog/contrato-manutencao-ou-chamar-quando-quebra" className="text-white underline hover:text-slate-300">vale mais ter contrato de manutenção ou chamar quando quebra</Link>. A Intelsecsul realiza diagnóstico e <Link to="/servicos/interfonia/" className="text-white underline hover:text-slate-300">manutenção de interfonia</Link> em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
           </div>
         ),
       },
@@ -5980,7 +6016,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
               <li>O motor volta, mas o controle não responde — veja <Link to="/blog/controle-remoto-portao-nao-funciona-bateria-codificacao-receptor" className="text-white underline hover:text-slate-300">controle remoto do portão não funciona: bateria, codificação ou receptor</Link>.</li>
               <li>Você não se sente seguro para realizar o procedimento — o risco de queda do portão ou de dano ao motor é real.</li>
             </ul>
-            <p>A Intelsecsul atende chamados de diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita verifica o estado do destravamento, o balanceamento do portão e a necessidade de nobreak ou bateria de backup.</p>
+            <p>A Intelsecsul atende chamados de diagnóstico e <Link to="/servicos/portao-automatico/" className="text-white underline hover:text-slate-300">manutenção de portões automáticos</Link> em Curitiba e Região Metropolitana, com avaliação técnica no local antes de qualquer orçamento. A visita verifica o estado do destravamento, o balanceamento do portão e a necessidade de nobreak ou bateria de backup.</p>
           </div>
         ),
       },
@@ -5990,7 +6026,8 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
           <div className="space-y-4">
             <p>Portão eletrônico que fica aberto (ou travado) após uma queda de energia é uma situação que exige ação rápida, mas segura. O caminho é o destravamento manual, um sistema mecânico que desacopla o motor e permite mover o portão com a mão. O procedimento varia conforme o modelo, mas a lógica é comum: avaliar o risco, desligar o disjuntor, localizar o kit de destravamento, acionar a chave ou alavanca até o fim do curso, mover o portão com cuidado e reacoplar o motor antes de religar a energia.</p>
             <p>O que você não deve fazer é igualmente importante: não force o portão com o motor engatado, não improvise ferramentas, não destrave sem avaliar molas e balanceamento e não mexa no mecanismo sem desligar o disjuntor. Essas ações podem danificar o motor ou causar acidentes graves.</p>
-            <p>Para evitar que o problema se repita, o nobreak dedicado e a manutenção preventiva são as melhores medidas. E se o portão não se mover, estiver desbalanceado ou o destravamento não funcionar, a avaliação de um técnico especializado é o caminho mais seguro. A Intelsecsul realiza diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+            <p>Para evitar que o problema se repita, o nobreak dedicado e a manutenção preventiva são as melhores medidas. E se o portão não se mover, estiver desbalanceado ou o destravamento não funcionar, a avaliação de um técnico especializado é o caminho mais seguro. A Intelsecsul realiza diagnóstico e <Link to="/servicos/portao-automatico/" className="text-white underline hover:text-slate-300">manutenção de portões automáticos</Link> em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.</p>
+            <p>Se o problema continuar, veja nossa página de <Link to="/servicos/portao-automatico/manutencao/" className="text-[#00C5FF] hover:underline">manutenção e conserto de portão automático</Link> e faça um diagnóstico gratuito pelo WhatsApp.</p>
           </div>
         ),
       },
@@ -6029,7 +6066,7 @@ export const BLOG_ARTICLES: BlogArticleMeta[] = [
     whatsappMessage: 'Vim do blog e meu portão ficou aberto após queda de energia',
     ctaFinal: {
       title: 'Seu portão ficou aberto ou travado após uma queda de energia? Precisa de ajuda para liberar com segurança?',
-      text: 'A Intelsecsul realiza diagnóstico e manutenção de portões eletrônicos em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.',
+      text: 'A Intelsecsul realiza diagnóstico e manutenção de portões automáticos em Curitiba e Região Metropolitana, com avaliação no local e orçamento claro antes de qualquer intervenção.',
       buttonText: 'Falar no WhatsApp agora',
     },
   },

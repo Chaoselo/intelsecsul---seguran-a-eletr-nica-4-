@@ -87,8 +87,8 @@ export const PortasAutomaticasPage: React.FC = () => {
       ]}
       faq={[
         {
-          question: 'Qual a diferença entre porta automática e portão eletrônico?',
-          answer: 'Portas automáticas são sistemas projetados principalmente para passagem de pedestres ou docas (portas de vidro com sensor de presença, seccionais e de enrolar em lojas, clínicas e empresas). Já os portões eletrônicos são estruturas para tráfego de veículos em garagens residenciais e condomínios, geralmente com motores deslizantes ou basculantes.',
+          question: 'Qual a diferença entre porta automática e portão automático?',
+          answer: 'Portas automáticas são sistemas projetados principalmente para passagem de pedestres ou docas (portas de vidro com sensor de presença, seccionais e de enrolar em lojas, clínicas e empresas). Já os portões automáticos (também chamados de portões eletrônicos) são estruturas para tráfego de veículos em garagens residenciais e condomínios, geralmente com motores deslizantes ou basculantes.',
         },
         {
           question: 'Vocês fazem manutenção em porta automática de qualquer marca?',

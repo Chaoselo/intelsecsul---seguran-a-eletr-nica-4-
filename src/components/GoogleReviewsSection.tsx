@@ -30,6 +30,8 @@ const avatarColors = [
   'bg-emerald-600 text-white',
   'bg-purple-600 text-white',
   'bg-amber-600 text-white',
+  'bg-rose-600 text-white',
+  'bg-cyan-600 text-white',
 ];
 
 export const GoogleReviewsSection: React.FC = () => {
@@ -58,12 +60,12 @@ export const GoogleReviewsSection: React.FC = () => {
           O que nossos clientes dizem no Google
         </h2>
         <p className="text-slate-300 text-xs sm:text-sm max-w-xl mx-auto">
-          Confira o depoimento real de moradores, condomínios e empresas de Curitiba e Região Metropolitana que confiam na Intelsecsul.
+          Avaliações reais de clientes da Intelsecsul no Google Meu Negócio.
         </p>
       </div>
 
       {/* Grid de Cards de Avaliação estilo Google Maps */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
         {TESTIMONIALS_LIST.map((item, idx) => {
           const initial = item.author.charAt(0).toUpperCase();
           const avatarBg = avatarColors[idx % avatarColors.length];
@@ -86,7 +88,7 @@ export const GoogleReviewsSection: React.FC = () => {
                       </h3>
                       <div className="flex items-center gap-1 text-[11px] text-emerald-400 font-medium">
                         <CheckCircle2 className="w-3 h-3 text-emerald-400 shrink-0" />
-                        <span>Verificada no Google</span>
+                        <span>Avaliação no Google</span>
                       </div>
                     </div>
                   </div>

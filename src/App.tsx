@@ -7,17 +7,20 @@ import { Home } from './pages/Home';
 import { CitiesHub } from './pages/CitiesHub';
 import { PlaceholderPage } from './components/PlaceholderPage';
 import { CamerasSegurancaPage } from './pages/services/CamerasSegurancaPage';
+import { CamerasManutencaoPage } from './pages/services/CamerasManutencaoPage';
 import { AlarmeMonitoradoPage } from './pages/services/AlarmeMonitoradoPage';
 import { CercaEletricaPage } from './pages/services/CercaEletricaPage';
 import { AluguelCamerasPage } from './pages/services/AluguelCamerasPage';
 import { ControleAcessoPage } from './pages/services/ControleAcessoPage';
 import { PortaoAutomaticoPage } from './pages/services/PortaoAutomaticoPage';
+import { PortaoManutencaoPage } from './pages/services/PortaoManutencaoPage';
 import { ControleRemotoPortaoPage } from './pages/services/ControleRemotoPortaoPage';
 import { PortasAutomaticasPage } from './pages/services/PortasAutomaticasPage';
 import { InterfoniaPage } from './pages/services/InterfoniaPage';
 import { CancelasCatracasPage } from './pages/services/CancelasCatracasPage';
 import { FechadurasEletronicasPage } from './pages/services/FechadurasEletronicasPage';
 import { ManutencaoPage } from './pages/services/ManutencaoPage';
+import { ContratoManutencaoPage } from './pages/services/ContratoManutencaoPage';
 import { CamerasResidencialPage } from './pages/services/segments/CamerasResidencialPage';
 import { CamerasComercialPage } from './pages/services/segments/CamerasComercialPage';
 import { CamerasCondominioPage } from './pages/services/segments/CamerasCondominioPage';
@@ -101,6 +104,7 @@ export default function App() {
 
             {/* Services Routes */}
             <Route path="/servicos/cameras-de-seguranca" element={<CamerasSegurancaPage />} />
+            <Route path="/servicos/cameras-de-seguranca/manutencao" element={<CamerasManutencaoPage />} />
             <Route path="/servicos/cameras-de-seguranca/residencial" element={<CamerasResidencialPage />} />
             <Route path="/servicos/cameras-de-seguranca/comercial" element={<CamerasComercialPage />} />
             <Route path="/servicos/cameras-de-seguranca/condominio" element={<CamerasCondominioPage />} />
@@ -123,6 +127,7 @@ export default function App() {
             <Route path="/servicos/controle-de-acesso/reconhecimento-facial" element={<ControleFacialPage />} />
 
             <Route path="/servicos/portao-automatico" element={<PortaoAutomaticoPage />} />
+            <Route path="/servicos/portao-automatico/manutencao" element={<PortaoManutencaoPage />} />
             <Route path="/servicos/portao-eletronico" element={<Navigate to="/servicos/portao-automatico/" replace />} />
             <Route path="/servicos/controle-remoto-para-portao" element={<ControleRemotoPortaoPage />} />
             <Route path="/servicos/portas-automaticas" element={<PortasAutomaticasPage />} />
@@ -135,6 +140,7 @@ export default function App() {
             <Route path="/servicos/fechaduras-eletronicas" element={<FechadurasEletronicasPage />} />
             <Route path="/servicos/fechaduras-eletromagneticas" element={<Navigate to="/servicos/fechaduras-eletronicas/" replace />} />
             <Route path="/servicos/manutencao" element={<ManutencaoPage />} />
+            <Route path="/servicos/contrato-de-manutencao" element={<ContratoManutencaoPage />} />
             <Route path="/servicos/manutencao-de-sistemas-de-seguranca" element={<ManutencaoPage />} />
             <Route path="/servicos/aluguel-de-cameras-de-seguranca" element={<AluguelCamerasPage />} />
             <Route path="/servicos/locacao-de-cameras-de-seguranca" element={<Navigate to="/servicos/aluguel-de-cameras-de-seguranca/" replace />} />

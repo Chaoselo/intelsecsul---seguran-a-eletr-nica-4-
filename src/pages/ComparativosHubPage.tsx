@@ -117,7 +117,7 @@ export const ComparativosHubPage: React.FC = () => {
                 </h2>
 
                 <p className="text-slate-300 text-sm leading-relaxed mb-6">
-                  Compare a abrangência de serviços, prazos contratuais de locação, suporte técnico local e soluções sob medida da Intelsecsul em relação ao modelo multinacional.
+                  Compare a abrangência de serviços, prazos contratuais de aluguel, suporte técnico local e soluções sob medida da Intelsecsul em relação ao modelo multinacional.
                 </p>
               </div>
 

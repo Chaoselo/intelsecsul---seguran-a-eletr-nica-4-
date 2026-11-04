@@ -112,6 +112,16 @@ export const ManutencaoPage: React.FC = () => {
         text: 'Avaliamos o sistema atual e apresentamos o diagnóstico e a solução necessária.',
         buttonText: 'Falar no WhatsApp agora',
       }}
+      relatedLinks={[
+        {
+          label: 'Manutenção e conserto de câmeras e CFTV',
+          url: '/servicos/cameras-de-seguranca/manutencao/',
+        },
+        {
+          label: 'Manutenção e conserto de portão automático',
+          url: '/servicos/portao-automatico/manutencao/',
+        },
+      ]}
       serviceSlug="manutencao"
     />
   );

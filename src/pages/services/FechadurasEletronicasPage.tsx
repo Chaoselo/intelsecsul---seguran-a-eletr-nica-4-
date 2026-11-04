@@ -7,7 +7,7 @@ export const FechadurasEletronicasPage: React.FC = () => {
       title="Fechaduras Eletrônicas em Curitiba e Região | Intelsecsul"
       metaDescription="Instalação de fechaduras eletrônicas para portas em Curitiba e região, integradas ao controle de acesso com biometria ou senha. Peça um orçamento."
       h1="Fechaduras eletrônicas em Curitiba e Região Metropolitana"
-      introText="Instalamos fechaduras eletrônicas para travamento seguro de portas em áreas restritas e ambientes corporativos ou residenciais, integradas a sistemas de controle de acesso por biometria, cartão ou senha."
+      introText="Instalamos fechaduras eletrônicas, inclusive fechaduras eletromagnéticas (eletroímã), para travamento seguro de portas em áreas restritas e ambientes corporativos ou residenciais, integradas a sistemas de controle de acesso por biometria, cartão ou senha."
       whenToHireTitle="Quando instalar fechadura eletrônica"
       whenToHireText="As fechaduras eletrônicas são indicadas para portas de áreas que precisam de controle rígido de acesso, como salas de servidores, almoxarifados, salas de reunião, consultórios, laboratórios ou áreas restritas de condomínios e empresas. O sistema pode utilizar modelos com eletroímã (travamento magnético por força de atração), fechaduras de embutir solenoide ou fechaduras digitais por biometria e senha. Diferente de uma fechadura convencional, elas são liberadas eletronicamente, o que permite integrar o travamento a um sistema de controle de acesso e manter um registro confiável de quem entrou em cada ambiente."
       sintomasFrequentes={[

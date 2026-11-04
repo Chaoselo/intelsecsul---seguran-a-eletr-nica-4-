@@ -11,7 +11,7 @@ export const ControleFacialPage: React.FC = () => {
       destaques={[
         'Identificação sem contato físico',
         'Agilidade em horários de pico',
-        'Pode ser integrado a catracas e fechaduras eletromagnéticas',
+        'Pode ser integrado a catracas e fechaduras eletrônicas',
         'Indicado para portarias, recepções e áreas corporativas',
       ]}
       pillarLink={{

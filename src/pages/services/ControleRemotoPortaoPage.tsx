@@ -529,13 +529,13 @@ export const ControleRemotoPortaoPage: React.FC = () => {
             </Link>
 
             <Link
-              to="/servicos/portao-automatico/"
+              to="/servicos/portao-automatico/manutencao/"
               className="bg-[#121824] p-5 rounded-xl border border-slate-800 hover:border-[#0091FF] hover:bg-[#0091FF]/10 text-slate-200 hover:text-white transition-all group flex flex-col justify-between"
             >
               <div>
                 <span className="text-xs text-[#00C5FF] font-semibold block mb-1">Assistência Técnica</span>
                 <h3 className="text-sm font-bold text-white group-hover:text-[#00C5FF] transition-colors">
-                  Manutenção de portão e do motor
+                  Manutenção e conserto de portão automático
                 </h3>
               </div>
               <div className="mt-4 flex items-center gap-1 text-xs font-bold text-[#00C5FF]">

@@ -334,7 +334,7 @@ export const FaqPage: React.FC = () => {
                   Comparativos de Segurança
                 </h4>
                 <p className="text-xs text-slate-400">
-                  Compra x Locação e Intelsecsul x Verisure.
+                  Compra x Aluguel e Intelsecsul x Verisure.
                 </p>
               </div>
             </Link>

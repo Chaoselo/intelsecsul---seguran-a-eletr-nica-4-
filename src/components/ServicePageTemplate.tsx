@@ -25,6 +25,7 @@ export interface ServicePageTemplateProps {
   introText: string;
   whenToHireTitle?: string;
   whenToHireText: string;
+  sintomasFrequentesTitle?: string;
   sintomasFrequentes?: Array<{
     titulo: string;
     descricao: string;
@@ -63,6 +64,7 @@ export interface ServicePageTemplateProps {
     buttonText: string;
   };
   serviceSlug?: string;
+  canonicalPath?: string;
 }
 
 export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
@@ -72,6 +74,7 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
   introText,
   whenToHireTitle,
   whenToHireText,
+  sintomasFrequentesTitle = 'Problemas e Sintomas Frequentes que Resolvemos',
   sintomasFrequentes,
   bairrosCuritiba,
   tiposAplicacaoTitle = 'Tipos e Aplicações',
@@ -83,9 +86,10 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
   faq,
   ctaFinal,
   serviceSlug,
+  canonicalPath,
 }) => {
   const location = useLocation();
-  const rawPath = serviceSlug ? `/servicos/${serviceSlug}` : location.pathname;
+  const rawPath = canonicalPath || (location.pathname && location.pathname !== '/' ? location.pathname : (serviceSlug ? `/servicos/${serviceSlug}` : location.pathname));
   const currentPath = rawPath.endsWith('/') ? rawPath : `${rawPath}/`;
 
   const breadcrumbSchema = buildBreadcrumbSchema([
@@ -126,7 +130,8 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
     ? [serviceSchema, breadcrumbSchema, faqSchema] 
     : [serviceSchema, breadcrumbSchema];
 
-  const currentService = serviceSlug ? SERVICES_LIST.find(s => s.slug === serviceSlug) : null;
+  const baseSlug = serviceSlug ? serviceSlug.split('/')[0] : null;
+  const currentService = baseSlug ? SERVICES_LIST.find(s => s.slug === baseSlug) : null;
 
   useDocumentMeta({
     title,
@@ -255,7 +260,7 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
               <span>Diagnóstico Técnico Rápido</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-3">
-              Problemas e Sintomas Frequentes que Resolvemos
+              {sintomasFrequentesTitle}
             </h2>
             <p className="text-slate-400 text-sm">
               Identifique o defeito do seu sistema e entenda como nossa equipe técnica resolve de forma definitiva.

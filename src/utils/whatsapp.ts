@@ -3,16 +3,19 @@ import { COMPANY_INFO } from '../constants';
 const ROUTE_MESSAGES: Record<string, string> = {
   '/': 'Olá! Vi o site da Intelsecsul e gostaria de solicitar um orçamento para segurança eletrônica.',
   '/servicos/cameras-de-seguranca': 'Olá! Gostaria de um orçamento para instalação de Câmeras de Segurança em meu imóvel.',
+  '/servicos/cameras-de-seguranca/manutencao': 'Olá! Gostaria de um orçamento para manutenção e conserto de câmeras e CFTV.',
   '/servicos/instalacao-de-alarmes': 'Olá! Gostaria de um orçamento para Instalação/Manutenção de Alarme em meu imóvel.',
   '/servicos/cerca-eletrica': 'Olá! Gostaria de um orçamento para instalação de Cerca Elétrica.',
   '/servicos/aluguel-de-cameras-de-seguranca': 'Olá! Tenho interesse no Aluguel de Câmeras de Segurança sem taxa de instalação e gostaria de um orçamento.',
   '/servicos/locacao-de-cameras-de-seguranca': 'Olá! Tenho interesse no Aluguel de Câmeras de Segurança sem taxa de instalação e gostaria de um orçamento.',
   '/servicos/controle-de-acesso': 'Olá! Preciso de um orçamento para Controle de Acesso (biometria/reconhecimento facial).',
   '/servicos/portao-automatico': 'Olá! Gostaria de um orçamento para automação ou manutenção de Portão Automático.',
+  '/servicos/portao-automatico/manutencao': 'Olá! Gostaria de um orçamento para manutenção e conserto de portão automático.',
   '/servicos/portao-eletronico': 'Olá! Gostaria de um orçamento para automação ou manutenção de Portão Automático.',
   '/servicos/controle-remoto-para-portao': 'Olá! Gostaria de um orçamento para controle remoto de portão automático.',
   '/servicos/fechaduras-eletronicas': 'Olá! Gostaria de um orçamento para instalação de Fechaduras Eletrônicas.',
   '/servicos/interfonia': 'Olá! Preciso de um orçamento para sistema de Interfonia / Vídeo Porteiro.',
+  '/servicos/contrato-de-manutencao': 'Olá! Gostaria de um orçamento para Contrato de Manutenção de segurança eletrônica.',
   '/contato': 'Olá! Vim pela página de contato e gostaria de falar com a equipe comercial da Intelsecsul.',
 };
 
