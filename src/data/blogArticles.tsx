@@ -17,6 +17,7 @@ export interface BlogArticleMeta {
   category: string;
   readTime: string;
   publishedDate: string;
+  updatedDate?: string;
   summary: string;
   intro: string;
   sections: BlogArticleSection[];

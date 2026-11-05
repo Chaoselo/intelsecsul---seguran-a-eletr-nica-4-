@@ -2,6 +2,7 @@ import { COMPANY_INFO } from '../constants';
 
 const ROUTE_MESSAGES: Record<string, string> = {
   '/': 'Olá! Vi o site da Intelsecsul e gostaria de solicitar um orçamento para segurança eletrônica.',
+  '/servicos': 'Olá! Gostaria de um diagnóstico gratuito pelo WhatsApp e de solicitar um orçamento.',
   '/servicos/cameras-de-seguranca': 'Olá! Gostaria de um orçamento para instalação de Câmeras de Segurança em meu imóvel.',
   '/servicos/cameras-de-seguranca/manutencao': 'Olá! Gostaria de um orçamento para manutenção e conserto de câmeras e CFTV.',
   '/servicos/instalacao-de-alarmes': 'Olá! Gostaria de um orçamento para Instalação/Manutenção de Alarme em meu imóvel.',

@@ -54,7 +54,8 @@ export const SegmentPageTemplate: React.FC<SegmentPageTemplateProps> = ({
 
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: 'Início', url: '/' },
-    { name: 'Serviços', url: pillarUrl },
+    { name: 'Serviços', url: '/servicos/' },
+    { name: matchingService?.title || pillarLink.label, url: pillarUrl },
     { name: h1, url: currentPath }
   ]);
 
@@ -79,7 +80,11 @@ export const SegmentPageTemplate: React.FC<SegmentPageTemplateProps> = ({
           <nav className="flex items-center gap-2 text-xs text-slate-400 mb-6 flex-wrap">
             <Link to="/" className="hover:text-[#00C5FF] transition-colors">Início</Link>
             <span>/</span>
-            <Link to={pillarUrl} className="hover:text-[#00C5FF] transition-colors">Serviços</Link>
+            <Link to="/servicos/" className="hover:text-[#00C5FF] transition-colors">Serviços</Link>
+            <span>/</span>
+            <Link to={pillarUrl} className="hover:text-[#00C5FF] transition-colors">
+              {matchingService?.title || pillarLink.label}
+            </Link>
             <span>/</span>
             <span className="text-slate-200 font-medium truncate">{h1}</span>
           </nav>

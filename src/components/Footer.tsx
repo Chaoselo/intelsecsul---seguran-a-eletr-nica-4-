@@ -62,6 +62,15 @@ export const Footer: React.FC = () => {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  to="/servicos/"
+                  className="text-[#00C5FF] font-bold hover:underline inline-flex items-center gap-1 pt-1"
+                >
+                  <span>Todos os serviços</span>
+                  <ArrowRight className="w-3 h-3" />
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -179,7 +188,7 @@ export const Footer: React.FC = () => {
             <span>•</span>
             <Link to="/blog/" className="hover:text-white transition-colors">Blog</Link>
             <span>•</span>
-            <Link to="/servicos/manutencao/" className="hover:text-white transition-colors">Serviços</Link>
+            <Link to="/servicos/" className="hover:text-white transition-colors">Serviços</Link>
             <span>•</span>
             <Link to="/cidades/" className="hover:text-white transition-colors">Cidades</Link>
             <span>•</span>

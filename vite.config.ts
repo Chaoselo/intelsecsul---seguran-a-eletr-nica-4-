@@ -116,6 +116,21 @@ function ensureChromePlugin() {
   };
 }
 
+function copy404HtmlPlugin() {
+  return {
+    name: 'copy-404-html-plugin',
+    closeBundle() {
+      const distDir = path.resolve(__dirname, 'dist');
+      const distIndexPath = path.join(distDir, 'index.html');
+      const dist404Path = path.join(distDir, '404.html');
+      if (fs.existsSync(distIndexPath)) {
+        fs.copyFileSync(distIndexPath, dist404Path);
+        console.log('[copy-404] dist/index.html copiado para dist/404.html');
+      }
+    },
+  };
+}
+
 export default defineConfig(() => {
   return {
     plugins: [
@@ -135,6 +150,7 @@ export default defineConfig(() => {
           args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
         }),
       }),
+      copy404HtmlPlugin(),
     ],
     resolve: {
       alias: {

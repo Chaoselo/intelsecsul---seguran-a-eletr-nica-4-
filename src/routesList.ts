@@ -16,6 +16,7 @@ export const PRERENDER_ROUTES: string[] = [
   "/cidades/campo-magro",
   "/cidades/quatro-barras",
   "/cidades/campina-grande-do-sul",
+  "/servicos",
   "/servicos/cameras-de-seguranca",
   "/servicos/cameras-de-seguranca/manutencao",
   "/servicos/cameras-de-seguranca/residencial",

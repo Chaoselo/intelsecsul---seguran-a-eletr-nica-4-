@@ -1,5 +1,6 @@
 import React from 'react';
 import { ServicePageTemplate } from '../../components/ServicePageTemplate';
+import { MAINTENANCE_COMMON_FAQ } from '../../data/maintenanceCommonFaq';
 
 export const CamerasManutencaoPage: React.FC = () => {
   return (
@@ -122,10 +123,6 @@ export const CamerasManutencaoPage: React.FC = () => {
           answer: 'O valor depende do defeito, do tipo de câmera, do gravador e das peças necessárias. Faça o diagnóstico gratuito pelo WhatsApp e solicite o orçamento: ele é feito caso a caso.',
         },
         {
-          question: 'O diagnóstico pelo WhatsApp é gratuito?',
-          answer: 'Sim. Descreva o problema, envie foto ou vídeo e orientamos sem custo. Se for necessário ir até o local, consulte a taxa de visita.',
-        },
-        {
           question: 'Vocês atendem todos os tipos de câmera e todas as marcas de DVR e NVR?',
           answer: 'Sim. Atendemos câmeras IP, Wi-Fi, dome, bullet, analógicas e outras, e gravadores DVR e NVR de todas as marcas, mesmo quando a instalação foi feita por outra empresa.',
         },
@@ -150,17 +147,10 @@ export const CamerasManutencaoPage: React.FC = () => {
           answer: 'Depende do tamanho do sistema e do ambiente. Em condomínios e empresas, é comum a revisão trimestral, que pode ser combinada em contrato de manutenção.',
         },
         {
-          question: 'Vocês atendem emergência?',
-          answer: 'Sim, em Curitiba e em toda a Região Metropolitana. Chamados urgentes são atendidos em até 12 horas, mediante disponibilidade técnica e cobrança de taxa.',
-        },
-        {
-          question: 'O serviço tem garantia?',
-          answer: 'Sim. Os serviços executados têm garantia de 3 meses.',
-        },
-        {
           question: 'No aluguel de câmeras, a manutenção está inclusa?',
           answer: 'Sim. No aluguel de câmeras da Intelsecsul, a manutenção preventiva e corretiva está inclusa na mensalidade. Veja a página de aluguel de câmeras de segurança.',
         },
+        ...MAINTENANCE_COMMON_FAQ,
       ]}
       ctaFinal={{
         title: 'Solicite um orçamento de manutenção de câmeras e CFTV',

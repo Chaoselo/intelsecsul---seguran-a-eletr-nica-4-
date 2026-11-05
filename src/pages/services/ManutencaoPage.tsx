@@ -1,5 +1,6 @@
 import React from 'react';
 import { ServicePageTemplate } from '../../components/ServicePageTemplate';
+import { MAINTENANCE_COMMON_FAQ } from '../../data/maintenanceCommonFaq';
 
 export const ManutencaoPage: React.FC = () => {
   return (
@@ -106,6 +107,7 @@ export const ManutencaoPage: React.FC = () => {
           question: 'Vocês também atualizam sistemas antigos?',
           answer: 'Sim, podemos avaliar o sistema atual e propor atualizações ou substituição de equipamentos ultrapassados.',
         },
+        ...MAINTENANCE_COMMON_FAQ,
       ]}
       ctaFinal={{
         title: 'Peça um orçamento gratuito para manutenção',

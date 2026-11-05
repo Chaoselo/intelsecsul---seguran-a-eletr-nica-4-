@@ -72,8 +72,17 @@ export const Header: React.FC = () => {
 
               {servicesDropdownOpen && (
                 <div className="absolute top-full left-0 w-80 bg-[#121824] border border-slate-700/80 rounded-xl shadow-2xl p-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
-                  <div className="text-xs font-semibold text-slate-400 px-3 py-1.5 uppercase tracking-wider">
-                    Nossas Soluções
+                  <div className="flex justify-between items-center px-3 py-1.5">
+                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">
+                      Nossas Soluções
+                    </span>
+                    <Link
+                      to="/servicos/"
+                      onClick={() => setServicesDropdownOpen(false)}
+                      className="text-[11px] text-[#00C5FF] hover:underline font-semibold"
+                    >
+                      Ver todos
+                    </Link>
                   </div>
                   <div className="divide-y divide-slate-800/60 max-h-[380px] overflow-y-auto custom-scrollbar">
                     {SERVICES_LIST.map((service) => (
@@ -235,6 +244,13 @@ export const Header: React.FC = () => {
               </button>
               {servicesDropdownOpen && (
                 <div className="ml-3 pl-3 border-l border-slate-800 my-1 space-y-1">
+                  <Link
+                    to="/servicos/"
+                    onClick={closeMobileMenu}
+                    className="block px-3 py-2 rounded-md text-xs font-bold text-sky-400 hover:bg-slate-800 uppercase tracking-wider"
+                  >
+                    Ver todos os serviços →
+                  </Link>
                   {SERVICES_LIST.map((s) => (
                     <Link
                       key={s.slug}

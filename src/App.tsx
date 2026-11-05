@@ -5,6 +5,7 @@ import { Footer } from './components/Footer';
 import { WhatsAppButton } from './components/WhatsAppButton';
 import { Home } from './pages/Home';
 import { CitiesHub } from './pages/CitiesHub';
+import { ServicosHubPage } from './pages/ServicosHubPage';
 import { PlaceholderPage } from './components/PlaceholderPage';
 import { CamerasSegurancaPage } from './pages/services/CamerasSegurancaPage';
 import { CamerasManutencaoPage } from './pages/services/CamerasManutencaoPage';
@@ -52,6 +53,7 @@ import { FazendaRioGrandePage } from './pages/cities/FazendaRioGrandePage';
 import { CampoMagroPage } from './pages/cities/CampoMagroPage';
 import { QuatroBarrasPage } from './pages/cities/QuatroBarrasPage';
 import { CampinaGrandeDoSulPage } from './pages/cities/CampinaGrandeDoSulPage';
+import { NotFoundPage } from './pages/NotFoundPage';
 import { useGTMPageTracking } from './hooks/useGTMPageTracking';
 import { CookieConsentBanner } from './components/CookieConsentBanner';
 
@@ -103,6 +105,7 @@ export default function App() {
             <Route path="/cidades/:slug" element={<PlaceholderPage type="city" />} />
 
             {/* Services Routes */}
+            <Route path="/servicos" element={<ServicosHubPage />} />
             <Route path="/servicos/cameras-de-seguranca" element={<CamerasSegurancaPage />} />
             <Route path="/servicos/cameras-de-seguranca/manutencao" element={<CamerasManutencaoPage />} />
             <Route path="/servicos/cameras-de-seguranca/residencial" element={<CamerasResidencialPage />} />
@@ -133,7 +136,7 @@ export default function App() {
             <Route path="/servicos/portas-automaticas" element={<PortasAutomaticasPage />} />
 
             <Route path="/servicos/interfonia" element={<InterfoniaPage />} />
-            <Route path="/servicos/interfones" element={<InterfoniaPage />} />
+            <Route path="/servicos/interfones" element={<Navigate to="/servicos/interfonia/" replace />} />
             <Route path="/servicos/interfonia/condominio" element={<InterfoniaCondominioPage />} />
 
             <Route path="/servicos/cancelas-e-catracas" element={<CancelasCatracasPage />} />
@@ -141,7 +144,7 @@ export default function App() {
             <Route path="/servicos/fechaduras-eletromagneticas" element={<Navigate to="/servicos/fechaduras-eletronicas/" replace />} />
             <Route path="/servicos/manutencao" element={<ManutencaoPage />} />
             <Route path="/servicos/contrato-de-manutencao" element={<ContratoManutencaoPage />} />
-            <Route path="/servicos/manutencao-de-sistemas-de-seguranca" element={<ManutencaoPage />} />
+            <Route path="/servicos/manutencao-de-sistemas-de-seguranca" element={<Navigate to="/servicos/manutencao/" replace />} />
             <Route path="/servicos/aluguel-de-cameras-de-seguranca" element={<AluguelCamerasPage />} />
             <Route path="/servicos/locacao-de-cameras-de-seguranca" element={<Navigate to="/servicos/aluguel-de-cameras-de-seguranca/" replace />} />
             <Route path="/servicos/locacao-de-equipamentos-de-seguranca" element={<Navigate to="/servicos/aluguel-de-cameras-de-seguranca/" replace />} />
@@ -153,7 +156,7 @@ export default function App() {
             <Route path="/por-que-escolher-a-intelsecsul" element={<PorQueEscolherPage />} />
             <Route path="/depoimentos" element={<Navigate to="/" replace />} />
             <Route path="/perguntas-frequentes" element={<FaqPage />} />
-            <Route path="/faq" element={<FaqPage />} />
+            <Route path="/faq" element={<Navigate to="/perguntas-frequentes/" replace />} />
             <Route path="/glossario" element={<GlossarioPage />} />
             
             {/* Comparativos Routes */}
@@ -169,7 +172,7 @@ export default function App() {
             <Route path="/contato" element={<ContatoPage />} />
 
             {/* Catch-all Fallback */}
-            <Route path="*" element={<Home />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
 

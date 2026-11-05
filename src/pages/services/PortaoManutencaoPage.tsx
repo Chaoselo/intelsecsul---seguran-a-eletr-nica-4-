@@ -1,5 +1,6 @@
 import React from 'react';
 import { ServicePageTemplate } from '../../components/ServicePageTemplate';
+import { MAINTENANCE_COMMON_FAQ } from '../../data/maintenanceCommonFaq';
 
 export const PortaoManutencaoPage: React.FC = () => {
   return (
@@ -110,10 +111,6 @@ export const PortaoManutencaoPage: React.FC = () => {
           answer: 'O valor depende do defeito, do tipo de portão e das peças necessárias. Faça o diagnóstico gratuito pelo WhatsApp e solicite o orçamento: ele é feito caso a caso.',
         },
         {
-          question: 'O diagnóstico pelo WhatsApp é gratuito?',
-          answer: 'Sim. Descreva o problema, envie foto ou vídeo e orientamos sem custo. Se for necessário ir até o local, consulte a taxa de visita.',
-        },
-        {
           question: 'Vocês atendem todas as marcas e tipos de portão?',
           answer: 'Sim. Atendemos todas as marcas e modelos de motor e portão deslizante, basculante, pivotante e seccionado.',
         },
@@ -134,17 +131,10 @@ export const PortaoManutencaoPage: React.FC = () => {
           answer: 'Depende de quantas vezes o portão é acionado por dia. Em condomínios e empresas, é comum a revisão trimestral, que pode ser combinada em contrato de manutenção.',
         },
         {
-          question: 'Vocês atendem emergência?',
-          answer: 'Sim, em Curitiba e em toda a Região Metropolitana. Chamados urgentes são atendidos em até 12 horas, mediante disponibilidade técnica e cobrança de taxa.',
-        },
-        {
-          question: 'O serviço tem garantia?',
-          answer: 'Sim. Os serviços executados têm garantia de 3 meses.',
-        },
-        {
           question: 'Vocês fazem contrato de manutenção de portão para condomínio e empresa?',
           answer: 'Sim. O contrato inclui visitas preventivas e atendimento por chamado, para todos os sistemas de segurança do imóvel. Solicite um orçamento pelo WhatsApp.',
         },
+        ...MAINTENANCE_COMMON_FAQ,
       ]}
       ctaFinal={{
         title: 'Solicite um orçamento de manutenção de portão automático',

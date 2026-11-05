@@ -55,11 +55,39 @@
   status = 301
   force = true
 
-# Fallback para Single Page Application (React Router)
+# Redirecionamento permanente 301 para manutenção de sistemas
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  from = "/servicos/manutencao-de-sistemas-de-seguranca"
+  to = "/servicos/manutencao"
+  status = 301
+  force = true
+
+# Redirecionamento permanente 301 para interfonia
+[[redirects]]
+  from = "/servicos/interfones"
+  to = "/servicos/interfonia"
+  status = 301
+  force = true
+
+# Redirecionamento permanente 301 para perguntas frequentes
+[[redirects]]
+  from = "/faq"
+  to = "/perguntas-frequentes"
+  status = 301
+  force = true
+
+# Redirecionamentos permanentes 301 para alarme residencial e empresarial
+[[redirects]]
+  from = "/servicos/alarme-monitorado/residencial"
+  to = "/servicos/instalacao-de-alarmes/residencial"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/servicos/alarme-monitorado/empresarial"
+  to = "/servicos/instalacao-de-alarmes/empresarial"
+  status = 301
+  force = true
 
 # Cabeçalhos globais de segurança e proteção HSTS
 [[headers]]

@@ -92,11 +92,21 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
   const rawPath = canonicalPath || (location.pathname && location.pathname !== '/' ? location.pathname : (serviceSlug ? `/servicos/${serviceSlug}` : location.pathname));
   const currentPath = rawPath.endsWith('/') ? rawPath : `${rawPath}/`;
 
-  const breadcrumbSchema = buildBreadcrumbSchema([
+  const baseSlug = serviceSlug ? serviceSlug.split('/')[0] : null;
+  const currentService = baseSlug ? SERVICES_LIST.find(s => s.slug === baseSlug) : null;
+  const isSubService = Boolean(serviceSlug && serviceSlug.includes('/'));
+
+  const breadcrumbItems = [
     { name: 'Início', url: '/' },
-    { name: 'Serviços', url: '/' },
+    { name: 'Serviços', url: '/servicos/' },
+    ...(isSubService && baseSlug ? [{
+      name: currentService?.title || baseSlug,
+      url: `/servicos/${baseSlug}/`
+    }] : []),
     { name: h1, url: currentPath }
-  ]);
+  ];
+
+  const breadcrumbSchema = buildBreadcrumbSchema(breadcrumbItems);
 
   // JSON-LD Schemas for Service & FAQPage
   const serviceSchema = {
@@ -130,9 +140,6 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
     ? [serviceSchema, breadcrumbSchema, faqSchema] 
     : [serviceSchema, breadcrumbSchema];
 
-  const baseSlug = serviceSlug ? serviceSlug.split('/')[0] : null;
-  const currentService = baseSlug ? SERVICES_LIST.find(s => s.slug === baseSlug) : null;
-
   useDocumentMeta({
     title,
     description: metaDescription,
@@ -161,7 +168,15 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
           <nav className="flex items-center gap-2 text-xs text-slate-400 mb-6 flex-wrap">
             <Link to="/" className="hover:text-[#00C5FF] transition-colors">Início</Link>
             <span>/</span>
-            <Link to="/" className="hover:text-[#00C5FF] transition-colors">Serviços</Link>
+            <Link to="/servicos/" className="hover:text-[#00C5FF] transition-colors">Serviços</Link>
+            {isSubService && baseSlug && (
+              <>
+                <span>/</span>
+                <Link to={`/servicos/${baseSlug}/`} className="hover:text-[#00C5FF] transition-colors">
+                  {currentService?.title || baseSlug}
+                </Link>
+              </>
+            )}
             <span>/</span>
             <span className="text-slate-200 font-medium truncate">{h1}</span>
           </nav>

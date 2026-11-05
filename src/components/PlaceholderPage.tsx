@@ -3,6 +3,7 @@ import { Link, useLocation, useParams } from 'react-router-dom';
 import { Shield, ArrowLeft, Phone, Construction, CheckCircle2, MapPin } from 'lucide-react';
 import { COMPANY_INFO, SERVICES_LIST, CITIES_LIST } from '../constants';
 import { WhatsAppIcon } from './WhatsAppIcon';
+import { NotFoundPage } from '../pages/NotFoundPage';
 
 interface Props {
   type: 'service' | 'city' | 'institutional';
@@ -23,23 +24,22 @@ export const PlaceholderPage: React.FC<Props> = ({ type, title: customTitle, des
 
   if (type === 'service') {
     const service = SERVICES_LIST.find((s) => s.slug === slug);
-    if (service) {
-      pageTitle = service.title;
-      pageSubtitle = service.description;
-      whatsappMsg = `Olá, gostaria de um orçamento para ${service.title}`;
-      currentServiceImage = service.imageUrl;
-      currentServiceImageAlt = service.imageAlt;
-    } else if (slug) {
-      pageTitle = slug.replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase());
-      whatsappMsg = `Olá, gostaria de um orçamento para ${pageTitle}`;
+    if (!service) {
+      return <NotFoundPage />;
     }
+    pageTitle = service.title;
+    pageSubtitle = service.description;
+    whatsappMsg = `Olá, gostaria de um orçamento para ${service.title}`;
+    currentServiceImage = service.imageUrl;
+    currentServiceImageAlt = service.imageAlt;
   } else if (type === 'city') {
     const city = CITIES_LIST.find((c) => c.slug === slug);
-    if (city) {
-      pageTitle = `Segurança Eletrônica em ${city.name}`;
-      pageSubtitle = `Atendimento técnico especializado, projetos, instalação e manutenção de sistemas de segurança em ${city.name} - PR.`;
-      whatsappMsg = `Olá, preciso de um orçamento de segurança eletrônica para meu imóvel em ${city.name}`;
+    if (!city) {
+      return <NotFoundPage />;
     }
+    pageTitle = `Segurança Eletrônica em ${city.name}`;
+    pageSubtitle = `Atendimento técnico especializado, projetos, instalação e manutenção de sistemas de segurança em ${city.name} - PR.`;
+    whatsappMsg = `Olá, preciso de um orçamento de segurança eletrônica para meu imóvel em ${city.name}`;
   } else if (type === 'institutional') {
     if (location.pathname === '/sobre') {
       pageTitle = 'Sobre a Intelsecsul';
@@ -76,7 +76,7 @@ export const PlaceholderPage: React.FC<Props> = ({ type, title: customTitle, des
           <span>/</span>
           {type === 'service' && (
             <>
-              <span className="text-slate-400">Serviços</span>
+              <Link to="/servicos/" className="hover:text-[#00C5FF] transition-colors">Serviços</Link>
               <span>/</span>
             </>
           )}

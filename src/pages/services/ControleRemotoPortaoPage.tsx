@@ -66,7 +66,7 @@ export const ControleRemotoPortaoPage: React.FC = () => {
 
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: 'Início', url: '/' },
-    { name: 'Serviços', url: '/servicos/portao-automatico/' },
+    { name: 'Serviços', url: '/servicos/' },
     { name: 'Portão automático', url: '/servicos/portao-automatico/' },
     { name: 'Controle remoto para portão', url: '/servicos/controle-remoto-para-portao/' },
   ]);
@@ -117,7 +117,7 @@ export const ControleRemotoPortaoPage: React.FC = () => {
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-slate-400 mb-6 flex-wrap">
             <Link to="/" className="hover:text-[#00C5FF] transition-colors">Início</Link>
             <span>/</span>
-            <Link to="/servicos/portao-automatico/" className="hover:text-[#00C5FF] transition-colors">Serviços</Link>
+            <Link to="/servicos/" className="hover:text-[#00C5FF] transition-colors">Serviços</Link>
             <span>/</span>
             <Link to="/servicos/portao-automatico/" className="hover:text-[#00C5FF] transition-colors">Portão automático</Link>
             <span>/</span>
